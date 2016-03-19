@@ -1,0 +1,193 @@
+ICS 169B — Capstone Game Project II<html>
+<head>
+<meta name="robots" content="none" />
+<style type="text/css">  <!--
+h1 { font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center}
+h2 { font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #ffAAff;
+     padding: 0.3em 0em 0.3em 0.5em; border: thin solid #000000}
+h3 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 150% }
+h4 { font-family: Verdana, Arial, Helvetica, sans-serif; }
+p { margin-left: 1cm; font-family: Georgia, "Times New Roman", Times, serif; }
+li { margin-left: 0.5cm; font-family: Georgia, "Times New Roman", Times, serif; }
+.floatbox {/* from http://www.bigbaer.com/css_tutorials/css.float.html.tutorial.htm*/
+  margin: 0.5em;
+  font-family: Georgia, "Times New Roman", Times, Serif;
+  padding: 1.0em;
+  border: 6px groove  #c0c0c0;
+  background: #f5f5f5;
+  float: right;
+  width: 33%;
+  }
+ -->
+</style>
+<title>
+ICS 169B &mdash; Capstone Game Project II
+</title>
+</head>
+<body>
+<h1>ICS 169B &mdash; Capstone Game Project II</h1>
+<center><h3>Winter, 2016</h3></center>
+
+<h2>Syllabus</h2>
+
+<p>
+In this course, and its first part ICS 169A,
+students work in teams to design and develop a computer game.
+
+<p>
+The course has no textbook, tests, or final exam.
+The final exam period, Tuesday, March 15, from 4:00pm to 6:00pm will be
+used for final presentations.
+
+<p>
+ICS 169A and 169B are graded together; your grade for ICS 169B will "count"
+for both courses.
+The grade for ICS 169B will be determined as follows:
+<blockquote>
+<b>80%: Game quality and individual contribution to the game</b>, where "quality" includes
+				many but probably not all of
+	<li>Good gameplay - well balanced, fun, challenging but not too hard, engaging, replayable, immersive, addictive
+	<li>Art and art design, including animation - polished, integrated with theme and gameplay
+	<li>Music and sound design - polished, integrated with theme and gameplay
+	<li><i>(Note: credit is given for art and sound assets created by team members, and for the work
+			required to wrangle external artists and their creations)</i>
+	<li>Completeness - such as menus, ending screens, transitions between levels, save/restore,
+			help screens and tutorial levels, cut scenes, GUI elements
+	<li>Technical challenges - such as complex AI, networking
+	<li>Extensiveness - multiple levels/quests/puzzles, many characters, weapons, attacks, etc.
+	<li>Narrative - background story, integration with game play, good writing and proofreading
+</blockquote>
+<blockquote>
+<b>20%: Course process</b>, including
+	<li>Attendance
+	<li>Completing surveys
+	<li>Timely completion of weekly status reports
+</blockquote>
+
+<!--
+<ul>
+<li>10%, attendance during lecture periods
+<li>20%, participation at team meetings
+<li>40%, weekly status reports
+<li>30%, team progress on the game
+</ul>
+<p>
+The tentative Fall quarter grade will be weighted as 45% of the overall grade.
+-->
+
+<p>
+You have access to the COGS lab (ICS-2 room 170).
+For now, use the code that was sent via an email.
+<!--
+Find your key code through the EEE GradeBook "ICS 169A - CGS Capstone II".
+-->
+Make sure to read and follow the
+<a href="COGSLabRules.pdf">COGS lab rules</a>.
+
+<!--
+<p>
+<a href="FinalPresentationTemplate.pptx">Final Presentation Template (pptx)</a>
+-->
+
+<p>
+Prof. Frost's office hours: <i>tba</i>
+
+<p>
+Prof. Wang's office hours: <i>tba</i>
+
+
+<h2>Schedule</h2>
+
+<p>
+Tentative schedule for Winter quarter:
+<p>
+
+<table border=1 padding=3>
+<tr>
+	<th>Week<th colspan="3" width=250>Tuesday<th colspan="3" width=250>Thursday
+</tr>
+<tr>
+	<td>1<td colspan="3"><sup>1/5</sup><br>Introductions and announcements<td colspan="3"><sup>1/7</sup><br>Profs meet with teams
+</tr>
+<tr>
+	<td>2<td colspan="3"><sup>1/12</sup><br>Meetings with mentors<td colspan="3"><sup>1/14</sup><br>Team meetings, no lecture
+</tr>
+<tr>
+	<td>3<td colspan="3"><sup>1/19</sup><br>Visit from UCSC's game program*
+	<td colspan="3"><sup>1/22</sup><br>Guest speaker: <a href="http://www.mcullen.me/reel/">Michael Cullen</a>, Audio Engineer**
+</tr>
+<tr>
+	<td>4<td colspan="3"><sup>1/26</sup><br>Bus trip to Blizzard<td colspan="3"><sup>1/28</sup><br>Team meetings, no lecture
+</tr>
+<tr>
+	<td>5<td colspan="3"><sup>2/2</sup><br>Play testing (in DBH 5011)<td colspan="3"><sup>2/4</sup><br>Team meetings, no lecture
+</tr>
+<tr>
+	<td>6<td colspan="3"><sup>2/9</sup><br>Professors meet with teams<td colspan="3"><sup>2/11</sup><br>Meetings with mentors
+</tr>
+<tr>
+	<td>7<td colspan="3"><sup>2/16</sup>
+	<br>Team meetings<td colspan="3"><sup>2/18</sup><br>Guest speakers from Blind Squirrel Games:
+	Dominic Camargo, an Engineer, and Chris Kagel, Lead Designer
+</tr>
+<tr>
+	<td>8<td colspan="3"><sup>2/23</sup><br>Meetings with mentors<td colspan="3"><sup>2/25</sup><br>Play testing
+</tr>
+<tr>
+	<td>9<td colspan="3"><sup>3/1</sup><br>&nbsp;<td colspan="3"><sup>3/3</sup><br>Blizzard Tour
+</tr>
+<tr>
+	<td style="width:20px">10
+	<td colspan="2"><sup>3/8</sup><br>Dress Rehearsals
+	<td colspan="2"><sup>Wed., 3/9</sup><br>Game Day
+	<td colspan="2"><sup>3/10</sup><br>&nbsp;
+</tr>
+<tr>
+	<td>F<td colspan="3"><sup>3/15</sup><br>Presentations, 4pm-6pm in DBH 5011<td colspan="3">&nbsp;
+</tr>
+</table>
+<p>
+
+*Visit from UCSC's game program: UC Santa Cruz has
+<a href="https://games.soe.ucsc.edu/graduate-study">several options</a> for graduate study in games.
+After a brief outline of those options from Prof. Jim Whitehead, Michael John, the Program Director for the
+Games and Playable Media MS program, will give a talk.  Here's the abstract:
+
+<blockquote>
+
+<b>Dynamic tuning, game analytics, and purple dragons, ca. 1999</b>
+<p>
+
+In 1999, the teams of Insomniac Games and Universal Interactive Studios had successfully
+launched Spyro the Dragon, with the help of Sony, and we realized we had found success at
+our goal of reaching a very large and diverse audience. However, this came at a cost -
+tuning the difficulty of the game was extremely difficult, and resulted in a game that
+was not correct for any particular cohort of the audience.
+<p>
+
+As we developed Spyro 2, we added a system which would adjust the difficulty of the play
+experience on-the-fly according to the player's historical performance. However as we
+attempted to seed the system with performance metrics, we realized we needed more accuracy
+than we could get from simple observation. So we implemented a primitive data analytics
+system into the pre-release builds of Spyro 2 and gathered play performance data from
+our playtesters.
+<p>
+
+Both of these systems were created out of pure necessity, but ended up being well ahead of
+their time. I'll detail our thought processes in how they were created, show some of the
+data we collected and how it was used, and talk about how adaptive difficulty is at work
+in a great many of the games you play, whether you know it or not.
+</blockquote>
+
+<p>
+**Michael Cullen has generously shared with us his slides and two C# scripts:
+<a href="http://frost.ics.uci.edu/ics169/BasicsofSoundDesignforVideoGames-MichaelCullen.pdf">
+Basics of Sound Design for Video Games</a>,
+<a href="AudioPlayer.cs">AudioPlayer.cs</a>,
+<a href="AU_PlayOneShot.cs">AU_PlayOneShot.cs</a>.
+
+<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+</body>
+</html>
+
+

@@ -1,0 +1,112 @@
+Computational Vision | ICS | UC IrvineComputational Vision at UC Irvine  
+  
+  
+    homeprojectspeoplepublicationsdatasetseventscoursescontactlinks
+  
+
+  
+    
+      Overview:
+      
+        
+Newly developed microscopy techniques are providing an unprecedented look at
+the biochemical processes that underpin life. These range from cryo electron
+microscopy, which reveals structures at the scale of individual
+macromolecules, to confocal fluorescence microscopy, which can measure
+concentrations of a particular protein at a neural synapse or across an entire
+developing animal. Just as microarrays allowed the move from individual genes
+to studying the entire genome in parallel, quantitative imaging opens a whole
+new spatial dimension of gene expression.  Successfully harvesting biological
+insights from the increasing flood of imaging data will require a whole new
+computational and statistical toolbox for dealing with the spatial aspects of
+morphology and gene expression.
+
+      
+    
+    
+      Publications:
+      
+        
+
+  
+  Analysis of in vivo single cell behavior by high throughput, human-in-the-loop segmentation of three-dimensional imagesMichael Chiang, Sam Hallman, Amanda Cinquin, Nabora Mochel, Adrian Paz, Shimako Kawauchi, Anne Calof, Ken Cho, Charless Fowlkes, Oliver CinquinBMC Bioinformatics, 2015, 16:397.[pdf]
+
+
+  
+  Whole-body tissue stabilization and selective extractions via tissue-hydrogel hybrids for high-resolution intact circuit mapping and phenotypingJennifer Treweek, Ken Chan, Nicholas Flytzanis, Bin Yang, Benjamin Deverman, Alon Greenbaum, Antti Lignell, Cheng Xiao, Long Cai, Mark Ladinsky, Pamela Bjorkman, Charless Fowlkes, Viviana GradinaruNature Protocols, 2015, 10, 11, 1860--1896.[pdf]
+
+
+  
+  Hierarchical Planar Correlation Clustering for Cell SegmentationJulian Yarkony, Chong Zhang, Charless FowlkesEnergy Minimization Methods in Computer Vision and Pattern Recognition, 2015, 492--504.[pdf]
+
+
+  
+  A gene expression atlas of a bicoid-depleted Drosophila embryo reveals early canalization of cell fateMax Staller, Charless Fowlkes, Meghan Bragdon, Zeba Wunderlich, Javier Estrada, Angela DePaceDevelopment, 2015, 142, 3, 587--596.[pdf]
+
+
+  
+  Shirnk-Film Configurable Multiscale Wrinkles for Functional Alignment of Human Embryonic Stem Cells and their Cardiac DerivativesAaron Chen, Deborah Lieu, Lauren Freshauf, Valerie Lew, Himanshu Sharma, Jianxian Wang, Diep Nguyen, Ioannis Karakikes, Roger Hajjar, Ajay Gopinathan, Elliot Botvinick, Charless Fowlkes, Ronald Li, Michelle KhineAdvanced Materials, 2011, 23, 5785-5791.[pdf]
+
+
+  
+  Multi-scale Biomimetic Topography for the Alignment of Neonatal and Embryonic Stem Cell-derived Heart CellsJesus Luna, Jesus Ciriza, Marcos Ojeda-Garcia, Marco Kong, Anthony Herren, Deborah Lieu, Ronald Li, Charless Fowlkes, Michelle Khine, Kara McCloskeyTissue Engineering: Part C, 2011, 17(5).[pdf]
+
+
+  
+  Analysis of Gap Gene Reguation in a 3D Organism-Scale Model of the Drosophila melanogaster EmbryoJames Hengenius, Michael Gribskov, Ann Rundell, Charless Fowlkes, David UmulisPLoS ONE, 2011, 6, e26797.[pdf]
+
+
+  
+  A Conserved Developmental Patterning Network Produces Quantitatively Different Output in Multiple Species of DrosophilaCharless Fowlkes, Kelly Eckenrode, Meghan Bragdon, Miriah Meyer, Zeba Wunderlich, Lisa Simirenko, Cris Luengo, Soile Keränen, Clara, Henriquez, David Knowles, Mark Biggin, Michael Eisen, Angela DePacePLoS Genetics, 2011, 7, e1002346.[pdf]
+
+
+  
+  Nonparametric identification of regulatory interactions from spatial and temporal gene expression dataAnil Aswani, Soile Keräen, James Brown, Charless Fowlkes, David Knowles, Mark Biggin, Peter Bickel, Claire TomlinBMC Bioinformatics, 2010, 11:413.[pdf]
+
+
+  
+  Integrating Data Clustering and Visualization for the Analysis of 3D Gene Expression DataOliver Rübel, Gunther Weber, Min-Yu Huang, E. Bethel, Mark Biggin, Charless Fowlkes, Cris Hendriks, Soile Keränen, Michael Eisen, David Knowles, Jitendra Malik, Hans Hagen, Bernd HamannIEEE Transactions on Computational Biology and Bioinformatics, 2010, 7(1), 64-79.[pdf]
+
+
+  
+  Visual Exploration of Three-dimensional Gene Expression Using Physical Views and Linked Abstract ViewsGunther Weber, Oliber Rubel, Min-Yu Huang, Angela DePace, Charless Fowlkes, Soile Keranen, Cris Hendriks, Hans Hagen, David Knowles, Jitendra Malik, Mark Biggin, Bernd HamannIEEE Transactions on Computational Biology and Bioinformatics, 2009, 6(2), 296-309.[pdf]
+
+
+  
+  A Quantitative Spatiotemporal Atlas of Gene Expression in the Drosohpila BlastodermCharless Fowlkes, Cris Luengo, Soile Keränen, Gunther Weber, Oliver Rübel, Min-Yu, Huang, Sohail Chatoor, Lisa Simirenko, Angela DePace, Clara, Henriquez, Amy Beaton, Richard Weiszmann, Susan Celniker, Bernd Hamann, David Knowles, Mark Biggin, Michael Eisen, Jitendra MalikCell, 2008, 133, 364-374.[pdf]
+
+
+  
+  3D Morphology and Gene Expression in the Drosophila Blastoderm at Cellular Resolution I: Data Acquisition PipelineCris Hendriks, Soile Keränen, Charless Fowlkes, Lisa Simirenko, Gunther Weber, Clara Henriquez, David Kaszuba, Bernd Hamann, Michael Eisen, Jitendra Malik, Damir Sudar, Mark Biggin, David KnowlesGenome Biology, 2006, 7:R123.[pdf]
+
+
+  
+  Inferring nuclear movements from fixed materialCharless Fowlkes, Jitendra MalikUC Berkeley, 2006, UCB//EECS-06-142.[pdf]
+
+
+  
+  3D Morphology and Gene Expression in the Drosophila Blastoderm at Cellular Resolution II: DynamicsSoile Keränen, Charless Fowlkes, Cris Hendriks, Damir Sudar, David Knowles, Jitendra Malik, Mark BigginGenome Biology, 2006, 7:R124.[pdf]
+
+
+  
+  PointCloudXplore: Visual Analysis of 3D Gene Expression Data Using Physical Views and Parallel CoordinatesO. Rubel, G.H. Weber, S.V.E. Keranen, Charless Fowlkes, C.L. Hendriks, L. Simirenko, N.Y. Shah, M.B. Eisen, M.D. Biggin, H. Hagen, D. Sudar, J. Malik, D.W. Knowles, B. HamannEurographics/IEEE VGTC Symposium on Visualization, 2006, 203--210.[pdf]
+
+
+  
+  Registering Drosophila Embryos at Cellular Resolution to Build a Quantitative 3D Atlas of Gene Expression Patterns and MorphologyCharless Fowlkes, Cris Hendriks, Soile Keränen, Mark Biggin, David Knowles, Damir Sudar, Jitendra MalikCSB 2005 Workshop on BioImage Data Minning and Informatics, 2005.[pdf]
+
+
+  
+  Extracting Global Structure from Gene Expression ProfilesCharless Fowlkes, Qun Shan, Serge Belongie, Jitendra MalikMethods of Microarray Data Analysis II, 2002.[pdf]
+
+
+      
+    
+  
+  
+    
+      Computational Vision |
+      School of Information and Computer Sciences |
+      UC Irvine
+    
+    © 2007-2015 UC Irvine

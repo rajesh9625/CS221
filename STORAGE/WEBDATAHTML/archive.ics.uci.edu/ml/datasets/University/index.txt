@@ -1,0 +1,233 @@
+UCI Machine Learning Repository: University Data Set
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: University Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>University Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/university/"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="../machine-learning-databases/university/university.names"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Data in original (LISP-readable) form</p>
+     </td>
+     <td><img 
+src="../assets/MLimages/Large104.jpg" 
+hspace=20 vspace=10  /> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">285</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Categorical, Integer</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">17</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">1988-07-01</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">Yes</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">88966</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Original Owner: <br><br>unknown<br><br>Donor:  <br><br>Steve Souders <<u>souders <b>'@'</b> ads.com</u>></p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">Format: Each observation concerns one university. In some cases, more information is provided about the attribute (e.g., units or domain). Some duplicates may exist and a single observation may have more than one value for a given attribute (esp. academic emphasis).<br><br>It appears that several attributes could serve as a distinguished class attribute for this database.  The data file remains in the state as given to us by Steve Souders.  It is a LISP readable file with a few relevant functions at the end of the data file.  The info on missing data values have not been calculated.  We hope to get to this in the future.</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">     1. University-name<br>     2. State<br>     3. location<br>     4. Control<br>     5. number-of-students<br>     6. male:female (ratio)<br>     7. student:faculty (ratio)<br>     8. sat-verbal<br>     9. sat-math<br>    10. expenses<br>    11. percent-financial-aid<br>    12. number-of-applicants<br>    13. percent-admittance<br>    14. percent-enrolled<br>    15. academics <br>    16. social<br>    17. quality-of-life<br>    18. academic-emphasis<br></p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Lebowitz M. "Concept learning in a rich input domain : generalization-based memory." Machine Learning, Vol 2, No 2, September 1987.<br><a href="http://rexa.info/paper/53f68588175a200a47d7a671b4e62551874ef1d2">[Web Link]</a></p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning 
+Repository's <a href="../citation_policy.html">citation policy</a></p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

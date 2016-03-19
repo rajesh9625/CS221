@@ -1,0 +1,568 @@
+mailman.ics.uci.edu Mailing Lists
+<HTML>
+<HEAD>
+<LINK REL="SHORTCUT ICON" HREF="/icons/mm-icon.png">
+<META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<TITLE>mailman.ics.uci.edu Mailing Lists</TITLE>
+</HEAD>
+<BODY bgcolor="white"
+dir="ltr">
+
+<table WIDTH="100%" BORDER="0">
+  <tr>
+    <td COLSPAN="2" BGCOLOR="#99ccff"><center><h2>mailman.ics.uci.edu Mailing Lists</h2></center></td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><font size="+2">Welcome!</font><p>Below is a listing of all the public mailing lists on
+            mailman.ics.uci.edu.  Click on a list name to get more information about
+            the list, or to subscribe, unsubscribe, and change the preferences
+            on your subscription. To visit the general information page for an unadvertised list,
+        open a URL similar to this one, but with a '/' and the 
+        list name appended.
+        <p>List administrators, you can visit <a href="../admin">the list admin overview page</a> to find the management interface for your list.
+         <p>If you are having trouble using the lists, please contact <a href="mailto:mailman@ics.uci.edu">mailman@ics.uci.edu</a>.<p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong><font size="+2">List</font></strong></td>
+    <td><strong><font size="+2">Description</font></strong></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/184-questions"><strong>184-questions</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/1cs6b-help"><strong>1cs6b-help</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/31-tutors"><strong>31-tutors</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/32-tutors"><strong>32-tutors</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/33-tutors"><strong>33-tutors</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/45c-tutors"><strong>45c-tutors</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/45j-tutors"><strong>45j-tutors</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/46-tutors"><strong>46-tutors</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/6a-questions"><strong>6a-questions</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/aperture"><strong>aperture</strong></a></td>
+    <td>Informatics 191 Team F, 2011-2012</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/asterix"><strong>asterix</strong></a></td>
+    <td>ASTERIX at UC group mailing list</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/asterixresearch"><strong>asterixresearch</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/autism"><strong>autism</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/baldi-group"><strong>baldi-group</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/bim_admits"><strong>bim_admits</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/blahblah"><strong>blahblah</strong></a></td>
+    <td>Informatics graduate student chat list</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/bmc_admits"><strong>bmc_admits</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/bren-ics-officers"><strong>bren-ics-officers</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cert-all"><strong>Cert-all</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/cert-cab"><strong>Cert-cab</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cert-faculty"><strong>Cert-faculty</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/cert-students"><strong>Cert-students</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cgs-committee"><strong>Cgs-committee</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/classof09"><strong>Classof09</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cmpro"><strong>cmpro</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/collapseomatic"><strong>collapseomatic</strong></a></td>
+    <td>People doing research about collapse informatics</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/communications"><strong>communications</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/compgamesci_admits"><strong>compgamesci_admits</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/compsci_admits"><strong>compsci_admits</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/crick"><strong>crick</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cs-grad-admissions"><strong>cs-grad-admissions</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/cs132"><strong>Cs132</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cs132ta"><strong>Cs132ta</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/cs222-help"><strong>Cs222-help</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cs232"><strong>Cs232</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/cs232ta"><strong>Cs232ta</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cse-committee"><strong>Cse-committee</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/cwp-study"><strong>cwp-study</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/cypress"><strong>cypress</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/docking"><strong>docking</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/emme"><strong>emme</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/erc-oopsla2013"><strong>erc-oopsla2013</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/events2006"><strong>Events2006</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/femalegrads"><strong>femalegrads</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/fr"><strong>fr</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/grad.informatics"><strong>grad.informatics</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/grad.softeng"><strong>grad.softeng</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/grad_social_club"><strong>Grad_social_club</strong></a></td>
+    <td>ICS Graduate Social Club</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/h22-questions"><strong>H22-questions</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/hackers"><strong>Hackers</strong></a></td>
+    <td>Help from UCI for technology challenges you are having</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/hana"><strong>Hana</strong></a></td>
+    <td>The research group of Gary and Judy Olson</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/hana-csw"><strong>Hana-CSW</strong></a></td>
+    <td>Collaboration Success Wizard Steering Committee</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/hana-csw-admins"><strong>hana-csw-admins</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/hana-culture"><strong>Hana-Culture</strong></a></td>
+    <td>Hana Ohana discussions of culture</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/hana-google"><strong>Hana-Google</strong></a></td>
+    <td>Researchers for Google-related projects</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/hana-ohana"><strong>Hana-Ohana</strong></a></td>
+    <td>The Hana research group and affiliated researchers</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/hana-soc"><strong>Hana-SoC</strong></a></td>
+    <td>Science of Collaboratories</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/hana-soc-reviewers"><strong>Hana-SoC-Reviewers</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/hana-wizard-admins"><strong>hana-wizard-admins</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/hanalab"><strong>HanaLab</strong></a></td>
+    <td>Hana Lab Steering Committee</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/hanalab-admins"><strong>hanalab-admins</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/hanalab-researchers"><strong>HanaLab-Researchers</strong></a></td>
+    <td>Hana Lab Researchers</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/hans-subtest"><strong>Hans-subtest</strong></a></td>
+    <td>Hans Sublist test</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/hobbes"><strong>hobbes</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/hts-support"><strong>Hts-support</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/ics-graphics"><strong>ics-graphics</strong></a></td>
+    <td>UCI-Graphics </td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/ics-insa"><strong>ics-insa</strong></a></td>
+    <td>Informatics Student Association, Bren School of ICS, UCI</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/ics6b-w08"><strong>ics6b-w08</strong></a></td>
+    <td>ICS 6B W08 - Instructor/Assistants Contact List</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/ics6d-questions"><strong>ics6d-questions</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/ics6n-questions"><strong>ics6n-questions</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/ics_admits"><strong>ics_admits</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/ics_undeclared_admits"><strong>ics_undeclared_admits</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/icsb-mjolsness-tutorial"><strong>Icsb-mjolsness-tutorial</strong></a></td>
+    <td>Signup for tutorial by E. Mjolsness, ICSB 2006</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/ictd"><strong>ictd</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/igb-community"><strong>Igb-community</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/igb-faculty"><strong>Igb-faculty</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/igsa-talk"><strong>igsa-talk</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/inform-board"><strong>inform-board</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/informatics-adjunct"><strong>Informatics-adjunct</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/informatics-allfaculty"><strong>informatics-allfaculty</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/informatics-facultymeeting"><strong>Informatics-facultymeeting</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/informatics-nonstudents"><strong>Informatics-nonstudents</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/informatics-postdocs"><strong>Informatics-postdocs</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/informatics-researchers"><strong>Informatics-researchers</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/informatics-staff"><strong>Informatics-staff</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/informatics.ugrads"><strong>Informatics.ugrads</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/informatics_admits"><strong>Informatics_admits</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/isg-friends"><strong>isg-friends</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/ivecg-community"><strong>Ivecg-community</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/ivecg-faculty"><strong>Ivecg-faculty</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/list-test"><strong>List-test</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/luci-lab"><strong>LUCI-lab</strong></a></td>
+    <td>LUCI Lab Residents</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/medinfo-group"><strong>Medinfo-group</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/middleware2007"><strong>Middleware2007</strong></a></td>
+    <td>ACM Middleware Conference 2007 -&amp;gt; Mailing List</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/mlrg"><strong>mlrg</strong></a></td>
+    <td>UCI Machine Learning Reading Group</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/mondego"><strong>Mondego</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/motifmap"><strong>motifmap</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/nds"><strong>Nds</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/nowledger"><strong>nowledger</strong></a></td>
+    <td>Brainstorming List for Nowledger Group</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/nsf-career"><strong>Nsf-career</strong></a></td>
+    <td>Faculty discussions for writing proposals.</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/omg"><strong>omg</strong></a></td>
+    <td>Online Media Group</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/opensim"><strong>Opensim</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/ops-git-commits"><strong>Ops-git-commits</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/pc-oopsla2013"><strong>pc-oopsla2013</strong></a></td>
+    <td>OOPSLA 2013 Program Committee</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/phr-study"><strong>Phr-study</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/ppopp13"><strong>ppopp13</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/proteomics"><strong>proteomics</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/psearch"><strong>psearch</strong></a></td>
+    <td>PSearch Project</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/quasar-l"><strong>Quasar-l</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/r_users_group"><strong>R_users_group</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/riscit"><strong>Riscit</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/satware"><strong>SATware</strong></a></td>
+    <td>SATware, a Stream Acquisition and Transformation middleware for sentient systems</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/se-committee"><strong>Se-committee</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/sislgram"><strong>SISLgram</strong></a></td>
+    <td>Newsletter from the UC Irvine Scientific Inference Systems Laboratory</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/soar"><strong>SOAR</strong></a></td>
+    <td>ICS Student Outreach Access and Retention Committee</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/spellchecker"><strong>spellchecker</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/statistics-minor"><strong>statistics-minor</strong></a></td>
+    <td>statsminor</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/stats-neuro"><strong>stats-neuro</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/statsgradpolicycommittee"><strong>statsgradpolicycommittee</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/statsms"><strong>statsms</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/statsphd"><strong>statsphd</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/test1"><strong>Test1</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/theory-seminar"><strong>Theory-seminar</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/tiw-group"><strong>tiw-group</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/transfers_fall2010"><strong>transfers_fall2010</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/uci-staff"><strong>uci-staff</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/uicds"><strong>uicds</strong></a></td>
+    <td>UICDS @ UCI-ICS</td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/upc-committee"><strong>Upc-committee</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/vis-research"><strong>vis-research</strong></a></td>
+    <td><em>[no description available]</em></td>
+  </tr>
+  <tr>
+    <td><a href="../listinfo/visionturk"><strong>visionturk</strong></a></td>
+    <td>Manages Amazon Mechanical Turk account</td>
+  </tr>
+  <tr BGCOLOR="#dddddd">
+    <td><a href="../listinfo/warp"><strong>warp</strong></a></td>
+    <td>Wireless Academic Research Projects</td>
+  </tr>
+</table>
+<hr>
+<table WIDTH="100%" BORDER="0">
+  <tr>
+    <td><img src="/icons/mailman.jpg" alt="Delivered by Mailman" border=0><br>version 2.1.12</td>
+    <td><img src="/icons/PythonPowered.png" alt="Python Powered" border=0></td>
+    <td><img src="/icons/gnu-head-tiny.jpg" alt="GNU's Not Unix" border=0></td>
+  </tr>
+</table>
+
+</BODY>
+</HTML>

@@ -1,0 +1,64 @@
+Michael T. Goodrich - ProjectsMichael T. Goodrich
+Projects
+
+
+
+
+Prof. Goodrich's research is directed at the design of high
+performance algorithms and data structures
+for solving large-scale problems
+motivated from 
+information assurance and security,
+the Internet,
+information visualization,
+and geometric computing.
+
+
+
+
+Algorithms for Graphs on Surfaces
+
+
+
+
+The Optiputer
+      
+
+Information Security Infrastructure
+
+Cyber-Security Algorithms
+
+Privacy Management, Measurement, and Visualization in Distributed
+Environments
+
+
+
+
+
+
+Book sites:
+
+
+Data Structures and Algorithms
+
+
+Data Structures and Algorithms in Java
+
+
+Data Structures and Algorithms in C++
+
+
+Algorithm Design
+
+
+
+
+
+
+
+
+Michael T. Goodrich
+Department of Computer Science
+Bren School of Information and Computer Sciences
+University of California, Irvine
+Irvine, CA 92697-3435 USA

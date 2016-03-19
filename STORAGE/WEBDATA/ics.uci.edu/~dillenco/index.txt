@@ -1,0 +1,53 @@
+Michael DillencourtMichael Dillencourt
+
+Position: Professor,  
+Department of Computer Science
+at the 
+University of California, Irvine
+Areas: 
+Theory - Algorithms and Data Structures
+
+Networked and Distributed Systems
+
+Research interests: 
+Distributed computing;
+Analysis of algorithms; 
+Data structures; 
+Computational geometry; 
+Graph algorithms.
+Office: DBH 4086
+Office Hours: Click here 
+E-mail: dillenco AT ics dot uci dot edu
+
+
+Current Courses
+ Summer, 2015
+ ICS 6D 
+- Discrete Mathematics for Computer Science
+ ICS 33 
+- Intermediate Programming
+
+
+
+
+
+Current Projects (Partial List)
+MESSENGERS:
+a programming paradigm for distributed systems based on the
+principle of autonomous messages (mobile agents).
+
+
+ 
+Publications
+
+
+
+
+
+Michael B. Dillencourt
+Computer Science Department
+University of California, Irvine
+Irvine, CA 92697-3435 USA
+
+dillenco AT ics dot uci dot edu
+Last modified: June 18, 2015

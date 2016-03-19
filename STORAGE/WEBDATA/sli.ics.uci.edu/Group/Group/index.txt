@@ -1,0 +1,177 @@
+SLI | Group / Group(?)
+  
+
+  
+        Classes
+Group
+Research
+Publications
+Code
+
+
+
+
+        login
+
+
+
+
+Current Group Members
+
+ 
+     
+Prof. Alexander Ihler
+BH 4066, x4-3645
+
+ 
+     
+Wei Ping
+BH 4051
+
+ 
+     
+Nick Gallo
+BH 4059
+
+ 
+     
+Qi Lou
+BH 4051
+
+
+Graduated Students
+Doctoral
+ 
+
+Sholeh Forouzan
+
+PhD, Fall 2015
+
+Thesis, "Approximate Inference in Graphical Models".
+
+
+
+
+
+ 
+
+David Keator
+
+PhD, Spring 2015
+
+Thesis, "Probabilistic Models for Brain Image Collection, Classification and Functional Connectivity".
+
+
+
+
+
+ 
+
+Qiang Liu
+
+PhD, Fall 2014
+
+Thesis, "Reasoning and Decisions in Probabilistic Graphical Models - A Unified Framework".
+
+
+
+
+
+ 
+
+Andrew Gelfand
+
+PhD, Spring 2014
+
+Thesis, "Bottom-Up Approaches to Approximate Inference and Learning in Discrete Graphical Models".
+
+
+
+
+
+ 
+
+Drew Frank
+
+PhD, Spring 2013
+
+Thesis, "Variational Message-Passing: Extension to Continuous Variables and Applications in Multi-target Tracking".
+
+
+
+
+
+ 
+
+Ozgur Sumer
+
+PhD, U Chicago, 2011  (unofficial advisor)
+
+Thesis, "Adaptive Inference for Graphical Models".
+
+
+
+
+
+ 
+
+Jon Hutchins
+
+PhD, Fall 2010
+
+Thesis, "Probabilistic Learning for Analysis of Sensor-Based Human Activity Data".
+
+
+
+
+Master's
+ 
+
+Priya Venkateshan
+
+MS, Spring 2011
+
+Thesis, "Graphical models for entity coreference resolution".
+
+
+
+
+
+ 
+
+Sidharth Shekhar
+
+MS, Spring 2009
+
+Thesis, "Fixing and extending the Multiplicative Approximation Scheme".
+
+
+
+
+Undergraduate Research
+ 
+     
+Ravi Ponmalai
+
+ 
+     
+Michael Vorobyov
+
+ 
+     
+Yuhao Ma
+
+ 
+     
+Jonathan Stroud
+
+
+
+
+      
+
+  
+     Last modified January 12, 2016, at 04:50 PM
+    
+    Bren School of Information and Computer Science
+    University of California, Irvine

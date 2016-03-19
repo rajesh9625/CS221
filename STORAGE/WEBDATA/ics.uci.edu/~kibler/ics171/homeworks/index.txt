@@ -1,0 +1,3 @@
+Index of /~kibler/ics171/homeworksIndex of /~kibler/ics171/homeworks
+NameLast modifiedSizeDescriptionParent Directory   -  LearningHwk.htm27-Aug-2004 09:35  2.3K Logic.htm28-Oct-2001 09:19  1.5K LogicQuizAns.doc02-Aug-2004 09:02   38K LogicSolutions.doc03-Aug-2004 10:59   26K Probability.htm13-Aug-2004 13:34  1.9K ProbabilityHWKSolutions.doc18-Aug-2004 09:10   30K SearchCoding.html06-Jul-2004 11:37  2.6K SearchCoding.tex25-Jun-2004 13:11  932  
+Apache/2.2.15 (CentOS) Server at www.ics.uci.edu Port 80

@@ -1,0 +1,83 @@
+Christian Medeiros Adriano  
+
+
+
+Christian M. Adriano
+
+
+    
+
+
+  Home  
+  
+  Blog  
+   
+
+
+
+  
+PhD Student
+Software Design and
+Collaboration Lab
+
+adrianoc [at] uci.edu 
+
+Office: ICS-01 414
+
+Mailing Address: 
+5208 Bren Hall 
+ Department of Informatics 
+ University of California, Irvine 
+ Irvine, CA 92697-3440  
+
+CV    Linked-in    
+Google
+Scholar
+
+Professional Service
+SEWORLD Moderator April/2014 - Now
+SEWORLD
+
+
+
+
+
+   
+
+
+ I am PhD student in Software engineering at the University of California Irvine
+in the Donald Bren School of Information and Computer Science.
+My advisor is professor André van der Hoek.
+
+My research focus is on enabling more people to contribute to software development. I am particularly 
+curious about the sheer amount of knowledge and context people gather to accomplish complex tasks (e.g., refactoring or fixing an existing system). 
+This poses several interesting challenges. For instance, how size of tasks affect performance? How tasks differ in terms of context and information needs? 
+Which tasks can be performed in parallel and which ones demand explicit coordination? Are there compromises impacting quality, time, and cost? 
+I am currently exploring these questions in the realm of software debugging. For that I am developing tools to help people divide work , perform
+smaller tasks, and make sense of aggregated results.
+
+
+As I study and do research, my interests usually span the topics of program comprehension, program analysis, software
+architecture, and software design. Education is my cross-cutting interest, especially teaching through case studies and applying alternative approaches for evaluation.
+
+
+ If you are an undergrad or master student interested in developing an individual project, please contact me! 
+I am actively collaborating with a set of brilliant people.
+
+
+ 
+ 
+
+Talking about that, I've been fortunate to work with a number of great people:
+
+Current
+Thomas La Toza - Development of CrowdCode
+
+Danilo Cardoso - Development of a tool to crowdsource debugging questions
+
+Past
+Rafael Leano - Experimental Design for the Bug Exchange Project
+
+Ivan L. M. Ricarte - My Master Thesis Advisor
+
+Matthias R. Brust - Studies on Complex Systems and Digital Artifacts

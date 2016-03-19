@@ -1,0 +1,126 @@
+Christian Medeiros Adriano﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title xmlns="">Christian Medeiros Adriano</title>
+
+  
+  
+  <link type="text/css" rel="stylesheet" href="website.css">
+
+<!-- Blueprint CSS -->
+  
+  <link rel="stylesheet" href="screen.css" type="text/css" media="screen, projection">
+
+  
+  <link rel="stylesheet" href="print.css" type="text/css" media="print">
+
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/><![endif]--><!--	<link rel="stylesheet" href="css/stylesheet.css?v=1.0" type="text/css" media="screen,projection" />
+	<style type="text/css" media="screen,project">		@font-face {		    font-family: 'PTSansRegular';		    src: url('fonts/PTS55F-webfont.eot');		    src: url('fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),		         url('fonts/PTS55F-webfont.woff') format('woff'),		         url('fonts/PTS55F-webfont.ttf') format('truetype'),		         url('fonts/PTS55F-webfont.svg#PTSansRegular') format('svg');		    font-weight:normal;		    font-style:normal;		}	</style>  -->
+  
+  <script src="ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2941209-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</head><body>
+
+<div xmlns="" class="container">
+<div class="span-24"> &nbsp; </div>
+
+<!-- Navigation bar -->
+<div style="font-family: Tahoma; font-weight: bold;" class="span-8"><small>
+</small><h1 style="font-weight: bold;"><small>Christian M. Adriano</small></h1><small>
+</small></div>
+
+<div style="width: 429px;" class="span-8"> &nbsp;&nbsp; </div>
+<br>
+<div class="span-3">
+<div style="width: 69px;" class="span-3"> <a href="http://www.ics.uci.edu/~adrianoc/"> Home </a> </div>
+<a href="teaching.html"> </a> </div>
+<div class="span-2 last"> <a href="http://christianadriano.com"> Blog </a> </div>
+<div class="span-24"> &nbsp; </div>
+
+
+<!-- Main body -->
+<div class="span-6"> <img src="https://www.ics.uci.edu/~adrianoc/Christian.jpg" width="160"> <br>
+<span style="font-weight: bold;">PhD Student</span><br style="font-weight: bold;">
+<a href="http://sdcl.ics.uci.edu/"><small>Software Design and
+Collaboration Lab</small></a><br>
+<br>
+<small><big>adrianoc [at] uci.edu </big><br>
+<br>
+Office: ICS-01 414<small><br>
+<br>
+</small></small><small>Mailing Address: <br>
+5208 Bren Hall <br>
+<a href="http://www.informatics.uci.edu/"> Department of Informatics </a><br>
+<a href="http://www.uci.edu/"> University of California, Irvine </a><br>
+<a href="http://g.co/maps/arfqe"> Irvine, CA 92697-3440 </a></small> <br>
+<a href="https://www.ics.uci.edu/~adrianoc/adrianoc-cv.pdf"><br>
+CV</a>&nbsp;&nbsp;&nbsp; <a href="http://www.linkedin.com/pub/christian-m-adriano/0/13a/658">Linked-in</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" http://scholar.google.com.br/citations?user=LIpGUvUAAAAJ">Google
+Scholar</a><br>
+<br>
+<span style="font-weight: bold;">Professional Service</span><br>
+SEWORLD Moderator April/2014 - Now<br>
+<small><a href="http://www.sigsoft.org/seworld/">SEWORLD</a></small>
+<br>
+</span>
+</div>
+
+
+<div style="margin-left: 10px; width: 11px;" class="span-2"> &nbsp; </div>
+<div class="span-16 last">
+
+<p style="width: 678px;" align="justify"> I am PhD student in Software engineering at the <a href="http://www.uci.edu/">University of California Irvine</a>
+in the <a href="http://www.ics.uci.edu/">Donald Bren School of Information and Computer Science</a>.
+My advisor is professor <a href="http://www.ics.uci.edu/~andre/">Andr&eacute; van der Hoek</a>.</p>
+
+<p style="width: 678px;" align="justify">My research focus is on enabling more people to contribute to software development. I am particularly 
+curious about the sheer amount of knowledge and context people gather to accomplish complex tasks (e.g., refactoring or fixing an existing system). 
+This poses several interesting challenges. For instance, how size of tasks affect performance? How tasks differ in terms of context and information needs? 
+Which tasks can be performed in parallel and which ones demand explicit coordination? Are there compromises impacting quality, time, and cost? 
+I am currently exploring these questions in the realm of software debugging. For that I am developing tools to help people divide work , perform
+smaller tasks, and make sense of aggregated results.
+</p>
+
+<p style="width: 678px;" align="justify">As I study and do research, my interests usually span the topics of program comprehension, program analysis, software
+architecture, and software design. Education is my cross-cutting interest, especially teaching through case studies and applying alternative approaches for evaluation.
+</p>
+
+<p style="width: 678px;" align="justify"> If you are an undergrad or master student interested in developing an individual project, please contact me! 
+I am actively collaborating with a set of brilliant people.
+</p>
+
+ 
+ 
+
+Talking about that, I've been fortunate to work with a number of great people:<br>
+<br>
+<span style="font-weight: bold;">Current</span><br>
+<a href="https://www.ics.uci.edu/~tlatoza/">Thomas La Toza</a> - Development of CrowdCode<br style="font-weight: bold;">
+
+<a href="https://www.linkedin.com/pub/danilo-cardoso/79/592/512">Danilo Cardoso</a> - Development of a tool to crowdsource debugging questions
+<br style="font-weight: bold;"><br>
+<span style="font-weight: bold;">Past</span><br>
+<a href="http://www.linkedin.com/pub/rafael-leano/2b/a05/166">Rafael Leano</a> - Experimental Design for the Bug Exchange Project
+<br style="font-weight: bold;">
+<a href="http://faculty.dca.fee.unicamp.br/ricarte/">Ivan L. M. Ricarte</a> - My Master Thesis Advisor
+<br style="font-weight: bold;">
+<a href="http://scholar.google.com/citations?user=5eyNEGAAAAAJ&hl=en">Matthias R. Brust</a> - Studies on Complex Systems and Digital Artifacts
+
+<p>
+</p>
+</div>
+</div>
+
+</body></html>

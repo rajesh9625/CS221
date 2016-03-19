@@ -1,0 +1,230 @@
+UCI Machine Learning Repository: Gesture Phase Segmentation Data Set
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Gesture Phase Segmentation Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Gesture Phase Segmentation Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/00302/"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="#"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: The dataset is composed by features extracted from 7 videos with people gesticulating, aiming at studying Gesture Phase Segmentation. It contains 50 attributes divided into two files for each video.</p>
+     </td>
+     <td> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate, Sequential, Time-Series</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">9900</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">50</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">2014-06-18</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification, Clustering</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">N/A</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">16725</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Creators: <br>     Renata Cristina Barros Madeo (Madeo, R. C. B.)<br>     Priscilla Koch Wagner (Wagner, P. K.)		<br>     Sarajane Marques Peres (Peres, S. M.)<br>     {renata.si, priscilla.wagner, sarajane} at usp.br<br>     <a href="http://each.uspnet.usp.br/sarajane/">http://each.uspnet.usp.br/sarajane/</a><br><br>Donor: <br>     University of Sao Paulo - Brazil</p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">The dataset is composed by features extracted from 7 videos with people gesticulating, aiming at studying Gesture Phase Segmentation.<br>Each video is represented by two files: a raw file, which contains the position of hands, wrists, head and spine of the user in each frame; and a processed file, which contains velocity and acceleration of hands and wrists. See the data set description for more information on the dataset.</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">Raw files: 18 numeric attributes (double), a timestamp and a class attribute (nominal).<br>Processed files: 32 numeric attributes (double) and a class attribute (nominal).<br>A feature vector with up to 50 numeric attributes can be generated with the two files mentioned above.</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">   1.  Madeo, R. C. B. ; Lima, C. A. M. ; PERES, S. M. . Gesture Unit Segmentation using Support Vector Machines: Segmenting <br>       Gestures from Rest Positions. In: Symposium on Applied Computing (SAC), 2013, Coimbra. Proceedings of the 28th Annual <br>       ACM Symposium on Applied Computing (SAC), 2013. p. 46-52.<br>       * In this paper, the videos A1 and A2 were studied.<br><br>   2.  Wagner, P. K. ; PERES, S. M. ; Madeo, R. C. B. ; Lima, C. A. M. ; Freitas, F. A. . Gesture Unit Segmentation Using <br>       Spatial-Temporal Information and Machine Learning. In: 27th Florida Artificial Intelligence Research Society Conference <br>       (FLAIRS), 2014, Pensacola Beach. Proceedings of the 27th Florida Artificial Intelligence Research Society Conference <br>       (FLAIRS). Palo Alto : The AAAI Press, 2014. p. 101-106.<br>       * In this paper, the videos A1, A2, A3, B1, B3, C1 and C3 were studied.<br><br>   3.  Madeo, R. C. B.. Support Vector Machines and Gesture Analysis: incorporating temporal aspects  (in Portuguese). Master <br>       Thesis - Universidade de Sao Paulo, Sao Paulo Researcher Foundation. 2013.<br>       * In this document, the videos named B1 and B3 in the document correspond to videos C1 and C3 in this dataset. Only <br>       five videos were explored in this document: A1, A2, A3, C1 and C3.<br><br>   4.  Wagner, P. K. ; Madeo, R. C. B. ; PERES, S. M. ; Lima, C. A. M. . SegmentaÃ§ao de Unidades Gestuais com Multilayer <br>       Perceptrons (in Portuguese). In: Encontro Nacional de Inteligencia Artificial e Computacional (ENIAC), 2013, Fortaleza. <br>       Anais do X Encontro Nacional de Inteligencia Artificial e Computacional (ENIAC), 2013.<br>       * In this paper, the videos A1, A2 and A3 were studied.</p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning Repository's citation policy.<br>Additionally, the authors require a citation to one or more publications from those cited as relevant papers.</p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,980 @@
+ICS Student Council – University of California, Irvine<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://student-council.ics.uci.edu/xmlrpc.php" />
+
+        <link rel="shortcut icon" href="//student-council.ics.uci.edu/wp-content/themes/porto/images/logo/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="//student-council.ics.uci.edu/wp-content/themes/porto/images/logo/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//student-council.ics.uci.edu/wp-content/themes/porto/images/logo/apple-touch-icon_114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//student-council.ics.uci.edu/wp-content/themes/porto/images/logo/apple-touch-icon_72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//student-council.ics.uci.edu/wp-content/themes/porto/images/logo/apple-touch-icon_144x144.png">
+
+<title>ICS Student Council &#8211; University of California, Irvine</title>
+<style rel="stylesheet" property="stylesheet" type="text/css">.ms-loading-container .ms-loading, .ms-slide .ms-slide-loading { background-image: none !important; background-color: transparent !important; box-shadow: none !important; } #header .logo { max-width: 111px; } @media (min-width: 1170px) { #header .logo { max-width: 111px; } } @media (max-width: 991px) { #header .logo { max-width: 100px; } } @media (max-width: 767px) { #header .logo { max-width: 100px; } } #header.sticky-header .logo { max-width: 100px; }</style><link rel="alternate" type="application/rss+xml" title="ICS Student Council &raquo; Feed" href="https://student-council.ics.uci.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ICS Student Council &raquo; Comments Feed" href="https://student-council.ics.uci.edu/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="ICS Student Council &raquo; iCal Feed" href="https://student-council.ics.uci.edu/events/?ical=1" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/student-council.ics.uci.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='validate-engine-css-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/wysija-newsletters/css/validationEngine.jquery.css?ver=2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe_events-widget-calendar-pro-style-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/events-calendar-pro/src/resources/css/widget-calendar-full.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe_events--widget-calendar-pro-override-style-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/events-calendar-pro/src/resources/css/widget-calendar-full.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/contact-form-7/includes/css/styles.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-events-calendar-pro-style-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/events-calendar-pro/src/resources/css/tribe-events-pro-full.min.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-events-calendar-pro-mobile-style-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/events-calendar-pro/src/resources/css/tribe-events-pro-full-mobile.min.css?ver=4.0.5' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='ms-main-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/masterslider.main.css?ver=2.26.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-custom-css'  href='https://student-council.ics.uci.edu//wp-content/uploads/scouncil/masterslider/custom.css?ver=1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe_events-widget-this-week-pro-style-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/events-calendar-pro/src/resources/css/widget-this-week-full.min.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='bsf-Defaults-css'  href='https://student-council.ics.uci.edu//wp-content/uploads/scouncil/smile_fonts/Defaults/Defaults.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/js_composer/assets/css/js_composer.min.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ultimate-style-min-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/Ultimate_VC_Addons/assets/min-css/ultimate.min.css?ver=3.15.0' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-bootstrap-css'  href='https://student-council.ics.uci.edu/wp-content/themes/porto/css/bootstrap.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-plugins-css'  href='https://student-council.ics.uci.edu/wp-content/themes/porto/css/plugins.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-theme-elements-css'  href='https://student-council.ics.uci.edu/wp-content/themes/porto/css/theme_elements_1.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-theme-css'  href='https://student-council.ics.uci.edu/wp-content/themes/porto/css/theme_1.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-theme-shop-css'  href='https://student-council.ics.uci.edu/wp-content/themes/porto/css/theme_shop_1.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-skin-css'  href='https://student-council.ics.uci.edu/wp-content/themes/porto/css/skin_1.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-style-css'  href='https://student-council.ics.uci.edu/wp-content/themes/porto/style.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CShadows+Into+Light%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7C&#038;ver=4.4.2' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='porto-ie-css'  href='https://student-council.ics.uci.edu/wp-content/themes/porto/css/ie.css?ver=4.4.2' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack_css-css'  href='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/jetpack/css/jetpack.css?ver=3.9.1' type='text/css' media='all' />
+<script type="text/template" id="tmpl-variation-template">
+    <div class="woocommerce-variation-description">
+        {{{ data.variation.variation_description }}}
+    </div>
+
+    <div class="woocommerce-variation-price">
+        {{{ data.variation.price_html }}}
+    </div>
+
+    <div class="woocommerce-variation-availability">
+        {{{ data.variation.availability_html }}}
+    </div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+    <p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"https:\/\/student-council.ics.uci.edu\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//student-council.ics.uci.edu/wp-content/plugins/scouncil/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=2.5.2'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=4.9.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tribe_this_week = {"ajaxurl":"https:\/\/student-council.ics.uci.edu\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/events-calendar-pro/src/resources/js/widget-this-week.min.js?ver=4.0.5'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/Ultimate_VC_Addons/assets/min-js/ultimate.min.js?ver=3.15.0'></script>
+<link rel='https://api.w.org/' href='https://student-council.ics.uci.edu/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://student-council.ics.uci.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://student-council.ics.uci.edu/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.2" />
+<meta name="generator" content="WooCommerce 2.5.2" />
+<link rel='shortlink' href='https://wp.me/6MoJL' />
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script>var ms_grabbing_curosr='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/common/grabbing.cur',ms_grab_curosr='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 2.26.0 - Responsive Touch Image Slider" />
+<style type='text/css'>img#wpstats{display:none}</style><meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]-->
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ICS Student Council" />
+<meta property="og:description" content="University of California, Irvine" />
+<meta property="og:url" content="https://student-council.ics.uci.edu/" />
+<meta property="og:site_name" content="ICS Student Council" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="home blog full blog-1 _masterslider _msp_version_2.26.0 tribe-bar-is-disabled wpb-js-composer js-comp-ver-4.9.2 vc_responsive">
+    
+    <div class="page-wrapper"><!-- page wrapper -->
+
+        
+                    <div class="header-wrapper clearfix"><!-- header wrapper -->
+                                
+                    <header id="header" class="header-corporate header-12 search-sm">
+    
+    <div class="header-main">
+        <div class="container">
+            <div class="header-left">
+                <h1 class="logo">    <a href="https://student-council.ics.uci.edu/" title="ICS Student Council - University of California, Irvine" rel="home">
+        <img class="img-responsive standard-logo" width="111" height="54" src="//student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/02/blue-gray-1.png" alt="ICS Student Council" /><img class="img-responsive retina-logo" width="111" height="54" src="//student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/02/blue-gray-1.png" alt="ICS Student Council" style="display:none;" />    </a>
+    </h1>            </div>
+
+            <div class="header-right">
+                                <a class="mobile-toggle"><i class="fa fa-reorder"></i></a>
+                <div id="main-menu">
+                    <ul id="menu-default" class="main-menu mega-menu show-arrow effect-down subeffect-fadein-left"><li id="nav-menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children active has-sub narrow "><a href="http://student-council.ics.uci.edu" class=" current ">Events</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-500" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://medappjam.com" class="">Med AppJam 2015</a></li>
+	<li id="nav-menu-item-161" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://www.ucireversecareerfair.com/" class="">Reverse Career Fair (RCF)</a></li>
+	<li id="nav-menu-item-162" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://www.icsday.com/" class="">ICS Day 2016</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has-sub narrow "><a title="About" href="https://student-council.ics.uci.edu/about/" class="">About</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://student-council.ics.uci.edu/about/" class="">Mission &#038; Vission</a></li>
+	<li id="nav-menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://student-council.ics.uci.edu/about/get-involved/" class="">Get Involved</a></li>
+	<li id="nav-menu-item-110" class="menu-item menu-item-type-taxonomy menu-item-object-category " data-cols="1"><a href="https://student-council.ics.uci.edu/category/officers/" class="">Executive Officers</a></li>
+	<li id="nav-menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://student-council.ics.uci.edu/about/exec-board-portal/" class="">Exec Board Portal</a></li>
+	<li id="nav-menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://student-council.ics.uci.edu/about/get-involved/major-rep-nomination/" class="">ICS Major Rep. Nomination</a></li>
+	<li id="nav-menu-item-1559" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://student-council.ics.uci.edu/about/get-involved/apply/" class="">ICSSC Application</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-136" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://student-council.ics.uci.edu/about/contact-us/" class="">Contact Us</a></li>
+<li id="nav-menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://student-council.ics.uci.edu/information-and-computer-science-clubs/" class="">ICS Clubs</a></li>
+<li id="nav-menu-item-1681" class="menu-item menu-item-type-custom menu-item-object-custom  narrow "><a href="https://student-council.ics.uci.edu/events/" class="">ICS Calendar</a></li>
+</ul>                </div>
+                <div class="share-links"><a target="_blank"  rel="nofollow" class="share-facebook" href="https://www.facebook.com/ICSStudentCouncil" title="Facebook"></a><a target="_blank"  rel="nofollow" class="share-twitter" href="https://twitter.com/icscouncil" title="Twitter"></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+                            </div><!-- end header wrapper -->
+        
+        
+        
+        <div id="main" class="column2 column2-right-sidebar boxed no-breadcrumbs"><!-- main -->
+
+            
+                        <div class="container">
+                <div class="row">
+            
+            <!-- main content -->
+            <div class="main-content col-md-9">
+
+                            
+
+<div id="content" role="main">
+
+    
+        
+        <div class="blog-posts posts-large-alt infinite-container posts-infinite" data-pagenum="1" data-path="https://student-council.ics.uci.edu/page/">
+
+        
+            
+<article class="post post-large-alt post-1756 post type-post status-publish format-standard has-post-thumbnail hentry category-main-page-features">
+
+            <div class="post-date">
+                <span class="day">10</span>
+    <span class="month">Jan</span>
+            </div>
+    
+    <div class="post-content">
+
+                
+            <div class="post-image single">
+            <div class="post-slideshow owl-carousel">
+                                    <div>
+                        <div class="img-thumbnail">
+                            <div class="inner">
+                                <img class="lazyOwl img-responsive" width="841" height="304" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/Schedules1.jpg" alt="" data-image="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/Schedules1.jpg" data-caption="" />
+                                                                    <span class="zoom"><i class="fa fa-search"></i></span>
+                                                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    
+    
+        <h2 class="entry-title"><a href="https://student-council.ics.uci.edu/icssc-committee-meetings-schedule/">ICSSC Committee Meetings &#8211; Schedule</a></h2>
+
+        <span class="vcard" style="display: none;"><span class="fn"><a href="https://student-council.ics.uci.edu/author/bhasting/" title="Posts by Brandon Hastings" rel="author">Brandon Hastings</a></span></span><span class="updated" style="display:none">2016-02-07T19:39:29+00:00</span><div class="entry-content"><h3 style="text-align: left;">ICSSC Committee Meeting times have been posted on the ICS Calendar <a href="https://student-council.ics.uci.edu/events/category/icssc/list/">here</a>.</h3>
+<p>Committee Meetings are weekly from Week 2 &#8211; 9 for the Winter Quarter.</p>
+<p>ICS Students interested in joining a committee as a member or mentor are encouraged to come and visit us at any of our meetings. Information on how to join Council&#8217;s official roster will be posted on our website this week.</p>
+<h2>Mac Lab Information</h2>
+<p>The lab is located in ICS2, Room 110.</p>
+<p>Access to the Kay Family Foundation Innovation Lab will be granted on a quarterly basis to students in a Bren School of ICS major. Students must request access from the Bren School facilities via <a href="http://keys.ics.uci.edu/">keys.ics.uci.edu</a>, specifying Mary Stasik as Supervisor. <strong>Access to the lab is <span class="aBn" tabindex="0" data-term="goog_1927410726"><span class="aQJ">7am to 10pm</span></span> daily.</strong> Access will expire at the end of each quarter.</p>
+<p><strong>Important Guidelines:</strong></p>
+<ul>
+<li>Students are not to open the door for unauthorized users, at the risk of losing room privileges for a full quarter. Students are not to prop the door open, at the risk of losing room privileges permanently.</li>
+<li>Food or drinks (including water) are not allowed in the lab, and anybody found with food/drink in the room will lose room privileges for a full quarter.</li>
+</ul>
+<p>The lab will be monitored via periodic checks by ICS Student Council members who helped design the lab and develop these policies. The ICS Student Council has been tasked with supporting the Bren School in its enforcement of these rules.</p>
+<p>More information about the Mac Lab is available <a href="https://www.ics.uci.edu/about/kfflab/">here</a>.</p>
+</div>
+        <div class="post-meta clearfix">
+            <span><i class="fa fa-user"></i> By <a href="https://student-council.ics.uci.edu/author/bhasting/" title="Posts by Brandon Hastings" rel="author">Brandon Hastings</a></span>                            <span><i class="fa fa-folder-open"></i> <a href="https://student-council.ics.uci.edu/category/main-page-features/" rel="category tag">Main Page Features</a></span>
+                                                            <a class="btn btn-xs btn-primary pt-right" href="https://student-council.ics.uci.edu/icssc-committee-meetings-schedule/">Read more...</a>
+        </div>
+
+    </div>
+
+</article>
+<article class="post post-large-alt post-1704 post type-post status-publish format-standard hentry category-event category-social-event">
+
+            <div class="post-date">
+                <span class="day">10</span>
+    <span class="month">Jan</span>
+            </div>
+    
+    <div class="post-content">
+
+                
+    
+    
+        <h2 class="entry-title"><a href="https://student-council.ics.uci.edu/first-general-meeting/">First General Meeting of Winter Quarter</a></h2>
+
+        <span class="vcard" style="display: none;"><span class="fn"><a href="https://student-council.ics.uci.edu/author/sarayr/" title="Posts by Saray Rodriguez" rel="author">Saray Rodriguez</a></span></span><span class="updated" style="display:none">2016-02-07T17:58:17+00:00</span><div class="entry-content"><div class="vc_row wpb_row vc_row-fluid"><div class="vc_column_container vc_col-sm-12"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Our first general meeting of the winter quarter was a blast! Started the meeting with a fun/messy activity involving marshmallows and pasta sticks and ended the meeting with a social at Blaze Pizza.</p>
+<p>Missed out? Don&#8217;t worry! Our next meeting will take place Week 3 on Wednesday at DBH 6011 from 7:30PM &#8211; 8:30PM.</p>
+
+		<!-- MasterSlider -->
+		<div id="P_MS56b9d695ba7f6" class="master-slider-parent master-slider-gallery   ms-parent-id-0"  >
+
+			
+			<!-- MasterSlider Main -->
+			<div id="MS56b9d695ba7f6" class="master-slider ms-skin-default" >
+				 				 
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="12471342_1025377054187764_6113449792648205820_o" title="12471342_1025377054187764_6113449792648205820_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12471342_1025377054187764_6113449792648205820_o.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/12471342_1025377054187764_6113449792648205820_o/" target="_self"    >12471342_1025377054187764_6113449792648205820_o</a>
+
+					<div class="ms-info">12471342_1025377054187764_6113449792648205820_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12471342_1025377054187764_6113449792648205820_o-140x80.jpg" alt="12471342_1025377054187764_6113449792648205820_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="12466158_1025377110854425_8825428097203289068_o" title="12466158_1025377110854425_8825428097203289068_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12466158_1025377110854425_8825428097203289068_o.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/12466158_1025377110854425_8825428097203289068_o/" target="_self"    >12466158_1025377110854425_8825428097203289068_o</a>
+
+					<div class="ms-info">12466158_1025377110854425_8825428097203289068_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12466158_1025377110854425_8825428097203289068_o-140x80.jpg" alt="12466158_1025377110854425_8825428097203289068_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="12487213_1025377044187765_3802408025865620297_o" title="12487213_1025377044187765_3802408025865620297_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12487213_1025377044187765_3802408025865620297_o.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/12487213_1025377044187765_3802408025865620297_o/" target="_self"    >12487213_1025377044187765_3802408025865620297_o</a>
+
+					<div class="ms-info">12487213_1025377044187765_3802408025865620297_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12487213_1025377044187765_3802408025865620297_o-140x80.jpg" alt="12487213_1025377044187765_3802408025865620297_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="12487213_1025377044187765_3802408025865620297_o" title="12487213_1025377044187765_3802408025865620297_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12487213_1025377044187765_3802408025865620297_o-1.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/12487213_1025377044187765_3802408025865620297_o-2/" target="_self"    >12487213_1025377044187765_3802408025865620297_o</a>
+
+					<div class="ms-info">12487213_1025377044187765_3802408025865620297_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12487213_1025377044187765_3802408025865620297_o-1-140x80.jpg" alt="12487213_1025377044187765_3802408025865620297_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="12471825_1025377127521090_3914938425439905603_o" title="12471825_1025377127521090_3914938425439905603_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12471825_1025377127521090_3914938425439905603_o.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/12471825_1025377127521090_3914938425439905603_o/" target="_self"    >12471825_1025377127521090_3914938425439905603_o</a>
+
+					<div class="ms-info">12471825_1025377127521090_3914938425439905603_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12471825_1025377127521090_3914938425439905603_o-140x80.jpg" alt="12471825_1025377127521090_3914938425439905603_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="12491970_1025377124187757_9194119625979860772_o" title="12491970_1025377124187757_9194119625979860772_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12491970_1025377124187757_9194119625979860772_o.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/12491970_1025377124187757_9194119625979860772_o/" target="_self"    >12491970_1025377124187757_9194119625979860772_o</a>
+
+					<div class="ms-info">12491970_1025377124187757_9194119625979860772_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12491970_1025377124187757_9194119625979860772_o-140x80.jpg" alt="12491970_1025377124187757_9194119625979860772_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="886921_1025376940854442_9192674760680594689_o" title="886921_1025376940854442_9192674760680594689_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/886921_1025376940854442_9192674760680594689_o-1400x1867.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/886921_1025376940854442_9192674760680594689_o/" target="_self"    >886921_1025376940854442_9192674760680594689_o</a>
+
+					<div class="ms-info">886921_1025376940854442_9192674760680594689_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/886921_1025376940854442_9192674760680594689_o-1400x1867-140x80.jpg" alt="886921_1025376940854442_9192674760680594689_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="12491970_1025377124187757_9194119625979860772_o" title="12491970_1025377124187757_9194119625979860772_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12491970_1025377124187757_9194119625979860772_o-1.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/12491970_1025377124187757_9194119625979860772_o-2/" target="_self"    >12491970_1025377124187757_9194119625979860772_o</a>
+
+					<div class="ms-info">12491970_1025377124187757_9194119625979860772_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12491970_1025377124187757_9194119625979860772_o-1-140x80.jpg" alt="12491970_1025377124187757_9194119625979860772_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="12489228_1025376937521109_4291531233214433736_o" title="12489228_1025376937521109_4291531233214433736_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12489228_1025376937521109_4291531233214433736_o-1400x1050.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/12489228_1025376937521109_4291531233214433736_o/" target="_self"    >12489228_1025376937521109_4291531233214433736_o</a>
+
+					<div class="ms-info">12489228_1025376937521109_4291531233214433736_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/12489228_1025376937521109_4291531233214433736_o-1400x1050-140x80.jpg" alt="12489228_1025376937521109_4291531233214433736_o" />
+				</div>
+			<div  class="ms-slide" data-delay="3"   >
+					<img src="https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/css/blank.gif" alt="10286806_1025376944187775_8220788238993890615_o" title="10286806_1025376944187775_8220788238993890615_o" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/10286806_1025376944187775_8220788238993890615_o-1400x1050.jpg" />
+	<a href="https://student-council.ics.uci.edu/first-general-meeting/10286806_1025376944187775_8220788238993890615_o/" target="_self"    >10286806_1025376944187775_8220788238993890615_o</a>
+
+					<div class="ms-info">10286806_1025376944187775_8220788238993890615_o</div>
+
+
+	<img class="ms-thumb" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/10286806_1025376944187775_8220788238993890615_o-1400x1050-140x80.jpg" alt="10286806_1025376944187775_8220788238993890615_o" />
+				</div>
+
+			</div>
+			<!-- END MasterSlider Main -->
+
+			 
+		</div>
+		<!-- END MasterSlider -->
+
+		<script>
+		( window.MSReady = window.MSReady || [] ).push( function( $ ) {
+
+			"use strict";
+			var masterslider_a7f6 = new MasterSlider();
+
+			// slider controls
+			masterslider_a7f6.control('arrows'     ,{ autohide:true, overVideo:true  });
+			masterslider_a7f6.control('thumblist'  ,{ autohide:false, overVideo:true, dir:'h', speed:17, inset:false, arrows:false, hover:false, customClass:'', align:'bottom',type:'thumbs', margin:2, width:140, height:80, space:2, fillMode:'fill'  });
+			masterslider_a7f6.control('slideinfo'  ,{ autohide:true, overVideo:true, dir:'h', align:'bottom',inset:true , margin:80  , size:30 });
+			// slider setup
+			masterslider_a7f6.setup("MS56b9d695ba7f6", {
+				width           : 960,
+				height          : 540,
+				minHeight       : 0,
+				space           : 0,
+				start           : 1,
+				grabCursor      : true,
+				swipe           : true,
+				mouse           : true,
+				keyboard        : false,
+				layout          : "fillwidth",
+				wheel           : false,
+				autoplay        : true,
+				instantStartLayers:false,
+				loop            : false,
+				shuffle         : false,
+				preload         : 3,
+				heightLimit     : false,
+				autoHeight      : false,
+				smoothHeight    : true,
+				endPause        : false,
+				overPause       : false,
+				fillMode        : "fill",
+				centerControls  : true,
+				startOnAppear   : false,
+				layersMode      : "center",
+				autofillTarget  : "",
+				hideLayers      : false,
+				fullscreenMargin: 0,
+				speed           : 17,
+				dir             : "h",
+				parallaxMode    : 'swipe',
+				view            : "basic"
+			});
+
+			
+			window.masterslider_instances = window.masterslider_instances || [];
+			window.masterslider_instances.push( masterslider_a7f6 );
+		});
+		</script>
+
+
+<p>&nbsp;</p>
+
+		</div>
+	</div>
+</div></div></div>
+</div>
+        <div class="post-meta clearfix">
+            <span><i class="fa fa-user"></i> By <a href="https://student-council.ics.uci.edu/author/sarayr/" title="Posts by Saray Rodriguez" rel="author">Saray Rodriguez</a></span>                            <span><i class="fa fa-folder-open"></i> <a href="https://student-council.ics.uci.edu/category/event/" rel="category tag">Event</a>, <a href="https://student-council.ics.uci.edu/category/social-event/" rel="category tag">Social Event</a></span>
+                                                            <a class="btn btn-xs btn-primary pt-right" href="https://student-council.ics.uci.edu/first-general-meeting/">Read more...</a>
+        </div>
+
+    </div>
+
+</article>
+<article class="post post-large-alt post-1623 post type-post status-publish format-standard has-post-thumbnail hentry category-main-page-features">
+
+            <div class="post-date">
+                <span class="day">06</span>
+    <span class="month">Jan</span>
+            </div>
+    
+    <div class="post-content">
+
+                
+            <div class="post-image single">
+            <div class="post-slideshow owl-carousel">
+                                    <div>
+                        <div class="img-thumbnail">
+                            <div class="inner">
+                                <img class="lazyOwl img-responsive" width="628" height="245" data-src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/email-header.png" alt="" data-image="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/01/email-header.png" data-caption="" />
+                                                                    <span class="zoom"><i class="fa fa-search"></i></span>
+                                                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    
+    
+        <h2 class="entry-title"><a href="https://student-council.ics.uci.edu/icssc-week-1-general-meeting/">ICSSC Week 1 General Meeting</a></h2>
+
+        <span class="vcard" style="display: none;"><span class="fn"><a href="https://student-council.ics.uci.edu/author/bhasting/" title="Posts by Brandon Hastings" rel="author">Brandon Hastings</a></span></span><span class="updated" style="display:none">2016-02-07T19:42:37+00:00</span><div class="entry-content"><p>Invite your ICS friends!! TONIGHT at 7pm Room DBH 6011. All ICS students are eligible General Members and may attend General Meetings that are every other odd week this quarter. Want to get more involved? Become a member of one of our four Committees: Corporate Outreach, Student Events, Faculty Relations (known as AAA), or join our Project Management Committee and learn a new language with a like minded team!</p>
+<p>//ICSSC Committee Membership signup forms will be released during our meeting today and be available on our website (if you were unable to make today&#8217;s meeting). If you class schedule conflicts with general meetings, you can still get involved and join one of the Committees, which have their own weekly meeting starting Week 2. A schedule of all the committees meeting times will be made available this week on our website.</p>
+<p>ICSSC is what you make of it. We facilitate the tools and many opportunities for ICS students to achieve their goals as ICS majors. Whether it be finding a summer internship, networking with professionals, making friends, or developing the next best app&#8212;ICSSC alumni leave saying that ICSSC was one of the most rewarding and memorable experiences they had at UCI.</p>
+<p>RSVP &amp; More Details: <a href="https://www.facebook.com/events/1112699308741865/" target="_blank">https://www.facebook.com/events/1112699308741865/</a></p>
+</div>
+        <div class="post-meta clearfix">
+            <span><i class="fa fa-user"></i> By <a href="https://student-council.ics.uci.edu/author/bhasting/" title="Posts by Brandon Hastings" rel="author">Brandon Hastings</a></span>                            <span><i class="fa fa-folder-open"></i> <a href="https://student-council.ics.uci.edu/category/main-page-features/" rel="category tag">Main Page Features</a></span>
+                                                            <a class="btn btn-xs btn-primary pt-right" href="https://student-council.ics.uci.edu/icssc-week-1-general-meeting/">Read more...</a>
+        </div>
+
+    </div>
+
+</article>
+<article class="post post-large-alt post-1605 post type-post status-publish format-standard hentry category-social-event">
+
+            <div class="post-date">
+                <span class="day">25</span>
+    <span class="month">Nov</span>
+            </div>
+    
+    <div class="post-content">
+
+                
+    
+    
+        <h2 class="entry-title"><a href="https://student-council.ics.uci.edu/video-game-night/">Video Game Night!</a></h2>
+
+        <span class="vcard" style="display: none;"><span class="fn"><a href="https://student-council.ics.uci.edu/author/sarayr/" title="Posts by Saray Rodriguez" rel="author">Saray Rodriguez</a></span></span><span class="updated" style="display:none">2015-11-25T16:18:13+00:00</span><div class="entry-content"><p>Come join us for video game night! Take a break from studying, and join us for an evening full of games and food! Games will be provided but members are welcome to bring any video games and consoles they would want to use.  Video game night is taking over our next general meeting Monday, November 30.</p>
+</div>
+        <div class="post-meta clearfix">
+            <span><i class="fa fa-user"></i> By <a href="https://student-council.ics.uci.edu/author/sarayr/" title="Posts by Saray Rodriguez" rel="author">Saray Rodriguez</a></span>                            <span><i class="fa fa-folder-open"></i> <a href="https://student-council.ics.uci.edu/category/social-event/" rel="category tag">Social Event</a></span>
+                                                            <a class="btn btn-xs btn-primary pt-right" href="https://student-council.ics.uci.edu/video-game-night/">Read more...</a>
+        </div>
+
+    </div>
+
+</article>
+<article class="post post-large-alt post-1603 post type-post status-publish format-standard hentry category-social-event">
+
+            <div class="post-date">
+                <span class="day">23</span>
+    <span class="month">Nov</span>
+            </div>
+    
+    <div class="post-content">
+
+                
+    
+    
+        <h2 class="entry-title"><a href="https://student-council.ics.uci.edu/ics-faculty-mixer/">ICS Faculty Mixer</a></h2>
+
+        <span class="vcard" style="display: none;"><span class="fn"><a href="https://student-council.ics.uci.edu/author/sarayr/" title="Posts by Saray Rodriguez" rel="author">Saray Rodriguez</a></span></span><span class="updated" style="display:none">2015-11-23T22:27:04+00:00</span><div class="entry-content"><p>Not sure what career path in ICS to pursue? Have questions about research or graduate school? Stuck on a project in one of your classes? Then come on out to the ICSSC Fall Faculty Mixer Tuesday, November 23rd from 6:00 pm to 8:pm! Enjoy a free Thanksgiving feast while asking your professors any questions you may have! RSVP at the link below!</p>
+<p><a href="http://goo.gl/forms/3AhrQchTGA" target="_blank" rel="nofollow">http://goo.gl/forms/3AhrQchTGA</a></p>
+</div>
+        <div class="post-meta clearfix">
+            <span><i class="fa fa-user"></i> By <a href="https://student-council.ics.uci.edu/author/sarayr/" title="Posts by Saray Rodriguez" rel="author">Saray Rodriguez</a></span>                            <span><i class="fa fa-folder-open"></i> <a href="https://student-council.ics.uci.edu/category/social-event/" rel="category tag">Social Event</a></span>
+                                                            <a class="btn btn-xs btn-primary pt-right" href="https://student-council.ics.uci.edu/ics-faculty-mixer/">Read more...</a>
+        </div>
+
+    </div>
+
+</article>
+<article class="post post-large-alt post-1591 post type-post status-publish format-standard hentry category-social-event">
+
+            <div class="post-date">
+                <span class="day">12</span>
+    <span class="month">Nov</span>
+            </div>
+    
+    <div class="post-content">
+
+                
+    
+    
+        <h2 class="entry-title"><a href="https://student-council.ics.uci.edu/icssc-movie-board-game-night/">ICSSC Movie / Board game night</a></h2>
+
+        <span class="vcard" style="display: none;"><span class="fn"><a href="https://student-council.ics.uci.edu/author/cwpark2/" title="Posts by Chan Woo Park" rel="author">Chan Woo Park</a></span></span><span class="updated" style="display:none">2015-11-12T23:31:53+00:00</span><div class="entry-content"><p>ICSSC is having a m<a href="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2015/11/movie_board_game.jpg"><img class="alignnone size-medium wp-image-1590" src="https://student-council.ics.uci.edu//wp-content/uploads/scouncil/2015/11/movie_board_game.jpg" alt="movie_board_game" width="1" height="1" /></a>ovie night this Friday! Spend an evening watching movies and playing board games with student council. Snacks will be served!</p>
+<p>Please fill out this form if you are interested in joining:<br />
+<a href="https://goo.gl/XyUE08" target="_blank" rel="nofollow nofollow">https://goo.gl/XyUE08</a></p>
+</div>
+        <div class="post-meta clearfix">
+            <span><i class="fa fa-user"></i> By <a href="https://student-council.ics.uci.edu/author/cwpark2/" title="Posts by Chan Woo Park" rel="author">Chan Woo Park</a></span>                            <span><i class="fa fa-folder-open"></i> <a href="https://student-council.ics.uci.edu/category/social-event/" rel="category tag">Social Event</a></span>
+                                                            <a class="btn btn-xs btn-primary pt-right" href="https://student-council.ics.uci.edu/icssc-movie-board-game-night/">Read more...</a>
+        </div>
+
+    </div>
+
+</article>
+        
+        
+                    <div class="clearfix"></div>
+        <div class="pagination-wrap">
+            <div class="pagination" role="navigation">
+                <span class='page-numbers current'>1</span><a class='page-numbers' href='https://student-council.ics.uci.edu/page/2/'>2</a><span class="page-numbers dots">&hellip;</span><a class='page-numbers' href='https://student-council.ics.uci.edu/page/5/'>5</a><a class="next page-numbers" href="https://student-council.ics.uci.edu/page/2/">Next &rarr;</a>            </div>
+        </div>
+            </div>
+
+        
+    
+</div>
+
+        
+
+</div><!-- end main content -->
+
+    <div class="col-md-3 sidebar right-sidebar"><!-- main sidebar -->
+                <aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://student-council.ics.uci.edu/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></aside><aside id="tribe-events-adv-list-widget-2" class="widget tribe-events-adv-list-widget"><h3 class="widget-title">Upcoming Events</h3>
+		<!-- Event  -->
+		<div class="type-tribe_events post-1871 tribe-clearfix tribe-events-category-icssc tribe-events-venue-1609 tribe-events-organizer-1616">
+			
+<div class="tribe-mini-calendar-event event--1 ">
+	<div class="list-date">
+		<span
+			class="list-dayname">Tue</span>
+		<span
+			class="list-daynumber">09</span>
+	</div>
+
+	<div class="list-info">
+		
+		<h2 class="tribe-events-title">
+			<a href="https://student-council.ics.uci.edu/event/the-portal-info-session/" rel="bookmark">The Portal Info Session</a>
+		</h2>
+
+		
+		
+		<div class="tribe-events-duration">
+			<span class="tribe-event-date-start">February 9 @ 6:30 pm</span> - <span class="tribe-event-time">8:00 pm</span>		</div>
+
+		
+		<div class="tribe-events-location">
+
+							<span class="tribe-events-venue"><a href="https://student-council.ics.uci.edu/venue/dbh-6011/" title="DBH 6011"">DBH 6011</a></span>
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+
+		
+	</div> <!-- .list-info -->
+</div>
+		</div>
+
+		
+	
+		<!-- Event  -->
+		<div class="type-tribe_events post-1876 tribe-clearfix tribe-events-category-maiss tribe-events-venue-1877">
+			
+<div class="tribe-mini-calendar-event event--1 ">
+	<div class="list-date">
+		<span
+			class="list-dayname">Wed</span>
+		<span
+			class="list-daynumber">10</span>
+	</div>
+
+	<div class="list-info">
+		
+		<h2 class="tribe-events-title">
+			<a href="https://student-council.ics.uci.edu/event/maiss-protiviti-speaking-engagement/" rel="bookmark">[MAISS] Protiviti Speaking Engagement</a>
+		</h2>
+
+		
+		
+		<div class="tribe-events-duration">
+			<span class="tribe-event-date-start">February 10 @ 2:30 am</span> - <span class="tribe-event-time">4:30 am</span>		</div>
+
+		
+		<div class="tribe-events-location">
+
+							<span class="tribe-events-venue"><a href="https://student-council.ics.uci.edu/venue/sb-223/" title="SB 223"">SB 223</a></span>
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+
+		
+	</div> <!-- .list-info -->
+</div>
+		</div>
+
+		
+	
+		<!-- Event  -->
+		<div class="type-tribe_events post-1736 tribe-clearfix tribe-events-category-icssc tribe-events-venue-1614">
+			
+<div class="tribe-mini-calendar-event event--1 ">
+	<div class="list-date">
+		<span
+			class="list-dayname">Wed</span>
+		<span
+			class="list-daynumber">10</span>
+	</div>
+
+	<div class="list-info">
+		
+		<h2 class="tribe-events-title">
+			<a href="https://student-council.ics.uci.edu/event/icssc-academic-and-administrative-affairs-meeting-2/2016-02-10/" rel="bookmark">ICSSC AAA Meeting</a>
+		</h2>
+
+		
+		
+		<div class="tribe-events-duration">
+			<span class="tribe-event-date-start">February 10 @ 3:30 pm</span> - <span class="tribe-event-time">4:30 pm</span>		</div>
+
+		
+		<div class="tribe-events-location">
+
+							<span class="tribe-events-venue"><a href="https://student-council.ics.uci.edu/venue/mac-lab/" title="Mac Lab"">Mac Lab</a></span>
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+
+		
+	</div> <!-- .list-info -->
+</div>
+		</div>
+
+		
+	
+		<!-- Event  -->
+		<div class="type-tribe_events post-1729 tribe-clearfix tribe-events-category-icssc tribe-events-venue-1614">
+			
+<div class="tribe-mini-calendar-event event--1 ">
+	<div class="list-date">
+		<span
+			class="list-dayname">Wed</span>
+		<span
+			class="list-daynumber">10</span>
+	</div>
+
+	<div class="list-info">
+		
+		<h2 class="tribe-events-title">
+			<a href="https://student-council.ics.uci.edu/event/icssc-corporate-outreach-meeting-2/2016-02-10/" rel="bookmark">ICSSC Corporate Outreach Meeting</a>
+		</h2>
+
+		
+		
+		<div class="tribe-events-duration">
+			<span class="tribe-event-date-start">February 10 @ 4:00 pm</span> - <span class="tribe-event-time">5:00 pm</span>		</div>
+
+		
+		<div class="tribe-events-location">
+
+							<span class="tribe-events-venue"><a href="https://student-council.ics.uci.edu/venue/mac-lab/" title="Mac Lab"">Mac Lab</a></span>
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+
+		
+	</div> <!-- .list-info -->
+</div>
+		</div>
+
+		
+	
+		<!-- Event  -->
+		<div class="type-tribe_events post-1860 tribe-clearfix tribe-events-category-maiss">
+			
+<div class="tribe-mini-calendar-event event--1 ">
+	<div class="list-date">
+		<span
+			class="list-dayname">Wed</span>
+		<span
+			class="list-daynumber">10</span>
+	</div>
+
+	<div class="list-info">
+		
+		<h2 class="tribe-events-title">
+			<a href="https://student-council.ics.uci.edu/event/maiss-banh-mi-fundraiser-2/" rel="bookmark">[MAISS] Banh Mi Fundraiser</a>
+		</h2>
+
+		
+		
+		<div class="tribe-events-duration">
+			<span class="tribe-event-date-start">February 10 @ 7:00 pm</span> - <span class="tribe-event-time">10:00 pm</span>		</div>
+
+		
+		<div class="tribe-events-location">
+
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+
+		
+	</div> <!-- .list-info -->
+</div>
+		</div>
+
+		
+	
+		<!-- Event  -->
+		<div class="type-tribe_events post-1878 tribe-clearfix tribe-events-category-ieee tribe-events-venue-1612 tribe-events-organizer-1825">
+			
+<div class="tribe-mini-calendar-event event--1 ">
+	<div class="list-date">
+		<span
+			class="list-dayname">Thu</span>
+		<span
+			class="list-daynumber">11</span>
+	</div>
+
+	<div class="list-info">
+		
+		<h2 class="tribe-events-title">
+			<a href="https://student-council.ics.uci.edu/event/christine-ieee-student-branch-atmel-workshop/" rel="bookmark">Christine / IEEE Student Branch / Atmel Workshop</a>
+		</h2>
+
+		
+		
+		<div class="tribe-events-duration">
+			<span class="tribe-event-date-start">February 11 @ 1:00 am</span> - <span class="tribe-event-time">3:00 am</span>		</div>
+
+		
+		<div class="tribe-events-location">
+
+							<span class="tribe-events-venue"><a href="https://student-council.ics.uci.edu/venue/dbh-3011/" title="DBH 3011"">DBH 3011</a></span>
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+
+		
+	</div> <!-- .list-info -->
+</div>
+		</div>
+
+		
+	
+	<p class="tribe-events-widget-link">
+		<a href="https://student-council.ics.uci.edu/events/" rel="bookmark">
+			View More&hellip;		</a>
+	</p>
+
+</aside>    </div><!-- end main sidebar -->
+
+    </div>
+</div>
+
+
+        
+                                                <div class="container sidebar content-bottom-wrapper">
+                        <div class="row">
+                
+                                                                    <div class="col-sm-12">
+                                <aside id="login_logout-2" class="widget widget_login_logout">
+<!-- Powered by Login-Logout plugin v.3.3 wordpress.org/plugins/login-logout/ -->
+<ul class="wrap_login_logout">
+<li class="item_login"><a href="https://student-council.ics.uci.edu/wp-login.php?redirect_to=https%3A%2F%2Fstudent-council.ics.uci.edu%2F">Login</a></li>
+</ul>
+</aside>                            </div>
+                                                            </div>
+                </div>
+                            
+            </div><!-- end main -->
+
+            
+            <div class="footer-wrapper ">
+
+                
+                    
+<div id="footer" class="footer-1 show-ribbon">
+    
+        <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-left">
+                                    <span class="logo">
+                        <a href="https://student-council.ics.uci.edu/" title="ICS Student Council - University of California, Irvine" rel="home">
+                            <img class="img-responsive" src="//student-council.ics.uci.edu//wp-content/uploads/scouncil/2016/02/blue-gray-1.png" alt="ICS Student Council" />                        </a>
+                    </span>
+                                © Copyright 2016. All Rights Reserved.            </div>
+
+            
+                    </div>
+    </div>
+    </div>
+                
+            </div>
+
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-start-slideshow="true" data-filter=":even">
+        <div class="slides"></div>
+        <h3 class="title">&nbsp;</h3>
+        <a class="prev"></a>
+        <a class="next"></a>
+        <a class="close"></a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+        
+    </div><!-- end wrapper -->
+    
+<div class="panel-overlay"></div>
+<div class="filter-overlay"></div>
+
+<div id="nav-panel" class="">
+    <div class="menu-wrap"><ul id="menu-default-1" class="mobile-menu accordion-menu"><li id="accordion-menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children active has-sub"><a href="http://student-council.ics.uci.edu" class=" current ">Events</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-500" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://medappjam.com" class="">Med AppJam 2015</a></li>
+	<li id="accordion-menu-item-161" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.ucireversecareerfair.com/" class="">Reverse Career Fair (RCF)</a></li>
+	<li id="accordion-menu-item-162" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.icsday.com/" class="">ICS Day 2016</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has-sub"><a title="About" href="https://student-council.ics.uci.edu/about/" class="">About</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://student-council.ics.uci.edu/about/" class="">Mission &#038; Vission</a></li>
+	<li id="accordion-menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://student-council.ics.uci.edu/about/get-involved/" class="">Get Involved</a></li>
+	<li id="accordion-menu-item-110" class="menu-item menu-item-type-taxonomy menu-item-object-category "><a href="https://student-council.ics.uci.edu/category/officers/" class="">Executive Officers</a></li>
+	<li id="accordion-menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://student-council.ics.uci.edu/about/exec-board-portal/" class="">Exec Board Portal</a></li>
+	<li id="accordion-menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://student-council.ics.uci.edu/about/get-involved/major-rep-nomination/" class="">ICS Major Rep. Nomination</a></li>
+	<li id="accordion-menu-item-1559" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://student-council.ics.uci.edu/about/get-involved/apply/" class="">ICSSC Application</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-136" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://student-council.ics.uci.edu/about/contact-us/" class="">Contact Us</a></li>
+<li id="accordion-menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://student-council.ics.uci.edu/information-and-computer-science-clubs/" class="">ICS Clubs</a></li>
+<li id="accordion-menu-item-1681" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://student-council.ics.uci.edu/events/" class="">ICS Calendar</a></li>
+</ul></div><div class="share-links"><a target="_blank"  rel="nofollow" class="share-facebook" href="https://www.facebook.com/ICSStudentCouncil" title="Facebook"></a><a target="_blank"  rel="nofollow" class="share-twitter" href="https://twitter.com/icscouncil" title="Twitter"></a></div></div>
+<a href="#" id="nav-panel-close" class=""><i class="fa fa-close"></i></a>
+<!--[if lt IE 9]>
+<script src="https://student-council.ics.uci.edu/wp-content/themes/porto/js/html5shiv.min.js"></script>
+<script src="https://student-council.ics.uci.edu/wp-content/themes/porto/js/respond.min.js"></script>
+<![endif]-->
+
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"https:\/\/student-council.ics.uci.edu\/wp-content\/plugins\/scouncil\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/contact-form-7/includes/js/scripts.js?ver=4.3.1'></script>
+<script type='text/javascript' src='//student-council.ics.uci.edu/wp-content/plugins/scouncil/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//student-council.ics.uci.edu/wp-content/plugins/scouncil/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.5.2'></script>
+<script type='text/javascript' src='//student-council.ics.uci.edu/wp-content/plugins/scouncil/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//student-council.ics.uci.edu/wp-content/plugins/scouncil/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.5.2'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201606'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2016Febaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/jetpack/modules/wpgroho.js?ver=4.4.2'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/Ultimate_VC_Addons/assets/min-js/SmoothScroll-compatible.min.js?ver=3.15.0'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-includes/js/underscore.min.js?ver=1.6.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-includes/js/wp-util.min.js?ver=4.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Select product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//student-council.ics.uci.edu/wp-content/plugins/scouncil/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=2.5.2'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/themes/porto/js/plugins.min.js?ver=2.7.4.1'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/themes/porto/js/blueimp/jquery.blueimp-gallery.min.js?ver=2.7.4.1'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/js/jquery.easing.min.js?ver=2.26.0'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/plugins/scouncil/masterslider/public/assets/js/masterslider.min.js?ver=2.26.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var js_porto_vars = {"rtl":"","ajax_url":"https:\/\/student-council.ics.uci.edu\/wp-admin\/admin-ajax.php","change_logo":"1","post_zoom":"1","portfolio_zoom":"1","member_zoom":"1","page_zoom":"1","container_width":"1170","grid_gutter_width":"20","show_sticky_header":"1","show_sticky_header_tablet":"1","show_sticky_header_mobile":"1","request_error":"The requested content cannot be loaded.<br\/>Please try again later.","ajax_loader_url":":\/\/student-council.ics.uci.edu\/wp-content\/themes\/porto\/images\/ajax-loader@2x.gif","category_ajax":"","prdctfltr_ajax":"","show_minicart":"0","slider_autoplay":"0","slider_speed":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-content/themes/porto/js/theme.min.js?ver=2.7.4.1'></script>
+<script type='text/javascript' src='https://student-council.ics.uci.edu/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+<script type="text/css" id="tmpl-tribe_events_pro_customizer_css"></script><style type="text/css" id="tribe_events_pro_customizer_css"></style><script type='text/javascript' src='https://stats.wp.com/e-201606.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.1',blog:'100192853',post:'0',tz:'-8',srv:'student-council.ics.uci.edu'} ]);
+	_stq.push([ 'clickTrackerInit', '100192853', '0' ]);
+</script>
+
+    <script type="text/javascript">
+                            jQuery(document).ready(function(){});                    </script>
+
+</body>
+</html>

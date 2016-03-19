@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0075)http://proquest.safaribooksonline.com/print?xmlid=9781449328917%2Fid2465691 -->
+<html xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./hadoop8_files/docsafarip.css"><link rel="stylesheet" type="text/css" href="./hadoop8_files/getfile"></head><body><div><p class="p"></p><hr><strong class="strong">Username: </strong><span>University of California Irvine User</span><span> </span><strong class="strong">Book: </strong><span>Hadoop: The Definitive Guide, 3rd Edition. </span><span>No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.</span><hr><p></p><div id="HtmlView"><div><h1 class="epub__title"><a id="I_sect19_d1e21871"></a>Benchmarking a Hadoop Cluster</h1>
+
+
+
+
+
+
+<p><a id="idx10748" class="epub__indexterm"></a><a id="idx10749" class="epub__indexterm"></a>Is the cluster set up correctly? The best way to answer this
+    question is empirically: run some jobs and confirm that you get the
+    expected results. Benchmarks make good tests because you also get numbers
+    that you can compare with other clusters as a sanity check on whether your
+    new cluster is performing roughly as expected. And you can tune a cluster
+    using benchmark results to squeeze the best performance out of it. This is
+    often done with monitoring systems in place (see <a href="http://proquest.safaribooksonline.com/9781449328917/id2469417#Monitoring" class="epub__xref" title="Monitoring" data-ajax="1">Monitoring</a>), so you can see how resources are being used
+    across the cluster.</p>
+<p>To get the best results, you should run benchmarks on a cluster that
+    is not being used by others. In practice, this is just before it is put
+    into service and users start relying on it. Once users have scheduled
+    periodic jobs on a cluster, it is generally impossible to find a time when
+    the cluster is not being used (unless you arrange downtime with users), so
+    you should run benchmarks to your satisfaction before this happens.</p>
+<p>Experience has shown that most hardware failures for new systems are
+    hard drive failures. By running I/O-intensive benchmarks—such as the ones
+    described next—you can “burn in” the cluster before it goes live.</p>
+<div class="epub__sect2" title="Hadoop Benchmarks"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id510273"></a>Hadoop Benchmarks</h2>
+</div>
+
+</div>
+
+
+</div>
+<p>Hadoop comes with several benchmarks that you can run very easily
+      with minimal setup cost. Benchmarks are packaged in the test JAR file,
+      and you can get a list of them, with descriptions, by invoking the JAR
+      file with no arguments:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar</code></strong></pre>
+<p>Most of the benchmarks show usage instructions when invoked with
+      no arguments. For example:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar TestDFSIO</code></strong>
+TestFDSIO.0.0.4
+Usage: TestFDSIO -read | -write | -clean [-nrFiles N] [-fileSize MB] [-resFile 
+resultFileName] [-bufferSize Bytes]</pre>
+<div class="epub__sect3" title="Benchmarking HDFS with TestDFSIO"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id510757"></a>Benchmarking HDFS with TestDFSIO</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10750" class="epub__indexterm"></a><a id="idx10751" class="epub__indexterm"></a><a id="idx10752" class="epub__indexterm"></a><a id="I_indexterm9_d1e32009" class="epub__indexterm"></a><code class="epub__literal">TestDFSIO</code> tests the
+        I/O performance of HDFS. It does this by using a MapReduce job as a
+        convenient way to read or write files in parallel. Each file is read
+        or written in a separate map task, and the output of the map is used
+        for collecting statistics related to the file just processed. The
+        statistics are accumulated in the reduce to produce a summary.</p>
+<p>The following command writes 10 files of 1,000 MB each:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar TestDFSIO -write -nrFiles 10</code></strong>
+<strong class="epub__userinput"><code>-fileSize 1000</code></strong></pre>
+<p>At the end of the run, the results are written to the console
+        and also recorded in a local file (which is appended to, so you can
+        rerun the benchmark and not lose old results):</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>cat TestDFSIO_results.log</code></strong>
+----- TestDFSIO ----- : write
+           Date &amp; time: Sun Apr 12 07:14:09 EDT 2009
+       Number of files: 10
+Total MBytes processed: 10000
+     Throughput mb/sec: 7.796340865378244
+Average IO rate mb/sec: 7.8862199783325195
+ IO rate std deviation: 0.9101254683525547
+    Test exec time sec: 163.387</pre>
+<p>The files are written under the <em class="epub__filename">/benchmarks/TestDFSIO</em> directory by default
+        (this can be changed by setting the <code class="epub__literal">test.build.data</code> system property), in a
+        directory called <em class="epub__filename">io_data</em>.</p>
+<p>To run a read benchmark, use the <code class="epub__literal">-read</code> argument. Note that these files must
+        already exist (having been written by <code class="epub__literal">TestDFSIO -write</code>):</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar TestDFSIO -read -nrFiles 10</code></strong> 
+<strong class="epub__userinput"><code>-fileSize 1000</code></strong></pre>
+<p>Here are the results for a real run:</p>
+<pre class="epub__screen">----- TestDFSIO ----- : read
+           Date &amp; time: Sun Apr 12 07:24:28 EDT 2009
+       Number of files: 10
+Total MBytes processed: 10000
+     Throughput mb/sec: 80.25553361904304
+Average IO rate mb/sec: 98.6801528930664
+ IO rate std deviation: 36.63507598174921
+    Test exec time sec: 47.624</pre>
+<p>When you’ve finished benchmarking, you can delete all the
+        generated files from HDFS using the <a id="I_indexterm9_d1e32071" class="epub__indexterm"></a><code class="epub__literal">-clean</code>
+        argument:<a id="I_indexterm9_d1e32077" class="epub__indexterm"></a><a id="I_indexterm9_d1e32078" class="epub__indexterm"></a><a id="I_indexterm9_d1e32079" class="epub__indexterm"></a></p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar TestDFSIO -clean</code></strong></pre>
+</div>
+<div class="epub__sect3" title="Benchmarking MapReduce with Sort"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id510759"></a>Benchmarking MapReduce with Sort</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10753" class="epub__indexterm"></a><a id="idx10754" class="epub__indexterm"></a><a id="idx10755" class="epub__indexterm"></a><a id="idx10756" class="epub__indexterm"></a>Hadoop comes with a MapReduce program that does a
+        partial sort of its input. It is very useful for benchmarking the
+        whole MapReduce system, as the full input dataset is transferred
+        through the shuffle. The three steps are: generate some random data,
+        perform the sort, then validate the results.</p>
+<p>First, we generate some random data using <a id="I_indexterm9_d1e32115" class="epub__indexterm"></a><code class="epub__literal">RandomWriter</code>. It runs
+        a MapReduce job with 10 maps per
+        node, and each map generates (approximately) 1 GB of random binary data, with keys and values of
+        various sizes. You can change these values if you <span>like
+        by setting the</span> <span>properties <a id="I_indexterm9_d1e32132" class="epub__indexterm"></a><code class="epub__literal">test.randomwriter.maps_per_host</code> and <code class="epub__literal"></code><code class="epub__literal">test.</code></span><span><code class="epub__literal">randomwrite.bytes_per_map</code>.
+        There are also settings for the size ranges of the keys </span>and
+        values; see <a id="I_indexterm9_d1e32148" class="epub__indexterm"></a><code class="epub__literal">RandomWriter</code> for
+        details.</p>
+<p>Here’s how to invoke <a id="I_indexterm9_d1e32156" class="epub__indexterm"></a><code class="epub__literal">RandomWriter</code> (found
+        in the example JAR file, not the test one) to write its output to a
+        directory called <em class="epub__filename">random-data</em>:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop jar $HADOOP_INSTALL/hadoop-*-examples.jar randomwriter random-data</code></strong></pre>
+<p>Next, we can run the <code class="epub__literal">Sort</code>
+        program:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop jar $HADOOP_INSTALL/hadoop-*-examples.jar sort random-data sorted-data</code></strong></pre>
+<p>The overall execution time of the sort is the metric we are
+        interested in, but it’s instructive to watch the job’s progress via
+        the web UI
+        (<code class="epub__uri">http://<em class="epub__replaceable"><code>jobtracker-host</code></em>:50030/</code>),
+        where you can get a feel for how long each phase of the job takes.
+        Adjusting the parameters
+        mentioned in <a href="http://proquest.safaribooksonline.com/9781449328917/id2436410#TuningAJob" class="epub__xref" title="Tuning a Job" data-ajax="1">Tuning a Job</a> is a useful exercise,
+        too.</p>
+<p>As a final sanity check, we validate that the data in <em class="epub__filename">sorted-data</em> is, in fact, correctly
+        sorted:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar testmapredsort -sortInput random-data \</code></strong>
+<strong class="epub__userinput"><code>  -sortOutput sorted-data</code></strong></pre>
+<p>This command runs the <a id="I_indexterm9_d1e32213" class="epub__indexterm"></a><code class="epub__literal">SortValidator</code>
+        program, which performs a series of checks on the unsorted and sorted
+        data to check whether the sort is accurate. It reports the outcome to
+        the console at the end of its run:<a id="I_indexterm9_d1e32219" class="epub__indexterm"></a><a id="I_indexterm9_d1e32220" class="epub__indexterm"></a><a id="I_indexterm9_d1e32221" class="epub__indexterm"></a><a id="I_indexterm9_d1e32222" class="epub__indexterm"></a></p>
+<pre class="epub__screen">SUCCESS! Validated the MapReduce framework's 'sort' successfully.</pre>
+</div>
+<div class="epub__sect3" title="Other benchmarks"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id494844"></a>Other benchmarks</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10757" class="epub__indexterm"></a><a id="idx10758" class="epub__indexterm"></a>There are many more Hadoop benchmarks, but the following
+        are widely used:</p><div class="epub__itemizedlist">
+<ul class="epub__itemizedlist">
+<li class="epub__listitem">
+<p><a id="I_indexterm9_d1e32246" class="epub__indexterm"></a><code class="epub__literal">MRBench</code> (invoked
+            with <code class="epub__literal">mrbench</code>) runs a small job
+            a number of times. It acts as a good counterpoint to sort, as it
+            checks whether small job runs are responsive.</p></li><li class="epub__listitem">
+<p><a id="I_indexterm9_d1e32257" class="epub__indexterm"></a><code class="epub__literal">NNBench</code> (invoked
+            with <code class="epub__literal">nnbench</code>) is useful for
+            load-testing namenode hardware.</p></li><li class="epub__listitem">
+<p><a id="I_indexterm9_d1e32268" class="epub__indexterm"></a><em class="epub__firstterm">Gridmix</em> is a suite of
+            benchmarks designed to model a realistic cluster workload by
+            mimicking a variety of data-access patterns seen in practice. See
+            the documentation in the distribution for how to run Gridmix, and
+            the blog post at <a class="epub__ulink" href="http://developer.yahoo.net/blogs/hadoop/2010/04/gridmix3_emulating_production.html" target="_new">http://developer.yahoo.net/blogs/hadoop/2010/04/gridmix3_emulating_production.html</a>
+            for more background.<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id656151" id="id656151" class="epub__footnote" data-ajax="1">83</a>]</sup><a id="I_indexterm9_d1e32287" class="epub__indexterm"></a><a id="I_indexterm9_d1e32288" class="epub__indexterm"></a></p></li></ul>
+
+</div>
+
+</div>
+
+
+</div>
+<div class="epub__sect2" title="User Jobs"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id632843"></a>User Jobs</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10759" class="epub__indexterm"></a><a id="idx10760" class="epub__indexterm"></a><a id="idx10761" class="epub__indexterm"></a>For tuning, it is best to include a few jobs that are
+      representative of the jobs that your users run, so your cluster is tuned
+      for these and not just for the standard benchmarks. If this is your
+      first Hadoop cluster and you don’t have any user jobs yet, then Gridmix
+      is a good substitute.</p>
+<p>When running your own jobs as benchmarks, you should select a
+      dataset for your user jobs and use it each time you run the benchmarks
+      to allow comparisons between runs. When you set up a new cluster or
+      upgrade a cluster, you will be able to use the same dataset to compare
+      the performance with previous runs.<a id="I_indexterm9_d1e32313" class="epub__indexterm"></a><a id="I_indexterm9_d1e32314" class="epub__indexterm"></a><a id="I_indexterm9_d1e32315" class="epub__indexterm"></a><a id="I_indexterm9_d1e32316" class="epub__indexterm"></a><a id="I_indexterm9_d1e32317" class="epub__indexterm"></a></p>
+</div>
+
+
+
+<div class="epub__sect1" title="Hadoop in the Cloud"><div class="epub__titlepage"><div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+function PagePrint()
+{
+    setTimeout("window.print()", 500);
+}
+PagePrint();
+</script></div><span id="BowEndOfDocument" style="display:none" hidden="hidden"></span></body></html>

@@ -1,0 +1,19 @@
+Welcome to CS154CompSci154 Computer Design Lab
+ 
+
+
+
+  Syllabus     
+  Lectures     
+  Labs     
+
+
+  Ashenden's "VHDL Cookbook"     
+
+
+
+  Stratix architecture (pdf)  
+
+
+
+  ModelSim tutorial (pdf)

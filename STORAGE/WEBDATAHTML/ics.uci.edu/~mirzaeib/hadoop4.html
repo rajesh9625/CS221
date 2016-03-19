@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0075)http://proquest.safaribooksonline.com/print?xmlid=9781449328917%2Fid2459383 -->
+<html xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./hadoop4_files/docsafarip.css"><link rel="stylesheet" type="text/css" href="./hadoop4_files/getfile"></head><body><div><p class="p"></p><hr><strong class="strong">Username: </strong><span>University of California Irvine User</span><span> </span><strong class="strong">Book: </strong><span>Hadoop: The Definitive Guide, 3rd Edition. </span><span>No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.</span><hr><p></p><div id="HtmlView"><div><h1 class="epub__title"><a id="I_sect19_d1e20190"></a>SSH Configuration</h1>
+
+
+
+
+
+
+<p><a id="idx10664" class="epub__indexterm"></a><a id="idx10665" class="epub__indexterm"></a>The Hadoop control scripts (but not the daemons) rely on SSH
+    to perform cluster-wide operations. For example, there is a script for
+    stopping and starting all the daemons in the cluster. Note that the
+    control scripts are optional—cluster-wide operations can be performed by
+    other mechanisms, too (such as a distributed shell).</p>
+<p>To work seamlessly, SSH needs to be set up to allow password-less
+    login for the <code class="epub__literal">hadoop</code> user from machines
+    in the cluster. The simplest way to achieve this is to generate a
+    public/private key pair and place it in an NFS location that is shared
+    across the cluster.</p>
+<p>First, generate an RSA key pair by typing the following in the
+    <code class="epub__literal">hadoop</code> user account:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>ssh-keygen -t rsa -f ~/.ssh/id_rsa</code></strong></pre>
+<p>Even though we want password-less logins, keys without passphrases
+    are not considered good practice (it’s OK to have an empty passphrase when
+    running a local pseudo-distributed cluster, as described in <a href="http://proquest.safaribooksonline.com/9781449328917/id2518965" class="epub__xref" title="Appendix A. Installing Apache Hadoop" data-ajax="1">Appendix&nbsp;A</a>), so we specify a passphrase when prompted for one. We
+    use <em class="epub__command">ssh-agent</em> to avoid the need to
+    enter a password for each connection.</p>
+<p>The private key is in the file specified by the <code class="epub__literal">-f</code> option, <em class="epub__filename">~/.ssh/id_rsa</em>, and the public key is stored in
+    a file with the same name but with <em class="epub__filename">.pub</em> appended, <em class="epub__filename">~/.ssh/id_rsa.pub</em>.</p>
+<p>Next we need to make sure that the public key is in the <em class="epub__filename">~/.ssh/authorized_keys</em> file on all the machines
+    in the cluster that we want to connect to. If the <code class="epub__literal">hadoop</code> user’s home directory is an NFS
+    filesystem, as described earlier, the keys can be shared across the
+    cluster by typing:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</code></strong></pre>
+<p>If the home directory is not shared using NFS, the public keys will
+    need to be shared by some other means (such as <em class="epub__command">ssh-copy-id</em>).</p>
+<p>Test that you can SSH from the master to a worker machine by making
+    sure <em class="epub__command">ssh-agent</em> is running,<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id455497" id="id455497" class="epub__footnote" data-ajax="1">77</a>]</sup> and then run <em class="epub__command">ssh-add</em> to
+    store your passphrase. You should be able to <em class="epub__command">ssh</em> to a worker without entering the passphrase
+    again.<a id="I_indexterm9_d1e28792" class="epub__indexterm"></a><a id="I_indexterm9_d1e28793" class="epub__indexterm"></a></p>
+
+<div class="epub__sect1" title="Hadoop Configuration"><div class="epub__titlepage"><div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+function PagePrint()
+{
+    setTimeout("window.print()", 500);
+}
+PagePrint();
+</script></div><span id="BowEndOfDocument" style="display:none" hidden="hidden"></span></body></html>

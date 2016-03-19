@@ -1,0 +1,119 @@
+Regulatory sites in yeast genome
+<HTML>
+<HEAD>
+<!-- Title entry -->
+<TITLE>Regulatory sites in yeast genome</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1>Regulatory sites in yeast genome</H1>
+<H2>Abstract</H2>
+<p>
+ The data consists of the upstream region for each gene in yeast.
+ There are over 6000 genes in Yeast and the upstream regions are
+ about 500 base pairs  long, ie. a sequence of characters from {A,C,T,G}.
+</p>
+<H2>Data Type</H2>
+sequence
+<H2> Sources</H2>
+<A HREF="ftp://genome-ftp.stanford.edu/pub/yeast/yeast_UTR5">ftp://genome-ftp.stanford.edu/pub/yeast/yeast_UTR5</A>
+
+This directory contains the upstream regions of every yeast gene.
+<H2> Other Relevant Information</H2>
+<P>
+Representation of the data, as always, is crucial. Unfortunately
+the best representation is not known, however one should maintain
+as much of the biological knowledge/constraints as possible. In 
+particular regulatory sites are strings of length 5-12 where
+the base at a position is variability.
+</P>
+<H2> Data Characteristics</H2>
+<P>
+Data found by biological experiment. There may be some errors, but
+probably less than 1%. No missing values.
+</P>
+<P>
+Number of Instances:  6000+
+</P>
+<P>
+Each instance is defined, in raw terms, by a sequence of
+about between 400 and 1000 base pairs.
+The belief is that patterns will have
+length no larger than 12. One may introduce various
+higher level features, which would change the number of attributes.
+</P>
+<P>
+The goal is to identify patterns in the strings which are
+common to specific family of genes and uncommon elsewhere.
+There are various languages for describing the patterns which
+permit expressing known constraints. One pattern language
+is strings of length between 6 and 12 over {a,c,g,t}. Another
+pattern language, which has been found to a better representation
+of reality, is probability matrices of length 6 to 12. 
+</P>
+<H2>Data Format</H2>
+    1 file, each line is  orf/gene name + whitespace + upstream region.
+<H2>Past Usage</H2>
+<p>
+   Helden,  Andre,  Collado-Vides
+   Extracting Regulatory Sites from the Upstream Region of Yeast Genes
+   by Computational Analysis of Oligonucleotides Frequences.
+   Journal Molecular Biology 1998 281, 827-842
+</p>
+<P>
+   Paper adopts the language of strings of length 6 over {a,c,g,t} and
+  shows that those strings that are occur more frequently than expected,
+  match known regulatory elements. In particular they examine
+  10 family of genes and find strings that partially match the known
+  regulatory sites in most cases. Real regulatory regions are known
+  to sometimes be longer than 6 and also know to have variability
+  in their base pair constituency. 
+</P>
+<H2>References and Further Information</H2>
+Background Papers: (various approaches)
+ 
+<p>
+Identification of consensus patterns in unaligned
+DNA sequences known to be functionally related
+Cabios 1990   Herzt, Hartzell, Stormo
+</p>
+<p>
+Unsupervised Learning of Multiple Motifs in 
+Biopolymers Using Expectation Maximization
+  ML95 (21)   Bailey and Elkan
+</p>
+<p>
+Identification of Consensus Patterns in Unaligned DNA
+and protein sequence: a large-deviation statistical basis
+for penalizing gaps.
+Hertz, Stormo    1995   3rd International Conference on BioInformatics
+and Genomic Research.
+</p>
+<p>
+Detecting Subtle Sequence Signals:
+ A Gibbs Sampling strategy for Multiple Alignment
+Lawrence, Altshcul, Boguski, Liu, Neuwald, Wootton
+Science 1993
+</p>
+<p>
+Extracting Regulatory Sites from the Upstream
+Region of Yeast Genes by Computational Analysis of
+Oligonucleotides Frequences
+JMB 1998 J.van Helden, B. Andre and J. Collado-Vides
+</p>
+
+
+These sites contain additional data, tutorials, and pointers to 
+the literature:
+<A HREF="http://genome-www.stanford.edu/Saccharomyces/">http://genome-www.stanford.edu/Saccharomyces/</A>
+<A HREF="http://copan.cifn.unam.mx/Computational_Biology/yeast-tools/">http://copan.cifn.unam.mx/Computational_Biology/yeast-tools/</A>
+<p dummy=""/>
+<hr dummy=""/>
+<ADDRESS>
+<A href="http://kdd.ics.uci.edu/">The UCI KDD Archive</A>
+<br dummy=""/>
+<a href="http://www.ics.uci.edu/">Information and Computer Science</a>
+<br dummy=""/>
+<a href="http://www.uci.edu/">University of California, Irvine</a>
+<br dummy=""/> Irvine, CA 92697-3425 <br dummy=""/>
+</ADDRESS> Last modified: July 12, 1999 </BODY>
+</HTML>

@@ -1,0 +1,29 @@
+Welcome to CS154
+
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<HTML CHARSET="head">
+<HEAD>   <TITLE>Welcome to CS154</TITLE>	</HEAD>
+
+<center>
+<font color="cc9876">
+<BODY><H2> CompSci154 Computer Design Lab
+</H2> 
+</font>
+</center>
+
+<A HREF="./syllabus.html"> <B> Syllabus </B> </A> <br>  <BR>
+<A HREF="./lectures.htm"> <B> Lectures </B> </A> <br>  <BR>
+<A HREF="./Labs"> <B> Labs </B> </A> <br>  <BR>
+
+<p>
+<A HREF="./VHDL-Cookbook.pdf"> <B> Ashenden's "VHDL Cookbook" </B> </A> <br>  <BR>
+</p>
+
+<p>
+<A HREF="https://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/wp/wp-01003.pdf"> <B> Stratix architecture (pdf) </B> </A>
+</p>
+<br>
+<p>
+<A HREF="ftp://ftp.altera.com/up/pub/Altera_Material/10.1/Tutorials/Using_ModelSim.pdf"> <B> ModelSim tutorial (pdf) </B> </A>
+</p>
+</BODY></HTML>

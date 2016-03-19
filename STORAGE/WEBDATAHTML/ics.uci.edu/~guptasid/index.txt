@@ -1,0 +1,105 @@
+Siddharth Gupta
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="my.css">
+            <title>Siddharth Gupta</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            </head>
+    <body>
+        
+        <body>
+            <header>
+                <img alt="Siddharth Gupta" src="files/sid.jpg"/>
+                <div id="letterhead">
+                    <h1>Siddharth Gupta</h1>
+                    <h2>Graduate Student</h2>
+                    <ul id="contacts">
+                        
+                        <li>DBH 4032</a></li>
+                        
+                        <li><a href="mailto:siddharth.gupta@uci.edu">siddharth.gupta@uci.edu</a></li>
+                        
+                        
+                    </ul>
+                    <ul id="profiles">
+                        
+                        <!--<li><a href="http://scholar.google.com/citations?user=vwc4KwwAAAAJ">Google Scholar</a></li>-->
+                        
+                        <li><a href="files/CV.pdf">Curriculum vitae</a></li>
+                        
+                    </ul>
+                </div>
+            </header>
+        
+        <section id= "about">
+            <h2>About</h2>
+            <article>
+                <p>
+                I am a Computer Science PhD student in the
+                <a href="http://www.ics.uci.edu/~theory/">Center for Algorithms and Theory of Computation</a>
+                at <a href="http://www.uci.edu/">University of California, Irvine</a>. My research interest are in the field of Algorithms and Graph Theory.
+                <p> 
+                Before joining UCI, I completed my M.Sc.(Hons.) Mathematics and B.E.(Hons.) Computer Science from <a href="http://www.bits-pilani.ac.in/Goa/"  target="_blank" rel="nofollow">BITS-Pilani, Goa Campus</a> in 2014.<!--I am advised by
+                <a href="www.ics.uci.edu/~eppstein/">David Eppstein</a>.--><br>
+                </article>
+        </section>
+        
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <article>
+                <h3>Winter 2016</h3>
+                <ul>
+                    <li>
+                        ICS 6D : Discrete Maths for CS(TA)
+                    </li>
+                </ul>
+            </article>
+            
+            <article>
+                <h3>Fall 2015</h3>
+                <ul>
+                    <li>
+                        CS/CSE161: Design and Analysis of Algorithms(Reader)
+                    </li>
+                </ul>
+            </article>
+        </section>
+        
+        <section id="research">
+            <h2>Publications</h2>
+            <article class="inproceedings">
+                
+                <h4>A New Parallel Algorithm for Two-Pass Connected Component Labeling</h4>
+                
+                <ul class="authors">
+                
+                    <li><span title="Siddharth Gupta">Siddharth Gupta</span></li>
+                    
+                    <li><span title="Diana Palsetia">Diana Palsetia</span></li>
+                    
+                    <li><span title="Md. Mostofa Ali Patwary">Md. Mostofa Ali Patwary</span></li>
+                    
+                    <li><a href="http://users.eecs.northwestern.edu/~ankitag/index.html" title="Ankit Agrawal">Ankit Agrawal</a></li>
+                    
+                    <li><a href="http://users.eecs.northwestern.edu/~choudhar/" title="Alok Choudhary">Alok Choudhary</a></li>
+                    
+                </ul>
+                
+                
+                <ul class="venues">
+                    <li>Presented at <a href="http://bmi.osu.edu/hpc/MTAAP2014/">MTAAP 2014</a>.</li>
+
+                    <!--<li>Preprint on <a href="http://arxiv.org/abs/1509.00818">arXiv</a>.</li>-->
+                    
+                </ul>
+                
+            </article>
+        </section>
+        
+        <!--<footer>
+            <p>Last modified: Jan, 2016</p>
+        </footer>-->
+    </body>
+</html>

@@ -1,0 +1,358 @@
+cs222-2015-fall – PublicLoginPreferencesAbout Trac
+  
+    
+    
+  
+    
+      
+  wiki:cs222-2015-fall
+
+      
+        Context Navigation
+          Start PageIndexHistory
+        
+      
+    
+      
+        
+          
+          
+            Last modified 2 months ago
+            Last modified on 12/06/15 19:30:03
+          
+          
+
+
+    CS122C/CS222 Fall 2015: Principles of Data Management
+    
+        Course Personnel
+        
+            Syllabus
+          
+      
+        Projects
+      
+        Schedule & Location
+      
+        Course Information
+        
+            Course Description
+          
+            CS222 Grading Breakdown
+          
+            CS122C Grading Breakdown
+          
+            Textbooks
+          
+            Other Readings
+          
+            Class Participation
+          
+            Class Discussion Forum
+          
+            Programming Project
+          
+            Comprehensive Exam Option
+          
+            Notice about Projects
+          
+            Project Late Policy
+          
+            Cheating Policy
+          
+            C/C++ Resources
+          
+      
+        Topic Coverage and Exam Schedule
+        
+            Midterm Exam
+          
+            Final Exam
+          
+      
+  
+
+
+CS122C/CS222 Fall 2015: Principles of Data Management
+Course Personnel
+
+Instructor:  Chen Li E-Mail: chenli AT ics DOT uci DOT edu  Office: DBH 2092  Office hours: Tue/Thu 2:00-3:00 PM 
+
+
+Assistant:  Taewoo Kim  E-mail: taewok2 AT ics DOT uci DOT edu  Office: DBH 2062  Reader hours: Mon/Wed 3:30-4:30 PM 
+
+
+Online Discussion: ​https://piazza.com/uci/fall2015/cs222cs122c/home
+
+Syllabus
+ Date  Topic  Readings  Notes 
+ 09/24/15, Th  Course Overview, DBMS Architecture  Ch. 1; Chamberlin et al 1981  Notes1​
+ 09/29/15, Tu  Disks and Files  Ch. 9.1-9.4; Stonebraker 1981  Notes2​
+ 10/01/15, Th  Page structure, Heap Files,   Ch. 9.5-9.8   Notes3​
+ 10/06/15, Tu  Catalogs, Buffer Manager, Heap Files, Sorted files  Ch. 8-8.4   Notes4​
+ 10/08/15, Th  Project 2, Clustered/Unclustered Tree indexes, Hash indexes  ditto  
+ 10/13/15, Tu  Schema versioning, ISAM and B+ Trees  Ch. 10; Graefe 2011 (Sec. 1-3)   Notes5​
+ 10/15/15, Th  Static and Dynamic Hashing  Ch. 11; Fagin et al 1979; Litwin 1980   Notes6​
+ 10/20/15, Tu  Indexing and Performance  Ch. 8.5-8.6  Notes7​
+ 10/22/15, Th  External Sorting  Ch. 13   Notes8​
+ 10/27/15, Tu  Query Processing Overview  Ch. 12   Notes9​
+ 10/29/15, Th  Project 3, Selection, Projection  Ch. 14.1 - 14.3   Notes10​
+ 11/03/15, Tu  In-class midterm  
+ 11/05/15, Th  Join (1)  Ch. 14.4   Notes11​
+ 11/10/15, Tu  Join (2)  ditto   ditto
+ 11/12/15, Th  Set operations, Aggregation  Ch. 14.5, 14.6  Notes12​
+ 11/17/15, Tu  Cost Estimation  Ch. 15.2   Notes13​
+ 11/19/15, Th  Iterator-Based Query Plan, Alternative Plans  Ch. 12.4, 12.5 
+ 11/24/15, Tu  Project 4, Plan Optimization (System-R)  Ch. 15.3, ​Selinger et al 1979  Notes14​
+ 12/01/15, Tu  Plan Optimization (System-R)  Ch. 15.4  Ditto
+ 12/03/15, Th  Open Topics, Course Wrap Up    Notes15​
+
+Projects
+
+The project is structured as a four-part, team-based, software development exercise:
+
+ Project  Due Date  Topic  Teams  Proportions (G:45%, U:75%) 
+ Project 1  Wed, Oct. 7  Record-Based File Manager (RBF)   Solo Project  G:8%, U:13% 
+ Project 2  Wed, Oct. 28  Relation Manager (RM)   Pair Project  G:12%, U:20% 
+ Project 3  Thu, Nov. 19   Index Manager (IX)   Pair Project  G:13%, U:22% 
+ Project 4  Thu, Dec. 3  Query Engine (QE)   Pair Project  G:12%, U:20% 
+
+
+​Project team sign-up sheet
+
+Schedule & Location
+
+Lecture 
+Days: Tuesdays and Thursdays 
+Time: 12:30-2:00 PM 
+Location: ​Steinhaus Hall 134
+
+
+Course Information
+Course Description
+
+This course provides an implementor's view of database management systems. It covers fundamental principles and implementation techniques, issues, and trade-offs related to database management systems. Topics covered include storage management, buffer management, record-oriented file systems, access methods, query processing, and query optimization. This course is a must for those students wishing to explore database management as an area of research and/or who plan on taking CS223 or CS224. A significant portion of database systems research as well as industrial database and information system development deals with adapting the basic database techniques covered in this course to new advances in hardware and software technologies or to the requirements of different applications and data types. 
+
+Prerequisites: CS 122A (Introduction to Data Management), CS 143A (Principles of Operating Systems), and CS 152 (Computer Systems Architecture).  Please don't attempt this class without the required background!  (Doing so has not proven to be a great idea for students historically. :-))
+
+CS222 Grading Breakdown
+
+Class Participation: 5% 
+Midterm Exam: 25% 
+Final Exam: 25% 
+Four-Part Programming Project: 45%
+
+
+This mixture of grading criteria for CS222 is intended to give equal "excelling opportunities" to both thinkers and do-ers. It's also intended to avoid overly weighting either team-based performance or individual performance. This is a hands-on project class, so expect to put a significant effort into your projects. The exams will be comprehensive with respect to the course material and will also ping you individually with respect to project knowledge, so be sure that you and your project partner make design decisions together. The two exams will be closed-book, but you may bring an 8.5"x11" two-sided cheat sheet to each exam if you like.
+
+CS122C Grading Breakdown
+
+Class Participation: 5% 
+Take-Home Exams: 20% 
+Four-Part Programming Project: 75%
+
+
+Undergraduates enrolled in the CS122C version of this class will not be required to take the exams in real time, as this is primarily a project class for undergraduates. You will be required to attend the course lectures, and you will also be expected to take the exams on a lightly-graded, low-pressure, take-home basis to test your knowledge of the academic material. You will pick up each exam at the appointed exam time and will have until midnight of the following day to turn them in, on EEE, as homework.
+
+
+For all the graded projects and exams, if you disagree with the grading, you can discuss with us within two weeks after they are returned. After that, all the grades will be finalized.
+
+Textbooks
+
+Required: Database Management Systems, 3rd edition, by R. Ramakrishnan and J. Gehrke, McGraw Hill, 2003. 
+Recommended: Readings in Database Systems, 4th edition, by J. Hellerstein and M. Stonebraker, MIT Press, 2005. 
+
+Other Readings
+
+The following papers are mostly drawn from the Hellerstein and Stonebraker book or can be found via UCI's ACM Digital Library subscription (​http://dl.acm.org).  The ones designated as (graduate) are papers where the required material is in the textbook but more detail is available elsewhere for those taking the course for graduate-level credit.  You will be responsible both for the material covered in the lectures and the material covered in the readings listed in the Syllabus below. 
+
+Abadi, D., Madden, S., and Hachem, N. 2008. Column-stores vs. Row-stores: How Different are They Really?. Proc. ACM SIGMOD Intl. Conf. on Management of Data (Vancouver, Canada, June 2008).
+Alsubaiee, S., et a., 2014. AsterixDB: a scalable, open source BDMS. Proc. VLDB Endow. 7, 14 (Oct. 2014), 1905-1916.
+Chamberlin, D., et al, 1981. A history and evaluation of System R. Commun. ACM 24, 10 (Oct. 1981), 632-646.
+Dean, J., and Ghemawat, S., 2004. MapReduce: Simplified data processing on large clusters. Proc. 6th USENIX Symp. on Op. Sys. Design and Impl. (OSDI'04) (San Francisco, CA, December 2004).
+DeWitt, D. and Gray, J. 1992. Parallel database systems: The future of high performance database systems. Commun. ACM 35, 6 (June 1992), 85-98.
+Fagin, R., et al, 1979. Extendible Hashing—A fast access method for dynamic files. ACM Trans. Database Syst. 4, 3 (Sept. 1979), 315-344. (graduate)
+Graefe, G., 2011. Modern B-Tree Techniques. Foundations and Trends in Databases 3, 4 (Sept. 2011) 203-402. (Available from the UCI intranet at: ​http://dx.doi.org/10.1561/1900000028)
+Guttman, A. 1984. R-trees: A dynamic index structure for spatial searching. Proc. ACM SIGMOD Intl. Conf. on Management of Data (Boston, Massachusetts, June 1984). (graduate)
+Litwin, W., 1980. Linear hashing: A new tool for file and table addressing. Proc. 6th Int'l. Conf. on Very Large Data Bases {Montreal, Oct. 1980). (graduate)
+Nievergelt, J., Hinterberger, H., and Sevcik, K. C. 1984. The Grid File: An adaptable, symmetric multikey file structure. ACM Trans. Database Syst. 9, 1 (March 1984), 38-71. (optional)
+Selinger, P. G. et al, 1979. Access path selection in a relational database management system. Proc. ACM SIGMOD Int'l. Conf. on Management of Data (Boston, Massachusetts, May-June 1979).
+Shapiro, L. D. 1986. Join processing in database systems with large main memories. ACM Trans. Database Syst. 11, 3 (Aug. 1986), 239-264.
+Stonebraker, M. 1981. Operating system support for database management. Commun. ACM 24, 7 (July 1981), 412-418.
+Class Participation
+
+As mentioned above, a small fraction of the course grade will be for "class participation". At various times I will ask for feedback via EEE or Piazza, and everyone will be expected to respond.  This feedback will help me guide the lectures, projects, etc., during this quarter and future quarters.  This small but important portion of your grade will be determined largely by whether or not you participate online.  (Note that it'll be easy to get the full participation credit - you will just have to be enrolled on Piazza and then answer these infrequent surveys by their deadlines, which by the way will also include the final "instructor evaluation" at the end of the course.)  5% of the class participation grade will be based on online participation. 
+
+Class Discussion Forum
+
+We will be using Piazza for online class discussions. This system is highly catered to getting you help fast and efficiently from classmates, the Reader(s), and the instructor. Rather than emailing questions to any of us on the teaching staff, we'll ask you to post your questions on Piazza. If you have any problems or feedback for the developers, email team@….  Please make Piazza participation (at least monitoring the activity there) a part of your regular CS122C/222 routine! 
+
+
+You can find our class page at: ​https://piazza.com/uci/fall2015/cs222cs122c/home
+
+Programming Project
+
+This class is intended to teach the principles involved in DBMS implementation, so it will include a significant programming component.  The project will be aimed at giving you a sense of what goes on inside a DBMS, and what the issues and challenges are in building a system "now" that will be managing data of various user-defined shapes and sizes "later".  You will try your hand at record-based file storage, indexing, and relational runtime system programming (a.k.a. query operators).  The language for the project will be C++ - hopefully you either have C++ experience or you have Java experience and can learn C++ quickly.  Our assistant(s) will run the project, and they can provide you with additional suggestions for material to help you "spin up" on C++ programming, debugging, and tools in case you need to do a bit of remedial work on the side in order to tackle the project successfully.  The course project will vary between CS122C and CS222; the undergraduate version of each project stage will be somewhat less intensive than the corresponding graduate version.
+
+Comprehensive Exam Option
+
+Computer Science graduate students wishing to satisfy the MS Comprehensive Exam requirement in Database Systems via CS222 should notify the instructor and the Student Advising Office (SAO) of this intention via e-mail before the day of the final exam. For such students, a weighted mix of your midterm and final exam performance will be used to determine your MS Comprehensive Exam grade (P or F) at the end of the course, and this grade will be reported to SAO. Students who do not pass successfully can try the exam again the next time CS 222 is offered by taking the midterm and final exams in that offering of the course; hopefully this will not be necessary for anyone. (Students who do this are advised to informally audit the next offering of the class; this is because the course emphasis and expected knowledge can vary a bit by term and by instructor, and also because you'll probably need the review to pass.)
+
+
+Notice about Projects
+Students should work on parts 2-4 of the project in groups of two. Please let us know about your group by following the instructions that will be provided via Piazza when the time comes to do so. (In general, you should keep a close eye on Piazza all throughout the quarter!)
+The undergraduate and graduate project assignments may be somewhat different, so please pay attention to that and be sure to form teams accordingly. (Cross-level teams will be permitted but will need to do the potentially larger graduate version of each component.)
+Students who strongly prefer to work alone for one reason or another may do so by requesting permission from the instructor — although it’s not advisable, and you will not get any “discount” on the assignment requirements if you opt to take this path.
+Students are allowed to add attributes, methods, and classes, as long as the public signatures provided in the codebase are kept and implemented.  We will be testing your code by calling the methods that are declared in the signatures.
+Students also have the freedom to use other open-source libraries or packages (e.g., Gtest and Boost) to implement and test their code.
+Just please make sure that you: (1) get the okay from a Reader before using any additional packages; (2) list such packages clearly in your project document; and (3) write your makefile correctly so that your project can still be built by calling the 'make' command.
+Project Late Policy
+The official due date for each assignment is listed here on the wiki, and it is expected that students will turn most work in on or before that date.
+We will offer a 48-hour "grace period" for each assignment, and will therefore accept solution submissions that are turned in within 48 hours of the due date (i.e., less than two days late).  No need to ask - this time is yours in the event that you need it for some unforeseen reason.  If you use it, your score will be deducted by 5% (out of 100%).  You are recommended NOT to use the grace period, as you will lose not only 5%, but also valuable time from the next assignment's working period for every hour that you run late.
+Late assignments after the grace period will NOT be accepted, so do always aim to be on time! (Please don't even ask, as this is what the two-day grace period is intended for. :-))
+Cheating Policy
+
+Cheating is an area where the instructor for this course has absolutely no patience or sympathy whatsoever. You are all here to learn, and cheating defeats that purpose and is unfair to your fellow students. Students will be expected to adhere to the UCI and ICS Academic Honesty policies (and should see ​http://www.editor.uci.edu/catalogue/appx/appx.2.htm#academic and ​http://www.ics.uci.edu/ugrad/policies/index.php#academic_honesty to read their details). Any student found to be cheating or aiding others in cheating will be academically prosecuted to the maximum extent possible — so you will fail the course with no option for a second chance. This policy will be strictly adhered to; no exceptions will be possible regardless of the impact it may have on your studies, your work plans, your visa status, or anything else. Don’t cheat and you won’t have issues. Just say no to cheating!  
+
+C/C++ Resources
+A helpful reference for C/C++ libraries: ​http://www.cplusplus.com/reference/
+A tutorial on programming in C/C++ and guide on related resources: ​http://www.cprogramming.com/tutorial.html#c++tutorial
+A tutorial on learning C++ for Java programmers: ​http://pages.cs.wisc.edu/~hasti/cs368/CppTutorial/index.html
+
+Topic Coverage and Exam Schedule
+
+Note that handout-formatted versions of the lectures' PPT slide decks will be attached at the end of this wiki page once they have been presented in class.  (Scroll all the way to the bottom and click on the Attachments to see a list of what's been attached so far.)
+
+Midterm Exam
+
+November 3, Tuesday, In-class. Closed books.  You can bring an A4-sized "cheat sheet."
+
+Final Exam
+
+Friday, December 11, 2015 
+10:30-12:30 PM 
+Classroom SH 134 
+Closed books. You can bring an A4-sized "cheat sheet."  The exam will cover all materials taught in this quarter, with a more emphasis on those after the midterm.
+
+
+        
+        
+      
+      
+    
+        Attachments
+        
+    cs222-lecture1.pdf​
+       (142.9 KB) -
+      added by chenli 5 months ago.
+              Lecture 1 notes
+            
+    cs222-lecture2.pdf​
+       (431.2 KB) -
+      added by chenli 4 months ago.
+              Lecture 2 notes
+            
+    cs222-lecture3.pdf​
+       (232.2 KB) -
+      added by chenli 4 months ago.
+              Lecture 3 notes
+            
+    cs222-lecture4.pdf​
+       (288.1 KB) -
+      added by chenli 4 months ago.
+              Lecture 4 notes
+            
+    cs222-lecture5.pdf​
+       (230.4 KB) -
+      added by chenli 4 months ago.
+              Lecture 5 notes
+            
+    cs222-lecture6.pdf​
+       (249.3 KB) -
+      added by chenli 4 months ago.
+              Lecture 6 notes
+            
+    cs222-lecture7.pdf​
+       (159.3 KB) -
+      added by chenli 4 months ago.
+              Lecture 7 notes
+            
+    cs222-lecture8.pdf​
+       (300.4 KB) -
+      added by chenli 4 months ago.
+              Lecture 8 notes
+            
+    CS222Spring2013Midterm.pdf​
+       (508.5 KB) -
+      added by waans11 4 months ago.
+            
+    CS222Spring2013MidtermSolution.pdf​
+       (2.6 MB) -
+      added by waans11 4 months ago.
+            
+    cs222-lecture9.pdf​
+       (219.5 KB) -
+      added by chenli 3 months ago.
+              Lecture 9 notes
+            
+    cs222-lecture10.pdf​
+       (106.7 KB) -
+      added by chenli 3 months ago.
+              Lecture 10 notes
+            
+    cs222-lecture11.pdf​
+       (337.7 KB) -
+      added by chenli 3 months ago.
+              Lecture 11 notes
+            
+    CS222Fall2015MidtermSolution.pdf​
+       (406.7 KB) -
+      added by waans11 3 months ago.
+            
+    cs222-lecture12.pdf​
+       (122.6 KB) -
+      added by chenli 3 months ago.
+              Lecture 12 notes
+            
+    cs222-lecture13.pdf​
+       (296.0 KB) -
+      added by chenli 3 months ago.
+              Lecture 13 notes
+            
+    cs222-lecture14.pdf​
+       (272.8 KB) -
+      added by chenli 3 months ago.
+              Lecture 14 notes
+            
+    CS222Spring2013Endterm.pdf​
+       (216.7 KB) -
+      added by waans11 3 months ago.
+            
+    CS222Spring2013EndtermSolution.pdf​
+       (2.4 MB) -
+      added by waans11 3 months ago.
+            
+    cs222-lecture15.pdf​
+       (2.4 MB) -
+      added by chenli 2 months ago.
+              Lecture 15 notes
+            
+    CS222Fall2015FinalSampleSolution.pdf​
+       (80.3 KB) -
+      added by waans11 7 weeks ago.
+            
+    
+
+    
+    
+      Download in other formats:
+      
+          Plain Text
+        
+    
+    
+    
+      
+      Powered by Trac 0.12.5
+        By Edgewall Software.
+      Visit the Trac open source project athttp://trac.edgewall.org/

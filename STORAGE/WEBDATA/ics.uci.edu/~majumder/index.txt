@@ -1,0 +1,163 @@
+Aditi Majumder 
+
+
+   
+   
+  Home
+   
+  Projects
+   
+  iGravi
+  (Interactive Graphics
+  & Visualization Lab)
+   
+  Publications
+   
+  Students
+   
+  Teaching
+   
+  CV
+   
+   
+  
+  
+  
+  Aditi Majumder 
+  Professor
+  University of California, Irvine
+  Department of Computer Science
+  4056 Bren Hall 
+  Irvine, CA 92697-3435
+  (949) 824-8877 - voice
+  (949) 824-4056 - fax
+  majumder @ ics.uci.edu
+   
+  Affiliated with:
+  California Institute of
+  Telecommunication and Information Technology (Calit2)
+  
+
+Research Interests 
+
+Novel
+     Display TechnologiesComputational
+     Cameras and ProjectorsImage
+     or Video ProcessingComputer
+     Graphics and VisualizationComputer
+     Vision
+
+A Peek at My Research
+
+          Our Multi-Projector Display Research
+
+Awards
+
+Deans
+     Mid-Career Research Award, School of Information and Computer Science,
+     UC-Irvine, 2011NSF
+     CAREER Award, 2009 on Ubiquitous
+     Displays Via a Distributed FrameworkBest
+     Paper Award, IEEE Virtual Reality, 2010Runner-up
+     for Best Paper Award, IEEE Visualization 2009Best
+     Paper Award at IEEE Workshop on Projector Camera Systems, 2010Faculty
+     Research Incentive Award, 2009
+
+Recent Academic Activities
+
+Program
+     Co-Chair, ACM Virtual
+     Reality Software and Technology (VRST), Edinburgh, UK, 2014General
+     Chair, IEEE Virtual
+     Reality (VR), Orange County, March 2012. Program
+     Chair, IEEE Virtual
+     Reality (VR), Singapore, March, 2011.Program
+     Chair, IEEE/ACM Workshop on
+     Projector-Camera Systems (PROCAMS), Miami, June 2009.General
+     Co-Chair, ACM Virtual Reality
+     Software and Technology (VRST),  Newport Beach, November, 2007.Program
+     Co-Chair, IEEE CVPR Workshop
+     on Projector-Camera Systems (PROCAMS) , San Diego, June 2005.
+
+Recent Industrial Activities
+
+Advisory
+     Board, Allosphere, University of California, Santa Barbara.Advising
+     Consultant, Disney Imagineering, June 2009-June 2010Advisory
+     Board Member and Consultant, Ostendo Technologies, Carlsbad, 2006-Present [Developed the first curved screen
+     multi-projector desktop]
+
+Recent Pedagogical Activities
+
+E-Tech Booth at Siggraph 2015
+
+ 
+
+  
+
+Book
+
+ 
+
+
+  
+  
+   
+   
+   
+  Aditi Majumder and Michael S. Brown, Practical Multi-Projector Display Design, A.K. Peters, 2007
+   
+  
+
+ 
+
+Book Chapter
+
+ 
+
+
+  
+  
+   
+   
+   
+  Chapter 15 on Ubiquitous Displays by Aditi Majumder, Distributed Video Sensor Networks,
+  Edited by Bir Bhanu, Chinya V. Ravishankar, Amit K. Roy-Chowdhury, Hamid
+  Aghajan and Demetri Terzopoulos, Springer, 2011
+   
+  
+
+ 
+
+Summer CourseVisual
+      Perception for Visualization and Multimedia Group, Department of
+      Informatics, University of Zurich, Switzerland, August 2010.
+
+
+ 
+
+Invited PresentationsKeynote
+      Speaker, BayArea Multi-media Forum,
+      San Jose, April, 2015Keynote
+      Speaker, Brazilian Symposium on Virtual
+      Reality, Rio, May, 2012Keynote
+      Speaker, International Symposium on
+      Visual Computing, Las Vegas, December, 2010Invited
+      Speaker, Ubiquitous Displays Via a
+      Distributed Framework, Johannes
+      Kepler University,
+      Linz, Austria, May, 2010.Invited
+      Speaker, Course on Projector in
+      Graphics, Organized by Ramesh Raskar and Oliver Bimber, SIGGRAPH 2009
+      (pdf).Invited
+      Panelist, Future of the
+      Projector-Camera Systems, IEEE Workshop on Projector-Camera Systems,
+      2008.
+
+
+ Released Software
+
+Contrast
+     Enhancement of Images
+
+ 

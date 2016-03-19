@@ -1,0 +1,75 @@
+Thinking ...Toggle navigation
+        
+        
+        
+      
+      Cerebro
+    
+
+    
+    
+      Research(current)
+          Code 
+          The Brain (frontend)Change LogBlinky (Code Profiler)
+        
+    
+  
+
+
+
+
+Developed by: Vijay Krishna Palepu and James A. Jones, SpiderLab, UCI
+
+  Select Execution to Run: 
+
+   
+  
+  
+
+  Toggle Edges 
+  Remove Edge Weights 
+  Add Edge Weights 
+
+  
+    
+       Lock Transformation
+    
+  
+
+  
+  
+  
+
+
+  Re-Play Execution   
+  Pause Execution
+  Resume Execution
+  
+  Execution Status:
+  
+  
+  
+  
+  
+  Program-Execution Time Slider
+   
+
+  
+  
+  Slowdown: 
+   
+  Current Executing Instruction:
+  
+
+  
+ 
+
+  
+  
+
+
+  
+
+
+  
+  Subject Program: NanoXML

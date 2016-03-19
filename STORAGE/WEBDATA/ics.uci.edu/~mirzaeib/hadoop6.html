@@ -1,0 +1,266 @@
+Username: University of California Irvine User Book: Hadoop: The Definitive Guide, 3rd Edition. No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.YARN Configuration
+
+
+
+
+
+
+YARN is the next-generation architecture for running
+    MapReduce (and is described in YARN (MapReduce 2)). It has a
+    different set of daemons and configuration options than classic MapReduce
+    (also called MapReduce 1), and in this section we look at these
+    differences and discuss how to run MapReduce on YARN.
+Under YARN, you no longer run a jobtracker or tasktrackers. Instead,
+    there is a single resource manager running on the same machine as the HDFS
+    namenode (for small clusters) or on a dedicated machine, and node managers
+    running on each worker node in the cluster.
+The YARN start-yarn.sh script
+    (in the sbin directory) starts the
+    YARN daemons in the cluster. This script will start a resource manager (on
+    the machine the script is run on) and a node manager on each machine
+    listed in the slaves file.
+YARN also has a job history server daemon that provides users with
+    details of past job runs, and a web app proxy server
+    for providing a secure way for users to access the UI provided by YARN
+    applications. In the case of MapReduce, the web UI served by the proxy
+    provides information about the current job you are running, similar to the
+    one described in The MapReduce Web UI. By default, the web
+    app proxy server runs in the same process as the resource manager, but it
+    may be configured to run as a standalone daemon.
+YARN has its own set of configuration files, listed in Table 9-8; these are used in addition to those
+    in Table 9-1.
+Table 9-8. YARN configuration files
+FilenameFormatDescriptionyarn-env.shBash scriptEnvironment variables that are used in the scripts to run
+            YARNyarn-site.xmlHadoop configuration
+            XMLConfiguration settings for YARN daemons: the resource
+            manager, the job history server, the webapp proxy server, and the
+            node managers
+
+
+
+
+
+
+
+Important YARN Daemon Properties
+
+
+
+
+
+
+When running MapReduce on YARN, the mapred-site.xml file is still used for
+      general MapReduce properties, although the jobtracker- and
+      tasktracker-related properties are not used. None of the properties in
+      Table 9-4 are applicable to
+      YARN, except for mapred.child.java.opts
+      (and the related properties mapreduce.map.java.opts
+      and mapreduce.reduce.java.opts, which apply only
+      to map or reduce tasks, respectively). The JVM options specified in this
+      way are used to launch the YARN child process that runs map or reduce
+      tasks.
+The configuration files in Example 9-4 show some
+      of the important configuration properties for running MapReduce on
+      YARN.
+Example 9-4. An example set of site configuration files for running
+        MapReduce on YARN
+<?xml version="1.0"?>
+<!-- mapred-site.xml -->
+<configuration>
+  <property>
+    <name>mapred.child.java.opts</name>
+    <value>-Xmx400m</value>
+    <!-- Not marked as final so jobs can include JVM debugging options -->
+  </property>
+</configuration>
+<?xml version="1.0"?>
+<!-- yarn-site.xml -->
+<configuration>
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>resourcemanager:8032</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.local-dirs</name>
+    <value>/disk1/nm-local-dir,/disk2/nm-local-dir</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce.shuffle</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>8192</value>
+  </property>
+</configuration>
+
+
+
+
+The YARN resource manager address is controlled via yarn.resourcemanager.address, which takes the
+      form of a host-port pair. In a client configuration, this property is
+      used to connect to the resource manager (using RPC), and in addition,
+      the mapreduce.framework.name property must be set
+      to yarn for the client to use YARN
+      rather than the local job runner.
+Although YARN does not honor mapred.local.dir, it
+      has an equivalent property called yarn.nodemanager.local-dirs, which allows you
+      to specify the local disks to store intermediate data on. It is
+      specified by a comma-separated list of local directory paths, which are
+      used in a round-robin fashion.
+YARN doesn’t have tasktrackers to serve map outputs to reduce
+      tasks, so for this function it relies on shuffle handlers, which are
+      long-running auxiliary services running in node managers. Because YARN
+      is a general-purpose service, the MapReduce shuffle handlers need to be
+      enabled explicitly in yarn-site.xml
+      by setting the yarn.nodemanager.aux-services property to
+      mapreduce.shuffle.
+Table 9-9 summarizes the
+      important configuration properties for YARN.
+Table 9-9. Important YARN daemon properties
+Property nameTypeDefault valueDescriptionyarn.resourcemanager.addressHostname and port0.0.0.0:8032The hostname and port that the resource manager’s RPC
+              server runs on.yarn.nodemanager.local-dirsComma-separated
+              directory names/tmp/nm-local-dirA list of directories where node managers allow
+              containers to store intermediate data. The data is cleared out
+              when the application ends.yarn.nodemanager.aux-servicesComma-separated
+              service names A list of auxiliary services run by the node manager. A
+              service is implemented by the class defined by the property
+              yarn.nodemanager.aux-services.service-name.class.
+              By default, no auxiliary services are specified.yarn.nodemanager.resource.memory-mbint8192The amount of physical memory (in MB) that may be
+              allocated to containers being run by the node manager.yarn.nodemanager.vmem-pmem-ratiofloat2.1The ratio of virtual to physical memory for containers.
+              Virtual memory usage may exceed the allocation by this
+              amount.
+
+
+
+
+
+
+
+Memory
+
+
+
+
+
+
+YARN treats memory in a more fine-grained manner than
+        the slot-based model used in the classic implementation of MapReduce.
+        Rather than specifying a fixed maximum number of map and reduce slots
+        that may run on a tasktracker node at once, YARN allows applications
+        to request an arbitrary amount of memory (within limits) for a task.
+        In the YARN model, node managers allocate memory from a pool, so the
+        number of tasks that are running on a particular node depends on the
+        sum of their memory requirements, and not simply on a fixed number of
+        slots.
+The slot-based model can lead to cluster underutilization, since
+        the proportion of map slots to reduce slots is fixed as a cluster-wide
+        configuration. However, the number of map versus reduce slots that are
+        in demand changes over time: at the
+        beginning of a job only map slots are needed, whereas at the end of
+        the job only reduce slots are needed. On larger clusters with many
+        concurrent jobs, the variation in demand for a particular type of slot
+        may be less pronounced, but there is still wastage. YARN avoids this
+        problem by not distinguishing between the two types of slots.
+The considerations for how much memory to dedicate to a node
+        manager for running containers are similar to the those discussed in
+        Memory. Each Hadoop daemon uses 1,000 MB, so for a
+        datanode and a node manager, the total is 2,000 MB. Set aside enough
+        for other processes that are running on the machine, and the remainder
+        can be dedicated to the node manager’s containers by setting the
+        configuration property yarn.nodemanager.resource.memory-mb to the
+        total allocation in MB. (The default is 8,192 MB.)
+The next step is to determine how to set memory options for
+        individual jobs. There are two controls: mapred.child.java.opts, which allows you to
+        set the JVM heap size of
+        the map or reduce
+        task;
+        an
+d
+        mapreduce.map.memory.mb
+        (or
+        mapreduce.reduce.memory.mb), which is used to specify
+        how much memory you need for map (or reduce) task containers. The
+        latter setting is used by the application master when negotiating for
+        resources in the cluster, and also by the node manager, which runs and
+        monitors the task containers.
+For example, suppose that mapred.child.java.opts is set to -Xmx800m and mapreduce.map.memory.mb is left at its
+        default value of 1,024 MB. When a map task is run, the node manager
+        will allocate a 1,024 MB container (decreasing the size of its pool by
+        that amount for the duration of the task) and will launch the task JVM
+        configured with an 800 MB maximum heap size. Note that the JVM process
+        will have a larger memory footprint than the heap size, and the
+        overhead will depend on such things as the native libraries that are
+        in use, the size of the permanent generation space, and so on. The
+        important thing is that the physical memory used by the JVM process,
+        including any processes that it spawns, such as Streaming or Pipes
+        processes, does not exceed its allocation (1,024 MB). If a container
+        uses more memory than it has been allocated, then it may be terminated
+        by the node manager and marked as failed.
+Schedulers may impose a minimum or maximum on memory
+        allocations. For example, for the
+        Capacity Scheduler, the default minimum is 1024 MB (set by
+        yarn.scheduler.capacity.minimum-allocation-mb),
+        and the default maximum is 10240 MB (set by yarn.scheduler.capacity.maximum-allocation-mb).
+There are also virtual memory constraints that a container must
+        meet. If a container’s virtual memory usage
+        exceeds a given multiple of the allocated physical memory, the node
+        manager may terminate the process. The multiple is expressed by the
+        yarn.nodemanager.vmem-pmem-ratio property,
+        which defaults to 2.1. In the example used earlier, the virtual memory
+        threshold above which the task may be terminated is 2,150 MB, which is
+        2.1 × 1,024 MB.
+When configuring memory parameters it’s very useful to be able
+        to monitor a task’s actual memory usage during a job run, and this is
+        possible via MapReduce task counters. The
+        counters PHYSICAL_MEMORY_BYTES, VIRTUAL_MEMORY_BYTES,
+        and COMMITTED_HEAP_BYTES
+        (described in Table 8-2) provide
+        snapshot values of memory usage and are therefore suitable
+        for observation during the course of a task attempt.
+
+
+
+
+
+
+YARN Daemon Addresses and Ports
+
+
+
+
+
+
+YARN daemons run one or more RPC and HTTP servers, details
+      of which are covered in Table 9-10 and
+      Table 9-11.
+Table 9-10. YARN RPC server properties
+Property nameDefault valueDescriptionyarn.resourcemanager.address0.0.0.0:8032The resource manager’s RPC server address and port. This
+              is used by the client (typically outside the cluster) to
+              communicate with the resource manager.yarn.resourcemanager.admin.address0.0.0.0:8033The resource manager’s admin RPC server address and port.
+              This is used by the admin client (invoked with yarn rmadmin, typically run outside
+              the cluster) to communicate with the resource manager.yarn.resourcemanager.scheduler.address0.0.0.0:8030The resource manager scheduler’s RPC server address and
+              port. This is used by (in-cluster) application masters to
+              communicate with the resource manager.yarn.resourcemanager.resource-tracker.address0.0.0.0:8031The resource manager resource tracker’s RPC server
+              address and port. This is used by the (in-cluster) node managers
+              to communicate with the resource manager.yarn.nodemanager.address0.0.0.0:0The node manager’s RPC server address and port. This is
+              used by (in-cluster) application masters to communicate with
+              node managers.yarn.nodemanager.localizer.address0.0.0.0:8040The node manager localizer’s RPC server address and
+              port.mapreduce.jobhistory.address0.0.0.0:10020The job history server’s RPC server address and port.
+              This is used by the client (typically outside the cluster) to
+              query job history. This property is set in mapred-site.xml.
+
+
+
+
+
+
+Table 9-11. YARN HTTP server properties
+Property nameDefault valueDescriptionyarn.resourcemanager.webapp.address0.0.0.0:8088The resource manager’s HTTP server address and
+              port.yarn.nodemanager.webapp.address0.0.0.0:8042The node manager’s HTTP server address and port.yarn.web-proxy.address The web app proxy server’s HTTP server address and port.
+              If not set (the default), then the web app proxy server will run
+              in the resource manager process.mapreduce.jobhistory.webapp.address0.0.0.0:19888The job history server’s HTTP server address and port.
+              This property is set in mapred-site.xml.mapreduce.shuffle.port8080The shuffle handler’s HTTP port number. This is used for
+              serving map outputs, and is not a user-accessible web UI. This
+              property is set in mapred-site.xml.

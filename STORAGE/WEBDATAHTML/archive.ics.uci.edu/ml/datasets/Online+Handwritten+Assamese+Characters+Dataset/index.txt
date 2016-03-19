@@ -1,0 +1,230 @@
+UCI Machine Learning Repository: Online Handwritten Assamese Characters Dataset Data Set
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Online Handwritten Assamese Characters Dataset Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Online Handwritten Assamese Characters Dataset Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/00208/"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="#"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: This is a dataset of 8235 online handwritten assamese characters. The â€œonlineâ€ process involves capturing of data as text is written on a digitizing tablet with an electronic pen.</p>
+     </td>
+     <td> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate, Sequential</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">8235</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Computer</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Integer</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">N/A</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">2011-04-01</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">N/A</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">23457</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Creators: <br>Udayan BaruahÂ¹ Â² and Shyamanta M HazarikaÂ¹<br><br>1.	Department of Computer Science and Engineering<br>	Tezpur University<br>	Assam, India, 784028.<br>	<u>udayanbaruah <b>'@'</b> yahoo.co.in</u><br>	<u>shyamanta <b>'@'</b> ieee.org</u><br><br>2.	Department of Information Technology<br>        Sikkim Manipal Institute of Technology<br>        Sikkim, India, 737136.<br>	<u>udayanbaruah <b>'@'</b> yahoo.co.in</u>	<br><br>Donor: <br>		<br>Udayan Baruah<br>Department of Information Technology<br>Sikkim Manipal Institute of Technology<br>Sikkim, India, 737136.<br><u>udayanbaruah <b>'@'</b> yahoo.co.in</u>		<br></p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">A dataset of online handwritten assamese characters by collecting samples from 45 writers is created. Each writer contributed 52 basic characters, 10 numerals and 121 assamese conjunct consonants. The total number of entries corresponding to each writer is 183 (= 52 characters + 10 numerals + 121 conjunct consonants). The total number of samples in the dataset is 8235 ( = 45 Ã— 183 ).<br><br>The handwriting samples were collected on an iball 8060U external digitizing tablet connected to a laptop using its cordless digital stylus pen. The data acquisition program consists of a GUI which shows a box on the screen along with other controls. The writers are instructed to write only inside the acquisition box. The acquisition program records the handwriting as a stream of (X, Y) coordinate points using the appropriate pen position sensor along with the pen-up/pen-down switching. No pressure level was recorded. <br><br>The distribution of the dataset consists of 45 folders (one for each writer) and a â€œData_Table.pdfâ€ file. This file contains information about the character id (ID), character name (Label) and actual shape of the character (Char).  <br><br>Each folder contains 183 text files corresponding to the 183 characters written by a single writer. Each file is named based on the pair (M, N). The text file â€œM.N.txtâ€ represents the character with ID â€œMâ€ written by the writer with ID â€œNâ€. For instance the file â€œ132.10.txtâ€ represents the character with ID â€œ132â€ written by the writer with ID â€œ10â€.  <br></p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">1.	Character Name: The first line of each sample is â€œCHARACTER_NAME: Characterâ€. The â€œCharacterâ€ is the Name of any one of the 183 characters listed below: <br><br>Here â€œID [i]â€ represents the name of the character with the ID â€œiâ€.<br><br>ID [1]     = â€œAâ€<br>ID [2]     = â€œAAâ€<br>ID [3]     = â€œEâ€<br>ID [4]     = â€œEEâ€<br>ID [5]     = â€œUâ€<br>ID [6]     = â€œUUâ€<br>ID [7]     = â€œREEâ€<br>ID [8]     = â€œAEâ€<br>ID [9]     = â€œOIâ€<br>ID [10]   = â€œOâ€<br>ID [11]   = â€œOUâ€<br>ID [12]   = â€œKAâ€<br>ID [13]   = â€œKHAâ€<br>ID [14]   = â€œGAâ€<br>ID [15]   = â€œGHAâ€<br>ID [16]   = â€œNGâ€<br>ID [17]   = â€œCAâ€<br>ID [18]   = â€œCCAâ€<br>ID [19]   = â€œJAâ€<br>ID [20]   = â€œJHAâ€<br>ID [21]   = â€œNIYAâ€<br>ID [22]   = â€œMTAâ€<br>ID [23]   = â€œMTHAâ€<br>ID [24]   = â€œMDAâ€<br>ID [25]   = â€œMDHAâ€<br>ID [26]   = â€œMNAâ€<br>ID [27]   = â€œTAâ€<br>ID [28]   = â€œTHAâ€<br>ID [29]   = â€œDAâ€<br>ID [30]   = â€œDHAâ€<br>ID [31]   = â€œNAâ€<br>ID [32]   = â€œPAâ€<br>ID [33]   = â€œPHAâ€<br>ID [34]   = â€œBAâ€<br>ID [35]   = â€œBHAâ€<br>ID [36]   = â€œMAâ€<br>ID [37]   = â€œAJAâ€<br>ID [38]   = â€œRAâ€<br>ID [39]   = â€œLAâ€<br>ID [40]   = â€œWAâ€<br>ID [41]   = â€œTXAâ€<br>ID [42]   = â€œMXAâ€<br>ID [43]   = â€œDXAâ€<br>ID [44]   = â€œHAâ€<br>ID [45]   = â€œKHYAâ€<br>ID [46]   = â€œAYAâ€<br>ID [47]   = â€œDRAâ€<br>ID [48]   = â€œDHRAâ€<br>ID [49]   = â€œKTAâ€<br>ID [50]   = â€œANSRâ€<br>ID [51]   = â€œBXGâ€<br>ID [52]   = â€œCBNâ€<br>ID [53]   = â€œKKâ€<br>ID [54]   = â€œKTâ€<br>ID [55]   = â€œKTTâ€<br>ID [56]   = â€œKSâ€<br>ID [57]   = â€œKLâ€<br>ID [58]   = â€œKMâ€<br>ID [59]   = â€œGLâ€<br>ID [60]   = â€œCCâ€<br>ID [61]   = â€œCCCâ€<br>ID [62]   = â€œJJâ€<br>ID [63]   = â€œJBâ€<br>ID [64]   = â€œBJâ€<br>ID [65]   = â€œGNâ€<br>ID [66]   = â€œTNâ€<br>ID [67]   = â€œJJBâ€<br>ID [68]   = â€œLGâ€<br>ID [69]   = â€œTTâ€<br>ID [70]   = â€œGDHâ€<br>ID [71]   = â€œGMâ€<br>ID [72]   = â€œGHNâ€<br>ID [73]   = â€œMDDâ€<br>ID [74]   = â€œNTâ€<br>ID [75]   = â€œNNâ€<br>ID [76]   = â€œNMMâ€<br>ID [77]   = â€œTTTâ€<br>ID [78]   = â€œTTBâ€<br>ID [79]   = â€œTMâ€<br>ID [80]   = â€œTRâ€<br>ID [81]   = â€œNTTâ€<br>ID [82]   = â€œRRGâ€<br>ID [83]   = â€œNDDâ€<br>ID [84]   = â€œNTHâ€<br>ID [85]   = â€œNDHâ€<br>ID [86]   = â€œNNNâ€<br>ID [87]   = â€œNBâ€<br>ID [88]   = â€œNSâ€<br>ID [89]   = â€œNMâ€<br>ID [90]   = â€œDBâ€<br>ID [91]   = â€œQJâ€<br>ID [92]   = â€œPTTâ€<br>ID [93]   = â€œPLâ€<br>ID [94]   = â€œDVâ€<br>ID [95]   = â€œBLâ€<br>ID [96]   = â€œBDâ€<br>ID [97]   = â€œTBâ€<br>ID [98]   = â€œMMâ€<br>ID [99]   = â€œMVâ€<br>ID [100] = â€œMPâ€<br>ID [101] = â€œMNâ€<br>ID [102] = â€œNTRâ€<br>ID [103] = â€œMBâ€<br>ID [104] = â€œLKâ€<br>ID [105] = â€œMNDâ€<br>ID [106] = â€œFKâ€<br>ID [107] = â€œLDâ€<br>ID [108] = â€œLLâ€<br>ID [109] = â€œLPâ€<br>ID [110] = â€œLTâ€<br>ID [111] = â€œSNâ€<br>ID [112] = â€œSCâ€<br>ID [113] = â€œSMâ€<br>ID [114] = â€œSBâ€<br>ID [115] = â€œFNâ€<br>ID [116] = â€œFTâ€<br>ID [117] = â€œSKâ€<br>ID [118] = â€œSSTHâ€<br>ID [119] = â€œSSMâ€<br>ID [120] = â€œSSNâ€<br>ID [121] = â€œSSBâ€<br>ID [122] = â€œSTâ€<br>ID [123] = â€œSPâ€<br>ID [124] = â€œSPHâ€<br>ID [125] = â€œSTHâ€<br>ID [126] = â€œSKHâ€<br>ID [127] = â€œNGGâ€<br>ID [128] = â€œNGCâ€<br>ID [129] = â€œFPâ€<br>ID [130] = â€œNGNâ€<br>ID [131] = â€œXMâ€<br>ID [132] = â€œNGJâ€<br>ID [133] = â€œMNTHâ€<br>ID [134] = â€œNGKâ€<br>ID [135] = â€œKRâ€<br>ID [136] = â€œTRUâ€<br>ID [137] = â€œBHRâ€<br>ID [138] = â€œTHBâ€<br>ID [139] = â€œDGâ€<br>ID [140] = â€œDGHâ€<br>ID [141] = â€œDDâ€<br>ID [142] = â€œDDHâ€<br>ID [143] = â€œHRâ€<br>ID [144] = â€œGGUâ€<br>ID [145] = â€œGGNâ€<br>ID [146] = â€œNKHâ€<br>ID [147] = â€œNGHâ€<br>ID [148] = â€œNGKHâ€<br>ID [149] = â€œTTHâ€<br>ID [150] = â€œPNâ€<br>ID [151] = â€œHNâ€<br>ID [152] = â€œXNâ€<br>ID [153] = â€œMFâ€<br>ID [154] = â€œBBâ€<br>ID [155] = â€œLBâ€<br>ID [156] = â€œLMâ€<br>ID [157] = â€œBHMâ€<br>ID [158] = â€œMLâ€<br>ID [159] = â€œSLâ€<br>ID [160] = â€œPSâ€<br>ID [161] = â€œKHRâ€<br>ID [162] = â€œGRâ€<br>ID [163] = â€œGHRâ€<br>ID [164] = â€œJRâ€<br>ID [165] = â€œTRRâ€<br>ID [166] = â€œDRRâ€<br>ID [167] = â€œDHRRâ€<br>ID [168] = â€œPRRâ€<br>ID [169] = â€œBRRâ€<br>ID [170] = â€œMRRâ€<br>ID [171] = â€œTSRâ€<br>ID [172] = â€œDSRâ€<br>ID [173] = â€œHRRâ€<br>ID [174] = â€œSUNYAâ€<br>ID [175] = â€œEKâ€<br>ID [176] = â€œDUIâ€<br>ID [177] = â€œTINIâ€<br>ID [178] = â€œCARIâ€<br>ID [179] = â€œPACâ€<br>ID [180] = â€œCAYâ€<br>ID [181] = â€œXATâ€<br>ID [182] = â€œATHâ€<br>ID [183] = â€œNAAâ€<br> <br>2.	The total number of strokes in the sample: The total number of strokes used to write a character is represented by the line â€œSTROKE_COUNT: Numberâ€, where â€œNumberâ€ is an integer value.<br><br>3.	Sequence of Strokes: Each stroke begins with the â€œPEN_DOWNâ€ information and there is a â€œPEN_UPâ€ information followed by the â€œPEN_DOWNâ€ information between two consecutive strokes. The end of a sample is represented by the â€œPEN_UPâ€ information followed by the â€œEND_CHARACTER: Characterâ€ information. Each stroke consists of a sequence of X and Y coordinates values which are given in the first and the second columns respectively. Corresponding to each pair of values of X and Y coordinates, there are â€œSTYLUS_STATEâ€ and â€œSTROKEâ€ information given in the third and the fourth columns respectively. â€œSTYLUS_STATEâ€ is either 1 or 0. Corresponding to each recorded (X, Y) point, â€œSTYLUS_STATEâ€ is 1 and corresponding to the â€œPEN_UPâ€ information â€œSTYLUS_STATEâ€ is 0. â€œSTYLUS_STATEâ€ is kept blank corresponding to each â€œPEN_DOWNâ€ information. The â€œSTROKEâ€ information represents the serial number of a constituent stroke of a sample. The value of X grows left-to-right and that of Y grows downwards. Coordinates are integer numbers ranging from 0 to 4392 for X and 0 to 4868 for Y respectively. <br></p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Provide references to papers that have cited this data set in the past (if any).</p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning Repository's  Citation  policy</p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+UCI Machine Learning Repository: UJIIndoorLoc-Mag Data Set
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: UJIIndoorLoc-Mag Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>UJIIndoorLoc-Mag Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/00343/"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="#"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: The UJIIndoorLoc-Mag is an indoor localization database to test Indoor Positioning System that rely on Earth's magnetic field variations.</p>
+     </td>
+     <td> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate, Sequential, Time-Series</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">40000</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Computer</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Integer, Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">13</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">2015-09-10</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification, Regression, Clustering</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">N/A</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">9300</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Donors<br>David Rambla, JoaquÃ­n Torres-Sospedra, RaÃºl Montoliu, Oscar Belmonte and JoaquÃ­n Huerta<br>Institute of New Imaging Technologies, Universitat Jaume I, CastellÃ³n, Spain<br><br>Contact<br>JoaquÃ­n Torres-Sospedra jtorres +@+ uji.es <br>Raul Montoliu montoliu +@+ uji.es </p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">Indoor localization is a key topic for mobile computing. However, it is still very difficult for the mobile sensing community to compare state-of-art Indoor Positioning Systems due to the scarcity of publicly available databases. Magnetic field-based methods are becoming an important trend in this research field. Here, we present UJIIndoorLoc-Mag database, which can be used to compare magnetic field-based indoor localization methods. It consists of 270 continuous samples for training and 11 for testing. Each sample comprises a set of discrete captures taken along a corridor (or an intersection) with a period of 0.1 seconds. In total, there are almost 40.000 discrete captures, where each one contains features obtained from the magnetometer, the accelerometer and the orientation sensor of the device.<br><br>Data has been stored as a simple text file as follows: <br><br>ts_1	mx_1	my_1	mz_1	ax_1	ay_1	az_1	ox_1	oy_1	oz_1<br>â€¦									<br>ts_n	mx_n	my_n	mz_n	ax_n	ay_n	az_n	ox_n	oy_n	oz_n<br><m>									<br>lat_1	lon_1	lat_2	lon_2	FS_1	LS_1				<br>â€¦									<br>lat_m	lon_m	lat_m+1	lon_m+1	FS_m	LS_m				<br><br>Where n is the number of samples collected in the trajectory at a 0.1 seconds frequency and m is the number of segments (corridors) in the trajectory. Each sample contains the timestamp ts and the values from magnetometer, accelerometer and orientation sensors in the three axes, which are denoted with mx, my, mz, ax, ay, az, ox, oy and oz. Finally, lat_i and lon_i corresponds to the coordinates (latitude & longitude in decimal degrees) of the initial, intermediate (intersections) and final points. A trajectory with m corridors has m+1 points. FS_i and LS_i state for the i-th trajectoryâ€™s first and last sample respectively in the full sequence of samples collected during the trajectory mapping. <br><br>According to the previous structure, the text files are composed by two well-differentiated parts separated by the row indicating the number of segments in the trajectory: 1) the sequence of discrete samples taken during the trajectory mapping, and 2) the configuration data. <br><br>The first part contains the timestamp (the UNIX time format in milliseconds) and the vector data from magnetometer (Androidâ€™s TYPE_MAGNETIC_FIELD), accelerometer (TYPE_LINEAR_ACCELERATION) and orientation (TYPE_ORIENTATION) sensors. The accelerometerâ€™s values do not include the gravity force to have a better representation of userâ€™s real movement. <br><br>The second part contains the information about location of initial, intermediate and ending points Moreover, the samples can be associated to corridor segments and, moreover, information about turnings is also provided in all the samples.<br><br>The database consists of 281 continuous samples, 270 are for training and 11 for testing. They have been stored as independent text files. The training ones are grouped into two main categories â€œlinesâ€ and â€œcurvesâ€. <br>- The â€œlinesâ€ group has 80 files and they stand for the single corridor case. The format for filename is â€œlXX_ZZ.txtâ€ where XX stands for the number of corridor & orientation (n or r) and ZZ stands for repetition. Example: l3r_03.txt<br>- The â€œcurvesâ€ group has 190 files and they stand for all possible trajectories considering two connected corridors only. The format for that groupâ€™s filename is â€œcXXYY_ZZ.txtâ€ where XX and YY stand for the number of corridor & orientation for the first and second corridors in the two corridors trajectory, and ZZ stands for repetition. Example: c5n1r_05.txt<br>- The testing filesâ€™ filename format is â€œttPP.txtâ€ where PP stands for the complex testing trajectory number. Example: tt03.txt<br></p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">Each discrete sample contains.<br>1- Timestamp<br>[2,3,4] - Magnetometer values on the x,y,z axes<br>[4,5,6] - Accelerometer values on the x,y,z axes<br>[7,8,9] - Orientation sensor values on the x,y,z axesn your data set.</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">JoaquÃ­n Torres-Sospedra, David Rambla, Raul Montoliu, Oscar Belmonte, and JoaquÃ­n Huerta.<br>UJIIndoorLoc-Mag: A New Database for Magnetic Field-Based Localization Problems<br>Proceedings of the Sixth International Conference on Indoor Positioning and Indoor Navigation (IPIN 2015), 13-16 October 2015, Banff, Alberta, Canada<br></p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">JoaquÃ­n Torres-Sospedra, David Rambla, Raul Montoliu, Oscar Belmonte, and JoaquÃ­n Huerta.<br>UJIIndoorLoc-Mag: A New Database for Magnetic Field-Based Localization Problems<br>Proceedings of the Sixth International Conference on Indoor Positioning and Indoor Navigation (IPIN 2015), 13-16 October 2015, Banff, Alberta, Canada<br></p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

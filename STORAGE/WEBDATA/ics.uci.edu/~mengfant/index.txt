@@ -1,0 +1,38 @@
+Mengfan TangMengfan Tang
+Office: 3211, Donald Bren Hall
+
+Department of Computer Science
+School of Information and Computer Sciences
+University of California, Irvine 
+email: mengfant at uci dot edu
+
+
+
+
+
+ News:
+
+5/20: Our ICME paper was nominated as both Best student paper candidate and Best paper candidate.
+5/15: Our ACM WebSci paper was accepted as oral.
+3/15: Our ICME paper was accepted as oral.
+11/14: I will be doing my internship in the Data Science team at Intuit, Mountain View Office, in summer 2015.
+
+
+
+
+
+ About me:
+ I am a Ph.D. candidate at Computer Science Department, working with Prof. Ramesh Jain. Before coming to UCI, I received my B.S. in mathematics from School for the Gifted Young, University of Science and Technology of China in 2010.
+ 
+
+
+
+
+ Publications:
+  M. Tang, F. Nie, R Jain, A graph regularized dimension reduction method for out-of-sample data(submitted)
+
+  M. Tang, P. Agrwal, R Jain, Habits vs Environment: What Really Causes Asthma?, ACM Web Science 2015
+   M. Tang, P. Agrwal, S. Pongpaichet, R. Jain, Geospatial interpolation Analytics for Data Streams in EventShop, 2015 IEEE International Conference on Multimedia & Expo. (Best Paper Candidate and Best Student Paper Candidate)
+  L. Jalali, D. Huo, H. Oh, M. Tang, S. Pongpaichet, R. Jain, Personicle: Personal Chronicle of Life Events, Workshop on Personal Data Analytics in the Internet of Things, VLDB 2014.
+  S. Pongpaichet, M. Tang, L. Jalali, R. Jain, Observing Real-World Phenomena through EventWeb over Space, Time and Theme, 2nd International Workshop on Building Web Observatories, ACM Web Science 2014.
+  G. Ye, M. Tang, J. Cai, Q. Nie, X. Xie, Low-Rank Regularization for Learning Gene Expression Programs, PLOS ONE, 2013.

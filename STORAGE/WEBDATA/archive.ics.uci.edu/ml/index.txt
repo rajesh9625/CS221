@@ -1,0 +1,220 @@
+UCI Machine Learning Repository         Center for Machine Learning and Intelligent Systems
+	
+		
+		About 
+		Citation Policy 
+		Donate a Data Set 
+		Contact
+		
+
+		
+		
+		
+
+
+Loading
+
+
+
+
+
+
+		View ALL Data Sets
+		
+	
+
+
+
+
+
+
+
+
+
+Welcome to the UC Irvine Machine Learning Repository!
+
+
+
+
+
+
+We currently maintain 336 data sets as a service to the machine learning community.
+You may view all data sets through our 
+searchable interface.  Our old web 
+site 
+is still available, for those who prefer the old format.  For a general overview of the Repository, please visit our About page.
+For information about citing data sets in publications, please read our citation policy.  If you wish to donate a data set, please consult our donation policy.
+For any other questions, feel free to contact the Repository librarians.
+
+We have also set up a mirror site for the Repository.  
+
+Supported By:In Collaboration With:
+
+
+
+
+
+
+
+
+			Latest News:
+							2013-04-04:
+						
+							Welcome to the new Repository admins Kevin Bache and Moshe Lichman!
+						
+							2010-03-01:
+						
+							Note from donor regarding Netflix data
+						
+							2009-10-16:
+						
+							Two new data sets have been added.
+						
+							2009-09-14:
+						
+							Several data sets have been added.
+						
+							2008-07-23:
+						
+							Repository mirror has been set up.
+						
+							2008-03-24:
+						
+							New data sets have been added!
+						
+							2007-06-25:
+						
+							Two new data sets have been added: UJI Pen Characters, MAGIC Gamma Telescope
+						Featured Data Set:  Function Finding
+
+						
+						
+
+						Task: Function-Learning# Instances: 352						
+					Cases collected mostly from investigations in physical science; intention is to evaluate function-finding algorithms
+					
+		
+			Newest Data Sets:
+							2016-01-28:
+						
+							 HEPMASS
+						
+							2015-10-26:
+						
+							 Heterogeneity Activity Recognition
+						
+							2015-09-24:
+						
+							 Educational Process Mining (EPM): A Learning Analytics Data Set
+						
+							2015-09-10:
+						
+							 UJIIndoorLoc-Mag
+						
+							2015-08-04:
+						
+							 Mice Protein Expression
+						
+							2015-07-29:
+						
+							 Smartphone-Based Recognition of Human Activities and Postural Transitions
+						
+							2015-07-27:
+						
+							 Cuff-Less Blood Pressure Estimation
+						
+							2015-07-11:
+						
+							 Taxi Service Trajectory - Prediction Challenge, ECML PKDD 2015
+						
+							2015-07-05:
+						
+							 Folio
+						
+							2015-07-03:
+						
+							 Chronic_Kidney_Disease
+						
+							2015-06-06:
+						
+							 Machine Learning based ZZAlpha Ltd. Stock Recommendations 2012-2014
+						
+							2015-05-31:
+						
+							 Online News Popularity
+						
+		
+			Most Popular Data Sets (hits since 2007):
+							885617:
+						
+							 Iris 
+						
+							625202:
+						
+							 Adult 
+						
+							499185:
+						
+							 Wine 
+						
+							425114:
+						
+							 Car Evaluation 
+						
+							389526:
+						
+							 Breast Cancer Wisconsin (Diagnostic) 
+						
+							330748:
+						
+							 Abalone 
+						
+							299091:
+						
+							 Wine Quality 
+						
+							295582:
+						
+							 Heart Disease 
+						
+							264592:
+						
+							 Poker Hand 
+						
+							262343:
+						
+							 Human Activity Recognition Using Smartphones 
+						
+							230026:
+						
+							 Forest Fires 
+						
+							210219:
+						
+							 Internet Advertisements 
+						
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+About  || 
+Citation Policy  || 
+Donation Policy  || 
+Contact  || 
+CML

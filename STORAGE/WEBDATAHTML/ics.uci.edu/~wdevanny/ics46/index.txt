@@ -1,0 +1,221 @@
+ICS/CSE 46<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="simple.css"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<title>ICS/CSE 46</title>
+</head>
+
+<body>
+<h2>ICS/CSE 46: Data Structures Implementation and Analysis (Summer 2015)</h2>
+<hr/>
+<h3>Instructors and Office Hours</h3>
+
+Instructor: William Devanny<br>
+Office: <a href="http://www.classrooms.uci.edu/GAC/DBH.html">DBH 4032</a><br>
+Email: wdevanny@uci.edu<br>
+Office Hours: Thursday 10:00am-12:00pm<br>
+<br>
+Teaching assistant: Sridevi Maharaj<br>
+Office: <a href="http://www.classrooms.uci.edu/GAC/DBH.html">DBH 4044</a><br>
+Email: sridevi.m@uci.edu<br>
+Office Hours: Tuesday 2:00-3:00pm<br>
+
+<h3>Lectures, Labs, and Exams</h3>
+
+Lecture: M/W/F 1:00-1:50pm in <a href="http://www.classrooms.uci.edu/GAC/PSCB120.html">PSCB 120</a><br>
+Lab: M 2:00-5:00pm in <a href="http://www.classrooms.uci.edu/GAC/ICS.html">ICS 364A</a><br>
+Midterm: July 24th<br>
+Final: August 28th 1:00-2:50pm in <a href="http://www.classrooms.uci.edu/GAC/PSCB140.html">PSCB 140</a><br>
+
+<h3>Course Resources</h3>
+
+<p>
+There is no required course textbook for this class.  The following are optional textbooks: 
+</p>
+
+<ul>
+<li><b>Data Structures and Algorithms in C++</b>
+by Goodrich, Tamassia, Mount<br>
+Published through Wiley
+<li><b>Data Structures and Algorithm Analysis in C++</b>
+by Weiss<br>
+Published through Prentice Hall
+<li><b>The Algorithm Design Manual</b> 
+by Skiena<br>
+Available free through <a href="http://link.springer.com/book/10.1007/978-1-84800-070-4">Springer</a>
+<li><b>Algorithms and Data Structures: The Basic Toolbox</b>
+by Mehlhorn, Sanders<br>
+Available free through <a href="http://link.springer.com/book/10.1007/978-3-540-77978-0">Springer</a>
+</ul>
+
+<p>
+Questions about course material are best asked in person either in class, in lab, or in office hours.  You can also ask questions by emailing myself or the TA (preferably both).  Please include "ICS 46" or "CSE 46" somewhere in the subject line of your email.
+</p>
+
+<h3>Grading Policy</h3>
+
+<p>
+Grades will be computed by a weighted combination of your programming projects, quizzes, midterm, and final:
+</p>
+
+<ul>
+<li> Project 0 (2%)
+<li> Project 1-5 (28%)
+<li> Quizzes (10%)
+<li> Midterm (25%)
+<li> Final (35%)
+</ul>
+
+<p>
+The letter grade conversions will be decided at the end of the course.
+</p>
+
+<h3>Tentative Course Schedule</h3>
+Week 1 (June 22nd) 
+<ul>
+<li> Course overview
+<li> <a href="http://www.cprogramming.com/tutorial/templates.html">Templates</a>
+<li> Arrays
+<li> <a href="https://en.wikipedia.org/wiki/Big_O_notation">O-Notation</a>
+<li> Basic search
+<li> <a href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion sort</a>
+<li> <a href="https://en.wikipedia.org/wiki/Merge_sort">Merge sort</a>
+</ul>
+Week 2 (June 29th)
+<ul>
+<li> Omega and theta notation
+<li> Comparison sorting
+<li> <a href="http://www.bowdoin.edu/~ltoma/teaching/cs231/fall07/Lectures/sortLB.pdf">Sorting lowerbound</a> and an <a href="http://www.cs.cmu.edu/~avrim/451f11/lectures/lect0913.pdf">alternate proof</a>
+<li> <a href="https://en.wikipedia.org/wiki/Amortized_analysis">Amortized analysis</a>
+<li> <a href="https://en.wikipedia.org/wiki/Linked_list">Linked lists</a>
+<li> <a href="https://en.wikipedia.org/wiki/Dynamic_array">Array-based (dynamic) lists</a>
+</ul>
+Week 3 (July 6th)
+<ul>
+<li> <a href="https://en.wikipedia.org/wiki/Hash_table">Hash tables, maps, and sets</a>
+<li> O(n) sorting
+<li> <a href="http://www.ics.uci.edu/~eppstein/161/960123.html">Bucket and radix sort</a>
+<li> <a href="https://en.wikipedia.org/wiki/Binary_tree">Binary trees</a>
+<li> <a href="https://en.wikipedia.org/wiki/Tree_traversal">Traversing binary trees</a>
+</ul>
+Week 4 (July 13th)
+<ul>
+<li> <a href="https://en.wikipedia.org/wiki/Binary_search_tree">Binary search trees</a>
+<li> <a href="https://en.wikipedia.org/wiki/AVL_tree">AVL trees</a>
+<li> <a href="https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29">Stacks</a>
+<li> <a href="https://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29">Queues</a>
+</ul>
+Week 5 (July 20th)
+<ul>
+<li> <a href="https://en.wikipedia.org/wiki/Skip_list">Skip lists</a>
+<li> Midterm exam
+</ul>
+Week 6 (July 27th)
+<ul>
+<li> <a href="https://en.wikipedia.org/wiki/Priority_queue">Priority queues</a>
+<li> <a href="https://en.wikipedia.org/wiki/Binary_heap">Binary heaps</a>
+<li> <a href="https://en.wikipedia.org/wiki/Heapsort">Heapsort</a>
+<li> Graphs
+<li> <a href="https://en.wikipedia.org/wiki/Adjacency_list">Adjacent lists</a>
+<li> <a href="https://en.wikipedia.org/wiki/Adjacency_matrix">Adjacency matrices</a>
+<li> <a href="http://www.codeproject.com/Tips/513874/Using-Single-Dimensional-Array-to-Represent-Two-Di">Multidimensional arrays in a single array</a>
+<li> <a href="https://en.wikipedia.org/wiki/Depth-first_search">DFS</a>
+<li> <a href="https://en.wikipedia.org/wiki/Breadth-first_search">BFS</a>
+</ul>
+Week 7 (August 3rd)
+<ul>
+<li> <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijksta's algorithm</a>
+<li> <a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm">Bellman-Ford</a>
+</ul>
+Week 8 (August 10th)
+<ul>
+<li> P vs. NP
+<li> <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling salesperson problem</a>
+<li> <a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree">Minimum spanning tree</a>
+<li> <a href="https://en.wikipedia.org/wiki/Kruskal's_algorithm">Kruskal's Algorithm</a>
+<li> <a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">Union find</a>
+</ul>
+Week 9 (August 17th)
+<ul>
+<li> Digraphs
+<li> <a href="https://en.wikipedia.org/wiki/Strongly_connected_component">Strong connectivity</a>
+<li> <a href="https://en.wikipedia.org/wiki/Tarjan's_strongly_connected_components_algorithm">Tarjan's algorithm</a>
+<li> <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAGs</a>
+<li> <a href="https://en.wikipedia.org/wiki/Topological_sorting">Topological sorting</a>
+</ul>
+Week 10 (August 24th)
+<ul>
+<li> <a href="https://en.wikipedia.org/wiki/Bloom_filter">Bloom filters</a> (not on final)
+<li> Final exam (Friday August 28th)
+</ul>
+
+<h3>Solutions</h3>
+<ul>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/quizzes/quiz1_answers.pdf">Quiz 1</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/quizzes/quiz2_answers.pdf">Quiz 2</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/quizzes/quiz3_answers.pdf">Quiz 3</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/quizzes/quiz4_answers.pdf">Quiz 4</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/midterm.pdf">Midterm (blank)</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/midterm_solutions.pdf">Midterm</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/quizzes/quiz5_answers.pdf">Quiz 5</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/quizzes/quiz6_answers.pdf">Quiz 6</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/quizzes/quiz7_answers.pdf">Quiz 7</a>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/quizzes/quiz8_answers.pdf">Quiz 8</a>
+</ul>
+
+<h3>Projects</h3>
+
+<p>
+As the course title indicates this course is about both implementation and analysis.  Most of lecture time will be devoted to the analysis of data structures and algorithms, while the projects will require you to work on implementing the data structures.
+</p>
+
+<p>
+We will have a total of six projects.  The first project (Project 0) will be much shorter and cover setting up our environment.
+</p>
+
+<ul>
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/projects/project0/">Project 0: VirtualBox and Templates</a> due on Friday June 26th at 11:59pm
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/projects/project1/">Project 1: Sorting Lab</a> due on Friday July 3rd at 11:59pm
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/projects/project2/">Project 2: Following Wikipedia Links</a> due on Friday July 17th at 11:59pm
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/projects/project3/">Project 3: An AVL Tree</a> due on Sunday August 2nd <strike>Friday July 31st</strike> at 11:59pm
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/projects/project4/">Project 4: Finding Shortest Paths</a> due on Friday August 14th at 11:59pm
+<li> <a href="http://www.ics.uci.edu/~wdevanny/ics46/projects/project5/">Project 5: Approximating TSP</a> due on <b>Wednesday</b> August 26th at 11:59pm
+</ul>
+
+<p>
+Projects will be graded on a 40 point scale with approximately 30 points for correctness and 10 points for code style.  Correctness covers did you met the project specifications and did your code compile and run without error. Coding style covers did you write readable, well documented code.  We expect that you will be working in the virtual machine you set up in Project 0 for all of your projects.  If your code does not compile and run with the provided build script on the provided platform, then it does not compile and run for the purposes of grading.
+</p>
+
+<p>
+Projects will all be due at 11:59pm on their due date.  You will be allowed one 48 hour extension on a project.  We will apply this policy to the first project you submit late.  No other late work will be accepted. Projects can be submitted by first following the instructions in Project 0 to create a <b>.tar.gz</b> file and then handing it in to the appropriate <a href="http://www.eee.uci.edu/">EEE</a> dropbox.  Submissions by email will not be accepted.  Please make sure you submit the correct version of your project.  Accidentally submitting the wrong code is not an acceptable reason for a regrade.
+</p>
+
+<h3>Academic Honesty</h3>
+
+<p>
+The ICS policy on academic honesty can be found <a href="http://www.ics.uci.edu/ugrad/policies">here</a>.
+</p>
+
+<p>
+All of the work you complete in this class should be your own.  Discussing course material at a high level is encouraged, however at no point should you share code with other students in any form.  Plagarism detection software will be run on the submissions for each project.  Additionally, answers on exams and quizzes should be entirely your own work.  Exams will be closed-note and closed-book.
+</p>
+
+<p>
+Anyone who commits an academic honesty violation will be reported accordingly and subject to the penalties described in the above policy.
+</p>
+
+<h3>Accommodations for Disabilities</h3>
+
+<p>
+If you feel you need any accommodations based on a disability, please contact me and the <a href="http://www.disability.uci.edu/">Disabilities Services Center</a> as soon as possibile to ensure the apporpriate accommodations can me made.
+</p>
+<h3>Acknowledgements</h3>
+<p>Portions of this course are based on similar courses by Michael Bannister, Richard Pattis, and Alex Thornton</p>
+</body>
+</html>

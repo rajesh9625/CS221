@@ -1,0 +1,112 @@
+CCSW 2015CCSW2015
+		The 7th ACM Cloud Computing Security Workshop
+		
+			October 16, 2015, The Denver Marriot City Center, Denver, Colorado, USA
+		
+		
+			in conjunction with the 22nd ACM Conference on Computer Communications Security (CCS)
+		
+	
+
+	HomeSubmission InfoRegistrationOrganizersProgramSpeakersPast editions
+
+
+
+	
+		Overview
+		
+			The CCSW workshop brings together researchers and practitioners in all security
+			and privacy aspects of cloud-centric and outsourced computing, including:
+		
+		
+				practical cryptographic protocols for cloud security
+			
+			outsourced privacy-preserving computation
+		
+		secure cloud resource virtualization mechanisms
+	
+	secure data management outsourcing (e.g., database as a service)
+
+practical privacy and integrity mechanisms for outsourcing
+
+privacy-enhancing technologies for the cloud
+
+foundations of cloud-centric threat models
+
+secure computation outsourcing
+
+remote attestation mechanisms in clouds
+
+sandboxing and VM-based enforcements
+
+trust and policy management in clouds
+
+secure identity management mechanisms
+
+new cloud-aware web service security paradigms and mechanisms
+
+cloud-centric regulatory compliance issues and mechanisms
+
+business and security risk models and clouds
+
+cost and usability models and their interaction with security in clouds
+
+scalability of security in global-size clouds
+
+trusted computing technology and clouds
+
+binary analysis of software for remote attestation and cloud protection
+
+network security (DOS, IDS etc.) mechanisms for cloud contexts
+
+security for emerging cloud programming models
+
+energy/cost/efficiency of security in clouds
+
+security for software defined networking
+
+
+	We would like to especially encourage novel paradigms and controversial ideas
+	that are not on the above list. The workshop is to act as a fertile ground for
+	creative debate and interaction in security-sensitive areas of computing 
+	impacted by clouds.
+
+
+
+	Impact
+
+
+	CCSW has had a significant impact in our research community. As of April 2015, in the Google Scholar Metrics entry for CCS (which encompasses CCSW), 4 of the top 20 cited papers of the past five years come from CCSW. One way to look at it is that you're as likely or perhaps more likely to have a top-20 paper publishing in CCSW than in CCS! (thanks to Ari Juels for noticing this)
+
+
+
+
+
+
+
+	Organizers
+	
+		Program Chairs:
+	
+	
+			Cristina Nita-Rotaru, Purdue University
+			
+		
+			Florian Kerschbaum, SAP
+		
+	
+		General Chair:
+	
+	
+			Indrajit Ray, Colorado State University
+		
+	
+		Steering Chair:
+	
+	
+			Gene Tsudik, University of California, Irvine
+		
+	
+		
+	 
+		Sponsors

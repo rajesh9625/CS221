@@ -1,0 +1,123 @@
+Username: University of California Irvine User Book: Hadoop: The Definitive Guide, 3rd Edition. No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.Cluster Setup and Installation
+
+
+
+
+
+
+Your hardware has arrived. The next steps are to get it
+    racked up and install the software needed to run Hadoop.
+There are various ways to install and configure Hadoop. This chapter
+    describes how to do it from scratch using the Apache Hadoop distribution
+    and provides background information on the things you need to think about
+    when setting up Hadoop. Alternatively, if you would like to use RPMs or
+    Debian packages for managing your Hadoop installation, then you might want
+    to start with Cloudera’s Distribution, described in Appendix B.
+To ease the burden of installing and maintaining the same software
+    on each node, it is normal to use an automated installation method such as
+    Red Hat Linux’s Kickstart or Debian’s Fully Automatic Installation. These
+    tools allow you to automate the operating system installation by recording
+    the answers to questions that are asked during the installation process
+    (such as the disk partition layout), as well as which packages to install.
+    Crucially, they also provide hooks to run scripts at the end of the
+    process, which are invaluable for doing the final system tweaks and
+    customization that are not covered by the standard installer.
+The following sections describe the customizations that are needed
+    to run Hadoop. These should all be added to the installation
+    script.
+
+
+Installing Java
+
+
+
+
+
+
+Java 6 or later is required to run Hadoop. The latest
+      stable Sun JDK is the preferred option, although Java distributions from
+      other vendors may work, too. The following command confirms that Java
+      was installed correctly:
+% java -version
+java version "1.6.0_12"
+Java(TM) SE Runtime Environment (build 1.6.0_12-b04)
+Java HotSpot(TM) 64-Bit Server VM (build 11.2-b01, mixed mode)
+
+
+
+Creating a Hadoop User
+
+
+
+
+
+
+It’s good practice to create a dedicated Hadoop user
+      account to separate the Hadoop installation from other services running
+      on the same machine.
+For small clusters, some administrators choose to make this user’s
+      home directory an NFS-mounted
+      drive, to aid with SSH key distribution (see the following discussion).
+      The NFS server is typically outside the Hadoop cluster. If you use NFS,
+      it is worth considering autofs, which allows you to mount the NFS
+      filesystem on demand when the system accesses it. Autofs provides some
+      protection against the NFS server failing and allows you to use
+      replicated filesystems for failover. There are other NFS gotchas to
+      watch out for, such as synchronizing UIDs and GIDs. For help setting up
+      NFS on Linux, refer to the HOWTO at http://nfs.sourceforge.net/nfs-howto/index.html.
+
+
+
+Installing Hadoop
+
+
+
+
+
+
+Download Hadoop from the Apache Hadoop releases page
+      (http://hadoop.apache.org/core/releases.html), and
+      unpack the contents of the distribution in a sensible location, such as
+      /usr/local (/opt is another standard choice). Note that
+      Hadoop is not installed in the
+      hadoop user’s home directory, as that
+      may be an NFS-mounted directory:
+% cd /usr/local
+% sudo tar xzf hadoop-x.y.z.tar.gz
+We also need to change the owner of the Hadoop files to be the
+      hadoop user and group:
+% sudo chown -R hadoop:hadoop hadoop-x.y.z
+Note
+Some administrators like to install HDFS and MapReduce in
+        separate locations on the same system. At the time of this writing,
+        only HDFS and MapReduce from the same Hadoop release are compatible
+        with one another; however, in future releases, the compatibility
+        requirements will be loosened. When this happens, having independent
+        installations makes sense, as it gives more upgrade options (for more,
+        see Upgrades). For example, it is convenient
+        to be able to upgrade MapReduce—perhaps to patch a bug—while leaving
+        HDFS running.
+Note that separate installations of HDFS and MapReduce can still
+        share configuration by using the --config option (when
+        starting daemons) to refer to a common configuration directory. They
+        can also log to the same directory because the logfiles they produce
+        are named in such a way as to avoid clashes.
+
+
+
+
+
+
+Testing the Installation
+
+
+
+
+
+
+Once you’ve created an installation script, you are ready
+      to test it by installing it on the machines in your cluster. This will
+      probably take a few iterations as you discover kinks in the install.
+      When it’s working, you can proceed to configure Hadoop and give it a
+      test run. This process is documented in the following
+      sections.

@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0038)file:///Users/hamid/Desktop/print.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./hadoop2_files/docsafarip.css"><link rel="stylesheet" type="text/css" href="./hadoop2_files/getfile"></head><body><div><p class="p"></p><hr><strong class="strong">Username: </strong><span>University of California Irvine User</span><span> </span><strong class="strong">Book: </strong><span>Hadoop: The Definitive Guide, 3rd Edition. </span><span>No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.</span><hr><p></p><div id="HtmlView"><div><h1 class="epub__title"><a id="I_sect19_d1e19780"></a>Cluster Specification</h1>
+
+
+
+
+
+
+<p><a id="idx10648" class="epub__indexterm"></a>Hadoop is designed to run on commodity hardware. That means
+    that you are not tied to expensive, proprietary offerings from a single
+    vendor; rather, you can choose standardized, commonly available hardware
+    from any of a large range of vendors to build your cluster.</p>
+<p>“Commodity” does not mean “low-end.” Low-end machines often have
+    cheap components, which have higher failure rates than more expensive (but
+    still commodity-class) machines. When you are operating tens, hundreds, or
+    thousands of machines, cheap components turn out to be a false economy, as
+    the higher failure rate incurs a greater maintenance cost. On the other
+    hand, large database-class machines are not recommended either, since they
+    don’t score well on the price/performance curve. And even though you would
+    need fewer of them to build a cluster of comparable performance than one
+    built of mid-range commodity hardware, when one did fail, it would have a
+    bigger impact on the cluster because a larger proportion of the cluster
+    hardware would be unavailable.</p>
+<p>Hardware specifications rapidly become obsolete, but for the sake of
+    illustration, a typical choice of machine for running a Hadoop datanode
+    and tasktracker in mid-2010 would have the following
+    specifications:</p><div class="epub__variablelist"><dl><dt><span class="epub__term">Processor</span></dt><dd>
+<p>Two quad-core 2-2.5 GHz CPUs</p></dd><dt><span class="epub__term">Memory</span></dt><dd>
+<p>16-24 GB ECC RAM<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id667277" id="id667277" class="epub__footnote" data-ajax="1">75</a>]</sup></p></dd><dt><span class="epub__term">Storage</span></dt><dd>
+<p>Four 1 TB SATA disks</p></dd><dt><span class="epub__term">Network</span></dt><dd>
+<p>Gigabit Ethernet</p></dd></dl>
+</div>
+<p>Although the hardware specification for your cluster will assuredly
+    be different, Hadoop is designed to use multiple cores and disks, so it
+    will be able to take full advantage of more powerful hardware.</p><div class="epub__sidebar"><a id="I_sidebar9_d1e19829"></a>
+<p class="epub__title">Why Not Use RAID?</p>
+<p>HDFS clusters do not benefit from using <a id="I_indexterm9_d1e28332" class="epub__indexterm"></a><a id="I_indexterm9_d1e28335" class="epub__indexterm"></a>RAID (Redundant Array of Independent Disks) for datanode
+      storage (although RAID is recommended for the namenode’s disks, to
+      protect against corruption of its metadata). The redundancy that RAID
+      provides is not needed, since HDFS handles it by replication between
+      nodes.</p>
+<p>Furthermore, RAID striping (RAID 0), which is commonly used to
+      increase performance, turns out to be <span class="epub__italic">slower</span> than the JBOD (Just a Bunch Of Disks)
+      configuration used by HDFS, which round-robins HDFS blocks between all
+      disks. This is because RAID 0 read and write operations are limited by
+      the speed of the slowest disk in the RAID array. In JBOD, disk
+      operations are independent, so the average speed of operations is
+      greater than that of the slowest disk. Disk performance often shows
+      considerable variation in practice, even for disks of the same model. In
+      some benchmarking carried out on a Yahoo! cluster (<a class="epub__ulink" href="http://markmail.org/message/xmzc45zi25htr7ry" target="_new">http://markmail.org/message/xmzc45zi25htr7ry</a>), JBOD
+      performed 10% faster than RAID 0 in one test (Gridmix) and 30% better in
+      another (HDFS write throughput).</p>
+<p>Finally, if a disk fails in a JBOD configuration, HDFS can
+      continue to operate without the failed disk, whereas with RAID, failure
+      of a single disk causes the whole array (and hence the node) to become
+      unavailable.</p>
+</div>
+<p>The bulk of Hadoop is written in Java and can therefore run on any
+    platform with a JVM, although there are enough parts that harbor Unix
+    assumptions (the control scripts, for example) to make it unwise to run on
+    a non-Unix platform in production. In fact, Windows operating systems are
+    not supported production platforms (although they can be used with Cygwin
+    as a development platform; see <a href="http://proquest.safaribooksonline.com/9781449328917/id2518965" class="epub__xref" title="Appendix A. Installing Apache Hadoop" data-ajax="1">Appendix&nbsp;A</a>).</p>
+<p>How large should your cluster be? There isn’t an exact answer to
+    this question, but the beauty of Hadoop is that you can start with a small
+    cluster (say, 10 nodes) and grow it as your storage and computational
+    needs grow. In many ways, a better question is this: how fast does my
+    cluster need to grow? You can get a good feel for this by considering
+    storage capacity.</p>
+<p>For example, if your data grows by 1 TB a week and you have
+    three-way HDFS replication, you need an additional 3 TB of raw storage per
+    week. Allow some room for intermediate files and logfiles (around 30%,
+    say), and this works out at about one (2010-vintage) machine per week, on
+    average. In practice, you wouldn’t buy a new machine each week and add it
+    to the cluster. The value of doing a back-of-the-envelope calculation like
+    this is that it gives you a feel for how big your cluster should be. In
+    this example, a cluster that holds two years of data needs 100
+    machines.</p>
+<p>For a small cluster (on the order of 10 nodes), it is usually
+    acceptable to run the namenode and the jobtracker on a single master
+    machine (as long as at least one copy of the namenode’s metadata is stored
+    on a remote filesystem). As the cluster and the number of files stored in
+    HDFS grow, the namenode needs more memory, so the namenode and jobtracker
+    should be moved onto separate machines.</p>
+<p>The secondary namenode can be run on the same machine as the
+    namenode, but again for reasons of memory usage (the secondary has the
+    same memory requirements as the primary), it is best to run it on a
+    separate piece of hardware, especially for larger clusters. (This topic is
+    discussed in more detail in <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#MasterNodeScenarios" class="epub__xref" title="Master node scenarios" data-ajax="1">Master node scenarios</a>.)
+    Machines running the namenodes
+    should typically run on 64-bit hardware to avoid the 3 GB limit on Java
+    heap size in 32-bit architectures.<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id679818" id="id679818" class="epub__footnote" data-ajax="1">76</a>]</sup></p>
+<div class="epub__sect2" title="Network Topology"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="ConfiguringNetworkTopology"></a>Network Topology</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10649" class="epub__indexterm"></a><a id="idx10650" class="epub__indexterm"></a>A common Hadoop cluster architecture consists of a
+      two-level network topology, as illustrated in <a href="http://proquest.safaribooksonline.com/9781449328917/id2458449#network_topology" class="epub__xref" title="Figure 9-1. Typical two-level network architecture for a Hadoop cluster" data-ajax="1">Figure&nbsp;9-1</a>. Typically there are 30 to 40 servers per
+      rack, with a 1 GB switch for the rack (only three are shown in the
+      diagram) and an uplink to a core switch or router (which is normally 1
+      GB or better). The salient point is that the aggregate bandwidth between
+      nodes on the same rack is much greater than that between nodes on
+      different racks.</p><div class="epub__figure"><a id="network_topology"></a><div class="epub__figure-contents"><div class="epub__mediaobject"><a id="I_mediaobject9_d1e19911"></a><img src="./hadoop2_files/getfile(1)" alt="Typical two-level network architecture for a Hadoop cluster">
+</div>
+
+</div>
+
+<p class="epub__title">Figure&nbsp;9-1.&nbsp;Typical two-level network architecture for a Hadoop cluster</p>
+</div>
+<div class="epub__sect3" title="Rack awareness"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="RackAwareness"></a>Rack awareness</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10651" class="epub__indexterm"></a><a id="idx10652" class="epub__indexterm"></a><a id="idx10653" class="epub__indexterm"></a>To get maximum performance out of Hadoop, it is
+        important to configure Hadoop so that it knows the topology of your
+        network. If your cluster runs on a single rack, then there is nothing
+        more to do, since this is the default. However, for multirack
+        clusters, you need to map nodes to racks. By doing this, Hadoop will
+        prefer within-rack transfers (where there is more bandwidth available)
+        to off-rack transfers when placing MapReduce tasks on nodes. HDFS will be
+        able to place replicas more intelligently to trade off performance and
+        resilience.</p>
+<p>Network locations such as nodes and racks are represented in a
+        tree, which reflects the network “distance” between locations. The
+        namenode uses the network location when determining where to place
+        block replicas (see <a href="http://proquest.safaribooksonline.com/9781449328917/id2416608#HDFSNetworkTopology" class="epub__xref" title="Network Topology and Hadoop" data-ajax="1">Network Topology and Hadoop</a>); the
+        MapReduce scheduler uses network location to determine where the
+        closest replica is as input to a map task.</p>
+<p>For the network in <a href="http://proquest.safaribooksonline.com/9781449328917/id2458449#network_topology" class="epub__xref" title="Figure 9-1. Typical two-level network architecture for a Hadoop cluster" data-ajax="1">Figure&nbsp;9-1</a>, the rack
+        topology is described by two network locations, say, <em class="epub__filename">/switch1/rack1</em> and <em class="epub__filename">/switch1/rack2</em>. Because there is only one
+        top-level switch in this cluster, the locations can be simplified to
+        <em class="epub__filename">/rack1</em> and <em class="epub__filename">/rack2</em>.</p>
+<p>The Hadoop configuration must specify a map between node
+        addresses and network locations. The map is described by a Java
+        interface, <a id="I_indexterm9_d1e28442" class="epub__indexterm"></a><code class="epub__literal">DNSToSwitchMapping</code>,
+        whose signature is:</p><a id="I_programlisting9_d1e19962"></a>
+<pre class="epub__programlisting">public interface DNSToSwitchMapping {
+  public List&lt;String&gt; resolve(List&lt;String&gt; names);
+}</pre>
+<p>The <a id="I_indexterm9_d1e28456" class="epub__indexterm"></a><code class="epub__literal">names</code> parameter is a
+        list of IP addresses, and the return value is a list of corresponding
+        network location strings. The <a id="I_indexterm9_d1e28462" class="epub__indexterm"></a><code class="epub__literal">topology.node.switch.mapping.impl</code>
+        configuration property defines an implementation of the <a id="I_indexterm9_d1e28468" class="epub__indexterm"></a><code class="epub__literal">DNSToSwitchMapping</code>
+        interface that the namenode and the jobtracker use to resolve worker
+        node network locations.</p>
+<p>For the network in our example, we would map <em class="epub__filename">node1</em>, <em class="epub__filename">node2</em>, and <em class="epub__filename">node3</em> to <em class="epub__filename">/rack1</em>, and <em class="epub__filename">node4</em>, <em class="epub__filename">node5</em>, and <em class="epub__filename">node6</em> to <em class="epub__filename">/rack2</em>.</p>
+<p>Most installations don’t need to implement the interface
+        themselves, however, since the default implementation is <a id="I_indexterm9_d1e28503" class="epub__indexterm"></a><code class="epub__literal">ScriptBasedMapping</code>,
+        which runs a user-defined script to determine the mapping. The
+        script’s location is controlled by the property <a id="I_indexterm9_d1e28509" class="epub__indexterm"></a><code class="epub__literal">topology.script.file.name</code>. The script
+        must accept a variable number of arguments that are the hostnames or
+        IP addresses to be mapped, and it must emit the corresponding network
+        locations to standard output, separated by whitespace. The Hadoop wiki
+        has an example at <a class="epub__ulink" href="http://wiki.apache.org/hadoop/topology_rack_awareness_scripts" target="_new">http://wiki.apache.org/hadoop/topology_rack_awareness_scripts</a>.</p>
+<p>If no script location is specified, the default behavior is to
+        map all nodes to a single network location, called <em class="epub__filename">/default-rack</em>.<a id="I_indexterm9_d1e28522" class="epub__indexterm"></a><a id="I_indexterm9_d1e28523" class="epub__indexterm"></a><a id="I_indexterm9_d1e28524" class="epub__indexterm"></a><a id="I_indexterm9_d1e28525" class="epub__indexterm"></a><a id="I_indexterm9_d1e28526" class="epub__indexterm"></a><a id="I_indexterm9_d1e28527" class="epub__indexterm"></a></p>
+</div>
+
+</div>
+
+
+
+<div class="epub__sect1" title="Cluster Setup and Installation"><div class="epub__titlepage"><div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+function PagePrint()
+{
+    setTimeout("window.print()", 500);
+}
+PagePrint();
+</script></div><span id="BowEndOfDocument" style="display:none" hidden="hidden"></span></body></html>

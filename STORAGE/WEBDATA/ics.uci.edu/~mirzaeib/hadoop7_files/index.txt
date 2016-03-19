@@ -1,0 +1,3 @@
+Index of /~mirzaeib/hadoop7_filesIndex of /~mirzaeib/hadoop7_files
+NameLast modifiedSizeDescriptionParent Directory   -  docsafarip.css28-Feb-2015 21:52  5.6K getfile28-Feb-2015 21:52   25K getfile(1)28-Feb-2015 21:52   18K 
+Apache/2.2.15 (CentOS) Server at www.ics.uci.edu Port 80

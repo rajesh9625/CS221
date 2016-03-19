@@ -1,0 +1,94 @@
+Padhraic SmythPadhraic Smyth 
+
+Professor,
+
+Department of Computer Science 
+Director,
+UCI Data Science Initiative
+  University of California, Irvine 
+  CA 92697-3435 
+
+
+  
+    [additional contact information] 
+
+
+
+
+
+ Publications 
+
+ 
+Links to papers
+
+
+
+ News 
+
+ (January 2015) We are currently
+
+hiring faculty in AI/machine learning as well as more broadly in computer science.
+ (Dec 2014) The new Data Science Initiative is now up and running - check out our 
+ Web site
+ for the latest news on what's happening.
+ (July 2014) UCI kicked off a new 3-year Data Science Initiative on July 1st - looks like it will be interesting, watch this space!
+ (July 2014) Presented an invited talk at AAAI in July on "30 years of Probability in AI and Machine Learning", which was fun to put together. And also attended a summer school in Heidelberg with psychologists interested in using machine learning and statistics to better understand dialog - a fun week.
+ (June 2014) Congrats to various machine learning students who graduated with their PhDs recently including Jimmy Foulds from my group (headed to a postdoc at UCSC), Levi Boyles from Max Welling's group (headed to a postdoc at Oxford), and Qiang Liu from Alex Ihler's group (headed to a postdoc at MIT and then a faculty position at Dartmouth). 
+
+
+
+
+
+
+ Biographical Information, etc 
+
+
+
+Short biography 
+and a rather long
+
+full curriculum vitae 
+ 
+Honors, joint faculty appointments, center affiliations, journal, conferences, etc
+
+
+Information about the name "Padhraic"
+
+
+
+
+
+ Smyth Research Group 
+
+ 
+Lis of students and postdocs  in our research group (unfortunately this is almost always a bit well out of date!)
+ 
+Information for students interested in joining our
+ group .
+
+
+
+ Centers, Seminars, Research Projects, and More 
+
+UCI Data Science Initiative
+Center for Machine Learning and Intelligent Systems
+  Weekly AI/Machine Learning Seminar Series 
+ MURI project on analysis of network data
+
+
+
+
+
+
+
+
+Teaching
+
+CS 274A: Probabilistic Learning: Theory and Algorithms
+  CS 277: Data Mining
+  CS 175: Project in Artificial Intelligence.
+   Introduction to Artificial Intelligence
+      CS Undergraduate Course, CS 171 
+  CS Graduate Course, CS 271.
+  
+  CS 177: Applications of Probability in Computer Science.

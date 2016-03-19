@@ -1,0 +1,265 @@
+UCI Machine Learning Repository: Dermatology Data Set
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Dermatology Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Dermatology Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/dermatology/"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="../machine-learning-databases/dermatology/dermatology.names"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Aim for this dataset is to determine the type of Eryhemato-Squamous Disease.</p>
+     </td>
+     <td> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">366</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Life</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Categorical, Integer</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">33</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">1998-01-01</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">Yes</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">74935</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Original Owners:<br><br>1. Nilsel Ilter, M.D., Ph.D., <br>Gazi University, <br>School of Medicine<br>06510 Ankara, Turkey<br>Phone: +90 (312) 214 1080<br><br>2. H. Altay Guvenir, PhD., <br>Bilkent University,<br>Department of Computer Engineering and Information Science,<br>06533 Ankara, Turkey<br>Phone: +90 (312) 266 4133<br>Email: <u>guvenir <b>'@'</b> cs.bilkent.edu.tr</u><br><br>Donor: <br><br>H. Altay Guvenir,<br>Bilkent University,<br>Department of Computer Engineering and Information Science,<br>06533 Ankara, Turkey<br>Phone: +90 (312) 266 4133<br>Email: <u>guvenir <b>'@'</b> cs.bilkent.edu.tr</u></p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">This database contains 34 attributes, 33 of which are linear valued and one of them is nominal. <br><br>The differential diagnosis of erythemato-squamous diseases is a real problem in dermatology. They all share the clinical features of erythema and scaling, with very little differences. The diseases in this group are psoriasis, seboreic dermatitis, lichen planus, pityriasis rosea, cronic dermatitis, and pityriasis rubra pilaris. Usually a biopsy is necessary for the diagnosis but unfortunately these diseases share many histopathological features as well. Another difficulty for the differential diagnosis is that a disease may show the features of another disease at the beginning stage and may have the characteristic features at the following stages. Patients were first evaluated clinically with 12 features. Afterwards, skin samples were taken for the evaluation of 22 histopathological features. The values of the histopathological features are determined by an analysis of the samples under a microscope. <br><br>In the dataset constructed for this domain, the family history feature has the value 1 if any of these diseases has been observed in the family, and 0 otherwise. The age feature simply represents the age of the patient. Every other feature (clinical and histopathological) was given a degree in the range of 0 to 3. Here, 0 indicates that the feature was not present, 3 indicates the largest amount possible, and 1, 2 indicate the relative intermediate values.<br><br>The names and id numbers of the patients were recently removed from the database.</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">      Clinical Attributes: (take values 0, 1, 2, 3, unless otherwise indicated)<br>      1: erythema<br>      2: scaling<br>      3: definite borders<br>      4: itching<br>      5: koebner phenomenon<br>      6: polygonal papules<br>      7: follicular papules<br>      8: oral mucosal involvement<br>      9: knee and elbow involvement<br>     10: scalp involvement<br>     11: family history, (0 or 1)<br>     34: Age (linear)<br><br>     Histopathological Attributes: (take values 0, 1, 2, 3)<br>     12: melanin incontinence<br>     13: eosinophils in the infiltrate<br>     14: PNL infiltrate<br>     15: fibrosis of the papillary dermis<br>     16: exocytosis<br>     17: acanthosis<br>     18: hyperkeratosis<br>     19: parakeratosis<br>     20: clubbing of the rete ridges<br>     21: elongation of the rete ridges<br>     22: thinning of the suprapapillary epidermis<br>     23: spongiform pustule<br>     24: munro microabcess<br>     25: focal hypergranulosis<br>     26: disappearance of the granular layer<br>     27: vacuolisation and damage of basal layer<br>     28: spongiosis<br>     29: saw-tooth appearance of retes<br>     30: follicular horn plug<br>     31: perifollicular parakeratosis<br>     32: inflammatory monoluclear inflitrate<br>     33: band-like infiltrate</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">G. Demiroz, H. A. Govenir, and N. Ilter, "Learning Differential Diagnosis of Eryhemato-Squamous Diseases using Voting Feature Intervals", Aritificial Intelligence in Medicine<br><a href="http://rexa.info/paper/f6790d06b3e02eb2de5f4af243b3a23a934aad9e">[Web Link]</a></p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">Vassilis Athitsos and Stan Sclaroff. <a 
+href="http://rexa.info/paper/692880d7b3356df64bfa0f06a683f89e4ce6955b">Boosting Nearest Neighbor Classifiers for Multiclass Recognition</a>. Boston University Computer Science Tech. Report No, 2004-006. 2004.  [<a 
+href="../support/Dermatology#692880d7b3356df64bfa0f06a683f89e4ce6955b">View Context</a>].<br><br>Gisele L. Pappa and Alex Alves Freitas and Celso A A Kaestner. <a 
+href="http://rexa.info/paper/30b640cb0a4ba73302609a2f1ec74291c70efd85">Attribute Selection with a Multi-objective Genetic Algorithm</a>. SBIA. 2002.  [<a 
+href="../support/Dermatology#30b640cb0a4ba73302609a2f1ec74291c70efd85">View Context</a>].<br><br>M. V. Fidelis and Heitor S. Lopes and Alex Alves Freitas. <a 
+href="http://rexa.info/paper/25c83dd7b43db4459e6eec12a71a229e10afac90">Discovering Comprehensible Classification Rules with a Genetic Algorithm</a>. UEPG, CPD CEFET-PR, CPGEI PUC-PR, PPGIA Praa Santos Andrade, s/n Av. Sete de Setembro.  [<a 
+href="../support/Dermatology#25c83dd7b43db4459e6eec12a71a229e10afac90">View Context</a>].<br><br>Rafael S. Parpinelli and Heitor S. Lopes and Alex Alves Freitas. <a 
+href="http://rexa.info/paper/f4405e32dbb5dea3ece303e2a5b3edb6b413271e">PART FOUR: ANT COLONY OPTIMIZATION AND IMMUNE SYSTEMS Chapter X An Ant Colony Algorithm for Classification Rule Discovery</a>. CEFET-PR, Curitiba.  [<a 
+href="../support/Dermatology#f4405e32dbb5dea3ece303e2a5b3edb6b413271e">View Context</a>].<br><br>Rafael S. Parpinelli and Heitor S. Lopes and Alex Alves Freitas. <a 
+href="http://rexa.info/paper/899bdb470e48c308144216cc22048c88816ee035">An Ant Colony Based System for Data Mining: Applications to Medical Data</a>. CEFET-PR, CPGEI Av. Sete de Setembro, 3165.  [<a 
+href="../support/Dermatology#899bdb470e48c308144216cc22048c88816ee035">View Context</a>].<br><br>Gisele L. Pappa and Alex Alves Freitas and Celso A A Kaestner. <a 
+href="http://rexa.info/paper/1a387e912f3bd68e66957cdfdebbb068ffc2149a">AMultiobjective Genetic Algorithm for Attribute Selection</a>. Computing Laboratory Pontificia Universidade Catolica do Parana University of Kent at Canterbury.  [<a 
+href="../support/Dermatology#1a387e912f3bd68e66957cdfdebbb068ffc2149a">View Context</a>].<br><br>Perry Moerland. <a 
+href="http://rexa.info/paper/43019420b94637b63ac4fc3f94f64abd11b64f0a">Mixtures of latent variable models for density estimation and classification</a>. E S E A R C H R E P R O R T I D I A P D a l l e M o l l e I n s t i t u t e f o r Pe r cep t ua l A r t i f i c i a l Intelligence .  [<a 
+href="../support/Dermatology#43019420b94637b63ac4fc3f94f64abd11b64f0a">View Context</a>].<br><br>H. Altay Guvenir. <a 
+href="http://rexa.info/paper/8eb7bb53b63501db4eb1c49eab30d76f7febba8d">A Classification Learning Algorithm Robust to Irrelevant Features</a>. Bilkent University, Department of Computer Engineering and Information Science.  [<a 
+href="../support/Dermatology#8eb7bb53b63501db4eb1c49eab30d76f7febba8d">View Context</a>].<br><br></p>
+
+-->
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" /><p class="normal">Vassilis Athitsos and Stan Sclaroff. <a 
+href="http://rexa.info/paper/692880d7b3356df64bfa0f06a683f89e4ce6955b">Boosting Nearest Neighbor Classifiers for Multiclass Recognition</a>. Boston University Computer Science Tech. Report No, 2004-006. 2004.  [<a 
+href="../support/Dermatology#692880d7b3356df64bfa0f06a683f89e4ce6955b">View Context</a>].<br><br>Gisele L. Pappa and Alex Alves Freitas and Celso A A Kaestner. <a 
+href="http://rexa.info/paper/30b640cb0a4ba73302609a2f1ec74291c70efd85">Attribute Selection with a Multi-objective Genetic Algorithm</a>. SBIA. 2002.  [<a 
+href="../support/Dermatology#30b640cb0a4ba73302609a2f1ec74291c70efd85">View Context</a>].<br><br>M. V. Fidelis and Heitor S. Lopes and Alex Alves Freitas. <a 
+href="http://rexa.info/paper/25c83dd7b43db4459e6eec12a71a229e10afac90">Discovering Comprehensible Classification Rules with a Genetic Algorithm</a>. UEPG, CPD CEFET-PR, CPGEI PUC-PR, PPGIA Praa Santos Andrade, s/n Av. Sete de Setembro.  [<a 
+href="../support/Dermatology#25c83dd7b43db4459e6eec12a71a229e10afac90">View Context</a>].<br><br>Rafael S. Parpinelli and Heitor S. Lopes and Alex Alves Freitas. <a 
+href="http://rexa.info/paper/f4405e32dbb5dea3ece303e2a5b3edb6b413271e">PART FOUR: ANT COLONY OPTIMIZATION AND IMMUNE SYSTEMS Chapter X An Ant Colony Algorithm for Classification Rule Discovery</a>. CEFET-PR, Curitiba.  [<a 
+href="../support/Dermatology#f4405e32dbb5dea3ece303e2a5b3edb6b413271e">View Context</a>].<br><br>Rafael S. Parpinelli and Heitor S. Lopes and Alex Alves Freitas. <a 
+href="http://rexa.info/paper/899bdb470e48c308144216cc22048c88816ee035">An Ant Colony Based System for Data Mining: Applications to Medical Data</a>. CEFET-PR, CPGEI Av. Sete de Setembro, 3165.  [<a 
+href="../support/Dermatology#899bdb470e48c308144216cc22048c88816ee035">View Context</a>].<br><br>Gisele L. Pappa and Alex Alves Freitas and Celso A A Kaestner. <a 
+href="http://rexa.info/paper/1a387e912f3bd68e66957cdfdebbb068ffc2149a">AMultiobjective Genetic Algorithm for Attribute Selection</a>. Computing Laboratory Pontificia Universidade Catolica do Parana University of Kent at Canterbury.  [<a 
+href="../support/Dermatology#1a387e912f3bd68e66957cdfdebbb068ffc2149a">View Context</a>].<br><br>Perry Moerland. <a 
+href="http://rexa.info/paper/43019420b94637b63ac4fc3f94f64abd11b64f0a">Mixtures of latent variable models for density estimation and classification</a>. E S E A R C H R E P R O R T I D I A P D a l l e M o l l e I n s t i t u t e f o r Pe r cep t ua l A r t i f i c i a l Intelligence .  [<a 
+href="../support/Dermatology#43019420b94637b63ac4fc3f94f64abd11b64f0a">View Context</a>].<br><br>H. Altay Guvenir. <a 
+href="http://rexa.info/paper/8eb7bb53b63501db4eb1c49eab30d76f7febba8d">A Classification Learning Algorithm Robust to Irrelevant Features</a>. Bilkent University, Department of Computer Engineering and Information Science.  [<a 
+href="../support/Dermatology#8eb7bb53b63501db4eb1c49eab30d76f7febba8d">View Context</a>].<br><br></p>
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning 
+Repository's <a href="../citation_policy.html">citation policy</a></p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration 
+with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

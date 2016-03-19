@@ -1,0 +1,21 @@
+ICS ELMS AuthenticationELMS-MSDNAA Login
+            
+
+
+
+
+
+   
+
+
+   Please enter your ICS username and password.
+
+
+        
+
+
+               
+
+               Username:  
+                                     "@ics.uci.edu" part not required 
+               Password:

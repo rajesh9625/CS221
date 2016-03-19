@@ -1,0 +1,16 @@
+Bart P. Knijnenburg, UC Irvine<html><head><title>Bart P. Knijnenburg, UC Irvine</title></head>
+<body>
+	<h1>Bart P. Knijnenburg</h1>
+	
+	<h2>Informatics PhD candidate, UC Irvine</h2>
+	<p>This is a placeholder, please visit my <a href="http://www.usabart.nl/">personal website</a>.</p>
+	
+	<p>Latest papers: 
+		<ul><a href="http://www.usabart.nl/portfolio/Knijnenburgetal-amcis2014.pdf">Knijnenburg, B.P., Willemsen, M.C., Broeders, R. (2014) "Smart Sustainability through System Satisfaction: Tailored Preference Elicitation for Energy-saving Recommenders"</a>, accepted at AMCIS2014.</ul>
+		<ul><a href="http://www.usabart.nl/portfolio/Knijnenburg-pps2014.pdf">Knijnenburg, B.P. (2014) "Information Disclosure Profiles for Segmentation and Recommendation"</a>, accepted at the SOUPS2014 Workshop on Privacy Personas and Segmentation (PPS).</ul>
+		<ul><a href="http://www.usabart.nl/portfolio/Wisniewskietal-pps2014.pdf">Wisniewski, P., Knijnenburg, B.P., Richter Lipford, H. (2014) "Profiling Facebook Users' Privacy Behaviors"</a>, accepted at the SOUPS2014 Workshop on Privacy Personas and Segmentation (PPS).</ul>
+		<ul><a href="http://www.usabart.nl/portfolio/Wuetal-pps2014.pdf">Wu, H., Knijnenburg, B.P., Kobsa, A. (2014) "Improving the prediction of users’ disclosure behavior... by making them disclose more predictably?"</a>, accepted at the SOUPS2014 Workshop on Privacy Personas and Segmentation (PPS).</ul>
+	</p>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+UCI Machine Learning Repository: Letter Recognition Data Set
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Letter Recognition Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Letter Recognition Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/letter-recognition/"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="../machine-learning-databases/letter-recognition/letter-recognition.names"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Database of character image features; try to identify the letter</p>
+     </td>
+     <td> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">20000</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Computer</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Integer</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">16</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">1991-01-01</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">No</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">154420</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Creator: <br><br>David J. Slate<br>Odesta Corporation; 1890 Maple Ave; Suite 115; Evanston, IL 60201<br><br>Donor: <br><br>David J. Slate (<u>dave <b>'@'</b> math.nwu.edu</u>) (708) 491-3867   </p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">The objective is to identify each of a large number of black-and-white rectangular pixel displays as one of the 26 capital letters in the English alphabet.  The character images were based on 20 different fonts and each letter within these 20 fonts was randomly distorted to produce a file of 20,000 unique stimuli.  Each stimulus was converted into 16 primitive numerical attributes (statistical moments and edge counts) which were then scaled to fit into a range of integer values from 0 through 15.  We typically train on the first 16000 items and then use the resulting model to predict the letter category for the remaining 4000.  See the article cited above for more details.</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">	 1.	lettr	capital letter	(26 values from A to Z)<br>	 2.	x-box	horizontal position of box	(integer)<br>	 3.	y-box	vertical position of box	(integer)<br>	 4.	width	width of box			(integer)<br>	 5.	high 	height of box			(integer)<br>	 6.	onpix	total # on pixels		(integer)<br>	 7.	x-bar	mean x of on pixels in box	(integer)<br>	 8.	y-bar	mean y of on pixels in box	(integer)<br>	 9.	x2bar	mean x variance			(integer)<br>	10.	y2bar	mean y variance			(integer)<br>	11.	xybar	mean x y correlation		(integer)<br>	12.	x2ybr	mean of x * x * y		(integer)<br>	13.	xy2br	mean of x * y * y		(integer)<br>	14.	x-ege	mean edge count left to right	(integer)<br>	15.	xegvy	correlation of x-ege with y	(integer)<br>	16.	y-ege	mean edge count bottom to top	(integer)<br>	17.	yegvx	correlation of y-ege with x	(integer)</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">P. W. Frey and D. J. Slate. "Letter Recognition Using Holland-style Adaptive Classifiers". (Machine Learning Vol 6 #2 March 91)<br><a href="http://rexa.info/paper/20ffa3d5e05b868d49b102b97c2a60037e85f34e">[Web Link]</a></p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">Xiaoli Z. Fern and Carla Brodley. <a 
+href="http://rexa.info/paper/426e712ef75473927e172cd8d75299a5c9037bd6">Cluster Ensembles for High Dimensional Clustering: An Empirical Study</a>. Journal of Machine Learning Research n, a. 2004.  [<a 
+href="../support/Letter+Recognition#426e712ef75473927e172cd8d75299a5c9037bd6">View Context</a>].<br><br>Jaakko Peltonen and Arto Klami and Samuel Kaski. <a 
+href="http://rexa.info/paper/8e5c7f7c811898dd8308bdf011e3bd14e3b43980">Improved Learning of Riemannian Metrics for Exploratory Analysis</a>. Improved Learning of Riemannian Metrics for Exploratory Analysis. Neural Networks. 2004.  [<a 
+href="../support/Letter+Recognition#8e5c7f7c811898dd8308bdf011e3bd14e3b43980">View Context</a>].<br><br>Giorgio Valentini. <a 
+href="http://rexa.info/paper/7ee121b26e79c0a7aa5c80979e275fc3592d0638">Ensemble methods based on bias--variance analysis Theses Series DISI-TH-2003</a>. Dipartimento di Informatica e Scienze dell'Informazione . 2003.  [<a 
+href="../support/Letter+Recognition#7ee121b26e79c0a7aa5c80979e275fc3592d0638">View Context</a>].<br><br>Dmitry Pavlov and Alexandrin Popescul and David M. Pennock and Lyle H. Ungar. <a 
+href="http://rexa.info/paper/cf50848a3edbd7599d1ff18d941d332e1fe6a673">Mixtures of Conditional Maximum Entropy Models</a>. ICML. 2003.  [<a 
+href="../support/Letter+Recognition#cf50848a3edbd7599d1ff18d941d332e1fe6a673">View Context</a>].<br><br>Kristin P. Bennett and Ayhan Demiriz and Richard Maclin. <a 
+href="http://rexa.info/paper/ca3e1e0bf335a97cedb76be7b64610181e0f6684">Exploiting unlabeled data in ensemble methods</a>. KDD. 2002.  [<a 
+href="../support/Letter+Recognition#ca3e1e0bf335a97cedb76be7b64610181e0f6684">View Context</a>].<br><br>Stephen D. Bay. <a 
+href="http://rexa.info/paper/6c590e12408ebd3b9184e8f4634612e552a823e9">Nearest neighbor classification from multiple feature subsets</a>. Intell. Data Anal, 3. 1999.  [<a 
+href="../support/Letter+Recognition#6c590e12408ebd3b9184e8f4634612e552a823e9">View Context</a>].<br><br>Thomas G. Dietterich. <a 
+href="http://rexa.info/paper/5f8eb537fc397ad5e506b2eae4f6676b48990ba6">Approximate Statistical Test For Comparing Supervised Classification Learning Algorithms</a>. Neural Computation, 10. 1998.  [<a 
+href="../support/Letter+Recognition#5f8eb537fc397ad5e506b2eae4f6676b48990ba6">View Context</a>].<br><br>Thomas G. Dietterich and Ghulum Bakiri. <a 
+href="http://rexa.info/paper/019c2f2e77588b6e654cc5c4c27ae643d3bd0f62">Solving Multiclass Learning Problems via Error-Correcting Output Codes</a>. CoRR, csAI/9501101. 1995.  [<a 
+href="../support/Letter+Recognition#019c2f2e77588b6e654cc5c4c27ae643d3bd0f62">View Context</a>].<br><br>Georgios Paliouras and David S. Brée. <a 
+href="http://rexa.info/paper/81865e4bd3f3a7a8b86c73c6144db99274e5bbaf">The Effect of Numeric Features on the Scalability of Inductive Learning Programs</a>. ECML. 1995.  [<a 
+href="../support/Letter+Recognition#81865e4bd3f3a7a8b86c73c6144db99274e5bbaf">View Context</a>].<br><br>Miguel Moreira and Alain Hertz and Eddy Mayoraz. <a 
+href="http://rexa.info/paper/abf0c261ab7aa462cd5cbc290cb7963cdf4f9ee8">Data binarization by discriminant elimination</a>. Proceedings of the ICML-99 Workshop: From Machine Learning to.  [<a 
+href="../support/Letter+Recognition#abf0c261ab7aa462cd5cbc290cb7963cdf4f9ee8">View Context</a>].<br><br>Arto Klami and Samuel Kaski and Ty n ohjaaja and Janne Sinkkonen. <a 
+href="http://rexa.info/paper/097c7a7a0199cda61be7fac0050755303cec3b46">HELSINKI UNIVERSITY OF TECHNOLOGY Department of Engineering Physics and Mathematics Arto Klami Regularized Discriminative Clustering</a>. Regularized Discriminative Clustering.  [<a 
+href="../support/Letter+Recognition#097c7a7a0199cda61be7fac0050755303cec3b46">View Context</a>].<br><br>Shailesh Kumar and Melba Crawford and Joydeep Ghosh. <a 
+href="http://rexa.info/paper/5dc7f8afb0d062322bf401745db703534477a4a0">A versatile framework for labelling imagery with a large number of classes</a>. Department of Electrical and Computer Engineering.  [<a 
+href="../support/Letter+Recognition#5dc7f8afb0d062322bf401745db703534477a4a0">View Context</a>].<br><br>Amund Tveit. <a 
+href="http://rexa.info/paper/51d0dcaced0a60e995d1d228b618f89c00aab45b">Empirical Comparison of Accuracy and Performance for the MIPSVM classifier with Existing Classifiers</a>. Division of Intelligent Systems Department of Computer and Information Science, Norwegian University of Science and Technology.  [<a 
+href="../support/Letter+Recognition#51d0dcaced0a60e995d1d228b618f89c00aab45b">View Context</a>].<br><br>Hirotaka Inoue and Hiroyuki Narihisa. <a 
+href="http://rexa.info/paper/2f0d669e8358c5a2af27cd538f8b5929dec89b48">Incremental Learning with Self-Organizing Neural Grove</a>. Department of Electrical Engineering and Information Science, Kure National College of Technology.  [<a 
+href="../support/Letter+Recognition#2f0d669e8358c5a2af27cd538f8b5929dec89b48">View Context</a>].<br><br>Jaakko Peltonen and Arto Klami and Samuel Kaski. <a 
+href="http://rexa.info/paper/ba8302e5db2921603c34aee0c738b103d1948f5f">Learning Metrics for Information Visualization</a>. Neural Networks Research Centre Helsinki University of Technology.  [<a 
+href="../support/Letter+Recognition#ba8302e5db2921603c34aee0c738b103d1948f5f">View Context</a>].<br><br>Adil M. Bagirov and Julien Ugon. <a 
+href="http://rexa.info/paper/69547b69d3133bba06b4ce74e67e2f3a6366a2f6">An algorithm for computation of piecewise linear function separating two sets</a>. CIAO, School of Information Technology and Mathematical Sciences, The University of Ballarat.  [<a 
+href="../support/Letter+Recognition#69547b69d3133bba06b4ce74e67e2f3a6366a2f6">View Context</a>].<br><br></p>
+
+-->
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" /><p class="normal">Xiaoli Z. Fern and Carla Brodley. <a 
+href="http://rexa.info/paper/426e712ef75473927e172cd8d75299a5c9037bd6">Cluster Ensembles for High Dimensional Clustering: An Empirical Study</a>. Journal of Machine Learning Research n, a. 2004.  [<a 
+href="../support/Letter+Recognition#426e712ef75473927e172cd8d75299a5c9037bd6">View Context</a>].<br><br>Jaakko Peltonen and Arto Klami and Samuel Kaski. <a 
+href="http://rexa.info/paper/8e5c7f7c811898dd8308bdf011e3bd14e3b43980">Improved Learning of Riemannian Metrics for Exploratory Analysis</a>. Improved Learning of Riemannian Metrics for Exploratory Analysis. Neural Networks. 2004.  [<a 
+href="../support/Letter+Recognition#8e5c7f7c811898dd8308bdf011e3bd14e3b43980">View Context</a>].<br><br>Giorgio Valentini. <a 
+href="http://rexa.info/paper/7ee121b26e79c0a7aa5c80979e275fc3592d0638">Ensemble methods based on bias--variance analysis Theses Series DISI-TH-2003</a>. Dipartimento di Informatica e Scienze dell'Informazione . 2003.  [<a 
+href="../support/Letter+Recognition#7ee121b26e79c0a7aa5c80979e275fc3592d0638">View Context</a>].<br><br>Dmitry Pavlov and Alexandrin Popescul and David M. Pennock and Lyle H. Ungar. <a 
+href="http://rexa.info/paper/cf50848a3edbd7599d1ff18d941d332e1fe6a673">Mixtures of Conditional Maximum Entropy Models</a>. ICML. 2003.  [<a 
+href="../support/Letter+Recognition#cf50848a3edbd7599d1ff18d941d332e1fe6a673">View Context</a>].<br><br>Kristin P. Bennett and Ayhan Demiriz and Richard Maclin. <a 
+href="http://rexa.info/paper/ca3e1e0bf335a97cedb76be7b64610181e0f6684">Exploiting unlabeled data in ensemble methods</a>. KDD. 2002.  [<a 
+href="../support/Letter+Recognition#ca3e1e0bf335a97cedb76be7b64610181e0f6684">View Context</a>].<br><br>Stephen D. Bay. <a 
+href="http://rexa.info/paper/6c590e12408ebd3b9184e8f4634612e552a823e9">Nearest neighbor classification from multiple feature subsets</a>. Intell. Data Anal, 3. 1999.  [<a 
+href="../support/Letter+Recognition#6c590e12408ebd3b9184e8f4634612e552a823e9">View Context</a>].<br><br>Thomas G. Dietterich. <a 
+href="http://rexa.info/paper/5f8eb537fc397ad5e506b2eae4f6676b48990ba6">Approximate Statistical Test For Comparing Supervised Classification Learning Algorithms</a>. Neural Computation, 10. 1998.  [<a 
+href="../support/Letter+Recognition#5f8eb537fc397ad5e506b2eae4f6676b48990ba6">View Context</a>].<br><br>Thomas G. Dietterich and Ghulum Bakiri. <a 
+href="http://rexa.info/paper/019c2f2e77588b6e654cc5c4c27ae643d3bd0f62">Solving Multiclass Learning Problems via Error-Correcting Output Codes</a>. CoRR, csAI/9501101. 1995.  [<a 
+href="../support/Letter+Recognition#019c2f2e77588b6e654cc5c4c27ae643d3bd0f62">View Context</a>].<br><br>Georgios Paliouras and David S. Brée. <a 
+href="http://rexa.info/paper/81865e4bd3f3a7a8b86c73c6144db99274e5bbaf">The Effect of Numeric Features on the Scalability of Inductive Learning Programs</a>. ECML. 1995.  [<a 
+href="../support/Letter+Recognition#81865e4bd3f3a7a8b86c73c6144db99274e5bbaf">View Context</a>].<br><br>Miguel Moreira and Alain Hertz and Eddy Mayoraz. <a 
+href="http://rexa.info/paper/abf0c261ab7aa462cd5cbc290cb7963cdf4f9ee8">Data binarization by discriminant elimination</a>. Proceedings of the ICML-99 Workshop: From Machine Learning to.  [<a 
+href="../support/Letter+Recognition#abf0c261ab7aa462cd5cbc290cb7963cdf4f9ee8">View Context</a>].<br><br>Arto Klami and Samuel Kaski and Ty n ohjaaja and Janne Sinkkonen. <a 
+href="http://rexa.info/paper/097c7a7a0199cda61be7fac0050755303cec3b46">HELSINKI UNIVERSITY OF TECHNOLOGY Department of Engineering Physics and Mathematics Arto Klami Regularized Discriminative Clustering</a>. Regularized Discriminative Clustering.  [<a 
+href="../support/Letter+Recognition#097c7a7a0199cda61be7fac0050755303cec3b46">View Context</a>].<br><br>Shailesh Kumar and Melba Crawford and Joydeep Ghosh. <a 
+href="http://rexa.info/paper/5dc7f8afb0d062322bf401745db703534477a4a0">A versatile framework for labelling imagery with a large number of classes</a>. Department of Electrical and Computer Engineering.  [<a 
+href="../support/Letter+Recognition#5dc7f8afb0d062322bf401745db703534477a4a0">View Context</a>].<br><br>Amund Tveit. <a 
+href="http://rexa.info/paper/51d0dcaced0a60e995d1d228b618f89c00aab45b">Empirical Comparison of Accuracy and Performance for the MIPSVM classifier with Existing Classifiers</a>. Division of Intelligent Systems Department of Computer and Information Science, Norwegian University of Science and Technology.  [<a 
+href="../support/Letter+Recognition#51d0dcaced0a60e995d1d228b618f89c00aab45b">View Context</a>].<br><br>Hirotaka Inoue and Hiroyuki Narihisa. <a 
+href="http://rexa.info/paper/2f0d669e8358c5a2af27cd538f8b5929dec89b48">Incremental Learning with Self-Organizing Neural Grove</a>. Department of Electrical Engineering and Information Science, Kure National College of Technology.  [<a 
+href="../support/Letter+Recognition#2f0d669e8358c5a2af27cd538f8b5929dec89b48">View Context</a>].<br><br>Jaakko Peltonen and Arto Klami and Samuel Kaski. <a 
+href="http://rexa.info/paper/ba8302e5db2921603c34aee0c738b103d1948f5f">Learning Metrics for Information Visualization</a>. Neural Networks Research Centre Helsinki University of Technology.  [<a 
+href="../support/Letter+Recognition#ba8302e5db2921603c34aee0c738b103d1948f5f">View Context</a>].<br><br>Adil M. Bagirov and Julien Ugon. <a 
+href="http://rexa.info/paper/69547b69d3133bba06b4ce74e67e2f3a6366a2f6">An algorithm for computation of piecewise linear function separating two sets</a>. CIAO, School of Information Technology and Mathematical Sciences, The University of Ballarat.  [<a 
+href="../support/Letter+Recognition#69547b69d3133bba06b4ce74e67e2f3a6366a2f6">View Context</a>].<br><br></p>
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning 
+Repository's <a href="../citation_policy.html">citation policy</a></p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration 
+with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

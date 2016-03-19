@@ -1,0 +1,994 @@
+Username: University of California Irvine User Book: Hadoop: The Definitive Guide, 3rd Edition. No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.Hadoop Configuration
+
+
+
+
+
+
+There are a handful of files for controlling the
+    configuration of a Hadoop installation; the most important ones are listed
+    in Table 9-1. This section covers
+    MapReduce 1, which employs the jobtracker and tasktracker daemons. Running
+    MapReduce 2 is substantially different and is covered in YARN Configuration.
+Table 9-1. Hadoop configuration files
+FilenameFormatDescriptionhadoop-env.shBash scriptEnvironment variables that are used in the scripts to run
+            Hadoopcore-site.xmlHadoop configuration
+            XMLConfiguration settings for Hadoop Core, such as I/O
+            settings that are common to HDFS and MapReducehdfs-site.xmlHadoop configuration
+            XMLConfiguration settings for HDFS daemons: the namenode, the
+            secondary namenode, and the datanodesmapred-site.xmlHadoop configuration
+            XMLConfiguration settings for MapReduce daemons: the
+            jobtracker, and the tasktrackersmastersPlain textA list of machines (one per line) that each run a secondary
+            namenodeslavesPlain textA list of machines (one per line) that each run a datanode
+            and a tasktracker hadoop-metrics  .propertiesJava PropertiesProperties for controlling how metrics are published in
+            Hadoop (see Metrics)log4j.propertiesJava PropertiesProperties for system logfiles, the namenode audit log, and
+            the task log for the
+            tasktracker child process (Hadoop Logs)
+
+
+
+
+
+These files are all found in the conf directory of the Hadoop distribution. The
+    configuration directory can be relocated to another part of the filesystem
+    (outside the Hadoop installation, which makes upgrades marginally easier)
+    as long as daemons are started with the --config option
+    specifying the location of this directory on the local filesystem.
+
+
+Configuration Management
+
+
+
+
+
+
+Hadoop does not have a single, global location for configuration
+      information. Instead, each Hadoop node in the cluster has its own set of
+      configuration files, and it is up to administrators to ensure that they
+      are kept in sync across the system. Hadoop provides a rudimentary
+      facility for synchronizing configuration using rsync (see the upcoming discussion);
+      alternatively, there are parallel shell tools that can help do this,
+      such as dsh or pdsh.
+Hadoop is designed so that it is possible to have a single set of
+      configuration files that are used for all master and worker machines.
+      The great advantage of this is simplicity, both conceptually (since
+      there is only one configuration to deal with) and operationally (as the
+      Hadoop scripts are sufficient to manage a single configuration
+      setup).
+For some clusters, the one-size-fits-all configuration model
+      breaks down. For example, if you expand the cluster with new machines
+      that have a different hardware specification from the existing ones, you
+      need a different configuration for the new machines to take advantage of
+      their extra resources.
+In these cases, you need to have the concept of a
+      class of machine and maintain a separate
+      configuration for each class. Hadoop doesn’t provide tools to do this,
+      but there are several excellent tools for doing precisely this type of
+      configuration management, such as Chef, Puppet, cfengine, and
+      bcfg2.
+For a cluster of any size, it can be a challenge to keep all of
+      the machines in sync: consider what happens if the machine is
+      unavailable when you push out an update. Who ensures it gets the update
+      when it becomes available? This is a big problem and can lead to
+      divergent installations, so even if you use the Hadoop control scripts
+      for managing Hadoop, it may be a good idea to use configuration
+      management tools for maintaining the cluster. These tools are also
+      excellent for doing regular maintenance, such as patching security holes
+      and updating system packages.
+
+
+Control scripts
+
+
+
+
+
+
+Hadoop comes with scripts for running commands and
+        starting and stopping daemons across the whole cluster. To use these
+        scripts (which can be found in the bin directory), you need to tell Hadoop
+        which machines are in the cluster. There are two files for this
+        purpose, called masters and
+        slaves, each of which contains a
+        list of the machine hostnames or IP addresses, one per line. The
+        masters file is actually a
+        misleading name, in that it determines which machine or machines
+        should run a secondary namenode. The slaves file lists the machines that the
+        datanodes and tasktrackers should run on. Both masters and slaves files reside in the configuration
+        directory, although the slaves
+        file may be placed elsewhere (and given another name) by changing the
+        HADOOP_SLAVES setting
+        in hadoop-env.sh. Also, these
+        files do not need to be distributed to worker nodes, since they are
+        used only by the control scripts running on the namenode or
+        jobtracker.
+You don’t need to specify which machine (or machines) the
+        namenode and jobtracker run on in the masters file, as this is determined by the
+        machine the scripts are run on. (In fact, specifying these in the
+        masters file would cause a
+        secondary namenode to run there, which isn’t always what you want.)
+        For example, the start-dfs.sh
+        script, which starts all the HDFS daemons in the cluster, runs the
+        namenode on the machine that the script is run on. In slightly more
+        detail, it:
+
+Starts a namenode on the local machine (the machine that the
+            script is run on)
+Starts a datanode on each machine listed in the slaves file
+Starts a secondary namenode on each machine listed in the
+            masters file
+
+
+There is a similar script called start-mapred.sh, which starts all the
+        MapReduce daemons in the cluster. More specifically, it:
+
+Starts a jobtracker on the local machine
+Starts a tasktracker on each machine listed in the slaves file
+
+
+Note that masters is not
+        used by the MapReduce control scripts.
+Also provided are stop-dfs.sh and stop-mapred.sh scripts to stop the daemons
+        started by the corresponding start script.
+These scripts start and stop Hadoop daemons using the hadoop-daemon.sh script. If you use the
+        aforementioned scripts, you shouldn’t call hadoop-daemon.sh directly. But if you need
+        to control Hadoop daemons from another system or from your own
+        scripts, the hadoop-daemon.sh
+        script is a good integration point. Likewise, hadoop-daemons.sh (with an “s”) is handy
+        for starting the same daemon on a set of hosts.
+
+
+
+Master node scenarios
+
+
+
+
+
+
+Depending on the size of the cluster, there are various
+        configurations for running the master daemons: the namenode, secondary
+        namenode, and jobtracker. On a small cluster (a few tens of nodes), it
+        is convenient to put them on a single machine; however, as the cluster
+        gets larger, there are good reasons to separate them.
+The namenode has high memory requirements, as it holds file and
+        block metadata for the entire namespace in memory. The secondary
+        namenode, although idle most of the time, has a comparable memory
+        footprint to the primary when it creates a checkpoint. (This is
+        explained in detail in The filesystem image and edit log.)
+        For filesystems with a large number of files, there may not be enough
+        physical memory on one machine to run both the primary and secondary
+        namenode.
+The secondary namenode keeps a copy of the latest checkpoint of
+        the filesystem metadata that it creates. Keeping this (stale) backup
+        on a different node from the namenode allows recovery in the event of
+        loss (or corruption) of all the namenode’s metadata files. (This is
+        discussed further in Chapter 10.)
+On a busy cluster running lots of MapReduce jobs, the jobtracker
+        uses considerable memory and CPU resources, so it should run on a
+        dedicated node.
+Whether the master daemons run on one or more nodes, the
+        following instructions apply:
+
+Run the HDFS control scripts from the namenode machine. The
+            masters file should contain the address of
+            the secondary namenode.
+Run the MapReduce control scripts from the jobtracker
+            machine.
+
+
+When the namenode and jobtracker are on separate nodes, their
+        slaves files need to be kept in
+        sync, since each node in the cluster should run a datanode and a
+        tasktracker.
+
+
+
+
+
+
+Environment Settings
+
+
+
+
+
+
+In this section, we consider how to set the variables in
+      hadoop-env.sh.
+
+
+Memory
+
+
+
+
+
+
+By default, Hadoop allocates 1,000 MB (1 GB) of memory
+        to each daemon it runs. This is controlled by the HADOOP_HEAPSIZE
+        setting in hadoop-env.sh. In
+        addition, the task tracker launches separate child JVMs to run map and
+        reduce tasks in, so we need to factor these into the total memory
+        footprint of a worker machine.
+The maximum number of map tasks that can run on a tasktracker at
+        one time is controlled by the mapred.tasktracker.map.tasks.maximum
+        property, which defaults to two tasks. There is a corresponding
+        property for reduce tasks, mapred.tasktracker.reduce.tasks.maximum,
+        which also defaults to two tasks. The tasktracker is said to have two
+        map slots and two reduce
+        slots.
+The memory given to each child JVM running a task can be changed
+        by setting the mapred.child.java.opts property. The default
+        setting is -Xmx200m, which gives
+        each task 200 MB of memory. (Incidentally, you can provide extra JVM
+        options here, too. For example, you might enable verbose GC logging to
+        debug GC.) The default configuration therefore uses 2,800 MB of memory
+        for a worker machine (see Table 9-2).
+Table 9-2. Worker node memory calculation
+JVMDefault memory used (MB)Memory used for eight processors, 400 MB per child
+                (MB)Datanode1,0001,000Tasktracker1,0001,000Tasktracker child map task2 × 2007 × 400Tasktracker child reduce task2 × 2007 × 400Total2,8007,600
+
+
+
+
+
+The number of tasks that can be run simultaneously on a
+        tasktracker is related to the number of processors available on the
+        machine. Because MapReduce jobs are normally I/O-bound, it makes sense
+        to have more tasks than processors to get better utilization. The amount of
+        oversubscription depends on the CPU utilization of jobs you run, but a
+        good rule of thumb is to have a factor of between one and two more
+        tasks (counting both map and reduce tasks) than processors.
+For example, if you had eight processors and you wanted to run
+        two processes on each processor, you could set both mapred.tasktracker.map.tasks.maximum and
+        mapred.tasktracker.reduce.tasks.maximum to 7
+        (not 8, because the datanode and the tasktracker each take one slot).
+        If you also increased the memory available to each child task to 400
+        MB, the total memory usage would be 7,600 MB (see Table 9-2).
+Whether this Java memory allocation will fit into 8 GB of
+        physical memory depends on the other processes that are running on the
+        machine. If you are running Streaming or Pipes programs, this
+        allocation will probably be inappropriate (and the memory allocated to
+        the child should be dialed down), since it doesn’t allow enough memory
+        for users’ (Streaming or Pipes) processes to run. The thing to avoid
+        is processes being swapped out, as this leads to severe performance
+        degradation. The precise memory settings are necessarily very
+        cluster-dependent and can be optimized over time with experience
+        gained from monitoring the memory usage across the cluster. Tools such
+        as Ganglia (GangliaContext) are good for gathering this
+        information. See Task memory limits for more on how
+        to enforce task memory limits.
+Hadoop also provides settings to control how much memory is used
+        for MapReduce operations. These can be set on a per-job basis and are
+        covered in the section on Shuffle and Sort.
+For the master nodes, each of the namenode, secondary namenode,
+        and jobtracker daemons uses 1,000 MB by default, for a total of 3,000
+        MB.
+How Much Memory Does a Namenode Need?
+A namenode can eat up memory, since a reference to every block
+          of every file is maintained in memory. It’s difficult to give a
+          precise formula because memory usage depends on the number of blocks
+          per file, the filename length, and the number of directories in the
+          filesystem; plus, it can change from one Hadoop release to
+          another.
+The default of 1,000 MB of namenode memory is normally enough
+          for a few million files, but as a rule of thumb for sizing purposes,
+          you can conservatively allow 1,000 MB per million blocks of
+          storage.
+For example, a 200-node cluster with 4 TB of disk space per
+          node, a block size of 128 MB, and a replication factor of 3 has room
+          for about 2 million blocks (or more): 200 × 4,000,000 MB ⁄ (128 MB ×
+          3). So in this case, setting the namenode memory to 2,000 MB would
+          be a good starting point.
+You can increase the namenode’s memory without changing the
+          memory allocated to other Hadoop daemons by setting HADOOP_NAMENODE_OPTS in hadoop-env.sh to include a JVM option for
+          setting the memory size. HADOOP_NAMENODE_OPTS allows you to pass
+          extra options to the namenode’s JVM. So, for example, if you were
+          using a Sun JVM, -Xmx2000m would
+          specify that 2,000 MB of memory should be allocated to the
+          namenode.
+If you change the namenode’s memory allocation, don’t forget
+          to do the same for the secondary namenode (using the HADOOP_SECONDARYNAMENODE_OPTS variable),
+          since its memory requirements are comparable to the primary
+          namenode’s. You probably also want to run the secondary namenode on
+          a different machine in this case.
+There are corresponding environment variables for the other
+          Hadoop daemons, so you can customize their memory allocations, if
+          desired. See hadoop-env.sh for
+          details.
+
+
+
+
+
+
+Java
+
+
+
+
+
+
+The location of the Java implementation to use is
+        determined by the JAVA_HOME setting in
+        hadoop-env.sh or from the
+        JAVA_HOME shell
+        environment variable, if not set in hadoop-env.sh. It’s a good idea to set the
+        value in hadoop-env.sh, so that
+        it is clearly defined in one place and to ensure that the whole
+        cluster is using the same version of Java.
+
+
+
+System logfiles
+
+
+
+
+
+
+System logfiles produced by Hadoop are stored in
+        $HADOOP_INSTALL/logs by
+        default. This can be changed using the HADOOP_LOG_DIR
+        setting in hadoop-env.sh. It’s a
+        good idea to change this so that logfiles are kept out of the
+        directory that Hadoop is installed in. Changing this keeps logfiles in
+        one place, even after the installation directory changes due to an
+        upgrade. A common choice is /var/log/hadoop, set by including the
+        following line in hadoop-env.sh:
+export HADOOP_LOG_DIR=/var/log/hadoop
+The log director will be created if it doesn’t already exist.
+        (If it does not exist, confirm that the Hadoop user has permission to
+        create it.) Each Hadoop daemon running on a machine produces two
+        logfiles. The first is the log output written via log4j. This file,
+        which ends in .log, should be the
+        first port of call when diagnosing problems because most application
+        log messages are written here. The standard Hadoop log4j configuration
+        uses a Daily Rolling File Appender to rotate logfiles. Old logfiles
+        are never deleted, so you should arrange for them to be periodically
+        deleted or archived, so as to not run out of disk space on the local
+        node.
+The second logfile is the combined standard output and standard
+        error log. This logfile, which ends in .out, usually contains little or no output,
+        since Hadoop uses log4j for logging. It is rotated only when the
+        daemon is restarted, and only the last five logs are retained. Old
+        logfiles are suffixed with a number between 1 and 5, with 5 being the
+        oldest file.
+Logfile names (of both types) are a combination of the name of
+        the user running the daemon, the daemon name, and the machine
+        hostname. For example, hadoop-tom-datanode-sturges.local.log.2008-07-04
+        is the name of a logfile after it has been rotated. This naming
+        structure makes it possible to archive logs from all machines in the
+        cluster in a single directory, if needed, since the filenames are
+        unique.
+The username in the logfile name is actually the default for the
+        HADOOP_IDENT_STRING
+        setting in hadoop-env.sh. If you
+        wish to give the Hadoop instance a different identity for the purposes
+        of naming the logfiles, change HADOOP_IDENT_STRING
+        to be the identifier you want.
+
+
+
+SSH settings
+
+
+
+
+
+
+The control scripts allow you to run commands on
+        (remote) worker nodes from the master node using SSH. It can be useful
+        to customize the SSH settings, for various reasons. For example, you
+        may want to reduce the connection timeout (using the ConnectTimeout
+        option) so the control scripts don’t hang around waiting to see
+        whether a dead node is going to respond. Obviously, this can be taken
+        too far. If the timeout is too low, then busy nodes will be skipped,
+        which is bad.
+Another useful SSH setting is StrictHostKeyChecking, which can be set to
+        no to automatically add new host
+        keys to the known hosts files. The default, ask, prompts the user to confirm that he has
+        verified the key fingerprint, which is not a suitable setting in a
+        large cluster environment.[78]
+To pass extra options to SSH, define the HADOOP_SSH_OPTS
+        environment variable in hadoop-env.sh. See the ssh and ssh_config manual
+        pages for more SSH settings.
+The Hadoop control scripts can distribute configuration files to
+        all nodes of the cluster using rsync. This is not enabled by default,
+        but by defining the HADOOP_MASTER setting
+        in hadoop-env.sh, worker daemons
+        will rsync the tree rooted at HADOOP_MASTER to the
+        local node’s HADOOP_INSTALL
+        whenever the daemon starts up.
+What if you have two masters—a namenode and a jobtracker—on
+        separate machines? You can pick one as the source and the other can
+        rsync from it, along with all the workers. In fact, you could use any
+        machine, even one outside the Hadoop cluster, to rsync from.
+Because HADOOP_MASTER is
+        unset by default, there is a bootstrapping problem: how do we make
+        sure hadoop-env.sh with
+        HADOOP_MASTER set is
+        present on worker nodes? For small clusters, it is easy to write a
+        small script to copy hadoop-env.sh from the master to all of the
+        worker nodes. For larger clusters, tools such as dsh can do the copies in parallel.
+        Alternatively, a suitable hadoop-env.sh can be created as a part of
+        the automated installation script (such as Kickstart).
+When starting a large cluster with rsyncing enabled, the worker
+        nodes start at around the same time and can overwhelm the master node
+        with rsync requests. To avoid this, set the HADOOP_SLAVE_SLEEP
+        setting to a small number of seconds, such as 0.1 for one-tenth of a second. When running
+        commands on all nodes of the cluster, the master will sleep for this
+        period between invoking the command on each worker machine in
+        turn.
+
+
+
+
+
+
+Important Hadoop Daemon Properties
+
+
+
+
+
+
+Hadoop has a bewildering number of configuration
+      properties. In this section, we address the ones that you need to define
+      (or at least understand why the default is appropriate) for any
+      real-world working cluster. These properties are set in the Hadoop site
+      files: core-site.xml, hdfs-site.xml, and mapred-site.xml. Typical examples of these
+      files are shown in Example 9-1, Example 9-2, and Example 9-3. Notice that
+      most properties are marked as final in order to prevent them from being
+      overridden by job configurations. You can learn more about how to write
+      Hadoop’s configuration files in The Configuration API.
+Example 9-1. A typical core-site.xml configuration file
+<?xml version="1.0"?>
+<!-- core-site.xml -->
+<configuration>
+  <property>
+    <name>fs.default.name</name>
+    <value>hdfs://namenode/</value>
+    <final>true</final>
+  </property>
+</configuration>
+
+
+
+
+
+Example 9-2. A typical hdfs-site.xml configuration file
+<?xml version="1.0"?>
+<!-- hdfs-site.xml -->
+<configuration>
+  <property>
+    <name>dfs.name.dir</name>
+    <value>/disk1/hdfs/name,/remote/hdfs/name</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>dfs.data.dir</name>
+    <value>/disk1/hdfs/data,/disk2/hdfs/data</value>
+    <final>true</final>
+  </property>
+  
+  <property>
+    <name>fs.checkpoint.dir</name>
+    <value>/disk1/hdfs/namesecondary,/disk2/hdfs/namesecondary</value>
+    <final>true</final>
+  </property>
+</configuration>
+
+
+
+
+
+Example 9-3. A typical mapred-site.xml configuration file
+<?xml version="1.0"?>
+<!-- mapred-site.xml -->
+<configuration>
+  <property>
+    <name>mapred.job.tracker</name>
+    <value>jobtracker:8021</value>
+    <final>true</final>
+  </property>
+  
+  <property>
+    <name>mapred.local.dir</name>
+    <value>/disk1/mapred/local,/disk2/mapred/local</value>
+    <final>true</final>
+  </property>
+  
+  <property>
+    <name>mapred.system.dir</name>
+    <value>/tmp/hadoop/mapred/system</value>
+    <final>true</final>
+  </property>
+  
+  <property>
+    <name>mapred.tasktracker.map.tasks.maximum</name>
+    <value>7</value>
+    <final>true</final>
+  </property>
+  
+  <property>
+    <name>mapred.tasktracker.reduce.tasks.maximum</name>
+    <value>7</value>
+    <final>true</final>
+  </property>
+  
+  <property>
+    <name>mapred.child.java.opts</name>
+    <value>-Xmx400m</value>
+    <!-- Not marked as final so jobs can include JVM debugging options -->
+  </property>
+</configuration>
+
+
+
+
+
+
+HDFS
+
+
+
+
+
+
+To run HDFS, you need to designate one machine as a
+        namenode. In this case, the property fs.default.name is an
+        HDFS filesystem URI whose host is the namenode’s hostname or IP
+        address and whose port is the port that the namenode will listen on
+        for RPCs. If no port is specified, the default of 8020 is used.
+Note
+The masters file that is
+          used by the control scripts is not used by the HDFS (or MapReduce)
+          daemons to determine hostnames. In fact, because the masters file is used only by the scripts,
+          you can ignore it if you don’t use them.
+
+The fs.default.name
+        property also doubles as specifying the default filesystem. The
+        default filesystem is used to resolve relative paths, which are handy
+        to use because they save typing (and avoid hardcoding knowledge of a
+        particular namenode’s address). For example, with the default
+        filesystem defined in Example 9-1, the relative URI
+        /a/b is resolved to hdfs://namenode/a/b.
+Note
+If you are running HDFS, the fact that fs.default.name is
+          used to specify both the HDFS namenode and the default filesystem means HDFS has
+          to be the default filesystem in the server configuration. Bear in
+          mind, however, that it is possible to specify a different filesystem
+          as the default in the client configuration, for convenience.
+For example, if you use both HDFS and S3 filesystems, then you
+          have a choice of specifying either as the default in the client
+          configuration, which allows you to refer to the default with a
+          relative URI and the other with an absolute URI.
+
+There are a few other configuration properties you should set
+        for HDFS: those that set the storage directories for the namenode and
+        for datanodes. The property dfs.name.dir
+        specifies a list of directories where the namenode stores persistent
+        filesystem metadata (the edit log and the filesystem image). A copy of
+        each metadata file is stored in each directory for redundancy. It’s
+        common to configure dfs.name.dir so that
+        the namenode metadata is written to one or two local disks, as well as
+        a remote disk, such as an NFS-mounted directory. Such a setup guards
+        against failure of a local disk and failure of the entire namenode,
+        since in both cases the files can be recovered and used to start a new
+        namenode. (The secondary namenode takes only periodic checkpoints of
+        the namenode, so it does not provide an up-to-date backup of the
+        namenode.)
+You should also set the dfs.data.dir
+        property, which specifies a list of directories for a datanode to
+        store its blocks. Unlike the namenode, which uses multiple directories
+        for redundancy, a datanode round-robins writes between its storage
+        directories, so for performance you should
+        specify a storage directory for each local disk. Read performance also
+        benefits from having multiple disks for storage, because blocks will
+        be spread across them and concurrent reads for distinct blocks will be
+        correspondingly spread across disks.
+Tip
+For maximum performance, you should mount storage disks with
+          the noatime option. This setting
+          means that last-accessed time information is not written on file
+          reads, which gives significant performance gains.
+
+Finally, you should configure where the secondary namenode
+        stores its checkpoints of the filesystem. The fs.checkpoint.dir
+        property specifies a list of directories where the checkpoints are
+        kept. Like the storage directories for the namenode, which keep
+        redundant copies of the namenode
+        metadata, the checkpointed filesystem image is stored in each
+        checkpoint directory for redundancy.
+Table 9-3 summarizes the
+        important configuration properties for HDFS.
+Table 9-3. Important HDFS daemon properties
+Property nameTypeDefault valueDescriptionfs.default.nameURIfile:///The default filesystem. The URI defines the hostname
+                and port that the namenode’s RPC server runs on. The default
+                port is 8020. This property is set in core-site.xml.dfs.name.dirComma-separated
+                directory names${hadoop.tmp.dir}/dfs/nameThe list of directories where the namenode stores its
+                persistent metadata. The
+                namenode stores a copy of the metadata in each directory in
+                the list.dfs.data.dirComma-separated directory names${hadoop.tmp.dir}/dfs/dataA list of directories where the datanode stores blocks.
+                Each block is stored in only one of these directories. fs.checkpoint.dir Comma-separated directory names${hadoop.tmp.dir}/dfs/namesecondaryA list of directories where the secondary namenode stores
+                checkpoints. It stores a copy of the checkpoint in each
+                directory in the list.
+
+
+
+
+
+
+Warning
+Note that the storage directories for HDFS are under Hadoop’s
+          temporary directory by default (the hadoop.tmp.dir
+          property, whose default is /tmp/hadoop-${user.name}). Therefore, it
+          is critical that these properties are set so that data is not lost
+          by the system when it clears out temporary directories.
+
+
+
+
+
+
+MapReduce
+
+
+
+
+
+
+To run MapReduce, you need to designate one machine as a
+        jobtracker, which on small clusters may be the same machine as the
+        namenode. To do this, set the mapred.job.tracker
+        property to the hostname or IP address and port that the jobtracker
+        will listen on. Note that this property is not a URI, but instead a
+        host-port pair, separated by a colon. The port number 8021 is a common
+        choice.
+During a MapReduce job, intermediate data and working files are
+        written to temporary local files. Because this data includes the
+        potentially very large output of map tasks, you need to ensure that
+        the mapred.local.dir
+        property, which controls the location of local temporary storage, is
+        configured to use disk partitions that are large enough. The
+        mapred.local.dir
+        property takes a comma-separated list of directory names, and you
+        should use all available local disks to spread disk I/O. Typically,
+        you will use the same disks and partitions (but different directories)
+        for MapReduce temporary data as you use for datanode block storage, as
+        governed by the dfs.data.dir
+        property, which was discussed earlier.
+MapReduce uses a distributed filesystem to share files (such as
+        the job JAR file) with the tasktrackers that run the MapReduce tasks.
+        The mapred.system.dir
+        property is used to specify a directory where these files can be
+        stored. This directory is resolved relative to the default filesystem
+        (configured in fs.default.name),
+        which is usually HDFS.
+Finally, you should set the mapred.tasktracker.map.tasks.maximum and
+        mapred.tasktracker.reduce.tasks.maximum
+        properties to reflect the number of available cores on the tasktracker
+        machines and mapred.child.java.opts to reflect the amount
+        of memory available for the tasktracker child JVMs. See the discussion
+        in Memory.
+Table 9-4 summarizes
+        the important configuration properties for MapReduce.
+Table 9-4. Important MapReduce daemon properties
+Property nameTypeDefault valueDescriptionmapred.job.trackerHostname and portlocalThe hostname and port that the jobtracker’s RPC server
+                runs on. If set to the default value of local, the jobtracker is run
+                in-process on demand when you run a MapReduce job (you don’t
+                need to start the jobtracker in this case, and in fact you will
+                get an error if you try to start it in this mode).mapred.local.dirComma-separated
+                directory names${hadoop.tmp.dir}/mapred/localA list of directories where MapReduce stores
+                intermediate data for jobs. The data is cleared out when the
+                job ends.mapred.system.dirURI${hadoop.tmp.dir}/mapred/systemThe directory relative to fs.default.name where shared files
+                are stored during a job run.mapred.tasktracker.map.tasks.maximumint2The number of map tasks that may be run on a
+                tasktracker at any one time.mapred.tasktracker.reduce.tasks.maximumint2The number of reduce tasks that may be run on a
+                tasktracker at any one time.mapred.child.java.optsString-Xmx200mThe JVM options used to launch the tasktracker child
+                process that runs map and reduce tasks. This property can be
+                set on a per-job basis, which can be useful for setting JVM
+                properties for debugging, for example.mapreduce.map.java.optsString-Xmx200mThe JVM options used for the child process that runs
+                map tasks. (Not available in 1.x.)mapreduce.reduce.java.optsString-Xmx200mThe JVM options used for the child process that runs
+                reduce tasks. (Not available in 1.x.)
+
+
+
+
+
+
+
+
+
+
+
+
+Hadoop Daemon Addresses and Ports
+
+
+
+
+
+
+Hadoop daemons generally run both an RPC server (Table 9-5) for communication between daemons and
+      an HTTP server to provide web pages for human consumption (Table 9-6). Each server is configured by setting
+      the network address and port number to listen on. By specifying the
+      network address as 0.0.0.0, Hadoop
+      will bind to all addresses on the machine. Alternatively, you can
+      specify a single address to bind to. A port number of 0 instructs the
+      server to start on a free port, but this is generally discouraged
+      because it is incompatible with setting cluster-wide firewall
+      policies.
+Table 9-5. RPC server properties
+Property nameDefault valueDescriptionfs.default.namefile:///When set to an HDFS URI, this property determines the
+              namenode’s RPC server address and port. The default port is 8020
+              if not specified.dfs.datanode.ipc.address0.0.0.0:50020The datanode’s RPC server address and port.mapred.job.trackerlocalWhen set to a hostname and port, this property specifies
+              the jobtracker’s RPC server address and port. A commonly used
+              port is 8021.mapred.task.tracker.report.address127.0.0.1:0The tasktracker’s RPC server address and port. This is
+              used by the tasktracker’s child JVM to communicate with the
+              tasktracker. Using any free port is acceptable in this case, as
+              the server only binds to the loopback address. You should change
+              this setting only if the
+              machine has no loopback address.
+
+
+
+
+
+In addition to an RPC server, datanodes run a TCP/IP server for
+      block transfers. The server address and port is set by the dfs.datanode.address
+      property and has a default value of 0.0.0.0:50010.
+Table 9-6. HTTP server properties
+Property nameDefault valueDescriptionmapred.job.tracker.http.address0.0.0.0:50030The jobtracker’s HTTP server address and portmapred.task.tracker.http.address0.0.0.0:50060The tasktracker’s HTTP server address and portdfs.http.address0.0.0.0:50070The namenode’s HTTP server address and portdfs.datanode.http.address0.0.0.0:50075The datanode’s HTTP server address and portdfs.secondary.http.address0.0.0.0:50090The secondary namenode’s HTTP server address and
+              port
+
+
+
+
+
+There are also settings for controlling which network interfaces
+      the datanodes and tasktrackers report as their IP addresses (for HTTP
+      and RPC servers). The relevant properties are dfs.datanode.dns.interface and mapred.tasktracker.dns.interface, both of
+      which are set to default, which will
+      use the default network interface. You can set this explicitly to report
+      the address of a particular interface (eth0, for example).
+
+
+
+Other Hadoop Properties
+
+
+
+
+
+
+This section discusses some other properties that you might
+      consider setting.
+
+
+Cluster membership
+
+
+
+
+
+
+To aid the addition and removal of nodes in the future,
+        you can specify a file containing a list of authorized machines that
+        may join the cluster as datanodes or tasktrackers. The file is
+        specified using the dfs.hosts and
+        mapred.hosts
+        properties (for datanodes and tasktrackers, respectively), as well as
+        the corresponding dfs.hosts.exclude and
+        mapred.hosts.exclude files used for
+        decommissioning. See Commissioning and Decommissioning Nodes for further
+        discussion.
+
+
+
+Buffer size
+
+
+
+
+
+
+Hadoop uses a buffer size of 4 KB (4,096 bytes) for its
+        I/O operations. This is a conservative setting, and with modern
+        hardware and operating systems, you will likely see performance
+        benefits by increasing it; 128 KB (131,072 bytes) is a common choice.
+        Set this using the io.file.buffer.size property in core-site.xml.
+
+
+
+HDFS block size
+
+
+
+
+
+
+The HDFS block size is 64 MB by default, but many
+        clusters use 128 MB (134,217,728 bytes) or even 256 MB (268,435,456
+        bytes) to ease memory pressure on the namenode and to give mappers
+        more data to work on. Set this using the dfs.block.size
+        property in hdfs-site.xml.
+
+
+
+Reserved storage space
+
+
+
+
+
+
+By default, datanodes will try to use all of the space
+        available in their storage directories. If you want to reserve some
+        space on the storage volumes for non-HDFS use, you can set dfs.datanode.du.reserved to the amount, in
+        bytes, of space to reserve.
+
+
+
+Trash
+
+
+
+
+
+
+Hadoop filesystems have a trash facility, in which
+        deleted files are not actually deleted, but rather are moved to a
+        trash folder, where they remain for a minimum period before being
+        permanently deleted by the system. The minimum period in minutes that
+        a file will remain in the trash is set using the fs.trash.interval configuration property in
+        core-site.xml. By default, the
+        trash interval is zero, which disables trash.
+Like in many operating systems, Hadoop’s trash facility is a
+        user-level feature, meaning that only files that are deleted using the
+        filesystem shell are put in the trash. Files deleted programmatically
+        are deleted immediately. It is possible to use the trash
+        programmatically, however, by constructing a Trash instance, then calling its moveToTrash() method with the
+        Path of the file intended for
+        deletion. The method returns a value indicating success; a value of
+        false means either that trash is
+        not enabled or that the file is already in the trash.
+When trash is enabled, each user has her own trash directory
+        called .Trash in her home
+        directory. File recovery is simple: you look for the file in a
+        subdirectory of .Trash and move
+        it out of the trash subtree.
+HDFS will automatically delete files in trash folders, but other
+        filesystems will not, so you have to arrange for this to be done
+        periodically. You can expunge the trash, which will
+        delete files that have been in the trash longer than their minimum
+        period, using the filesystem shell:
+% hadoop fs -expunge
+The Trash class exposes
+        an expunge() method that has the
+        same effect.
+
+
+
+Job scheduler
+
+
+
+
+
+
+Particularly in a multiuser MapReduce setting, consider
+        changing the default FIFO job scheduler to one of the more fully
+        featured alternatives. See Job Scheduling.
+
+
+
+Reduce slow start
+
+
+
+
+
+
+By default, schedulers wait until 5% of the map tasks in
+        a job have completed before scheduling reduce tasks for the same job.
+        For large jobs this can cause problems with cluster utilization, since
+        they take up reduce slots while waiting for the map tasks to complete.
+        Setting mapred.reduce.slowstart.completed.maps to a
+        higher value, such as 0.80 (80%),
+        can help improve throughput.
+
+
+
+Task memory limits
+
+
+
+
+
+
+On a shared cluster, it shouldn’t be possible for one
+        user’s errant MapReduce program to bring down nodes in the cluster.
+        This can happen if the map or reduce task has a memory leak, for
+        example, because the machine on which the tasktracker is running will
+        run out of memory and may affect the other running processes.
+Or consider the case where a user sets mapred.child.java.opts to a large value and
+        causes memory pressure on other running tasks, causing them to swap.
+        Marking this property as final on the cluster would prevent it from
+        being changed by users in their jobs, but there are legitimate reasons
+        to allow some jobs to use more memory, so this is not always an
+        acceptable solution. Furthermore, even locking down mapred.child.java.opts does not solve the
+        problem, because tasks can spawn new processes that are not
+        constrained in their memory usage. Streaming and Pipes jobs do exactly
+        that, for example.
+To prevent cases like these, some way of enforcing a limit on a
+        task’s memory usage is needed. Hadoop provides two mechanisms for
+        this. The simplest is via the Linux ulimit command, which can be done at the
+        operating-system level (in the limits.conf file, typically found in
+        /etc/security) or by setting
+        mapred.child.ulimit in the Hadoop
+        configuration. The value is specified in kilobytes, and should be
+        comfortably larger than the memory of the JVM set by mapred.child.java.opts; otherwise, the child
+        JVM might not start.
+The second mechanism is Hadoop’s task memory
+        monitoring feature.[79]  The
+        idea is that an administrator sets a range of allowed virtual memory
+        limits for tasks on the cluster, and users specify the maximum memory
+        requirements for their jobs in the job configuration. If a user
+        doesn’t set memory requirements for his job, then the defaults are
+        used (mapred.job.map.memory.mb and
+        mapred.job.reduce.memory.mb).
+This approach has a couple of advantages over the ulimit approach. First, it enforces the
+        memory usage of the whole task process tree, including spawned
+        processes. Second, it enables memory-aware scheduling, where tasks are
+        scheduled on tasktrackers that have enough free memory to run them.
+        The Capacity Scheduler, for example, will account for slot usage based
+        on the memory settings, so if a job’s mapred.job.map.memory.mb setting exceeds
+        mapred.cluster.map.memory.mb, the
+        scheduler will allocate more than one slot on a tasktracker to run
+        each map task for that job.
+To enable task memory monitoring, you need to set all six of the
+        properties in Table 9-7. The default
+        values are all -1, which means the
+        feature is disabled.
+Table 9-7. MapReduce task memory monitoring properties
+Property nameTypeDefault valueDescriptionmapred.cluster.map.memory.mbint-1The amount of virtual memory, in MB, that defines a map
+                slot. Map tasks that require more than this amount of memory
+                will use more than one map slot.mapred.cluster.reduce.memory.mbint-1The amount of virtual memory, in MB, that defines a
+                reduce slot. Reduce tasks that require more than this amount
+                of memory will use more than one reduce slot.mapred.job.map.memory.mbint-1The amount of virtual memory, in MB, that a map task
+                requires to run. If a map task exceeds this limit, it may be
+                terminated and marked as failed.mapred.job.reduce.memory.mbint-1The amount of virtual memory, in MB, that a reduce task
+                requires to run. If a reduce task exceeds this limit, it may
+                be terminated and marked as failed.mapred.cluster.max.map.memory.mbint-1The maximum limit that users can set mapred.job.map.memory.mb to.mapred.cluster.max.reduce.memory.mbint-1The maximum limit that users can set mapred.job.reduce.memory.mb
+                to.
+
+
+
+
+
+
+
+
+
+
+
+
+User Account Creation
+
+
+
+
+
+
+Once you have a Hadoop cluster up and running, you need to
+      give users access to it. This involves creating a home directory for
+      each user and setting ownership permissions on it:
+% hadoop fs -mkdir /user/username
+% hadoop fs -chown username:username /user/username
+This is a good time to set space limits on the directory. The
+      following sets a 1 TB limit on the given user directory:
+% hadoop dfsadmin -setSpaceQuota 1t /user/username

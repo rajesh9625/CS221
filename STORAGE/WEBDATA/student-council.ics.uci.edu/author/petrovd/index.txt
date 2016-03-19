@@ -1,0 +1,638 @@
+Delian Petrov – ICS Student CouncilEvents
+Med AppJam 2015Reverse Career Fair (RCF)ICS Day 2016
+About
+Mission & VissionGet InvolvedExecutive OfficersExec Board PortalICS Major Rep. NominationICSSC Application
+Contact UsICS ClubsICS Calendar                
+                
+                
+            
+        
+    
+
+                            
+        
+        
+                
+        
+    
+        
+                            
+                    HomeDelian Petrov                
+                        
+                                    Author - Delian Petrov
+                            
+                    
+    
+    
+    
+        
+
+            
+                        
+                
+            
+            
+            
+
+                            
+
+
+
+    
+        
+		
+        
+
+        
+            
+
+
+            
+                12
+    May
+            
+    
+    
+
+                
+            
+            
+                                    
+                        
+                            
+                                
+                                                                    
+                                                            
+                        
+                    
+                            
+        
+    
+    
+        ICS Day 2015 Recap Video
+
+        Delian Petrov2015-10-18T20:44:20+00:00
+
+ICS Day 2015 was on Thursday, May 21st, 2015. 
+Please click the following video to see the excitement of this year’s event. 
+Official Site: ICSDAY.COM
+Due to the storm coming in at the end of this week, we decided that it would be best to move ICS Day to next Thursday, May 21st. It will be at the same time/location (ICS Plaza, 10AM – 4PM). This is because of our high dependency on electrical equipment in an outdoor environment, and for safety precautions due to rain and strong winds.
+
+
+What is ICS Day!
+Remember dunk tanking Professor Shannon Alfaro? Like the cool demos showcasing awesome tech (that are unavailable to us poor students)? ICS Day 2015 is bringing all of that back and more! ICS Student Council, ACM, MAISS, VGDC, and WICS are proud to present one of the biggest ICS events — back for a third year, ICS Day celebrates the awesome field of Information and Computer Science!
+We will have food, drinks, performances, coding competitions, a selfie booth, sweet raffle prizes, and more!
+The first 150 people at the event will get food if they sign in and request a food wristband.
+The first 200 people to RVSP and attend will be guaranteed a free t-shirt, but we cannot guarantee the shirt size!
+
+        
+             By Delian Petrov                             Uncategorized
+                                                            Read more...
+        
+
+    
+
+
+
+
+            
+                12
+    May
+            
+    
+    
+
+                
+    
+    
+        And the 2015-2016 ICSSC Executive Board Members are…
+
+        Delian Petrov2015-09-11T00:17:43+00:00After an astounding result from all of you that voted on the EEE survey, I am pleased to announce the ICS Student Council (ICSSC) Executive Board for the 2015-2016 year:
+President
+Brandon Hastings
+
+Vice-President
+Dalton Kraatz
+
+Treasurer
+Ryan Bald
+
+Academic and Administrative Affairs (AAA) Chair
+Sophie Pebworth
+
+Corporate Outreach Chair
+Karan Kanwar
+
+Project Management Chair
+Ziliver Yuan
+
+
+Student Events Chair
+Chan Woo Park
+
+
+ 
+Congratulations on being selected as new year’s board members for ICS Student Council. I can’t wait to see what new direction ICSSC is going in!
+
+        
+             By Delian Petrov                             Uncategorized
+                                                            Read more...
+        
+
+    
+
+
+
+
+            
+                24
+    Feb
+            
+    
+    
+
+                
+            
+            
+                                    
+                        
+                            
+                                
+                                                                    
+                                                            
+                        
+                    
+                            
+        
+    
+    
+        Google@UCI & ICSSC Present Google WebHacks
+
+        Delian Petrov2015-04-21T20:10:48+00:00Google WebHacks (24-hour hackathon) is coming THIS SATURDAY @ 9am.
+ 
+Presented by Google@UCI & ICS Student Council, participants will have 24 hours to create a web platform based application that utilizes various Google technologies, from Google Apps Script to the Go programming language.
+This is the perfect opportunity for those interested in web development and Google technologies to learn and build something new!
+WHAT: Google WebHacks
+WHEN: Sat. Feb. 28 (9:00am) – Sun. Mar. 1 (9:00am)
+WHERE: 5151 California Avenue Suite # 100, Irvine CA
+
+        
+             By Delian Petrov                             Main Page Features
+                                                            Read more...
+        
+
+    
+
+
+
+
+            
+                27
+    Dec
+            
+    
+    
+
+                
+            
+            
+                                    
+                        
+                            
+                                
+                                                                    
+                                                            
+                        
+                    
+                            
+        
+    
+    
+        Happy Holidays from ICSSC!
+
+        Delian Petrov2016-02-07T19:36:52+00:00Hope everyone is enjoying their time off!
+ 
+
+        
+             By Delian Petrov                             Main Page Features
+                                                            Read more...
+        
+
+    
+
+
+
+
+            
+                08
+    Dec
+            
+    
+    
+
+                
+    
+    
+        Week 10: Lessons
+
+        Delian Petrov2015-05-12T15:30:29+00:00HELLO ICS SCHOOL & everyone else that’s reading these,
+How much I miss these editorial style blogs since the days of my high-school Edit0r-in-Chief years. These past 10 weeks, for me, were really difficult as President of ICS Student Council. We certainly had our peak events — Reverse Career Fair and Med AppJam — thrive and saw an improvement but it was surprisingly insane how much time juggling needed to go on. Between school, job, interviews, girlfriend, home, life, this quarter was definitely the boss-level that everyone loves to finish and beat.
+I think I beat it, but I’m beat myself.
+You know the moment when you think that everything is falling apart, when you’re not sleeping well and waking up feeling restless, and suddenly you realize that all the pieces are falling in place. After months of work, things are settling in. I experienced this over and over and over again with ICS Student Council. Case in point we worked on Med AppJam since July and yet the night before the judging ceremony, Stephanie and I were up ’til 11:00pm frantically trying to get last minute details done. How is it possible to be working on an event for 3 months and still not have everything covered? I don’t think it was bad planning, I think it was passion and excitement to flawlessly lead a great event. In order to keep sanity, you have to balance perfection with reality. The big day came and everything panned out fantastically and we had great reaction yet again from the audience and the participants. Then the feeling sets in: the unexplained reason that justifies all the countless worries that you’ve had trying to make something happen.
+That’s why I’m in ICS Student Council: I love that feeling. And I have my board members and the ICSSC general members to thank for that feeling. Thank you Adrian, Austin, Dalton, Franklin, Phil, Will, and especially Stephanie. Without all of you ICS Student Council would literally collapse!
+Happy Holidays everyone, kick butt on finals, and see you all in 2015!
+All the best,
+Delian Petrov
+
+        
+             By Delian Petrov                             Main Page Features
+                                                            Read more...
+        
+
+    
+
+
+
+
+            
+                31
+    Aug
+            
+    
+    
+
+                
+            
+            
+                                    
+                        
+                            
+                                
+                                                                    
+                                                            
+                        
+                    
+                            
+        
+    
+    
+        Reverse Career Fair
+
+        Delian Petrov2014-11-23T10:55:53+00:00
+A Different & Interactive Type of Career Fair where YOU will be given a chance to show your work to top companies! Hungry for opportunities, join today! Where you are more than a line in a resume!
+The ICS Student Council Reverse Career Fair gives students a chance to highlight their technical skills by showcasing their projects to company recruiters. We give students a booth to set up their projects and have companies walk around and have a more casual one-to-one interaction. These projects range from traditional computer science topics such as artificial intelligence, database design, and operating systems to newer technologies such as AJAX, social networking, web application development, new software development life cycles, and business analytics.
+Need an easier way to get a hold of companies?
+Got a project you’d like to show off? Would you like to be hired by top IT Companies? If you answered yes to any of these questions, come participate at the Reverse Career Fair! Our last Reverse Career Fair was very successful, as a few people now have jobs from the companies that attended this event. At the Reverse Career Fair students will show off their projects in a fair-style setting as company representatives browse around and check out the displays.
+WHEN: Thursday, October 23, 2014
+WHERE: The UCI Student Center Doheny Beach A
+ 
+Ready to sign-up?
+Checkout the website at http://ucirversecareerfair.com to sign up!
+
+        
+             By Delian Petrov                             Uncategorized
+                                                            Read more...
+        
+
+    
+
+
+        
+        
+                    
+        
+            
+                12Next →            
+        
+            
+
+        
+    
+
+        
+
+
+
+    
+                
+				
+					Search for:
+					
+					
+				
+			Upcoming Events
+		
+		
+			
+
+	
+		Tue
+		09
+	
+
+	
+		
+		
+			The Portal Info Session
+		
+
+		
+		
+		
+			February 9 @ 6:30 pm - 8:00 pm		
+
+		
+		
+
+							DBH 6011
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+		
+	 
+
+		
+
+		
+	
+		
+		
+			
+
+	
+		Wed
+		10
+	
+
+	
+		
+		
+			[MAISS] Protiviti Speaking Engagement
+		
+
+		
+		
+		
+			February 10 @ 2:30 am - 4:30 am		
+
+		
+		
+
+							SB 223
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+		
+	 
+
+		
+
+		
+	
+		
+		
+			
+
+	
+		Wed
+		10
+	
+
+	
+		
+		
+			ICSSC AAA Meeting
+		
+
+		
+		
+		
+			February 10 @ 3:30 pm - 4:30 pm		
+
+		
+		
+
+							Mac Lab
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+		
+	 
+
+		
+
+		
+	
+		
+		
+			
+
+	
+		Wed
+		10
+	
+
+	
+		
+		
+			ICSSC Corporate Outreach Meeting
+		
+
+		
+		
+		
+			February 10 @ 4:00 pm - 5:00 pm		
+
+		
+		
+
+							Mac Lab
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+		
+	 
+
+		
+
+		
+	
+		
+		
+			
+
+	
+		Wed
+		10
+	
+
+	
+		
+		
+			[MAISS] Banh Mi Fundraiser
+		
+
+		
+		
+		
+			February 10 @ 7:00 pm - 10:00 pm		
+
+		
+		
+
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+		
+	 
+
+		
+
+		
+	
+		
+		
+			
+
+	
+		Thu
+		11
+	
+
+	
+		
+		
+			Christine / IEEE Student Branch / Atmel Workshop
+		
+
+		
+		
+		
+			February 11 @ 1:00 am - 3:00 am		
+
+		
+		
+
+							DBH 3011
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+		
+	 
+
+		
+
+		
+	
+	
+		
+			View More…		
+	
+
+    
+
+    
+
+
+
+        
+                                                
+                        
+                
+                                                                    
+                                
+
+Login
+                            
+                                                            
+                
+                            
+            
+
+            
+            
+
+                
+                    
+
+    
+        
+        
+            
+                                    
+                        
+                                                    
+                    
+                                © Copyright 2016. All Rights Reserved.            
+
+            
+                    
+    
+    
+                
+            
+
+                
+        
+         
+        
+        
+        
+        
+        
+    
+
+        
+    
+    
+
+
+
+
+    Events
+Med AppJam 2015Reverse Career Fair (RCF)ICS Day 2016
+About
+Mission & VissionGet InvolvedExecutive OfficersExec Board PortalICS Major Rep. NominationICSSC Application
+Contact UsICS ClubsICS Calendar

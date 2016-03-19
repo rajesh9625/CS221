@@ -1,0 +1,67 @@
+Khanh NguyenKhanh Nguyen 
+
+
+
+ 
+
+
+
+
+
+
+ I am a Ph.D. candidate in Computer Science Department at UCI, working under my advisor, 
+Prof. Guoqing (Harry) Xu. 
+ My research aims to develop techniques and analyses to solve scalability issue in Big Data applications.
+ I earned my M.S. and B.S. in Computer Science from UCI in Spring 2015 and Spring 2012, respectively. Prior to this, I earned my A.A. in Mathematics and A.S. in Computer Science from Fullerton College in Spring 2010.  
+
+
+I mentored several summer interns in our research group: 
+ Yoonseung Choi and Soyeong Park (2015, UCI I-SURF Fellows from Kookmin University, South Korea)
+ Ankur Gupta (2014, from University high school) 
+ Wendy Wei (2013, from University high school, now at MIT)
+ Allen Min and Jonathon Tsai (2012, from Gretchen A. Whitney high school, both are now at UCI)
+
+
+ My current CV can be found  here 
+
+ 
+ 
+    Publications  
+Lu Fang, Khanh Nguyen, Guoqing Xu, Brian Demsky, and Shan Lu. "Interruptible Tasks: Treating Memory Pressure As Interrupts for Highly Scalable Data-Parallel Programs", The 25th ACM Symposium on Operating Systems Principles (SOSP), Monterey, CA, October 4-7, 2015. (Acceptance rate: 30/186, 16%) [PDF] [1-column PDF] [Slides]
+Khanh Nguyen, Kai Wang, Yingyi Bu, Lu Fang, Jianfei Hu, and Guoqing Xu. "Facade: A Compiler and Runtime for (Almost) Object-Bounded Big Data Applications", The 20th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), Istanbul, Turkey, March 14-18, 2015. (Acceptance rate: 48/287, 17%)
+[PDF] [Slides]
+Khanh Nguyen, and Guoqing Xu. "Cachetor: Detecting Cacheable Data to Remove Bloat", Joint Meeting of the European Software Engineering Conference
+and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE), Saint Petersburg, Russia, August 18-26, 2013. (Acceptance rate: 51/251, 20%)
+[PDF] [Slides]
+
+   Research Projects  
+ Interruptible Tasks: Treating memory pressure as interrupts
+Abstract: Real-world data-parallel tasks developed in managed languages such as Java and C# commonly suffer from great memory pressure. This leads to excessive GC effort and out-of-memory errors, significantly
+hurting system performance and scalability. Interruptible task is a new type of data-parallel task that can be interrupted upon memory pressure—with part or all of their used memory reclaimed—and resumed when the pressure goes away. Experiments on two state-of-the-art platforms Hadoop and Hyracks show the effectiveness of the technique. All 13 reproduced real-world out-of-memory problems reported on Hadoop are solved using our system. A second set of experiments with 5 already well-tuned programs in Hyracks on datasets of different sizes shows that the our versions are 1.5–3× faster and scale to 3–24×+ larger datasets.
+ The paper was accepted in SOSP'15. [PDF] [1-column PDF]
+
+
+ Facade: a compiler and runtime support for (almost) object-bounded Big Data applications 
+ Abstract: Popular Big Data platforms use managed object-oriented programming language such as Java due to its quick development cycle and rich community resources. However, when object-orientation meets Big Data, the cost of the managed runtime system is significantly magnified and becomes a scalability-prohibiting bottleneck. This project aims to remove this bottleneck in Big Data applications by introducing the novel compiler framework called Facade. Facade can automatically generate highly efficient data manipulation code by transforming the data path of an existing Big Data application. The key to efficiency is that in the generated code, the number of heap objects created for data types in each thread is statically bounded regardless of how much data an application has to process. Using Facade, one can obtain significantly reduced memory management costs and improved scalability. 
+ The paper was accepted in ASPLOS'15. [PDF]
+ Using this project, I competed and won the third prize (bronze medal) in the ACM Student Research Competition in PLDI'14.   
+ This work was presented at the SoCalPLS Workshop in Spring 2014 in Harvey Mudd College.
+
+
+Cachetor: Detecting cacheable data to remove bloat
+ Abstract: Modern object-oriented software commonly suffers from runtime bloat that significantly affects its performance and scalability. One pattern of bloat is the work repeatedly done to compute the same data values. Cachetor is a novel runtime profiling tool that is effective in exposing caching opportunities and substantial performance gains can be achieved by modifying the program to cache the reported data.
+ The paper was accepted in ESEC/FSE'13. [PDF] 
+ This work was presented at the SoCalPLS Workshop in Fall 2012 in UC Riverside.
+
+
+
+   Service
+ PLDI 2015 - Artifact Evaluation Committee
+ SOSP 2015 - Student Volunteer
+ Sub-reviewer for ECOOP 2016, PLDI 2015, ECOOP 2015, JTOC, TOSEM
+
+    Others  Asides from my research and programming, I am very interested in individual taxation. I volunteered in the IRS-sponsored VITA program 2011-2014. 
+ I was the UCI liaison and project manager for the Orange County United Way's Free Tax Preparation Campaign. I managed the development of the online scheduling and volunteer management platform, working with several UCI undergraduates. 
+I am the research group's coordinator, working with prospective summer interns. I'm proud to say that in the school of ICS, our group is one of the few groups that have been accepting high school students and undergraduates for summer internship for a number of years. The experience has been very positive for the interns and the group. 
+   Acknowledgements 
+ I greatly appreciate the Donald Bren School of Information and Computer Sciences for awarding me the Dean's Fellowship with four years of support for my study. I also appreciate NSF, ACM, ACM SIGSOFT, ACM SIGPLAN (PAC), and ACM SIGOPS for their travel grants.

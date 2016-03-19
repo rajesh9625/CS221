@@ -1,0 +1,38 @@
+CoursesHomeCoursesTeachingSchedule
+	 
+
+	
+		
+		William Lam
+		
+	
+	
+			
+		
+			Information
+			PhD Candidate
+Computer Science
+UC Irvine
+Office: DBH 4099
+will...@ics.uci.edu 
+PGP Key
+
+
+			 
+		
+	
+	
+	
+		
+			
+		
+		
+        
+
+
+
+Coursework Taken
+CS 211AVisual ComputingCS 216Image UnderstandingCS 230Distributed Computer SystemsCS 260Fundamentals of the Design and Analysis of AlgorithmsCS 271Artificial IntelligenceCS 273AMachine LearningCS 274AProbabilistic Learning: Theory and AlgorithmsCS 274BLearning in Graphical ModelsCS 274CNeural Networks and Deep LearningCS 275Constraint NetworksCS 276Belief NetworksCS 295Reasoning and Modeling with Graphical ModelsICS 200Seminar in Research in ICSICS 398ATeaching Assistant Seminar
+			
+			
+© 2015 William Lam

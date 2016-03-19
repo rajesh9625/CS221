@@ -1,0 +1,107 @@
+ICS 161 - Game Engine Lab - Home PageICS 161: Game Engine Lab
+
+
+Winter Quarter, 2016 
+
+
+
+
+
+
+
+Syllabus
+
+COGS Lab Rules
+
+Runtime Engine Architecture (from Gregory)
+
+
+Lab homeworks
+
+Homework 1
+Homework 2
+Homework 3
+Homework 4
+Homework 5
+Homework 6
+
+
+Upcoming weird lecture periods
+
+
+Monday, Jan. 18: Campus Holiday, Martin Luther King, Jr. Day
+
+Friday, Jan. 29: No lecture
+
+Monday, Feb. 1: Pre recorded lecture
+
+Friday, Feb. 5: In class test
+
+Friday, Feb. 12: No lecture
+
+Monday, Feb. 14: No lecture (Presidents Day)
+
+
+Reading assignments
+
+Before class on Friday, Jan. 8: read "Introduction", "Architecture, Performance, and Games", and "Game Loop" in
+Game Programming Patterns
+
+
+Before class on Wednesday, Jan. 20: read "Type Object" in
+Game Programming Patterns
+
+
+Before class on Wednesday, Jan. 27: read the "Event Queue" chapter in
+Game Programming Patterns
+
+
+
+
+Links and references
+
+Jan. 6: SDL Screen Functions
+
+
+Jan. 8: Intro to Game Programming Patterns 
+		The Game Loop Pattern
+
+
+Jan. 11: res_path.h 
+		Cowabunga Candace (Flash game from Miniclip)
+
+
+Jan. 13: TextureDemo.zip 
+
+
+Jan. 15: Double Buffering 
+		Date class example
+
+
+Jan. 20: HW3 code snippets
+
+
+Jan. 22: The Type Object Pattern
+
+	Test 1 from 2015
+
+
+Jan. 25: Texty.h
+
+
+
+Feb. 1: The Event Queue Pattern -- with audio track!
+
+
+Feb. 8: Texty.cpp
+
+	GE161 Game Engine Design Goals
+
+	Pong game code
+
+	Test 1
+
+
+
+
+               

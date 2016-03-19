@@ -1,0 +1,53 @@
+Dan Frost's Home PageDan Frost
+
+
+
+
+
+"Lectures were once useful, but now when all can read,
+and books are so numerous, lectures are unnecessary." 
+-- Samuel Johnson, 1709-1784
+
+
+
+
+
+Information about the
+
+UC Irvine major in Computer Game Science.
+Also, a related
+
+Facebook page about Games at UC Irvine.
+
+
+
+Want to write computer games with Java?
+Check out
+Ucigame, a Java game programming library.
+
+
+
+Thinking of applying to a Ph. D. program in a few years?
+I recommend reading
+Applying to Ph.D. Programs in Computer Science.
+
+
+
+
+
+
+
+In Winter, 2016, I am teaching:
+
+ICS 161 - Game Engine Lab
+ICS 169B - Computer Game Science Capstone Game Project
+
+
+
+
+
+
+In Fall, 2015, I am taught:
+
+CS 113 / Inf 125 - Computer Game Development
+ICS 169A - Computer Game Science Capstone Game Project

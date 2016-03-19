@@ -1,0 +1,53 @@
+Index of /~fielding/pubs/dissertation<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~fielding/pubs/dissertation</title>
+ </head>
+ <body>
+<h1>Index of /~fielding/pubs/dissertation</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/~fielding/pubs/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="abstract.htm">abstract.htm</a></td><td align="right">15-Mar-2002 14:11  </td><td align="right">3.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="acknowledgments.htm">acknowledgments.htm</a></td><td align="right">02-Jan-2003 18:49  </td><td align="right">5.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="ccss_style.gif">ccss_style.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">2.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="client_server_style.gif">client_server_style.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">1.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="conclusions.htm">conclusions.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right">7.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="configurability.gif">configurability.gif</a></td><td align="right">29-Sep-2001 00:33  </td><td align="right">899 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="customizability.gif">customizability.gif</a></td><td align="right">29-Sep-2001 00:32  </td><td align="right">950 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="dedication.htm">dedication.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right">2.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="early_web_arch.gif">early_web_arch.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="efficiency.gif">efficiency.gif</a></td><td align="right">29-Sep-2001 00:34  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="evaluation.htm">evaluation.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right"> 74K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="evolvability.gif">evolvability.gif</a></td><td align="right">29-Sep-2001 00:28  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="extensibility.gif">extensibility.gif</a></td><td align="right">29-Sep-2001 00:29  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="faq.htm">faq.htm</a></td><td align="right">09-Jan-2010 22:10  </td><td align="right">4.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="fielding_cv_2000.htm">fielding_cv_2000.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right"> 13K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="fielding_dissertation.pdf">fielding_dissertation.pdf</a></td><td align="right">04-Jan-2001 01:44  </td><td align="right">1.3M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="fielding_dissertation_2up.pdf">fielding_dissertation_2up.pdf</a></td><td align="right">04-Jan-2001 01:44  </td><td align="right">909K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="introduction.htm">introduction.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right">8.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="layered_uccss.gif">layered_uccss.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">4.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="net_app_arch.htm">net_app_arch.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right"> 25K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="net_arch_styles.htm">net_arch_styles.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right"> 64K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="net_performance.gif">net_performance.gif</a></td><td align="right">29-Sep-2001 00:34  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="null_style.gif">null_style.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="portability.gif">portability.gif</a></td><td align="right">29-Sep-2001 00:37  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="references.htm">references.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right"> 30K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="reliability.gif">reliability.gif</a></td><td align="right">29-Sep-2001 00:38  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="rest_arch_style.htm">rest_arch_style.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right"> 52K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="rest_derivation.gif">rest_derivation.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">5.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="rest_process_view.gif">rest_process_view.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">9.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="rest_style.gif">rest_style.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">4.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="reusability.gif">reusability.gif</a></td><td align="right">29-Sep-2001 00:36  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="scalability.gif">scalability.gif</a></td><td align="right">29-Sep-2001 00:35  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="simplicity.gif">simplicity.gif</a></td><td align="right">29-Sep-2001 00:31  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="software_arch.htm">software_arch.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right"> 39K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="stateless_cs.gif">stateless_cs.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">2.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="top.htm">top.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right">7.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="uniform_ccss.gif">uniform_ccss.gif</a></td><td align="right">02-Sep-2001 00:37  </td><td align="right">3.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="up_performance.gif">up_performance.gif</a></td><td align="right">29-Sep-2001 00:34  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="visibility.gif">visibility.gif</a></td><td align="right">29-Sep-2001 00:36  </td><td align="right">886 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="web_arch_domain.htm">web_arch_domain.htm</a></td><td align="right">15-Mar-2002 14:12  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.15 (CentOS) Server at www.ics.uci.edu Port 80</address>
+</body></html>

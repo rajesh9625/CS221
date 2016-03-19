@@ -1,0 +1,285 @@
+Yingyi Bu's HomepageYingyi Bu
+
+Email: yingyib@ics.uci.edu
+
+
+
+
+
+
+
+
+ I received my Ph.D. in Computer Science at University of California, Irvine, advised by Prof. Michael J. Carey. Before that, I got a B.Sc. from 
+Nanjing University, China, an M.Phil. from
+The Chinese University of Hong Kong, and also 
+fulltimely worked in Microsoft SQL
+Server group . 
+
+
+	 News: 
+        2015/08/20    I defended my thesis and joined Couchbase. (a related news:-) )2015/06/22    After 5 years's R&D of Algebricks, our paper about the framework has been accepted to SOCC'15!2015/03/01    AsterixDB is accepted to be an Apache incubator project!2014/11/11    Our paper about the Facade compiler and runtime for Big Data applciations has been accepted to ASPLOS'15!2014/08/05    After 3 years's R&D of Pregelix, our paper about the system has been accepted to VLDB'15!2014/08/04    After 5 years's R&D of AsterixDB, our paper about the system has been accepted to VLDB'15!2014/07/06    Our paper about graph connectivity analysis on Pregel has been accepted to VLDB'15!2014/06/23    Start a returned internship in Google Research, working with Chris Olston 
+				and Peter Hawkins!2014/05/09    New Pregelix website is online now! Checkout our juicy perf. numbers!2013/08/13    AsterixDB team are visiting Couchbase for the Couchbase/AsterixDB workshop! 2013/06/11    I'm awarded the 2013-2015 Google Fellowship in Structured Data!  Archived news 
+
+ Research Interests 
+My primary area of research interest is in building and evaluating Big Data management systems. 
+
+	Current projects:
+
+Pregelix. Pregelix is an open-source implementation of Google's Pregel programming model. We
+	architect the Pregel programming model on top of a general-purpose data-parallel  
+	execution engine, which leads to better scaling properties, out-of-core support, physical flexibility, and software simplicity.
+AsterixDB. We are working towards an open source data-intensive computing platform, with new technologies for ingesting,
+storing, managing, indexing, querying, analyzing, and subscribing intensive semi-structured data. 
+
+	Past projects:
+	HaLoop. In HaLoop, we designed and implemented a modified version of 
+the Hadoop MapReduce framework for efficiently support data-intensive iterative data analysis. 
+	
+ Publications (dlbp 
+entry) (google scholar)
+
+
+        
+        	Algebricks: A Data Model-Agnostic Compiler Backend for Big Data Languages [PDF][PPT]
+        
+        (In the News)
+        
+            Vinayak Borkar, Yingyi Bu, Preston Carman, Nicola Onose, Till Westmann, Pouria Pirzadeh, Michael J. Carey, Vassilis J. Tsotras
+        
+        
+        	In Proceedings of the 2015 ACM SIGMOD/SIGOPS Symposium on Cloud Computing (SOCC
+                2015)
+        
+        
+        	Kohala, Hawaii, August 27 - August 29, 2015.
+        
+
+
+    
+
+        
+        	Facade: A Compiler and Runtime for (Almost) Object-Bounded Big Data Applications [PDF][PPT]
+        
+        
+            Khanh Nguyen, Kai Wang, Yingyi Bu, Lu Fang, Jianfei Hu, and Guoqing Xu
+        
+        
+        	In Proceedings of the 20th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS
+                2015)
+        
+        
+        	Istanbul, Turkey, March 2015.
+        
+
+    
+    
+
+        
+        	Pregelix: Big(ger) Graph Analytics on A Dataflow Engine [PDF][PPT][Open Source System][Tech Report]
+        
+        (In the News)
+        
+        
+        Yingyi Bu, Vinayak Borkar, Jianfeng Jia, Michael J. Carey,  Tyson Condie
+        
+        
+        	In Proceedings of the Very Large Database Endowment, Volume 8 (VLDB 
+			2015)
+        
+        
+        	Kohala, Hawaii, August 31 - September 5, 2015.
+        
+
+
+
+        
+        	AsterixDB: A Scalable, Open Source BDMS [PDF][PPT][Open Source System][Tech Report]
+            
+            (Start  Apache incubation in March 2015)
+            (In the News)
+            (Press Release)
+            
+        
+        Sattam Alsubaiee, Yasser Altowim, Hotham Altwaijry, Alexander Behm, Vinayak Borkar, Yingyi Bu, Michael J. Carey, Inci Cetindil, Madhusudan Cheelangi,
+	Khurram Faraaz, Eugenia Gabrielova, Raman Grover, Zachary Heilbron, Young-Seok Kim, Chen Li, Guangqiang Li, Ji Mahn Ok, Nicola Onose,
+        Pouria Pirzadeh, Vassilis Tsotras, Rares Vernica, Jian Wen, Till Westmann (Alphabetical Ordered)
+        
+        
+        	In Proceedings of the Very Large Database Endowment, Volume 7 (VLDB 
+			2015)
+        
+         
+        	Kohala, Hawaii, August 31 - September 5, 2015.
+        
+
+
+
+        
+        	Pregel Algorithms for Graph Connectivity Problems with Performance Guarantees [PDF][PPT][Implementation]
+        
+        
+        Da Yan, James Cheng, Kai Xing, Yi Lu, Wilfred Ng, Yingyi Bu
+        
+        
+        	In Proceedings of the Very Large Database Endowment, Volume 7 (VLDB 
+			2015)
+        
+        
+        	Kohala, Hawaii, August 31 - September 5, 2015.
+        
+
+
+    
+
+    
+        	A Bloat-Aware Design for Big Data Applications [PDF][PPT][An independent Chinese translation]
+        
+        (Open-source systems using our design paradigm: AsterixDB, Hyracks, Pregelix )
+    
+            Yingyi Bu, Vinayak Borkar, Guoqing Xu, and Michael J. Carey
+    
+    
+        	In Proceedings of the 2013 ACM SIGPLAN International Symposium on Memory Management (ISMM 2013)
+    
+    
+        	 Seattle, WA, June 20-21, 2013.
+    
+
+
+
+
+        
+        	The HaLoop Approach to Large-Scale Iterative Data Analysis [PDF][Implementation]                                                                          
+	        
+	
+        Yingyi Bu, Bill Howe, Magdalenda Balazinska, Michael D. Ernst
+        
+        
+        	The VLDB Journal (VLDBJ), Volume 21, Number 2, April 2012.
+        
+
+
+
+
+        
+        	HaLoop: Efficient Iterative Data Processing on Large Clusters [PDF][PPT][Talk 
+			in Berkeley][Implementation]
+			
+			(Best of VLDB 2010 )                                                                          
+        
+        Yingyi Bu, Bill Howe, Magdalenda Balazinska, Michael D. Ernst
+        
+        
+                  In Proceedings of the Very Large Database Endowment, Volume 3 (VLDB 
+			2010)
+        
+        
+        	Singapore, 11-17 September, 2010. (Acceptance Rate: 33/204 = 16.1%)
+        
+
+
+
+
+        
+        	Efficient Anomaly Monitoring Over Moving Object Trajectory Streams [PDF][PPT][Source 
+			Code][Dataset]
+        
+        Yingyi Bu, Lei Chen, Ada Wai-Chee Fu, Dawei Liu
+        
+        
+        	In Proceedings of the 15th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 
+			2009)
+        
+        
+        	 Paris, France, June 28-July 1, 2009. (Acceptance Rate: 105/537 = 19.6%)
+        
+
+
+
+    
+		Privacy Preserving Serial Data Publishing By Role Composition [PDF][PPT][Source 
+		Code][Dataset 
+		Link]
+	
+    Yingyi Bu, Ada Wai-Chee Fu, Raymond Chi-Wing Wong, Lei Chen, Jiuyong Li
+    
+    
+    	In Proceedings of the Very Large Database Endowment, Volume 1 (VLDB 2008)
+    
+    
+    	Auckland, New Zealand on 24-30 Aug, 2008.  (Acceptance Rate: 46/273 = 16.8%)  
+    
+
+
+
+    
+		WAT: Finding Top-K Discords in Time Series Database 
+		[PDF][Source 
+		Code]
+    
+    Yingyi Bu, Tat-Wing Leung, Ada Wai-Chee Fu, Eamonn Keogh, Jian Pei, Sam Meshkin
+    
+    
+		 In Proceedings of the 2007 SIAM International Conference on Data Mining (SDM 
+		 2007)
+    
+    
+    	 Minneapolis, MN, USA, April 26-28, 2007.  (Acceptance Rate: 25%)     
+    
+
+
+
+System Demos and Posters
+
+        
+            Pregelix: Dataflow-Based Big Graph Analytics
+            [PDF][Open Source System]
+        
+            Yingyi Bu
+        
+        
+            In Proceedings of the 2013 ACM SIGMOD/SIGOPS Symposium on Cloud Computing (SOCC
+                2013)
+        
+        
+            Santa Clara, CA, October 1-3, 2013.
+        
+
+
+
+        
+            Comparing SSD-placement strategies to scale a Database-in-the-Cloud
+            [PDF]
+        
+            Yingyi Bu, Hongrae Lee, Jayant Madhavan
+        
+        
+            In Proceedings of the 2013 ACM SIGMOD/SIGOPS Symposium on Cloud Computing (SOCC
+                2013)
+        
+        
+            Santa Clara, CA, October 1-3, 2013.     
+        
+
+
+
+    
+		ASTERIX: An Open Source System for "Big Data" Management and Analysis
+		[PDF]
+    
+    Sattam Alsubaiee, Yasser Altowim, Hotham Altwaijry, Alexander Behm, Vinayak R. Borkar, Yingyi Bu, Michael J. Carey, Raman Grover, Zachary Heilbron, Young-Seok Kim, Chen Li, Nicola Onose, Pouria Pirzadeh, Rares Vernica, Jian Wen
+    
+    
+		 In Proceedings of Very Large Data Bases Endowment, Volume 5 (VLDB 
+			2012)
+    
+    
+    	 Istanbul, Turkey, August 27-31, 2012.     
+    
+
+
+ Honors and Awards
+    2013-2015 Google Fellowship in Structured Data2013-2014 Facebook Fellowship Finalist2010 Yahoo! Key Scientific Challenage Award
+
+ 
+ Last modified: August 5, 2014.

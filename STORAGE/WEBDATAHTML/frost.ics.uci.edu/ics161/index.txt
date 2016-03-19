@@ -1,0 +1,170 @@
+ICS 161 - Game Engine Lab - Home Page<HTML>
+<head>
+<title> ICS 161 - Game Engine Lab - Home Page</title>
+</head>
+
+<body  bgcolor="#fffff0">
+<CENTER>
+<h2>
+ICS 161: Game Engine Lab
+</h2>
+
+<b>Winter Quarter, 2016 </b><br>
+<p>
+</center>
+
+<p>
+
+<!--
+<font color="red">
+Starting Wednesday, Jan. 7, lecture meets in SSL (Social Science Lab) 290.
+</font>
+<p>
+Discussions meet on Tuesday, Jan. 6, in the "COGS" lab: ICS-2 Room 170.
+-->
+
+<li><a href="Syllabus.pdf">Syllabus</a>
+<p>
+<li><a href="COGS-Lab-Rules.pdf">COGS Lab Rules</a>
+<p>
+<li><a href="RuntimeEngineArchtecture.pdf">Runtime Engine Architecture</a> (from Gregory)
+<p>
+
+<h3>Lab homeworks</h3>
+
+<li><a href="Homework1.pdf">Homework 1</a>
+<li><a href="Homework2.pdf">Homework 2</a>
+<li><a href="Homework3.pdf">Homework 3</a>
+<li><a href="Homework4.pdf">Homework 4</a>
+<li><a href="Homework5.pdf">Homework 5</a>
+<li><a href="Homework6.pdf">Homework 6</a>
+
+<p>
+<h3>Upcoming weird lecture periods</h3>
+
+<p>
+<font color="gray">Monday, Jan. 18: Campus Holiday, Martin Luther King, Jr. Day</font>
+<br>
+<font color="gray">Friday, Jan. 29: No lecture</font>
+<br>
+<font color="gray">Monday, Feb. 1: Pre recorded lecture</font>
+<br>
+<font color="gray">Friday, Feb. 5: In class test</font>
+<br>
+Friday, Feb. 12: No lecture
+<br>
+Monday, Feb. 14: No lecture (Presidents Day)
+
+<p>
+<h3>Reading assignments</h3>
+
+Before class on Friday, Jan. 8: read "Introduction", "Architecture, Performance, and Games", and "Game Loop" in
+<a href="http://gameprogrammingpatterns.com/">Game Programming Patterns</a>
+
+<p>
+Before class on Wednesday, Jan. 20: read "Type Object" in
+<a href="http://gameprogrammingpatterns.com/">Game Programming Patterns</a>
+
+<p>
+Before class on Wednesday, Jan. 27: read the "Event Queue" chapter in
+<a href="http://gameprogrammingpatterns.com/">Game Programming Patterns</a>
+
+<!--
+<p>
+Before class on Friday, Jan. 16: read the "Command" chapter in
+<a href="http://gameprogrammingpatterns.com/">Game Programming Patterns</a>
+
+
+-->
+
+
+<h3>Links and references</h3>
+<p>
+Jan. 6: <a href="SDL-Screen-Functions.pptx">SDL Screen Functions</a>
+
+<p>
+Jan. 8: <a href="http://frost.ics.uci.edu/ics161/GameProgrammingPatterns/Intro.pptx">Intro to Game Programming Patterns</a> <br>
+		The <a href="http://frost.ics.uci.edu/ics161/GameProgrammingPatterns/GameLoopPattern.pptx">Game Loop Pattern</a>
+
+<p>
+Jan. 11: <a href="http://frost.ics.uci.edu/ics161/res_path.pdf">res_path.h</a> <br>
+		<a href="http://www.miniclip.com/games/cowabunga-candace/en/">Cowabunga Candace</a> (Flash game from Miniclip)
+
+<p>
+Jan. 13: <a href="http://frost.ics.uci.edu/ics161/TextureDemo.zip">TextureDemo.zip</a> <br>
+
+<p>
+Jan. 15: <a href="DoubleBuffering.pdf">Double Buffering</a> <br>
+		<a href="DateClass.pdf">Date class example</a>
+
+<p>
+Jan. 20: <a href="HW3-code-snippets.pdf">HW3 code snippets</a>
+
+<p>
+Jan. 22: The <a href="http://frost.ics.uci.edu/ics161/GameProgrammingPatterns/TypeObjectPattern.pptx">Type Object Pattern</a>
+<br>
+	<a href="Test1-2015.pdf">Test 1 from 2015</a>
+
+<p>
+Jan. 25: <a href="Texty.h.pdf">Texty.h</a>
+<br>
+
+<p>
+Feb. 1: The <a href="http://frost.ics.uci.edu/ics161/GameProgrammingPatterns/EventQueuePattern.pptx">Event Queue Pattern</a> -- with audio track!
+
+<p>
+Feb. 8: <a href="Texty.cpp">Texty.cpp</a>
+<br>
+	<a href="GE161Design.pptx">GE161 Game Engine Design Goals</a>
+<br>
+	<a href="PongCode.pdf">Pong game code</a>
+<br>
+	<a href="Test1-for-review.pdf">Test 1</a>
+
+<p>
+<!--
+Jan. 7: <a href="TextureDemo.zip">TextureDemo.zip</a>
+
+<p>
+Jan. 12: The <a href="http://frost.ics.uci.edu/ics161/Week2-code-samples.docx">Lesson 1 code samples</a>
+
+<p>
+Jan. 16: <a href="http://www.miniclip.com/games/cowabunga-candace/en/#t-ss-S">Cowabunga Candace</a> (Flash game from Miniclip)
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	The <a href="http://frost.ics.uci.edu/ics161/GameProgrammingPatterns/CommandPattern.pptx">Command Pattern</a>
+
+<p>
+Jan. 21: <a href="http://frost.ics.uci.edu/ics161/HW3-code-snippets.pdf">Hw 3 code snippets</a>
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://frost.ics.uci.edu/ics161/VisualStudioDebugging.pdf">Visual Studio Debugging</a>
+
+
+<p>
+Feb. 4: The <a href="http://frost.ics.uci.edu/ics161/GameProgrammingPatterns/TypeObjectPattern.pptx">Type Object Pattern</a>
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard">Why Learning to Code is So Damn Hard</a>
+	(<a href="https://news.ycombinator.com/item?id=8998269">Hacker News comments</a>)
+
+
+<p>
+Feb. 9: <a href="http://frost.ics.uci.edu/ics161/SDL-Events.pdf">SDL Event handling</a>
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://frost.ics.uci.edu/ics161/Evently.cpp">Evently.cpp</a>
+
+<p>
+Feb. 11: <a href="http://frost.ics.uci.edu/ics161/Tim-POPL.ppt">Tim Sweeney talk on Game Programming Languages</a>
+
+<p>
+Feb. 18: The <a href="http://frost.ics.uci.edu/ics161/GameProgrammingPatterns/EventQueuePattern.pptx">Event Queue Pattern</a>
+
+<p>
+Feb. 25: <a href="http://www.slideshare.net/markdeloura/game-engines-and-middleware-2011">Game Engines and Middleware</a>
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.develop-online.net/tools-and-tech/the-top-16-game-engines-for-2014/0192302">Top 16 game engine for 2014</a>
+-->
+
+<br>&nbsp; <br>&nbsp; <br>&nbsp; <br>&nbsp; <br>&nbsp; <br>&nbsp; <br>&nbsp; <br>&nbsp;
+
+</BODY>
+</HTML>
+

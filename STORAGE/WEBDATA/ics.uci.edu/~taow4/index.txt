@@ -1,0 +1,82 @@
+Tao WangTao Wang
+
+    
+        About Me
+        I am a PhD candidate at the Department of Informatics,
+        Donald Bren School of Information and Computer Science,
+        the University of California, Irvine. My advisor is 
+        Professor Donald J. Patterson. 
+        My research interests are human computer interaction (HCI) and ubiquitous computing.
+	I am particularly interested in technologies and issues that improve the quality of life for people living with impaired 
+	abilities due to illness or aging. If there is anything you want to discuss or share, please feel free to reach me
+        through one of the means listed in the "Contact" section.
+        
+	Before coming to UC Irvine, I was a web developer in New Zealand.
+    
+    
+        Education
+        
+        I received my Bachelor of Science in Computer Science with Honors at the 
+        Department of Computer Science,
+        the University of Auckland.
+	My Honor dissertation supervisor was Dr. Beryl Plimmer. At UC Irvine,
+	I have been working with Professor Alfred Kobsa
+	and Professor Yunan Chen
+	on diabetes patient personal management tools. I am also working with 
+	Professor Donald J. Patterson 
+	on another project where we explore
+	 the role of context in information sharing.   
+        
+    
+    
+        Project
+        
+	    
+		    Using Geofencing to Improve the Performance of Location-based Services
+		    Geofencing is a functionatlity that has become available in all popular mobile platforms. In this project, we took advantage of its proactive
+		     nature and created location-based services that reduce power consumption of mobile user agents. 
+		    
+		
+		    Context-awareness in Information Sharing
+		    With the progress in information technology, we are facing the challenge of information overflow. However, people's information needs are often
+		    context specific. In this project, we aim to improve the understanding of roles that context-awareness plays in information management.
+		    
+		
+		    Personal Rules in Diabetes Self-management
+		    Website: HealthWatch
+		    One important part of diabetes self-management is to see the patterns between diet, exercise and glucose levels. Experienced patients apply this knowledge to control their sugar levels and minimize the use of insulin injection. In this project, we aim to create systems that assist such a practise. This ongoing project is supervised by Professor Alfred Kobsa, Professor Yunan Chen (both from Informatics, UC Irvine), and Professor Dara Sorkin (School of Medicine, UC Irinve). I am actively involved in designing the study, developing the software prototypes, data collection, and data analysis. 
+		
+		    Clinical Information on a Timeline
+		    Accumulated patient information from various sources over time can be hard to decode. Clinicians need to see the relation among events to hypothesize or verify theories. Temporal relations are useful clues for such an analysis. In this project, we conducted user studies and participatory design to explore requirements for a web system that visualizes temporal events. This ongoing project is supervised by Professor Wendy Chapman and Professor Robert El-Kareh (both from iDash, UC San Diego). As a 2012 summer intern, I was involved in the design and development of a prototype web system used in the study. 
+		
+        
+    
+    
+        Teaching
+        
+	    As TA
+	    IN4MATX 191: Senior Design ProjectIN4MATX 62: Game Technologies and Interactive MediaIN4MATX 141: Information RetrievalIN4MATX 131: Human-Computer InteractionIN4MATX 45: Patterns of Software ConstructionIN4MATX 123: Software ArchitectureIN4MATX 117: Project in Software System DesignICS 10: How Computers Work
+        
+    
+    
+        Working Experience
+        
+	    2008 - 2011	Datacom (www.datacom.co.nz), Auckland, New Zealand2007 - 2008	Hyro (www.hyro.com), Auckland, New Zealand2005 - 2007	Intergen (www.intergen.co.nz), Auckland, New Zealand
+        
+    
+    
+        Other Interests
+        Love travelling (who doesn't!). I also find myself spending a lot of my time on music, film. In terms of getting sweaty,
+		I normally do my share by running, weight training, and playing badminton.
+        
+    
+    
+        Contact
+        
+            Office: 5059 Bren Hall (Bldg 314) 
+            E-mail: [FirstName].[LastName] @ uci.edu (Please replace the placeholders by my name)
+        
+    
+
+
+Last modified: Mar 26th 2015

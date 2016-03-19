@@ -1,0 +1,386 @@
+E komo mai - Welcome! | Hana Ohana<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://hanalab.ics.uci.edu/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta content="E komo mai - Welcome!" about="/?q=content/e-komo-mai-welcome-0" property="dc:title" />
+<link rel="canonical" href="/?q=content/e-komo-mai-welcome-0" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/?q=node/20" />
+  <title>E komo mai - Welcome! | Hana Ohana</title>
+  <style type="text/css" media="all">@import url("http://hanalab.ics.uci.edu/modules/system/system.base.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/modules/system/system.menus.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/modules/system/system.messages.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/modules/system/system.theme.css?nx7d1t");</style>
+<style type="text/css" media="all">@import url("http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/date/date_api/date.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/modules/field/theme/field.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/modules/search/search.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/modules/user/user.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/views/css/views.css?nx7d1t");</style>
+<style type="text/css" media="all">@import url("http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/colorbox/styles/default/colorbox_style.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/ctools/css/ctools.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/sites/all/modules/panels/css/panels.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/css/superfish.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/css/superfish-vertical.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/css/superfish-navbar.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/sites/all/modules/panels/plugins/layouts/twocol_bricks/twocol_bricks.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/textbook/textbook_styles/textbook_core/reset.css?nx7d1t");</style>
+<style type="text/css" media="all">@import url("http://hanalab.ics.uci.edu/themes/bartik/css/layout.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/themes/bartik/css/style.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/themes/bartik/css/colors.css?nx7d1t");</style>
+<style type="text/css" media="print">@import url("http://hanalab.ics.uci.edu/themes/bartik/css/print.css?nx7d1t");</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://hanalab.ics.uci.edu/themes/bartik/css/ie.css?nx7d1t" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://hanalab.ics.uci.edu/themes/bartik/css/ie6.css?nx7d1t" media="all" />
+<![endif]-->
+<style type="text/css" media="all">@import url("http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/textbook/textbook_styles/textbook_core/node_tables.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/textbook/textbook_styles/textbook_core/node_lists.css?nx7d1t");
+@import url("http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/textbook/textbook_styles/textbook_core/node.css?nx7d1t");</style>
+  <script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/jquery_update/replace/jquery/1.5/jquery.min.js?v=1.5.2"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/misc/drupal.js?nx7d1t"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/colorbox/js/colorbox.js?nx7d1t"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/modules/contrib/colorbox/styles/default/colorbox_style.js?nx7d1t"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/sites/all/modules/panels/js/panels.js?nx7d1t"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/jquery.hoverIntent.minified.js?nx7d1t"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/jquery.bgiframe.min.js?nx7d1t"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/superfish.js?nx7d1t"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/supersubs.js?nx7d1t"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/supposition.js?nx7d1t"></script>
+<script type="text/javascript" src="http://hanalab.ics.uci.edu/profiles/rlab/libraries/superfish/sftouchscreen.js?nx7d1t"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"uoS6oKPWL41negzDsxmtBu6g-K5LwHTCZoeQETTw91w","js":{"profiles\/rlab\/modules\/contrib\/jquery_update\/replace\/jquery\/1.5\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rlab\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"profiles\/rlab\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"https:\/\/www.google.com\/jsapi":1,"sites\/all\/modules\/panels\/js\/panels.js":1,"profiles\/rlab\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"profiles\/rlab\/libraries\/superfish\/jquery.bgiframe.min.js":1,"profiles\/rlab\/libraries\/superfish\/superfish.js":1,"profiles\/rlab\/libraries\/superfish\/supersubs.js":1,"profiles\/rlab\/libraries\/superfish\/supposition.js":1,"profiles\/rlab\/libraries\/superfish\/sftouchscreen.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/rlab\/modules\/contrib\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/rlab\/modules\/contrib\/views\/css\/views.css":1,"profiles\/rlab\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"profiles\/rlab\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"profiles\/rlab\/libraries\/superfish\/css\/superfish.css":1,"profiles\/rlab\/libraries\/superfish\/css\/superfish-vertical.css":1,"profiles\/rlab\/libraries\/superfish\/css\/superfish-navbar.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/twocol_bricks\/twocol_bricks.css":1,"profiles\/rlab\/modules\/contrib\/textbook\/textbook_styles\/textbook_core\/reset.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1,"profiles\/rlab\/modules\/contrib\/textbook\/textbook_styles\/textbook_core\/node_tables.css":1,"profiles\/rlab\/modules\/contrib\/textbook\/textbook_styles\/textbook_core\/node_lists.css":1,"profiles\/rlab\/modules\/contrib\/textbook\/textbook_styles\/textbook_core\/node.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true}});
+//--><!]]>
+</script>
+</head>
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-20 node-type-panel" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu"><div class="section clearfix">
+
+          <a href="/" title="Home" rel="home" id="logo">
+        <img src="http://hanalab.ics.uci.edu/sites/default/files/fish.png" alt="Home" />
+      </a>
+    
+          <div id="name-and-slogan">
+
+                              <div id="site-name">
+              <strong>
+                <a href="/" title="Home" rel="home"><span>Hana Ohana</span></a>
+              </strong>
+            </div>
+                  
+                  <div id="site-slogan">
+            Making Distance Matter Less          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+      <div class="region region-header">
+    <div id="block-views-header-fish-block" class="block block-views">
+
+    <h2 class="element-invisible">header fish</h2>
+  
+  <div class="content">
+    <div class="view view-header-fish view-id-header_fish view-display-id-block view-dom-id-18c0fd5463dcc95f7fee7ee5d75917ba">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-content-chunk-image">        <div class="field-content"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/content_chunks/projects_0.png" width="407" height="92" alt="" /></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-563 active-trail first active"><a href="/?q=content/e-komo-mai-welcome-0" class="active-trail active">Home</a></li>
+<li class="menu-541"><a href="/?q=content/people">People</a></li>
+<li class="menu-553"><a href="/?q=content/projects">Projects</a></li>
+<li class="menu-552"><a href="/?q=content/publications">Publications</a></li>
+<li class="menu-578"><a href="/?q=content/hana-lab-behavior-lab">Hana Lab/ Behavior Lab</a></li>
+<li class="menu-389 last"><a href="/?q=content/contact-us">Talk to us</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+    
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+          E komo mai - Welcome!        </h1>
+                          <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-20" class="node node-panel node-full clearfix" about="/?q=content/e-komo-mai-welcome-0" typeof="sioc:Item foaf:Document">
+
+      
+  
+  <div class="content clearfix">
+    <div class="panel-display panel-2col-bricks clearfix" >
+  <div class="panel-panel panel-col-top">
+    <div class="inside"></div>
+  </div>
+  <div class="center-wrapper">
+    <div class="panel-panel panel-col-first">
+      <div class="inside"><div class="panel-pane pane-node" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="node-2" class="node node-content-chunk node-promoted clearfix" about="/?q=content/e-komo-mai-welcome" typeof="sioc:Item foaf:Document">
+
+        <h2 property="dc:title" datatype="">
+      <a href="/?q=content/e-komo-mai-welcome"></a>
+    </h2>
+    
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>The Hana Ohana Research Group at the University of California, Irvine, studies a wide range of issues having to do with how people collaborate and what new technologies can do to help. We have a socio-technical perspective, looking at the relationship between the people involved and the tools they use. We focus on both discovering the underlying principles and guiding future practice to be more effective.</p>
+</div></div></div>  </div>
+
+  
+  
+</div>
+  </div>
+
+  
+  </div>
+</div>
+    </div>
+
+    <div class="panel-panel panel-col-last">
+      <div class="inside"><div class="panel-pane pane-block pane-views-faculty-block-1" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="view view-faculty view-id-faculty view-display-id-block_1 view-dom-id-5bccea54e9dad2dc4c9be8d07b7f6054">
+        
+  
+  
+      <div class="view-content">
+      <table class="views-view-grid cols-5">
+  
+  <tbody>
+          <tr class="row-1">
+                  <td class="col-1">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/judy-olson"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/profile/Judy%20Mentoring%20Award_0_thumb.jpg?itok=gNQlnT5y" width="70" height="100" alt="" /></a></div>  </div>          </td>
+                  <td class="col-2">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/gary-m-olson"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/Gary_Olson.jpg?itok=MYLkshhs" width="70" height="100" alt="" /></a></div>  </div>          </td>
+                  <td class="col-3">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/matthew-j-bietz"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/MattBietz.jpg?itok=v91vQw4n" width="70" height="100" alt="" /></a></div>  </div>          </td>
+                  <td class="col-4">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/martin-shelton"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/profile/photo_thumb_0.jpg?itok=j58sVbm3" width="70" height="100" alt="" /></a></div>  </div>          </td>
+                  <td class="col-5">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/simone-simpson"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/profile/Simone.jpg?itok=CZ1hlATP" width="70" height="100" alt="" /></a></div>  </div>          </td>
+              </tr>
+          <tr class="row-2">
+                  <td class="col-1">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/jingwen-zhang"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/profile/Jingwen.jpg?itok=7dj7c_7v" width="70" height="100" alt="" /></a></div>  </div>          </td>
+                  <td class="col-2">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/dakuo-wang"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/profile/DakuoWang.jpg?itok=6Bwh2xP9" width="70" height="100" alt="" /></a></div>  </div>          </td>
+                  <td class="col-3">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/katherine-lo"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/profile/Katherine.jpg?itok=WiRz4t6R" width="70" height="100" alt="" /></a></div>  </div>          </td>
+                  <td class="col-4">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/yao-li"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/profile/Yaoli.jpg?itok=0bV32I_A" width="70" height="100" alt="" /></a></div>  </div>          </td>
+                  <td class="col-5">
+              
+  <div class="views-field views-field-field-bio-image">        <div class="field-content"><a href="/?q=content/veronica-newhart"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/styles/thumbnail/public/profile/Veronica%20Newhart_0.jpg?itok=1HMcdIS6" width="72" height="100" alt="" /></a></div>  </div>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="panel-panel panel-col-middle">
+    <div class="inside"></div>
+  </div>
+  <div class="center-wrapper">
+    <div class="panel-panel panel-col-first">
+      <div class="inside"><div class="panel-pane pane-block pane-views-news-block" >
+  
+        <h2 class="pane-title">News</h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-news view-id-news view-display-id-block view-dom-id-07f34874b08b835c2a812cc9a6eccf42">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-body">        <div class="field-content"><p class="p1"><span class="s1">Larry Page was quoted in the book <i>The Innovators</i> as saying "The college course that made the most impression was taught by Judith Olson on human computer interaction."</span></p>
+</div>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-body">        <div class="field-content"><p class="p1"><span class="s1">Dakuo Wang presented our paper, "DocuViz, Visualizing Collaborative Writing" at CHI in Korea in April.  A number of good contact and collaborations followed.</span></p>
+</div>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-body">        <div class="field-content"><p class="p1"><span class="s1">Judy and Gary participated in the <a href="http://www.scienceofteamscience.org/">Science of Team Science conference</a> in Bethesda, MD, by serving on two panels.  Judy reviewed her contribution to the NRC report and Gary served on the "Ask and Expert" panel to answer questions about technology.</span></p>
+</div>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Gary Olson is writing the hisotry of the University of Michigan's School of Information in celebration of the University's 200th anniversary.</p>
+</div>  </div></li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Gary and Judy Olson just published the lead article in Interactions, an article titled, "<a href="http://interactions.acm.org/archive/view/march-april-2014/how-to-make-distance-work-work">How to Make Distance Work </a><em><a href="http://interactions.acm.org/archive/view/march-april-2014/how-to-make-distance-work-work">Work.</a>"</em></p>
+</div>  </div></li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Judy Olson serves on the National Research Council committee on "The Science of Team Science."  A report is due out this summer.</p>
+</div>  </div></li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Gary Olson is Chairing the <a href="http://ischools.org/the-iconference/" target="_blank">2015 iConference</a>, to be held in Newport Beach, CA. Judy Olson is Co-Chair with Jack Carroll of the Sessions for Interaction and Engagement.  Julia Haines is Co-Chair of Student Volunteers.</p>
+</div>  </div></li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Judy Olson co-edited the book, <a href="http://www.amazon.com/Ways-Knowing-HCI-Judith-Olson/dp/1493903772/ref=sr_1_1?ie=UTF8&amp;qid=1432854088&amp;sr=8-1&amp;keywords=ways+of+knowing+in+HCI" target="_blank">Ways of Knowing in HCI<em>, </em></a>with Wendy Kellogg.  The book has chapters on the wide variety of methods now in common use in Human Computer Interaction, ranging from ethnography to log analysis.  </p>
+</div>  </div></li>
+          <li class="views-row views-row-9 views-row-odd views-row-last">  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Judy and Gary Olson just published a book, <a href="http://www.amazon.com/Working-Together-Apart-Collaboration-Human-Centered/dp/1608450503/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1402079868&amp;sr=1-1&amp;keywords=Working+together+apart">Working Together Apart<em>,</em></a><a href="http://www.amazon.com/Ways-Knowing-HCI-Judith-Olson/dp/1493903772/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1402079689&amp;sr=1-1&amp;keywords=Ways+of+Knowing+in+HCI"> </a>which compiles research on how people work long distance, the challenges and what to do to alleviate them.</p>
+
+</div>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+    </div>
+
+    <div class="panel-panel panel-col-last">
+      <div class="inside"><div class="panel-pane pane-block pane-views-view-of-sponsors-block" >
+  
+        <h2 class="pane-title">Sponsors</h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-view-of-sponsors view-id-view_of_sponsors view-display-id-block view-dom-id-c6ab807b4493f67cf5ab8f590f18874d">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-field-sponsor-icon">        <div class="field-content"><a href="/?q=content/google"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/google.png" width="150" height="52" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-field-sponsor-icon">        <div class="field-content"><a href="/?q=content/nsf"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/NSF-full.png" width="291" height="58" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-field-sponsor-icon">        <div class="field-content"><a href="/?q=content/donald-bren-foundation"><img typeof="foaf:Image" src="http://hanalab.ics.uci.edu/sites/default/files/Screen%20Shot%202013-08-01%20at%203.19.39%20PM.png" width="202" height="53" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="panel-panel panel-col-bottom">
+    <div class="inside"></div>
+  </div>
+</div>
+  </div>
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+          <div id="footer" class="clearfix">
+          <div class="region region-footer">
+    <div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <p>Copyrights @ 2015 Hana Ohana Group</p>
+<p><a href="http://www.uci.edu">UCI</a><span class="nodeLabelBox repTarget " role="treeitem" style="font-size: 13px;"><a href="http://www.ics.uci.edu/"><span class="nodeText editable ">  </span></a></span><a href="http://www.ics.uci.edu/">ICS</a>  <a href="http://www.informatics.uci.edu/">Informatics</a></p>
+
+  </div>
+</div>
+  </div>
+      </div> <!-- /#footer -->
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  </body>
+</html>

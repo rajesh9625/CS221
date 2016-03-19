@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0075)http://proquest.safaribooksonline.com/print?xmlid=9781449328917%2Fid2463480 -->
+<html xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./hadoop6_files/docsafarip.css"><link rel="stylesheet" type="text/css" href="./hadoop6_files/getfile"></head><body><div><p class="p"></p><hr><strong class="strong">Username: </strong><span>University of California Irvine User</span><span> </span><strong class="strong">Book: </strong><span>Hadoop: The Definitive Guide, 3rd Edition. </span><span>No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.</span><hr><p></p><div id="HtmlView"><div><h1 class="epub__title"><a id="YARNConfiguration"></a>YARN Configuration</h1>
+
+
+
+
+
+
+<p><a id="idx10725" class="epub__indexterm"></a><a id="idx10726" class="epub__indexterm"></a>YARN is the next-generation architecture for running
+    MapReduce (and is described in <a href="http://proquest.safaribooksonline.com/9781449328917/id2438152#YARN" class="epub__xref" title="YARN (MapReduce 2)" data-ajax="1">YARN (MapReduce 2)</a>). It has a
+    different set of daemons and configuration options than classic MapReduce
+    (also called MapReduce 1), and in this section we look at these
+    differences and discuss how to run MapReduce on YARN.</p>
+<p>Under YARN, you no longer run a jobtracker or tasktrackers. Instead,
+    there is a single resource manager running on the same machine as the HDFS
+    namenode (for small clusters) or on a dedicated machine, and node managers
+    running on each worker node in the cluster.</p>
+<p>The YARN <em class="epub__filename">start-yarn.sh</em> script
+    (in the <em class="epub__filename">sbin</em> directory) starts the
+    YARN daemons in the cluster. This script will start a resource manager (on
+    the machine the script is run on) and a node manager on each machine
+    listed in the <em class="epub__filename">slaves</em> file.</p>
+<p>YARN also has a job history server daemon that provides users with
+    details of past job runs, and a web app proxy server
+    for providing a secure way for users to access the UI provided by YARN
+    applications. In the case of MapReduce, the web UI served by the proxy
+    provides information about the current job you are running, similar to the
+    one described in <a href="http://proquest.safaribooksonline.com/9781449328917/id2434076#TheMapReduceWebUI" class="epub__xref" title="The MapReduce Web UI" data-ajax="1">The MapReduce Web UI</a>. By default, the web
+    app proxy server runs in the same process as the resource manager, but it
+    may be configured to run as a standalone daemon.</p>
+<p>YARN has its own set of configuration files, listed in <a href="http://proquest.safaribooksonline.com/9781449328917/id2463480#YARNConfigurationFiles" class="epub__xref" title="Table 9-8. YARN configuration files" data-ajax="1">Table&nbsp;9-8</a>; these are used in addition to those
+    in <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#HadoopConfigurationFiles" class="epub__xref" title="Table 9-1. Hadoop configuration files" data-ajax="1">Table&nbsp;9-1</a>.</p><div class="epub__table"><a id="YARNConfigurationFiles"></a>
+<p class="epub__title">Table&nbsp;9-8.&nbsp;YARN configuration files</p><div class="epub__table-contents">
+<table summary="YARN configuration files" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Filename</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Format</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><em class="epub__filename">yarn-env.sh</em></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bash script</td><td style="border-bottom: 0.5pt solid ; ">Environment variables that are used in the scripts to run
+            YARN</td></tr><tr><td style="border-right: 0.5pt solid ; "><em class="epub__filename">yarn-site.xml</em></td><td style="border-right: 0.5pt solid ; ">Hadoop configuration
+            XML</td><td style="">Configuration settings for YARN daemons: the resource
+            manager, the job history server, the webapp proxy server, and the
+            node managers</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="epub__sect2" title="Important YARN Daemon Properties"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id704540"></a>Important YARN Daemon Properties</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10727" class="epub__indexterm"></a><a id="idx10728" class="epub__indexterm"></a><a id="idx10729" class="epub__indexterm"></a>When running MapReduce on YARN, the <em class="epub__filename">mapred-site.xml</em> file is still used for
+      general MapReduce properties, although the jobtracker- and
+      tasktracker-related properties are not used. None of the properties in
+      <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#ImportantMapReduceDaemonProperties" class="epub__xref" title="Table 9-4. Important MapReduce daemon properties" data-ajax="1">Table&nbsp;9-4</a> are applicable to
+      YARN, except for <a id="I_indexterm9_d1e30927" class="epub__indexterm"></a><code class="epub__literal">mapred.child.java.opts</code>
+      (and the related properties <a id="I_indexterm9_d1e30934" class="epub__indexterm"></a><code class="epub__literal">mapreduce.map.java.opts</code>
+      and <a id="I_indexterm9_d1e30940" class="epub__indexterm"></a><code class="epub__literal">mapreduce.reduce.java.opts</code>, which apply only
+      to map or reduce tasks, respectively). The JVM options specified in this
+      way are used to launch the YARN child process that runs map or reduce
+      tasks.</p>
+<p>The configuration files in <a href="http://proquest.safaribooksonline.com/9781449328917/id2463480#yarn-site" class="epub__xref" title="Example 9-4. An example set of site configuration files for running MapReduce on YARN" data-ajax="1">Example&nbsp;9-4</a> show some
+      of the important configuration properties for running MapReduce on
+      YARN.</p><div class="epub__example"><a id="yarn-site"></a>
+<p class="epub__title">Example&nbsp;9-4.&nbsp;An example set of site configuration files for running
+        MapReduce on YARN</p><div class="epub__example-contents">
+<pre class="epub__programlisting">&lt;?xml version="1.0"?&gt;
+&lt;!-- mapred-site.xml --&gt;
+&lt;configuration&gt;
+  &lt;property&gt;
+    &lt;name&gt;mapred.child.java.opts&lt;/name&gt;
+    &lt;value&gt;-Xmx400m&lt;/value&gt;
+    &lt;!-- Not marked as final so jobs can include JVM debugging options --&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;</pre>
+<pre class="epub__programlisting">&lt;?xml version="1.0"?&gt;
+&lt;!-- yarn-site.xml --&gt;
+&lt;configuration&gt;
+  &lt;property&gt;
+    &lt;name&gt;yarn.resourcemanager.address&lt;/name&gt;
+    &lt;value&gt;resourcemanager:8032&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+    &lt;name&gt;yarn.nodemanager.local-dirs&lt;/name&gt;
+    &lt;value&gt;/disk1/nm-local-dir,/disk2/nm-local-dir&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+    &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;
+    &lt;value&gt;mapreduce.shuffle&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+    &lt;name&gt;yarn.nodemanager.resource.memory-mb&lt;/name&gt;
+    &lt;value&gt;8192&lt;/value&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;</pre>
+</div>
+
+</div>
+
+<p>The YARN resource manager address is controlled via <a id="I_indexterm9_d1e30959" class="epub__indexterm"></a><code class="epub__literal">yarn.resourcemanager.address</code>, which takes the
+      form of a host-port pair. In a client configuration, this property is
+      used to connect to the resource manager (using RPC), and in addition,
+      the <a id="I_indexterm9_d1e30965" class="epub__indexterm"></a><code class="epub__literal">mapreduce.framework.name</code> property must be set
+      to <code class="epub__literal">yarn</code> for the client to use YARN
+      rather than the local job runner.</p>
+<p>Although YARN does not honor <a id="I_indexterm9_d1e30976" class="epub__indexterm"></a><code class="epub__literal">mapred.local.dir</code>, it
+      has an equivalent property called <a id="I_indexterm9_d1e30982" class="epub__indexterm"></a><code class="epub__literal">yarn.nodemanager.local-dirs</code>, which allows you
+      to specify the local disks to store intermediate data on. It is
+      specified by a comma-separated list of local directory paths, which are
+      used in a round-robin fashion.</p>
+<p>YARN doesn’t have tasktrackers to serve map outputs to reduce
+      tasks, so for this function it relies on shuffle handlers, which are
+      long-running auxiliary services running in node managers. Because YARN
+      is a general-purpose service, the MapReduce shuffle handlers need to be
+      enabled explicitly in <em class="epub__filename">yarn-site.xml</em>
+      by setting the <a id="I_indexterm9_d1e30993" class="epub__indexterm"></a><code class="epub__literal">yarn.nodemanager.aux-services</code> property to
+      <a id="I_indexterm9_d1e30999" class="epub__indexterm"></a><code class="epub__literal">mapreduce.shuffle</code>.</p>
+<p><a href="http://proquest.safaribooksonline.com/9781449328917/id2463480#ImportantYARNDaemonProperties" class="epub__xref" title="Table 9-9. Important YARN daemon properties" data-ajax="1">Table&nbsp;9-9</a> summarizes the
+      important configuration properties for YARN.</p><div class="epub__table"><a id="ImportantYARNDaemonProperties"></a>
+<p class="epub__title">Table&nbsp;9-9.&nbsp;Important YARN daemon properties</p><div class="epub__table-contents">
+<table summary="Important YARN daemon properties" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Property name</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Type</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default value</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.resourcemanager.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Hostname and port</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:8032</code></td><td style="border-bottom: 0.5pt solid ; ">The hostname and port that the resource manager’s RPC
+              server runs on.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.nodemanager.local-dirs</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Comma-separated
+              directory names</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">/tmp/nm-local-dir</code></td><td style="border-bottom: 0.5pt solid ; ">A list of directories where node managers allow
+              containers to store intermediate data. The data is cleared out
+              when the application ends.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.nodemanager.aux-services</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Comma-separated
+              service names</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td><td style="border-bottom: 0.5pt solid ; ">A list of auxiliary services run by the node manager. A
+              service is implemented by the class defined by the property
+              <code class="epub__literal">yarn.nodemanager.aux-services.<em class="epub__replaceable"><code>service-name</code></em>.class</code>.
+              By default, no auxiliary services are specified.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.nodemanager.resource.memory-mb</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">8192</code></td><td style="border-bottom: 0.5pt solid ; ">The amount of physical memory (in MB) that may be
+              allocated to containers being run by the node manager.</td></tr><tr><td style="border-right: 0.5pt solid ; "><code class="epub__literal">yarn.nodemanager.vmem-pmem-ratio</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">float</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">2.1</code></td><td style="">The ratio of virtual to physical memory for containers.
+              Virtual memory usage may exceed the allocation by this
+              amount.</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="epub__sect3" title="Memory"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="YARNMemory"></a>Memory</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10730" class="epub__indexterm"></a><a id="idx10731" class="epub__indexterm"></a><a id="idx10732" class="epub__indexterm"></a>YARN treats memory in a more fine-grained manner than
+        the slot-based model used in the classic implementation of MapReduce.
+        Rather than specifying a fixed maximum number of map and reduce slots
+        that may run on a tasktracker node at once, YARN allows applications
+        to request an arbitrary amount of memory (within limits) for a task.
+        In the YARN model, node managers allocate memory from a pool, so the
+        number of tasks that are running on a particular node depends on the
+        sum of their memory requirements, and not simply on a fixed number of
+        slots.</p>
+<p>The slot-based model can lead to cluster underutilization, since
+        the proportion of map slots to reduce slots is fixed as a cluster-wide
+        configuration. However, the number of map versus reduce slots that are
+        <span class="epub__italic">in demand</span> changes over time: at the
+        beginning of a job only map slots are needed, whereas at the end of
+        the job only reduce slots are needed. On larger clusters with many
+        concurrent jobs, the variation in demand for a particular type of slot
+        may be less pronounced, but there is still wastage. YARN avoids this
+        problem by not distinguishing between the two types of slots.</p>
+<p>The considerations for how much memory to dedicate to a node
+        manager for running containers are similar to the those discussed in
+        <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#Memory" class="epub__xref" title="Memory" data-ajax="1">Memory</a>. Each Hadoop daemon uses 1,000 MB, so for a
+        datanode and a node manager, the total is 2,000 MB. Set aside enough
+        for other processes that are running on the machine, and the remainder
+        can be dedicated to the node manager’s containers by setting the
+        configuration property <a id="I_indexterm9_d1e31127" class="epub__indexterm"></a><code class="epub__literal">yarn.nodemanager.resource.memory-mb</code> to the
+        total allocation in MB. (The default is 8,192 MB.)</p>
+<p>The next step is to determine how to set memory options for
+        individual jobs. There are two controls: <a id="I_indexterm9_d1e31135" class="epub__indexterm"></a><code class="epub__literal">mapred.child.java.opts</code>, which allows you to
+        set the JVM heap <span><span>size <span>of
+        </span></span></span><span><span><span>the map or reduce
+        task</span></span><span>;
+        </span></span><span><span><span>an</span></span>
+<span><span><span>d
+        <a id="I_indexterm9_d1e31161" class="epub__indexterm"></a><code class="epub__literal">mapreduce.map.memory.mb</code>
+        (or</span></span>
+        <code class="epub__literal">map</code></span></span><code class="epub__literal">reduce.</code><code class="epub__literal">reduce.</code><code class="epub__literal">memory.mb</code>), which is used to specify
+        how much memory you need for map (or reduce) task containers. The
+        latter setting is used by the application master when negotiating for
+        resources in the cluster, and also by the node manager, which runs and
+        monitors the task containers.</p>
+<p>For example, suppose that <a id="I_indexterm9_d1e31179" class="epub__indexterm"></a><code class="epub__literal">mapred.child.java.opts</code> is set to <code class="epub__literal">-Xmx800m</code> and <a id="I_indexterm9_d1e31188" class="epub__indexterm"></a><code class="epub__literal">mapreduce.map.memory.mb</code> is left at its
+        default value of 1,024 MB. When a map task is run, the node manager
+        will allocate a 1,024 MB container (decreasing the size of its pool by
+        that amount for the duration of the task) and will launch the task JVM
+        configured with an 800 MB maximum heap size. Note that the JVM process
+        will have a larger memory footprint than the heap size, and the
+        overhead will depend on such things as the native libraries that are
+        in use, the size of the permanent generation space, and so on. The
+        important thing is that the physical memory used by the JVM process,
+        including any processes that it spawns, such as Streaming or Pipes
+        processes, does not exceed its allocation (1,024 MB). If a container
+        uses more memory than it has been allocated, then it may be terminated
+        by the node manager and marked as failed.</p>
+<p>Schedulers may impose a minimum or maximum on memory
+        allocations. For example, for the
+        Capacity Scheduler, the default minimum is 1024 MB (set by
+        <code class="epub__literal">yarn.</code><code class="epub__literal">scheduler.capacity.minimum-allocation-mb</code>),
+        and the default maximum is 10240 MB (set by <code class="epub__literal">yarn.scheduler.capacity.maximum-allocation-mb</code>).</p>
+<p>There are also virtual memory constraints that a container must
+        meet. If a container’s virtual memory usage
+        exceeds a given multiple of the allocated physical memory, the node
+        manager may terminate the process. The multiple is expressed by the
+        <a id="I_indexterm9_d1e31211" class="epub__indexterm"></a><code class="epub__literal">yarn.nodemanager.vmem-pmem-ratio</code> property,
+        which defaults to 2.1. In the example used earlier, the virtual memory
+        threshold above which the task may be terminated is 2,150 MB, which is
+        2.1 × 1,024 MB.</p>
+<p>When configuring memory parameters it’s very useful to be able
+        to monitor a task’s actual memory usage during a job run, and this is
+        possible via MapReduce task counters. The
+        counters <a id="I_indexterm9_d1e31221" class="epub__indexterm"></a><code class="epub__literal">PHYSICAL_MEMORY_BYTES</code>, <a id="I_indexterm9_d1e31227" class="epub__indexterm"></a><code class="epub__literal">VIRTUAL_MEMORY_BYTES</code>,
+        and <a id="I_indexterm9_d1e31233" class="epub__indexterm"></a><code class="epub__literal">COMMITTED</code><code class="epub__literal">_HEAP_BYTES</code>
+        (described in <a href="http://proquest.safaribooksonline.com/9781449328917/id2752430#BuiltInTaskCountersTable" class="epub__xref" title="Table 8-2. Built-in MapReduce task counters" data-ajax="1">Table&nbsp;8-2</a>) provide
+        snapshot values of memory usage and are therefore suitable
+        for observation during the course of a task attempt.<a id="I_indexterm9_d1e31245" class="epub__indexterm"></a><a id="I_indexterm9_d1e31246" class="epub__indexterm"></a><a id="I_indexterm9_d1e31247" class="epub__indexterm"></a><a id="I_indexterm9_d1e31248" class="epub__indexterm"></a><a id="I_indexterm9_d1e31249" class="epub__indexterm"></a><a id="I_indexterm9_d1e31250" class="epub__indexterm"></a></p>
+</div>
+
+</div>
+
+<div class="epub__sect2" title="YARN Daemon Addresses and Ports"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id910397"></a>YARN Daemon Addresses and Ports</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10733" class="epub__indexterm"></a><a id="idx10734" class="epub__indexterm"></a><a id="idx10735" class="epub__indexterm"></a><a id="idx10736" class="epub__indexterm"></a><a id="idx10737" class="epub__indexterm"></a>YARN daemons run one or more RPC and HTTP servers, details
+      of which are covered in <a href="http://proquest.safaribooksonline.com/9781449328917/id2463480#YARNRPCServerProperties" class="epub__xref" title="Table 9-10. YARN RPC server properties" data-ajax="1">Table&nbsp;9-10</a> and
+      <a href="http://proquest.safaribooksonline.com/9781449328917/id2463480#YARNHTTPServerProperties" class="epub__xref" title="Table 9-11. YARN HTTP server properties" data-ajax="1">Table&nbsp;9-11</a>.<a id="I_indexterm9_d1e31291" class="epub__indexterm"></a><a id="I_indexterm9_d1e31293" class="epub__indexterm"></a><a id="I_indexterm9_d1e31294" class="epub__indexterm"></a><a id="I_indexterm9_d1e31295" class="epub__indexterm"></a><a id="I_indexterm9_d1e31296" class="epub__indexterm"></a><a id="I_indexterm9_d1e31297" class="epub__indexterm"></a><a id="I_indexterm9_d1e31298" class="epub__indexterm"></a></p><div class="epub__table"><a id="YARNRPCServerProperties"></a>
+<p class="epub__title">Table&nbsp;9-10.&nbsp;YARN RPC server properties</p><div class="epub__table-contents">
+<table summary="YARN RPC server properties" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Property name</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default value</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.resourcemanager.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:8032</code></td><td style="border-bottom: 0.5pt solid ; ">The resource manager’s RPC server address and port. This
+              is used by the client (typically outside the cluster) to
+              communicate with the resource manager.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.resourcemanager.admin.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:8033</code></td><td style="border-bottom: 0.5pt solid ; ">The resource manager’s admin RPC server address and port.
+              This is used by the admin client (invoked with <code class="epub__literal">yarn rmadmin</code>, typically run outside
+              the cluster) to communicate with the resource manager.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.resourcemanager.scheduler.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:8030</code></td><td style="border-bottom: 0.5pt solid ; ">The resource manager scheduler’s RPC server address and
+              port. This is used by (in-cluster) application masters to
+              communicate with the resource manager.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.resourcemanager.resource-tracker.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:8031</code></td><td style="border-bottom: 0.5pt solid ; ">The resource manager resource tracker’s RPC server
+              address and port. This is used by the (in-cluster) node managers
+              to communicate with the resource manager.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.nodemanager.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:0</code></td><td style="border-bottom: 0.5pt solid ; ">The node manager’s RPC server address and port. This is
+              used by (in-cluster) application masters to communicate with
+              node managers.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.nodemanager.localizer.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:8040</code></td><td style="border-bottom: 0.5pt solid ; ">The node manager localizer’s RPC server address and
+              port.</td></tr><tr><td style="border-right: 0.5pt solid ; "><code class="epub__literal">mapreduce.jobhistory.address</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:10020</code></td><td style="">The job history server’s RPC server address and port.
+              This is used by the client (typically outside the cluster) to
+              query job history. This property is set in <em class="epub__filename">mapred-site.xml</em>.</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="epub__table"><a id="YARNHTTPServerProperties"></a>
+<p class="epub__title">Table&nbsp;9-11.&nbsp;YARN HTTP server properties</p><div class="epub__table-contents">
+<table summary="YARN HTTP server properties" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Property name</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default value</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.resourcemanager.webapp.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:8088</code></td><td style="border-bottom: 0.5pt solid ; ">The resource manager’s HTTP server address and
+              port.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.nodemanager.webapp.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:8042</code></td><td style="border-bottom: 0.5pt solid ; ">The node manager’s HTTP server address and port.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">yarn.web-proxy.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td><td style="border-bottom: 0.5pt solid ; ">The web app proxy server’s HTTP server address and port.
+              If not set (the default), then the web app proxy server will run
+              in the resource manager process.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapreduce.jobhistory.webapp.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:19888</code></td><td style="border-bottom: 0.5pt solid ; ">The job history server’s HTTP server address and port.
+              This property is set in <em class="epub__filename">mapred-site.xml</em>.</td></tr><tr><td style="border-right: 0.5pt solid ; "><code class="epub__literal">mapreduce.shuffle.port</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">8080</code></td><td style="">The shuffle handler’s HTTP port number. This is used for
+              serving map outputs, and is not a user-accessible web UI. This
+              property is set in <em class="epub__filename">mapred-site.xml</em>.</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="epub__sect1" title="Security"><div class="epub__titlepage"><div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+function PagePrint()
+{
+    setTimeout("window.print()", 500);
+}
+PagePrint();
+</script></div><span id="BowEndOfDocument" style="display:none" hidden="hidden"></span></body></html>

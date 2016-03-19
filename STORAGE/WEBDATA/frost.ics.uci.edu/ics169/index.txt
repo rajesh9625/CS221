@@ -1,0 +1,123 @@
+ICS 169B — Capstone Game Project IIICS 169B — Capstone Game Project II
+Winter, 2016
+
+Syllabus
+
+
+In this course, and its first part ICS 169A,
+students work in teams to design and develop a computer game.
+
+
+The course has no textbook, tests, or final exam.
+The final exam period, Tuesday, March 15, from 4:00pm to 6:00pm will be
+used for final presentations.
+
+
+ICS 169A and 169B are graded together; your grade for ICS 169B will "count"
+for both courses.
+The grade for ICS 169B will be determined as follows:
+
+80%: Game quality and individual contribution to the game, where "quality" includes
+				many but probably not all of
+	Good gameplay - well balanced, fun, challenging but not too hard, engaging, replayable, immersive, addictive
+	Art and art design, including animation - polished, integrated with theme and gameplay
+	Music and sound design - polished, integrated with theme and gameplay
+	(Note: credit is given for art and sound assets created by team members, and for the work
+			required to wrangle external artists and their creations)
+	Completeness - such as menus, ending screens, transitions between levels, save/restore,
+			help screens and tutorial levels, cut scenes, GUI elements
+	Technical challenges - such as complex AI, networking
+	Extensiveness - multiple levels/quests/puzzles, many characters, weapons, attacks, etc.
+	Narrative - background story, integration with game play, good writing and proofreading
+
+
+20%: Course process, including
+	Attendance
+	Completing surveys
+	Timely completion of weekly status reports
+
+
+
+
+
+You have access to the COGS lab (ICS-2 room 170).
+For now, use the code that was sent via an email.
+
+Make sure to read and follow the
+COGS lab rules.
+
+
+
+
+Prof. Frost's office hours: tba
+
+
+Prof. Wang's office hours: tba
+
+
+Schedule
+
+
+Tentative schedule for Winter quarter:
+
+
+WeekTuesdayThursday
+11/5Introductions and announcements1/7Profs meet with teams
+21/12Meetings with mentors1/14Team meetings, no lecture
+31/19Visit from UCSC's game program*
+	1/22Guest speaker: Michael Cullen, Audio Engineer**
+41/26Bus trip to Blizzard1/28Team meetings, no lecture
+52/2Play testing (in DBH 5011)2/4Team meetings, no lecture
+62/9Professors meet with teams2/11Meetings with mentors
+72/16
+	Team meetings2/18Guest speakers from Blind Squirrel Games:
+	Dominic Camargo, an Engineer, and Chris Kagel, Lead Designer
+82/23Meetings with mentors2/25Play testing
+93/1 3/3Blizzard Tour
+10
+	3/8Dress Rehearsals
+	Wed., 3/9Game Day
+	3/10 
+F3/15Presentations, 4pm-6pm in DBH 5011 
+
+
+
+*Visit from UCSC's game program: UC Santa Cruz has
+several options for graduate study in games.
+After a brief outline of those options from Prof. Jim Whitehead, Michael John, the Program Director for the
+Games and Playable Media MS program, will give a talk.  Here's the abstract:
+
+
+
+Dynamic tuning, game analytics, and purple dragons, ca. 1999
+
+
+In 1999, the teams of Insomniac Games and Universal Interactive Studios had successfully
+launched Spyro the Dragon, with the help of Sony, and we realized we had found success at
+our goal of reaching a very large and diverse audience. However, this came at a cost -
+tuning the difficulty of the game was extremely difficult, and resulted in a game that
+was not correct for any particular cohort of the audience.
+
+
+As we developed Spyro 2, we added a system which would adjust the difficulty of the play
+experience on-the-fly according to the player's historical performance. However as we
+attempted to seed the system with performance metrics, we realized we needed more accuracy
+than we could get from simple observation. So we implemented a primitive data analytics
+system into the pre-release builds of Spyro 2 and gathered play performance data from
+our playtesters.
+
+
+Both of these systems were created out of pure necessity, but ended up being well ahead of
+their time. I'll detail our thought processes in how they were created, show some of the
+data we collected and how it was used, and talk about how adaptive difficulty is at work
+in a great many of the games you play, whether you know it or not.
+
+
+
+**Michael Cullen has generously shared with us his slides and two C# scripts:
+
+Basics of Sound Design for Video Games,
+AudioPlayer.cs,
+AU_PlayOneShot.cs.
+
+    

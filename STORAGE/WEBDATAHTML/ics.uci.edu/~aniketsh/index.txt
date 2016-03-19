@@ -1,0 +1,9 @@
+Aniket Shivam<html>
+  <head>
+    <title>Aniket Shivam</title>
+    <META http-equiv="refresh" content="0;URL=http://sites.uci.edu/aniketshivam/">
+  </head>
+  <body bgcolor="#ffffff">
+  </body>
+</html>
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0075)http://proquest.safaribooksonline.com/print?xmlid=9781449328917%2Fid2459070 -->
+<html xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./hadoop3_files/docsafarip.css"><link rel="stylesheet" type="text/css" href="./hadoop3_files/getfile"></head><body><div><p class="p"></p><hr><strong class="strong">Username: </strong><span>University of California Irvine User</span><span> </span><strong class="strong">Book: </strong><span>Hadoop: The Definitive Guide, 3rd Edition. </span><span>No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.</span><hr><p></p><div id="HtmlView"><div><h1 class="epub__title"><a id="I_sect19_d1e20021"></a>Cluster Setup and Installation</h1>
+
+
+
+
+
+
+<p><a id="idx10654" class="epub__indexterm"></a>Your hardware has arrived. The next steps are to get it
+    racked up and install the software needed to run Hadoop.</p>
+<p>There are various ways to install and configure Hadoop. This chapter
+    describes how to do it from scratch using the Apache Hadoop distribution
+    and provides background information on the things you need to think about
+    when setting up Hadoop. Alternatively, if you would like to use RPMs or
+    Debian packages for managing your Hadoop installation, then you might want
+    to start with Cloudera’s Distribution, described in <a href="http://proquest.safaribooksonline.com/9781449328917/id3207483" class="epub__xref" title="Appendix B. Cloudera’s Distribution Including Apache Hadoop" data-ajax="1">Appendix&nbsp;B</a>.</p>
+<p>To ease the burden of installing and maintaining the same software
+    on each node, it is normal to use an automated installation method such as
+    Red Hat Linux’s Kickstart or Debian’s Fully Automatic Installation. These
+    tools allow you to automate the operating system installation by recording
+    the answers to questions that are asked during the installation process
+    (such as the disk partition layout), as well as which packages to install.
+    Crucially, they also provide hooks to run scripts at the end of the
+    process, which are invaluable for doing the final system tweaks and
+    customization that are not covered by the standard installer.</p>
+<p>The following sections describe the customizations that are needed
+    to run Hadoop. These should all be added to the installation
+    script.</p>
+<div class="epub__sect2" title="Installing Java"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id688695"></a>Installing Java</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10655" class="epub__indexterm"></a><a id="idx10656" class="epub__indexterm"></a><a id="idx10657" class="epub__indexterm"></a>Java 6 or later is required to run Hadoop. The latest
+      stable Sun JDK is the preferred option, although Java distributions from
+      other vendors may work, too. The following command confirms that Java
+      was installed correctly:<a id="I_indexterm9_d1e28569" class="epub__indexterm"></a><a id="I_indexterm9_d1e28570" class="epub__indexterm"></a><a id="I_indexterm9_d1e28571" class="epub__indexterm"></a></p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>java -version</code></strong>
+java version "1.6.0_12"
+Java(TM) SE Runtime Environment (build 1.6.0_12-b04)
+Java HotSpot(TM) 64-Bit Server VM (build 11.2-b01, mixed mode)</pre>
+</div>
+<div class="epub__sect2" title="Creating a Hadoop User"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id501983"></a>Creating a Hadoop User</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10658" class="epub__indexterm"></a><a id="idx10659" class="epub__indexterm"></a>It’s good practice to create a dedicated Hadoop user
+      account to separate the Hadoop installation from other services running
+      on the same machine.</p>
+<p>For small clusters, some administrators choose to make this user’s
+      home directory an NFS-mounted
+      drive, to aid with SSH key distribution (see the following discussion).
+      The NFS server is typically outside the Hadoop cluster. If you use NFS,
+      it is worth considering autofs, which allows you to mount the NFS
+      filesystem on demand when the system accesses it. Autofs provides some
+      protection against the NFS server failing and allows you to use
+      replicated filesystems for failover. There are other NFS gotchas to
+      watch out for, such as synchronizing UIDs and GIDs. For help setting up
+      NFS on Linux, refer to the HOWTO at <a class="epub__ulink" href="http://nfs.sourceforge.net/nfs-howto/index.html" target="_new">http://nfs.sourceforge.net/nfs-howto/index.html</a>.<a id="I_indexterm9_d1e28603" class="epub__indexterm"></a><a id="I_indexterm9_d1e28604" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect2" title="Installing Hadoop"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id678989"></a>Installing Hadoop</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10660" class="epub__indexterm"></a><a id="idx10661" class="epub__indexterm"></a><a id="idx10662" class="epub__indexterm"></a>Download Hadoop from the Apache Hadoop releases page
+      (<a class="epub__ulink" href="http://hadoop.apache.org/core/releases.html" target="_new">http://hadoop.apache.org/core/releases.html</a>), and
+      unpack the contents of the distribution in a sensible location, such as
+      <em class="epub__filename">/usr/local</em> (<em class="epub__filename">/opt</em> is another standard choice). Note that
+      Hadoop is <span class="epub__italic">not</span> installed in the
+      <code class="epub__literal">hadoop</code> user’s home directory, as that
+      may be an NFS-mounted directory:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>cd /usr/local</code></strong>
+<code class="epub__prompt">%</code> <strong class="epub__userinput"><code>sudo tar xzf hadoop-<em class="epub__replaceable"><code>x.y.z</code></em>.tar.gz</code></strong></pre>
+<p>We also need to change the owner of the Hadoop files to be the
+      <code class="epub__literal">hadoop</code> user and group:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>sudo chown -R hadoop:hadoop hadoop-<em class="epub__replaceable"><code>x.y.z</code></em></code></strong></pre><div class="epub__note" title="Note">
+<h3 class="epub__title">Note</h3>
+<p>Some administrators like to install HDFS and MapReduce in
+        separate locations on the same system. At the time of this writing,
+        only HDFS and MapReduce from the same Hadoop release are compatible
+        with one another; however, in future releases, the compatibility
+        requirements will be loosened. When this happens, having independent
+        installations makes sense, as it gives more upgrade options (for more,
+        see <a href="http://proquest.safaribooksonline.com/9781449328917/id2470668#UpgradingHadoop" class="epub__xref" title="Upgrades" data-ajax="1">Upgrades</a>). For example, it is convenient
+        to be able to upgrade MapReduce—perhaps to patch a bug—while leaving
+        HDFS running.</p>
+<p>Note that separate installations of HDFS and MapReduce can still
+        share configuration by using the <a id="I_indexterm9_d1e28680" class="epub__indexterm"></a><code class="epub__literal">--config</code> option (when
+        starting daemons) to refer to a common configuration directory. They
+        can also log to the same directory because the logfiles they produce
+        are named in such a way as to avoid clashes.<a id="I_indexterm9_d1e28686" class="epub__indexterm"></a><a id="I_indexterm9_d1e28687" class="epub__indexterm"></a></p>
+</div>
+
+</div>
+
+<div class="epub__sect2" title="Testing the Installation"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id694908"></a>Testing the Installation</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10663" class="epub__indexterm"></a>Once you’ve created an installation script, you are ready
+      to test it by installing it on the machines in your cluster. This will
+      probably take a few iterations as you discover kinks in the install.
+      When it’s working, you can proceed to configure Hadoop and give it a
+      test run. This process is documented in the following
+      sections.<a id="I_indexterm9_d1e28700" class="epub__indexterm"></a><a id="I_indexterm9_d1e28701" class="epub__indexterm"></a><a id="I_indexterm9_d1e28702" class="epub__indexterm"></a></p>
+</div>
+
+
+
+<div class="epub__sect1" title="SSH Configuration"><div class="epub__titlepage"><div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+function PagePrint()
+{
+    setTimeout("window.print()", 500);
+}
+PagePrint();
+</script></div><span id="BowEndOfDocument" style="display:none" hidden="hidden"></span></body></html>

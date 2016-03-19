@@ -1,0 +1,746 @@
+LUCI blogCheese Pizza Infographic wins Pie on Pi Day
+ 
+                
+            	
+            
+				
+					Cheese Pizza Opinions
+In a very complicated execution of metaphor and infographic, LUCI’s own Ph.D. student Oliver Haimson, won the @inforgram Pie Day Contest (#PiDay2014).  The prize is also pie!  So Meta!
+It’s interactive!
+Congrats Oliver!  
+
+				
+
+
+		
+			
+			
+								Posted by Julie Darwish							
+								
+				
+								Julie Darwish liked this on Facebook.  
+								
+							
+								Posted by Katie Derthick							
+								
+				
+								Katie Derthick liked this on Facebook.  
+								
+							
+								Posted by Oliver Haimson							
+								
+				
+								Oliver Haimson liked this on Facebook.  
+								
+							
+								Posted by Kate Ringland							
+								
+				
+								Kate Ringland liked this on Facebook.  
+								
+							
+								Posted by Oliver Haimson							
+								
+				
+								Thanks!!  
+								
+							
+						(Read 8 Comments)
+						
+			
+						Tags: contest, infographic					
+						Posted:   3/20/14 5:52 pm PST by admin Add Your Comment					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+Flatricide Pulgamitude
+ 
+                
+            	
+            
+				
+					Prof. Patterson’s class is having an Information Retrieval contest to get the term Flatricide Pulgamitude listed at the top of a search for that term.
+This entry is to support the contest. If you want to support his efforts include this code on your blog as well:
+<a href=”http://djp3-pc2.ics.uci.edu/flatricide_pulgamitude.html”>Flatricide Pulgamitude</a>
+Update: The contest will end in 4 days!
+
+				
+
+
+		
+			
+			
+			
+						Tags: class, contest, teaching					
+						Posted:   1/16/14 9:06 pm PST by admin Comments Off					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+Janet supports NASA in CNN
+ 
+                
+            	
+            
+				
+					
+Janet Vertesi, a former LUCI post-doc, has just penned an article for CNN supporting the broad impacts of continuing funding for NASA:
+
+“At a time when our math and science students are getting left behind, and the public is looking to our high tech and scientific sectors to power innovation and economic growth, we should invest in our sciences and continue to inspire the next generation. Let’s make sure our current best and brightest working on the cutting edge don’t get the pink slip.”
+				
+
+
+		
+			
+			
+								Posted by LUCI_at_UCI							
+								
+				
+								LUCI Lab alumna, Janet Vertesi, has an article up on CNN reminding us that funding NASA isn't just about cute … 
+								
+							
+								Posted by UCI_Informatics							
+								
+				
+								LUCI Lab alumna, Janet Vertesi, has an article up on CNN reminding us that funding NASA isn't just about cute … 
+								
+							
+			
+						Tags: Janet Vertesi, NASA, press, space					
+						Posted:   12/16/13 6:04 am PST by admin Add Your Comment					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+Made in China
+ 
+                
+            	
+            
+				
+					
+
+
+The Economist is featuring work by former LUCI grad student and current UCI Post-doc, Silvia Lindtner, about the DIY Maker movement in China.  Notably another LUCI graduate, Sharon (Xianghua) Ding is at Fudan University now:
+
+“Proximity to shanzhai manufacturers could make it easier for Chinese makers to turn prototypes into mass-produced products. At the same time, the maker community could boost innovation among shanzhai firms, which are in fact more inventive than is often assumed. Silvia Lindtner, an ethnographer at University of California, Irvine and Shanghai’s Fudan University, notes that shanzhai producers have long adapted mobile phones to the needs of people in the developing world. For example, unlike mainstream manufacturers, they championed mobile phones with dual SIM slots, ideal for Africa and India where users often switch networks to reduce costs.”
+				
+
+
+		
+			
+			
+								Posted by mohans							
+								
+				
+								RT @LUCI_at_UCI: When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/Od4yl…  
+								
+							
+								Posted by Variablefrog							
+								
+				
+								RT @UCI_Informatics: When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/q…  
+								
+							
+								Posted by LUCI_at_UCI							
+								
+				
+								When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/Od4ylIr704  
+								
+							
+								Posted by dourish							
+								
+				
+								RT @UCI_Informatics: When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/q…  
+								
+							
+								Posted by UCI_Informatics							
+								
+				
+								When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/qWwSwwrMFX  
+								
+							
+						(Read 5 Comments)
+						
+			
+						Tags: China, Economist, ethnography, Fudan University, maker, mobile phone, Sharon Xianghua Ding, Silvia Lindtner					
+						Posted:   12/6/13 7:01 pm PST by admin Add Your Comment					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+Using Gas Sensors to Classify Odors
+ 
+                
+            	
+            
+				
+					
+Congratulations to LUCI grad student Sen Hirano on passing his Phase II exam with the paper, “Exploring the Potential for Gas Sensors to Classify Odors in Ubicomp Applications”
+“The sense of smell is the primary method many animals use to infer information about their environment. Although human noses are less developed, it is still a sense on which we rely heavily. Ubicomp researchers have long been interested in sensing user activities in an unobtrusive manner. One way to do this sensing is through detecting the gases released during those activities. Previous research has shown that gas sensors can be used to classify odors when used in highly controlled experimental testing chambers. However, potential ubicomp applications require these sensors to perform an analysis in less controlled environments. In this paper, I present my design of uSmell—a gas sensor system for sensing smell in ubicomp environments. My system samples an odor fingerprint from a variable amount of metal oxide semiconductor (MOS) gas sensors every second. It then processes the time series data to extract three features that highlight how time and distance affect the gas sensors’ ability to react to the gas molecules released by an odor, for each five-second window. I evaluate uSmell through four experiments: basic efficacy, effects of airflow and distance, classifying bathroom activities, and tracking cooking state. These experiments demonstrated my system’s ability to classify a set of odors in a small container with 88% average accuracy, a set of odors in open air 0.5-2 m from the odor samples, bathroom activities with 93% accuracy, and doneness for waffles and popcorn with 73% and 85% accuracy, respectively. I close with a discussion on opportunities for optimizing classification, opportunities for using shapes and patterns for recognition, and future directions for using this technology to help guide cooks.”
+
+				
+
+
+		
+			
+			
+								Posted by Vrishti Gulati							
+								
+				
+								Vrishti Gulati liked this on Facebook.  
+								
+							
+								Posted by John S. Seberger							
+								
+				
+								John S. Seberger liked this on Facebook.  
+								
+							
+								Posted by Alejandro Komai							
+								
+				
+								Alejandro Komai liked this on Facebook.  
+								
+							
+								Posted by Lynn Dombrowski							
+								
+				
+								Lynn Dombrowski liked this on Facebook.  
+								
+							
+								Posted by Courtney Loder							
+								
+				
+								Courtney Loder liked this on Facebook.  
+								
+							
+						(Read 10 Comments)
+						
+			
+						Tags: Sen Hirano					
+						Posted:   11/19/13 3:10 pm PST by admin Add Your Comment					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+Tech Tools for Students with Autism
+ 
+                
+            	
+            
+				
+					
+
+Congratulations to Prof. Gillian Hayes and Ph.D student Jed Brubaker on the publication of “Technology Tools for Students with Autism”.  Two chapters in the book have LUCI Pedigrees:
+Using Mobile Technologies to Support Students in Work Transition Programs by Hayes, G.R., Yeganyan, M.T., Brubaker, J.R., O’Neal, L., and Hosaflook, S.W.
+Tools to support simplified capture activities in natural environments. by Abowd, G.D., Kientz, J.A., Hayes, G.R., Arriaga, R.I, and Nazneen. 
+
+				
+
+
+		
+			
+			
+								Posted by LUCI_at_UCI							
+								
+				
+								Who wrote the book on "Tech Tools for Students with Autism"? Prof. Gillian Hayes and Ph.D. Student Jed Brubaker! http://t.co/Or8qR9ii8o  
+								
+							
+								Posted by UCI_Informatics							
+								
+				
+								Who wrote the book on "Tech Tools for Students with Autism"? Prof. Gillian Hayes and Ph.D. Student Jed Brubaker! http://t.co/nvIKVdZHYB  
+								
+							
+			
+						Tags: autism, book, Gillian Hayes, Jed Brubaker, Michael Yeganyan, publication					
+						Posted:   11/8/13 11:16 pm PST by admin Add Your Comment					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+Temporalities of Sociotechnical Change in a Long-Lived System
+ 
+                
+            	
+            
+				
+					
+Congratulations to LUCI’s newest Ph.D., Dr. Marisa Cohn.  She just passed her final defense. With her thesis: “Lifetimes and Legacies: Temporalities of Sociotechnical Change in a Long-Lived System”
+
+“In studying technological change, we often seek to understand the dynamics of how technologies and practice shape each other over time, examining sites of innovation, adaptation, and appropriation, of making and re-making systems anew. However less attention has been given to how formerly cutting-edge technologies become old, how people work alongside aging and obsolescent systems, or how organizations prepare for the end of a technology’s life cycle. 
+In this dissertation, I argue that this bias towards progressivist accounts of technological change obscures the lived temporal relations of systems work. I present research drawn from 9 months of ethnographic fieldwork with engineers at the Cassini mission to Saturn, at the Jet Propulsion Laboratory, in Pasadena, CA. Having launched in 1997, the longevity of the mission means that their work takes place in the context of an aging spacecraft and increasingly obsolescent software infrastructure. As the mission is bound to complete in 2017, engineers are beginning to plan for and work towards the end of the mission and reflect on its origins and possible legacies. 
+Cassini thus offers a perspicuous case for understanding technological change. I examine how Cassini’s computational infrastructure mediates the work of translating across multiple temporal concerns — from multi-year science objectives to the run time of algorithms to the lifetimes and legacies of hardware and software tools. In doing so, I shift attention from understanding how technologies emerge in practice, to how people live with technological change over the duration of lived experience. I articulate a lens that reveals technological change not as a single phenomenon belonging to a totalized system (e.g., the organizational infrastructure, information ecology, or sociotechnical system) but rather as multiple modes or regimes among which people, and organizations, evaluate how technologies (ought to) develop over time.”
+
+Committee: Paul Dourish (Chair), Kavita Philip, Melissa Mazmanian, Geof Bowker
+
+				
+
+
+		
+			
+			
+								Posted by Kate Ringland							
+								
+				
+								Kate Ringland liked this on Facebook.  
+								
+							
+								Posted by Chris Wolf							
+								
+				
+								Chris Wolf liked this on Facebook.  
+								
+							
+								Posted by UCI_Informatics							
+								
+				
+								"Lifetimes and Legacies: Temporalities of Sociotechnical Change in a Long-Lived System"  Congratulations Dr. Cohn! http://t.co/qIGysYZ6F6  
+								
+							
+			
+						Tags: Geof Bowker, infrastructure, Kavita Philip, LUCI, Marisa Cohn, Melissa Mazmanian, organization, Paul Dourish, Ph.D., research, thesis					
+						Posted:   10/26/13 12:07 am PST by admin Add Your Comment					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+The effects of EMR deployment wins best paper award
+ 
+                
+            	
+            
+				
+					
+Congratulations to LUCI grad students Sun Young Park and So Young Lee and Professor Yunan Chen on having their paper, “The effects of EMR deployment on doctors’ work practices: a qualitative study in the emergency department of a teaching hospital” selected as Best Paper of the year.
+“The International Medical Informatics Association (IMIA) publishes the annual IMIA Yearbook of Medical Informatics, a non-profit project to advance the field of medical informatics and to stimulate dissemination and exchange of information between researchers and professionals belonging to IMIA’s societies.
+The Yearbook of IMIA contains references, reviews, and links to the ”best of medical informatics” articles from the preceding year, together with a number of original articles, as well as a background information on IMIA.  We are very pleased to inform you that the Editorial Board of the 2013 IMIA Yearbook of Medical Informatics has selected your article for listing in the Yearbook as one of the best articles from the literature in medical informatics published in 2012 in the Human Factors subfield of Medical Informatics.
+The Yearbook will be made available to over 20,000 members of the healthcare and biomedical scientific communities through both a print version and online access. It reaches members in more than 40 societies participating to IMIA worldwide.”
+
+				
+
+
+		
+			
+			
+			
+						Tags: article, award, EMR, Informatics, Medical Informatics, paper, So Young Lee, Sun Young Park, teaching, Yunan Chen					
+						Posted:   10/3/13 5:04 am PST by admin Comments Off					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+RIP Trolling
+ 
+                
+            	
+            
+				
+					
+The Center for Digital Ethics and Policy at Loyola University has published an article on RIP Trolling with help from LUCI Lab Ph.D. student Jed Brubaker.
+“This troll targets a type of website most would deem sacred — not a place for joking, let alone crude tormenting. It’s a type of website increasingly common in the digital age: one that memorializes the deceased.
+Like the Westboro Baptist Church members who picket military funerals, or thieves who study obituaries for funeral information so they can rob families who are away from home, RIP trolls target people who are mourning their loved ones.”
+
+				
+
+
+		
+			
+			
+								Posted by UCI_Informatics							
+								
+				
+								RIP Trolling: Jed Brubaker, Informatics Ph.D., talks to the Center for Digital Ethics & Policy http://t.co/LgofkzCOks  
+								
+							
+								Posted by LUCI_at_UCI							
+								
+				
+								RIP Trolling: Jed Brubaker, Informatics Ph.D., talks to the Center for Digital Ethics & Policy http://t.co/MdFZTWuIvX  
+								
+							
+			
+						Tags: article, death, ethics, Jed Brubaker, social networks					
+						Posted:   10/2/13 9:57 pm PST by admin Add Your Comment					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+					
+				
+Studying Ideological Differences wins Courtney the Rob Kling Fellowship
+ 
+                
+            	
+            
+				
+					
+Congratulations to Courtney Loder on winning the Rob Kling Memorial Fellowship for 2013-2014! The award comes with a cash prize to support her work on studying ideological differences online:
+
+“I am interested in the ways that people engage with systems, platforms, and web services in the presence of ideological difference. For example, what options are available to someone who wants to communicate with friends and family on Facebook but who dislikes features and policies that embody the company’s philosophy of radical transparency? Stories about this tug of war between the network effects of large-scale communication platforms and personally held values in conflict with the dominant platform are increasingly common (Mainwaring, Chang, & Anderson, 2004). Another example at a different level of technological scale is the person who worries about the visibility of their communication as it traverses the network. Rather than opt out of using services completely (e.g. Portwood-Stacer, 2012), a growing number of people are taking action to adjust their use to better align with their personally held values. These actions happen at every level of scale. From something as simple as using a pseudonym on Facebook to more complicated configurations of encrypted web browsing, people are engaging with—and in some cases, altering—the infrastructures underlying digitally-mediated communication. ”
+
+And more about the award:
+
+“The Rob Kling Memorial Fellowship was created to honor the life of Rob Kling, Professor of Information and Computer Science here at UCI, who passed away in 2003. For decades, Dr. Kling was a leader and icon in the field of social informatics. He had a deep concern, personally and professionally, for the welfare of the public and the relationship of technology use to the quality of life.  His intellectual contributions to the field of social informatics have been seminal and vast.  With this fellowship, the Bren School hopes that you will be able to continue your research and dissertation.”
+
+				
+
+
+		
+			
+			
+								Posted by UCIbrenICS							
+								
+				
+								RT @UCI_Informatics: Congratulations to Courtney Loder on winning the Rob Kling Fellowship to study ideological differences online! http://…  
+								
+							
+								Posted by UCI_Informatics							
+								
+				
+								Congratulations to Courtney Loder on winning the Rob Kling Fellowship to study ideological differences online! http://t.co/9u9mupt6am  
+								
+							
+								Posted by LUCI_at_UCI							
+								
+				
+								Congratulations to Courtney Loder on winning the Rob Kling Fellowship to study ideological differences online! http://t.co/13S1IFW2wn  
+								
+							
+			
+						Tags: award, Courtney Loder, facebook, fellowship, Informatics, infrastructure, LUCI, privacy, research, Rob Kling					
+						Posted:   10/2/13 5:24 pm PST by admin Add Your Comment					
+						GD Star Ratinga WordPress rating system					
+											
+
+		
+
+			
+            
+            
+
+		
+		
+			
+						
+					
+						Front Page
+					
+						Older Entries »
+					
+		
+ 
+ 
+ 
+ 
+		
+
+
+	
+	
+
+	
+    				
+		
+		
+				
+					Search for:
+					
+					
+				
+			Lots of Thumbs-Up For:			TitleVotesRatingNo results.
+		We Blog Lots of PlacesDistributed Systems Testing: The Lost World  cristaReading the Runes to Anticipate Children’s Digital Futures  Jamieson PondBook Review: Disconnected: Youth, New Media and the Ethics Gap  Jamieson PondPaper in Social Media + Society with Press Coverage  epsbArchitectures for Massively Multi-User Environments  cristaHow Non-use Experiences Influence the Likelihood of Social Media Reversion: Perceived Addiction, Boundary Negotiation, Subjective Mood, and Social Connections  epsbDharma in California?  Zinc SulfateWriting with friends -- Participatory Culture in a Networked Era  Mizuko ItoBrainTrack  adminSoftware Developer Accessibility Awareness  adminCanon Politics  KavitaConnected Camps Summer of Minecraft  Mizuko ItoTagsLUCI:
+design:
+CHI:
+art:
+Donald J. Patterson:
+paper published:
+article:
+AI:
+Photos:
+fun:
+award:
+Paul Dourish:
+ubiquitous computing:
+Gillian R. Hayes:
+video:
+conference:
+research:
+education:
+app:
+UCI:
+Ph.D.:
+STEM:
+mobile phone:
+interface:
+HCI:
+infrastructure:
+privacy:
+Bill Tomlinson:
+workshop:
+pervasive computing:
+facebook:
+Melissa Mazmanian:
+MIT:
+CSCW:
+context:
+Health Care:
+Lilly Irani:
+Jed Brubaker:
+Intel:
+social networks:
+Garnet Hertz:
+press:
+demo:
+China:
+culture:
+paper:
+podcast:
+youtube:
+collaboration:
+sustainability:
+Medical Informatics:
+Silvia Lindtner:
+Google:
+geolocation:
+visualization:
+twitter:
+grant:
+anthropology:
+thesis:
+Yunan Chen:
+Bonnie Nardi:
+Sen Hirano:
+Nomatic:
+Eric Kabisch:
+Mechanical Turk:
+contest:
+interactive visualization:
+children:
+AmI:
+ethnography:
+Sam Kaufman:
+Crista Lopes:
+surveillance:
+STAR:
+NSF:
+vehicle:
+Sharon Xianghua Ding:
+autism:
+Microsoft:
+mobile app:
+internship:
+Gillian Hayes:
+Six Silberman:
+Amanda WIlliams:
+Eric Baumer:
+IEEE:
+pod:
+Italy:
+Mimi Ito:
+machine learning:
+information retrieval:
+CalIT2:
+japan:
+Australia:
+physical sensors:
+Joel Ross:
+hacking:
+food:
+map:
+Sun Young Park:
+Creative Expression:
+teaching:
+Nick Noack:
+Judy Chen:
+Android:
+humor:
+Monica Tentori:
+Gabriela Marcu:
+NGO:
+Augmented Reality:
+ICT4D:
+ipod:
+GPS:
+Informatics:
+media:
+Lynn Dombrowski:
+talk:
+Commentary:
+book published:
+David H. Nguyen:
+instant messenger:
+Mohamad Monibi:
+Africa:
+Bill Maurer:
+blogs:
+gaming:
+urban computing:
+Gloria Mark:
+Ellie Harmon:
+RFID:
+Charlotte Lee:
+Kavita Philip:
+UBICOMP:
+study:
+bluetooth:
+Gadget:
+tech report published:
+Wikipedia:
+Karen Cheng:
+children with autism:
+Bruce Sterling:
+India:
+telecom companies:
+Gesture Recognition:
+Nithya Sambasivan:
+scholarship:
+myspace:
+activity recognition:
+Korea:
+code:
+T-Mobile:
+navigation:
+iot:
+smartphone:
+kinect:
+architecture:
+blog:
+Scott Mainwaring:
+transportation:
+Johanna Brewer:
+coffee:
+Michael Yeganyan:
+recognition algorithms:
+3d printing:
+virtual reality:
+Ken Anderson:
+rapid prototyping:
+USC:
+Janet Vertesi:
+Lecture:
+Vrishti Gulati:
+AIDS:
+Seattle:
+Marisa Cohn:
+outreach:
+Jim Jones:
+Ramesh Jain:
+vending machine:
+politics:
+Yasser Ganjisaffar:
+bitcoin:
+arduino:
+fellowship:
+Michael Curry:
+circuit bending:
+Turkopticon:
+organization:
+Geoffrey Bowker:
+Geof Bowker:
+UROP:
+So Young Lee:
+solar:
+software engineering:
+PARC:
+Alladi Venkatesh:
+video data:
+safety:
+games:
+digital camera:
+Fulbright:
+kiosk:
+Susan Sim:
+Mohan Singh:
+automotive UI:
+Genevieve Bell:
+Leslie Liu:
+Cerebral Palsy:
+laptop:
+Nitin Shantharam
+        			
+
+		Archives		March 2014January 2014December 2013November 2013October 2013September 2013August 2013July 2013June 2013May 2013April 2013March 2013February 2013January 2013December 2012November 2012October 2012September 2012August 2012July 2012June 2012May 2012April 2012March 2012February 2012January 2012December 2011November 2011October 2011September 2011August 2011July 2011June 2011May 2011April 2011March 2011February 2011January 2011December 2010November 2010October 2010September 2010August 2010July 2010June 2010May 2010April 2010March 2010February 2010January 2010December 2009November 2009October 2009September 2009August 2009July 2009June 2009May 2009April 2009February 2009January 2009December 2008November 2008October 2008September 2008August 2008July 2008June 2008May 2008April 2008March 2008February 2008January 2008December 2007November 2007October 2007September 2007August 2007July 2007June 2007May 2007April 2007March 2007February 2007January 2007December 2006November 2006October 2006September 2006August 2006July 2006June 2006May 2006April 2006March 2006February 2006January 2006
+
+	
+
+
+
+	
+     
+    
+    
+   
+    
+	
+    
+    	
+        	
+        
+        
+        
+        	Copyright 2010 - all rights reserved

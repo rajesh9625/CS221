@@ -1,0 +1,133 @@
+About | Yiran Wang<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+				<title>About | Yiran Wang</title>
+		<meta name="robots" content="all" />
+		<meta name="generator" content="Sandvox 2.10.2" />
+		<meta name="viewport" content="width=772" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="image_src" href="http://www.ics.uci.edu/~yiranw2/_Media/uci2_360.jpeg" type="image/jpeg" />
+		<link rel="apple-touch-icon" href="_Media/uci2.jpeg" />
+		<link rel="canonical" href="http://www.ics.uci.edu/~yiranw2/" />
+		
+		<link rel="stylesheet" type="text/css" href="sandvox_NeoNews/main.css" title="Neo News" /><!--[if lt IE 6]>
+		<link rel="stylesheet" type="text/css" href="sandvox_NeoNews/ie.css" /><![endif]-->
+		<!--
+		Photo credits for this website's design: <http://www.ics.uci.edu/~yiranw2/sandvox_NeoNews/Credits.rtf>
+		Licensing for this website's design:     <http://www.ics.uci.edu/~yiranw2/sandvox_NeoNews/License.rtf>
+		-->
+		
+	</head>
+	<body class="sandvox has-page-title allow-sidebar no-custom-banner home-page no-IR" id="www_ics_uci_edu_yiranw2" >
+				<div id="page-container">
+			<div id="page">
+				<div id="page-top" class="no-logo has-title has-tagline">
+					<div id="title">
+						<h1 class="title"><span class="in"><span style="font-weight: normal; font-size: 24px; font-family: 'PT Sans Caption';">Yiran Wang</span></span></h1>
+						<p id="tagline"><span class="in"><span style="font-size: 18px; font-family: 'PT Sans';">Social Computing + Youth and Digital Media</span><span style="font-family: Georgia; font-size: 18px;"> </span><span style="font-size: 18px; font-family: 'PT Sans';">+ Informal Learning</span></span></p>
+					</div><!-- title -->
+					<div id="sitemenu-container">
+						<div id="sitemenu">
+							<h2 class="hidden">Site Navigation<a href="#page-content" rel="nofollow">[Skip]</a></h2>
+							<div id="sitemenu-content">
+								<ul>
+									<li class="i1 o currentPage"><span class="in">Home</span></li>
+									<li class="i2 e"><a href="publications.html" title="Publications"><span class="in">Publications</span></a></li>
+									<li class="i3 o"><a href="projects.html" title="Projects"><span class="in">Projects</span></a></li>
+									<li class="i4 e last-item last"><a href="personal.html" title="Personal"><span class="in">Personal</span></a></li>
+								</ul>
+							</div> <!-- /sitemenu-content -->
+						</div> <!-- /sitemenu -->
+					</div> <!-- sitemenu-container -->
+				</div> <!-- page-top -->
+				<div class="clear below-page-top"></div>
+				<div id="page-content" class="">
+					<div id="sidebar-container">
+						<div id="sidebar">
+							<div id="sidebar-top"></div>
+							<div id="sidebar-content">
+								<h3 class="hidden">Sidebar<a rel="nofollow" href="#main">[Skip]</a></h3>
+								<div class="pagelet untitled i1 o">
+									<div class="pagelet-body">
+										<div class="RichTextElement">
+											<div>
+												<p><img src="_Media/yw_bio_med_hr.jpeg" alt="" width="200" height="223" class="first" /></p>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pagelet titled i2 e">
+									<h4 class="title pagelet-title"><span class="in"><span style="font-family: 'PT Sans'; color: rgb(196, 94, 90);"><strong> Travels</strong></span></span></h4>
+									<div class="pagelet-body">
+										<div class="RichTextElement">
+											<div>
+												<p><strong><u><span style="font-family: 'PT Sans'; font-size: 12px;">2015.10.13-2015.10.16</span></u></strong></p><p><span style="font-family: 'PT Sans'; font-size: 12px;">Grace Hopper @Houston, TX</span></p><p><strong><u><span style="font-family: 'PT Sans'; font-size: 12px;">2015.03.14-2015.03.18</span></u></strong></p><p><span style="font-family: 'PT Sans'; font-size: 12px;">CSCW’15 @Vancouver, Canada</span></p><p><span style="font-family: 'PT Sans'; font-size: 12px;">(03.19-03.21 @Seattle)</span></p><p><strong><u><span style="font-family: 'PT Sans'; font-size: 12px;">2014.4.26 - 2014.5.1</span></u></strong></p><p><span style="font-family: 'PT Sans'; font-size: 12px;">Attending CHI’14 @Toronto, Canada</span></p><p><span style="font-size: 12px; font-family: Georgia; color: rgb(70, 77, 113);"><br /></span></p>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pagelet titled i3 o last-item">
+									<h4 class="title pagelet-title"><span class="in"><strong style="color: rgb(0, 0, 0); font-size: 12px;"><span style="color: rgb(197, 94, 91); font-size: 14px; font-family: 'PT Sans';"> CONTACT</span></strong><br /></span></h4>
+									<div class="pagelet-body">
+										<div class="RichTextElement">
+											<div>
+												<p><span style="font-family: 'PT Sans'; font-size: 12px;"><strong>Email</strong>: yiranw2(at)uci(dot)edu</span></p><p><span style="font-family: 'PT Sans'; color: rgb(12, 4, 3); font-size: 12px;"><strong>Office</strong>: Department of Informatics</span></p><p><span style="font-family: 'PT Sans'; color: rgb(12, 4, 3); font-size: 12px;">5099 Donald Bren Hall</span></p><p><span style="font-family: 'PT Sans'; color: rgb(12, 4, 3); font-size: 12px;">Uniervsity of California</span></p><p><span style="font-family: 'PT Sans'; color: rgb(12, 4, 3); font-size: 12px;">Irvine, </span><span style="color: rgb(12, 4, 3); font-family: 'PT Sans'; font-size: 12px;">CA, 92697</span></p>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> <!-- sidebar-content -->
+							<div id="sidebar-bottom"></div>
+						</div> <!-- sidebar -->
+					</div> <!-- sidebar-container -->
+					<div id="main">
+						<div id="main-top"></div>
+						<div id="main-content">
+							<h2 class="title"><span class="in"><span style="font-size: 18px; font-family: 'PT Sans Caption';">About</span></span></h2>
+							<div class="article">
+								<div class="article-content">
+									<div class="RichTextElement">
+										<div>
+											<div class="first graphic-container wide center ImageElement">
+												<div class="graphic">
+													<div class="figure-content">
+														<!-- sandvox.ImageElement --><img src="_Media/uci2_med_hr.jpeg" alt="UCI2" width="488" height="242" />
+														<!-- /sandvox.ImageElement --></div>
+												</div>
+											</div><p><span style="font-size: 14px; font-family: 'PT Sans';">I am a Ph.D candidate in the <a href="http://www.informatics.uci.edu/" target="_blank">Department of Informatics</a>, <a href="http://www.ics.uci.edu/" target="_blank">Donald Bren School of Information and Computer Sciences</a>, at University of California, Irvine. I am advised by <a href="http://www.ics.uci.edu/~gmark/Home_page/Welcome.html">Prof. Gloria Mark</a>. Prior to joining in UC Irvine, I earned my B.S. in Computer Science from <a href="http://www.pku.edu.cn/">Peking University</a> (Beijing University), China.</span></p>
+											<p><span style="font-size: 14px; font-family: 'PT Sans';">I am fascinated
+																																	by how people use digital technology, how technology advancement contributes to societal changes, and how the design and use of technology affect each other, grounded in a cultural and political context. With such a human-centered approach, my current work focuses on youth and technology.</span></p><p><span style="font-size: 14px; font-family: 'PT Sans';">The way the college-aged Millennial generation engages with information and communication technologies (ICTs) has been an open question in recent years. Critics and the popular media, who can often influence general public opinion, tend to claim that digital media hinders the ability of “digital natives” to perform academically and socially. Yet, little research has investigated how and why these young people incorporate an assembly of digital media in their everyday lives. Towards addressing this issue, I study college students’ technology use in their natural environment, with a special focus on multitasking, social media use, informal learning, and well-being (e.g., stress, mood, and sleep debt). I draw on a set of diverse methods, from interviews, to computer and phone logging, survey, sensors, and observation. The evidence-based and ecological approach helps empirically ground discussions and sense-making of the relationship between youth and technology.</span></p>
+											
+										</div>
+									</div>
+								</div> <!-- /article-content -->
+								<div class="article-info">
+								</div> <!-- /article-info -->
+							</div> <!-- /article -->
+						</div> <!-- main-content -->
+						<div id="main-bottom"></div>
+					</div> <!-- main -->
+				</div> <!-- content -->
+				<div class="clear below-content"></div>
+				<div id="page-bottom">
+					<div id="page-bottom-contents">
+						<div>© Yiran Wang 2015</div>
+						<div class="hidden"> <a rel="nofollow" href="#title">[Back To Top]</a></div>
+					</div>
+				</div> <!-- page-bottom -->
+			</div> <!-- container -->
+			<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div><div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+		</div> <!-- specific body type -->
+		<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
+		<script>
+		if (typeof jQuery === 'undefined') document.write('<scr'+'ipt src="_Resources/jquery-1.9.1.min.js"></scr'+'ipt>');
+		</script>
+		
+		
+	</body>
+</html>

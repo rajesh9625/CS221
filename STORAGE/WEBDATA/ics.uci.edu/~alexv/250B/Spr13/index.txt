@@ -1,0 +1,10 @@
+Welcome to CS250BCS250B Modern Microprocessors
+ 
+
+
+
+  Lectures   
+  Reading List   
+  Project   
+
+  A sample memory component

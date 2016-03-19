@@ -1,0 +1,59 @@
+Welcome to SCONCESconce
+      
+        
+      
+    
+      
+        About
+            Courses
+            CS 134: Introduction to Computer Security and CryptographyCS 167: Applied CryptographyCS 201: Crypytographic ProtocolsCS 203 / NETSYS 240: Network Security
+          
+            Faculty
+            Michael T. GoodrichAlfred KobsaAlice SilverbergGene TsudikPaul DourishStanislaw JareckiMichael FranzSharad MehrotraDavid RedmilesAthina Markopoulou
+          Students, Alumni & Visitors
+            Funders
+            ARONSF CybertrustNSF SFSDept. of Education GAANNExperian CorporationThe Fullbright Foundation
+          
+        
+      
+    
+
+
+
+  
+    
+      
+
+        
+          
+          Managing Director: Gene Tsudik
+          Technical Director: Stanislaw Jarecki
+        
+      
+      
+    
+  
+
+
+
+
+	
+    
+    
+      
+    
+      
+		
+		
+      
+		
+      		
+		
+		
+     
+	
+
+
+  
+  	
+    	©SCONCE 2014

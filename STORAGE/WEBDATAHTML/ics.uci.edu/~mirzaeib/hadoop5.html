@@ -1,0 +1,1031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0075)http://proquest.safaribooksonline.com/print?xmlid=9781449328917%2Fid2459570 -->
+<html xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./hadoop5_files/docsafarip.css"><link rel="stylesheet" type="text/css" href="./hadoop5_files/getfile"></head><body><div><p class="p"></p><hr><strong class="strong">Username: </strong><span>University of California Irvine User</span><span> </span><strong class="strong">Book: </strong><span>Hadoop: The Definitive Guide, 3rd Edition. </span><span>No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.</span><hr><p></p><div id="HtmlView"><div><h1 class="epub__title"><a id="HadoopConfiguration"></a>Hadoop Configuration</h1>
+
+
+
+
+
+
+<p><a id="idx10666" class="epub__indexterm"></a><a id="idx10667" class="epub__indexterm"></a>There are a handful of files for controlling the
+    configuration of a Hadoop installation; the most important ones are listed
+    in <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#HadoopConfigurationFiles" class="epub__xref" title="Table 9-1. Hadoop configuration files" data-ajax="1">Table&nbsp;9-1</a>. This section covers
+    MapReduce 1, which employs the jobtracker and tasktracker daemons. Running
+    MapReduce 2 is substantially different and is covered in <a href="http://proquest.safaribooksonline.com/9781449328917/id2463480#YARNConfiguration" class="epub__xref" title="YARN Configuration" data-ajax="1">YARN Configuration</a>.</p><div class="epub__table"><a id="HadoopConfigurationFiles"></a>
+<p class="epub__title">Table&nbsp;9-1.&nbsp;Hadoop configuration files</p><div class="epub__table-contents">
+<table summary="Hadoop configuration files" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Filename</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Format</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><em class="epub__filename">hadoop-env.sh</em></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bash script</td><td style="border-bottom: 0.5pt solid ; ">Environment variables that are used in the scripts to run
+            Hadoop</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><em class="epub__filename">core-site.xml</em></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Hadoop configuration
+            XML</td><td style="border-bottom: 0.5pt solid ; ">Configuration settings for Hadoop Core, such as I/O
+            settings that are common to HDFS and MapReduce</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><em class="epub__filename">hdfs-site.xml</em></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Hadoop configuration
+            XML</td><td style="border-bottom: 0.5pt solid ; ">Configuration settings for HDFS daemons: the namenode, the
+            secondary namenode, and the datanodes</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><em class="epub__filename">mapred-site.xml</em></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Hadoop configuration
+            XML</td><td style="border-bottom: 0.5pt solid ; ">Configuration settings for MapReduce daemons: the
+            jobtracker, and the tasktrackers</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><em class="epub__filename">masters</em></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Plain text</td><td style="border-bottom: 0.5pt solid ; ">A list of machines (one per line) that each run a secondary
+            namenode</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><em class="epub__filename">slaves</em></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Plain text</td><td style="border-bottom: 0.5pt solid ; ">A list of machines (one per line) that each run a datanode
+            and a tasktracker</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> <em class="epub__filename">hadoop-metrics</em>  <em class="epub__filename">.properties</em></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Java Properties</td><td style="border-bottom: 0.5pt solid ; ">Properties for controlling how metrics are published in
+            Hadoop (see <a href="http://proquest.safaribooksonline.com/9781449328917/id2469417#HadoopMetrics" class="epub__xref" title="Metrics" data-ajax="1">Metrics</a>)</td></tr><tr><td style="border-right: 0.5pt solid ; "><em class="epub__filename">log4j.properties</em></td><td style="border-right: 0.5pt solid ; ">Java Properties</td><td style="">Properties for system logfiles, the namenode audit log, and
+            the task log for the
+            tasktracker child process (<a href="http://proquest.safaribooksonline.com/9781449328917/id2434076#HadoopLogs" class="epub__xref" title="Hadoop Logs" data-ajax="1">Hadoop Logs</a>)</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+<p>These files are all found in the <em class="epub__filename">conf</em> directory of the Hadoop distribution. The
+    configuration directory can be relocated to another part of the filesystem
+    (outside the Hadoop installation, which makes upgrades marginally easier)
+    as long as daemons are started with the <a id="I_indexterm9_d1e28931" class="epub__indexterm"></a><code class="epub__literal">--config</code> option
+    specifying the location of this directory on the local filesystem.</p>
+<div class="epub__sect2" title="Configuration Management"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id672967"></a>Configuration Management</h2>
+</div>
+
+</div>
+
+
+</div>
+<p>Hadoop does not have a single, global location for configuration
+      information. Instead, each Hadoop node in the cluster has its own set of
+      configuration files, and it is up to administrators to ensure that they
+      are kept in sync across the system. Hadoop provides a rudimentary
+      facility for synchronizing configuration using <em class="epub__command">rsync</em> (see the upcoming discussion);
+      alternatively, there are parallel shell tools that can help do this,
+      such as <em class="epub__command">dsh</em> or <em class="epub__command">pdsh</em>.</p>
+<p>Hadoop is designed so that it is possible to have a single set of
+      configuration files that are used for all master and worker machines.
+      The great advantage of this is simplicity, both conceptually (since
+      there is only one configuration to deal with) and operationally (as the
+      Hadoop scripts are sufficient to manage a single configuration
+      setup).</p>
+<p>For some clusters, the one-size-fits-all configuration model
+      breaks down. For example, if you expand the cluster with new machines
+      that have a different hardware specification from the existing ones, you
+      need a different configuration for the new machines to take advantage of
+      their extra resources.</p>
+<p>In these cases, you need to have the concept of a
+      <em class="epub__firstterm">class</em> of machine and maintain a separate
+      configuration for each class. Hadoop doesn’t provide tools to do this,
+      but there are several excellent tools for doing precisely this type of
+      configuration management, such as Chef, Puppet, cfengine, and
+      bcfg2.</p>
+<p>For a cluster of any size, it can be a challenge to keep all of
+      the machines in sync: consider what happens if the machine is
+      unavailable when you push out an update. Who ensures it gets the update
+      when it becomes available? This is a big problem and can lead to
+      divergent installations, so even if you use the Hadoop control scripts
+      for managing Hadoop, it may be a good idea to use configuration
+      management tools for maintaining the cluster. These tools are also
+      excellent for doing regular maintenance, such as patching security holes
+      and updating system packages.</p>
+<div class="epub__sect3" title="Control scripts"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id288552"></a>Control scripts</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10668" class="epub__indexterm"></a><a id="idx10669" class="epub__indexterm"></a><a id="idx10670" class="epub__indexterm"></a>Hadoop comes with scripts for running commands and
+        starting and stopping daemons across the whole cluster. To use these
+        scripts (which can be found in the <em class="epub__filename">bin</em> directory), you need to tell Hadoop
+        which machines are in the cluster. There are two files for this
+        purpose, called <em class="epub__filename">masters</em> and
+        <em class="epub__filename">slaves</em>, each of which contains a
+        list of the machine hostnames or IP addresses, one per line. The
+        <em class="epub__filename">masters</em> file is actually a
+        misleading name, in that it determines which machine or machines
+        should run a secondary namenode. The <em class="epub__filename">slaves</em> file lists the machines that the
+        datanodes and tasktrackers should run on. Both <em class="epub__filename">masters</em> and <em class="epub__filename">slaves</em> files reside in the configuration
+        directory, although the <em class="epub__filename">slaves</em>
+        file may be placed elsewhere (and given another name) by changing the
+        <a id="I_indexterm9_d1e29009" class="epub__indexterm"></a><code class="epub__literal">HADOOP_SLAVES</code> setting
+        in <em class="epub__filename">hadoop-env.sh</em>. Also, these
+        files do not need to be distributed to worker nodes, since they are
+        used only by the control scripts running on the namenode or
+        jobtracker.</p>
+<p>You don’t need to specify which machine (or machines) the
+        namenode and jobtracker run on in the <em class="epub__filename">masters</em> file, as this is determined by the
+        machine the scripts are run on. (In fact, specifying these in the
+        <em class="epub__filename">masters</em> file would cause a
+        secondary namenode to run there, which isn’t always what you want.)
+        For example, the <em class="epub__filename">start-dfs.sh</em>
+        script, which starts all the HDFS daemons in the cluster, runs the
+        namenode on the machine that the script is run on. In slightly more
+        detail, it:</p><div class="epub__orderedlist">
+<ol class="epub__orderedlist">
+<li class="epub__listitem">
+<p>Starts a namenode on the local machine (the machine that the
+            script is run on)</p></li><li class="epub__listitem">
+<p>Starts a datanode on each machine listed in the <em class="epub__filename">slaves</em> file</p></li><li class="epub__listitem">
+<p>Starts a secondary namenode on each machine listed in the
+            <em class="epub__filename">masters</em> file</p></li></ol>
+
+</div>
+<p>There is a similar script called <em class="epub__filename">start-mapred.sh</em>, which starts all the
+        MapReduce daemons in the cluster. More specifically, it:</p><div class="epub__orderedlist">
+<ol class="epub__orderedlist">
+<li class="epub__listitem">
+<p>Starts a jobtracker on the local machine</p></li><li class="epub__listitem">
+<p>Starts a tasktracker on each machine listed in the <em class="epub__filename">slaves</em> file</p></li></ol>
+
+</div>
+<p>Note that <em class="epub__filename">masters</em> is not
+        used by the MapReduce control scripts.</p>
+<p>Also provided are <em class="epub__filename">stop-dfs.sh</em> and <em class="epub__filename">stop-mapred.sh</em> scripts to stop the daemons
+        started by the corresponding start script.</p>
+<p>These scripts start and stop Hadoop daemons using the <em class="epub__filename">hadoop-daemon.sh</em> script. If you use the
+        aforementioned scripts, you shouldn’t call <em class="epub__filename">hadoop-daemon.sh</em> directly. But if you need
+        to control Hadoop daemons from another system or from your own
+        scripts, the <em class="epub__filename">hadoop-daemon.sh</em>
+        script is a good integration point. Likewise, <em class="epub__filename">hadoop-</em><em class="epub__filename">daemons.sh</em> (with an “s”) is handy
+        for starting the same daemon on a set of hosts.<a id="I_indexterm9_d1e29091" class="epub__indexterm"></a><a id="I_indexterm9_d1e29093" class="epub__indexterm"></a><a id="I_indexterm9_d1e29094" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="Master node scenarios"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="MasterNodeScenarios"></a>Master node scenarios</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10671" class="epub__indexterm"></a><a id="idx10672" class="epub__indexterm"></a><a id="idx10673" class="epub__indexterm"></a>Depending on the size of the cluster, there are various
+        configurations for running the master daemons: the namenode, secondary
+        namenode, and jobtracker. On a small cluster (a few tens of nodes), it
+        is convenient to put them on a single machine; however, as the cluster
+        gets larger, there are good reasons to separate them.</p>
+<p>The namenode has high memory requirements, as it holds file and
+        block metadata for the entire namespace in memory. The secondary
+        namenode, although idle most of the time, has a comparable memory
+        footprint to the primary when it creates a checkpoint. (This is
+        explained in detail in <a href="http://proquest.safaribooksonline.com/9781449328917/id482900#FilesystemImageAndEditLog" class="epub__xref" title="The filesystem image and edit log" data-ajax="1">The filesystem image and edit log</a>.)
+        For filesystems with a large number of files, there may not be enough
+        physical memory on one machine to run both the primary and secondary
+        namenode.</p>
+<p>The secondary namenode keeps a copy of the latest checkpoint of
+        the filesystem metadata that it creates. Keeping this (stale) backup
+        on a different node from the namenode allows recovery in the event of
+        loss (or corruption) of all the namenode’s metadata files. (This is
+        discussed further in <a href="http://proquest.safaribooksonline.com/9781449328917/id2467002" class="epub__xref" title="Chapter 10. Administering Hadoop" data-ajax="1">Chapter&nbsp;10</a>.)</p>
+<p>On a busy cluster running lots of MapReduce jobs, the jobtracker
+        uses considerable memory and CPU resources, so it should run on a
+        dedicated node.</p>
+<p>Whether the master daemons run on one or more nodes, the
+        following instructions apply:</p><div class="epub__itemizedlist">
+<ul class="epub__itemizedlist">
+<li class="epub__listitem">
+<p>Run the HDFS control scripts from the namenode machine. The
+            <em class="epub__filename">masters</em> file should contain the address of
+            the secondary namenode.</p></li><li class="epub__listitem">
+<p>Run the MapReduce control scripts from the jobtracker
+            machine.</p></li></ul>
+
+</div>
+<p>When the namenode and jobtracker are on separate nodes, their
+        <em class="epub__filename">slaves</em> files need to be kept in
+        sync, since each node in the cluster should run a datanode and a
+        tasktracker.<a id="I_indexterm9_d1e29144" class="epub__indexterm"></a><a id="I_indexterm9_d1e29145" class="epub__indexterm"></a><a id="I_indexterm9_d1e29146" class="epub__indexterm"></a></p>
+</div>
+
+</div>
+
+<div class="epub__sect2" title="Environment Settings"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="EnvironmentSettings"></a>Environment Settings</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10674" class="epub__indexterm"></a><a id="idx10675" class="epub__indexterm"></a><a id="idx10676" class="epub__indexterm"></a>In this section, we consider how to set the variables in
+      <em class="epub__filename">hadoop-env.sh</em>.</p>
+<div class="epub__sect3" title="Memory"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="Memory"></a>Memory</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10677" class="epub__indexterm"></a><a id="idx10678" class="epub__indexterm"></a>By default, Hadoop allocates 1,000 MB (1 GB) of memory
+        to each daemon it runs. This is controlled by the <a id="I_indexterm9_d1e29191" class="epub__indexterm"></a><code class="epub__literal">HADOOP_HEAPSIZE</code>
+        setting in <em class="epub__filename">hadoop-env.sh</em>. In
+        addition, the task tracker launches separate child JVMs to run map and
+        reduce tasks in, so we need to factor these into the total memory
+        footprint of a worker machine.</p>
+<p>The maximum number of map tasks that can run on a tasktracker at
+        one time is controlled by the <code class="epub__literal">mapred.tasktracker.map.tasks.maximum</code>
+        property, which defaults to two tasks. There is a corresponding
+        property for reduce tasks, <code class="epub__literal">mapred.tasktracker.reduce.tasks.maximum</code>,
+        which also defaults to two tasks. The tasktracker is said to have two
+        <em class="epub__firstterm">map slots</em> and two <em class="epub__firstterm">reduce
+        slots</em>.</p>
+<p>The memory given to each child JVM running a task can be changed
+        by setting the <a id="I_indexterm9_d1e29216" class="epub__indexterm"></a><code class="epub__literal">mapred.child.java.opts</code> property. The default
+        setting is <code class="epub__literal">-Xmx200m</code>, which gives
+        each task 200 MB of memory. (Incidentally, you can provide extra JVM
+        options here, too. For example, you might enable verbose GC logging to
+        debug GC.) The default configuration therefore uses 2,800 MB of memory
+        for a worker machine (see <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#WorkerMemory" class="epub__xref" title="Table 9-2. Worker node memory calculation" data-ajax="1">Table&nbsp;9-2</a>).</p><div class="epub__table"><a id="WorkerMemory"></a>
+<p class="epub__title">Table&nbsp;9-2.&nbsp;Worker node memory calculation</p><div class="epub__table-contents">
+<table summary="Worker node memory calculation" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">JVM</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default memory used (MB)</th><th style="border-bottom: 0.5pt solid ; ">Memory used for eight processors, 400 MB per child
+                (MB)</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Datanode</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1,000</td><td style="border-bottom: 0.5pt solid ; ">1,000</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tasktracker</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1,000</td><td style="border-bottom: 0.5pt solid ; ">1,000</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tasktracker child map task</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2 × 200</td><td style="border-bottom: 0.5pt solid ; ">7 × 400</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tasktracker child reduce task</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2 × 200</td><td style="border-bottom: 0.5pt solid ; ">7 × 400</td></tr><tr><td style="border-right: 0.5pt solid ; ">Total</td><td style="border-right: 0.5pt solid ; ">2,800</td><td style="">7,600</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+<p>The number of tasks that can be run simultaneously on a
+        tasktracker is related to the number of processors available on the
+        machine. Because MapReduce jobs are normally I/O-bound, it makes sense
+        to have more tasks than processors to get better utilization. The amount of
+        oversubscription depends on the CPU utilization of jobs you run, but a
+        good rule of thumb is to have a factor of between one and two more
+        tasks (counting both map and reduce tasks) than processors.</p>
+<p>For example, if you had eight processors and you wanted to run
+        two processes on each processor, you could set both <code class="epub__literal">mapred.tasktracker.map.tasks.maximum</code> and
+        <code class="epub__literal">mapred.tasktracker.reduce.tasks.maximum</code> to 7
+        (not 8, because the datanode and the tasktracker each take one slot).
+        If you also increased the memory available to each child task to 400
+        MB, the total memory usage would be 7,600 MB (see <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#WorkerMemory" class="epub__xref" title="Table 9-2. Worker node memory calculation" data-ajax="1">Table&nbsp;9-2</a>).</p>
+<p>Whether this Java memory allocation will fit into 8 GB of
+        physical memory depends on the other processes that are running on the
+        machine. If you are running Streaming or Pipes programs, this
+        allocation will probably be inappropriate (and the memory allocated to
+        the child should be dialed down), since it doesn’t allow enough memory
+        for users’ (Streaming or Pipes) processes to run. The thing to avoid
+        is processes being swapped out, as this leads to severe performance
+        degradation. The precise memory settings are necessarily very
+        cluster-dependent and can be optimized over time with experience
+        gained from monitoring the memory usage across the cluster. Tools such
+        as Ganglia (<a href="http://proquest.safaribooksonline.com/9781449328917/id2469417#Ganglia" class="epub__xref" title="GangliaContext" data-ajax="1">GangliaContext</a>) are good for gathering this
+        information. See <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#TaskMemoryLimits" class="epub__xref" title="Task memory limits" data-ajax="1">Task memory limits</a> for more on how
+        to enforce task memory limits.</p>
+<p>Hadoop also provides settings to control how much memory is used
+        for MapReduce operations. These can be set on a per-job basis and are
+        covered in the section on <a href="http://proquest.safaribooksonline.com/9781449328917/id2441006#ShuffleAndSort" class="epub__xref" title="Shuffle and Sort" data-ajax="1">Shuffle and Sort</a>.</p>
+<p>For the master nodes, each of the namenode, secondary namenode,
+        and jobtracker daemons uses 1,000 MB by default, for a total of 3,000
+        MB.</p><div class="epub__sidebar"><a id="HowMuchMemoryNamenode"></a>
+<p class="epub__title">How Much Memory Does a Namenode Need?</p>
+<p>A namenode can eat up memory, since a reference to every block
+          of every file is maintained in memory. It’s difficult to give a
+          precise formula because memory usage depends on the number of blocks
+          per file, the filename length, and the number of directories in the
+          filesystem; plus, it can change from one Hadoop release to
+          another.</p>
+<p>The default of 1,000 MB of namenode memory is normally enough
+          for a few million files, but as a rule of thumb for sizing purposes,
+          you can conservatively allow 1,000 MB per million blocks of
+          storage.</p>
+<p>For example, a 200-node cluster with 4 TB of disk space per
+          node, a block size of 128 MB, and a replication factor of 3 has room
+          for about 2 million blocks (or more): 200 × 4,000,000 MB ⁄ (128 MB ×
+          3). So in this case, setting the namenode memory to 2,000 MB would
+          be a good starting point.</p>
+<p>You can increase the namenode’s memory without changing the
+          memory allocated to other Hadoop daemons by setting <a id="I_indexterm9_d1e29313" class="epub__indexterm"></a><code class="epub__literal">HADOOP_NAMENODE_OPTS</code> in <em class="epub__filename">hadoop-env.sh</em> to include a JVM option for
+          setting the memory size. <a id="I_indexterm9_d1e29322" class="epub__indexterm"></a><code class="epub__literal">HADOOP_NAMENODE_OPTS</code> allows you to pass
+          extra options to the namenode’s JVM. So, for example, if you were
+          using a Sun JVM, <code class="epub__literal">-Xmx2000m</code> would
+          specify that 2,000 MB of memory should be allocated to the
+          namenode.</p>
+<p>If you change the namenode’s memory allocation, don’t forget
+          to do the same for the secondary namenode (using the <a id="I_indexterm9_d1e29334" class="epub__indexterm"></a><code class="epub__literal">HADOOP_SECONDARYNAMENODE_OPTS</code> variable),
+          since its memory requirements are comparable to the primary
+          namenode’s. You probably also want to run the secondary namenode on
+          a different machine in this case.</p>
+<p>There are corresponding environment variables for the other
+          Hadoop daemons, so you can customize their memory allocations, if
+          desired. See <em class="epub__filename">hadoop-env.sh</em> for
+          details.<a id="I_indexterm9_d1e29345" class="epub__indexterm"></a><a id="I_indexterm9_d1e29346" class="epub__indexterm"></a></p>
+</div>
+
+</div>
+
+<div class="epub__sect3" title="Java"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id667523"></a>Java</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10679" class="epub__indexterm"></a><a id="idx10680" class="epub__indexterm"></a>The location of the Java implementation to use is
+        determined by the <a id="I_indexterm9_d1e29364" class="epub__indexterm"></a><code class="epub__literal">JAVA_HOME</code> setting in
+        <em class="epub__filename">hadoop-env.sh</em> or from the
+        <a id="I_indexterm9_d1e29373" class="epub__indexterm"></a><code class="epub__literal">JAVA_HOME</code> shell
+        environment variable, if not set in <em class="epub__filename">hadoop-env.sh</em>. It’s a good idea to set the
+        value in <em class="epub__filename">hadoop-env.sh</em>, so that
+        it is clearly defined in one place and to ensure that the whole
+        cluster is using the same version of Java.<a id="I_indexterm9_d1e29386" class="epub__indexterm"></a><a id="I_indexterm9_d1e29387" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="System logfiles"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="LogFiles"></a>System logfiles</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10681" class="epub__indexterm"></a><a id="idx10682" class="epub__indexterm"></a>System logfiles produced by Hadoop are stored in
+        <code class="epub__literal"><em class="epub__filename">$HADOOP_INSTALL/logs</em></code> by
+        default. This can be changed using the <a id="I_indexterm9_d1e29407" class="epub__indexterm"></a><code class="epub__literal">HADOOP_LOG_DIR</code>
+        setting in <em class="epub__filename">hadoop-env.sh</em>. It’s a
+        good idea to change this so that logfiles are kept out of the
+        directory that Hadoop is installed in. Changing this keeps logfiles in
+        one place, even after the installation directory changes due to an
+        upgrade. A common choice is <em class="epub__filename">/var/log/hadoop</em>, set by including the
+        following line in <em class="epub__filename">hadoop-env.sh</em>:</p>
+<pre class="epub__screen">export HADOOP_LOG_DIR=/var/log/hadoop</pre>
+<p>The log director will be created if it doesn’t already exist.
+        (If it does not exist, confirm that the Hadoop user has permission to
+        create it.) Each Hadoop daemon running on a machine produces two
+        logfiles. The first is the log output written via log4j. This file,
+        which ends in <em class="epub__filename">.log</em>, should be the
+        first port of call when diagnosing problems because most application
+        log messages are written here. The standard Hadoop log4j configuration
+        uses a Daily Rolling File Appender to rotate logfiles. Old logfiles
+        are never deleted, so you should arrange for them to be periodically
+        deleted or archived, so as to not run out of disk space on the local
+        node.</p>
+<p>The second logfile is the combined standard output and standard
+        error log. This logfile, which ends in <em class="epub__filename">.out</em>, usually contains little or no output,
+        since Hadoop uses log4j for logging. It is rotated only when the
+        daemon is restarted, and only the last five logs are retained. Old
+        logfiles are suffixed with a number between 1 and 5, with 5 being the
+        oldest file.</p>
+<p>Logfile names (of both types) are a combination of the name of
+        the user running the daemon, the daemon name, and the machine
+        hostname. For example, <em class="epub__filename">hadoop-tom-datanode-sturges.local.log.2008-07-04</em>
+        is the name of a logfile after it has been rotated. This naming
+        structure makes it possible to archive logs from all machines in the
+        cluster in a single directory, if needed, since the filenames are
+        unique.</p>
+<p>The username in the logfile name is actually the default for the
+        <a id="I_indexterm9_d1e29442" class="epub__indexterm"></a><code class="epub__literal">HADOOP_IDENT_STRING</code>
+        setting in <em class="epub__filename">hadoop-env.sh</em>. If you
+        wish to give the Hadoop instance a different identity for the purposes
+        of naming the logfiles, change <a id="I_indexterm9_d1e29451" class="epub__indexterm"></a><code class="epub__literal">HADOOP_IDENT_STRING</code>
+        to be the identifier you want.<a id="I_indexterm9_d1e29457" class="epub__indexterm"></a><a id="I_indexterm9_d1e29458" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="SSH settings"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id553813"></a>SSH settings</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10683" class="epub__indexterm"></a><a id="idx10684" class="epub__indexterm"></a>The control scripts allow you to run commands on
+        (remote) worker nodes from the master node using SSH. It can be useful
+        to customize the SSH settings, for various reasons. For example, you
+        may want to reduce the connection timeout (using the <a id="I_indexterm9_d1e29477" class="epub__indexterm"></a><code class="epub__literal">ConnectTimeout</code>
+        option) so the control scripts don’t hang around waiting to see
+        whether a dead node is going to respond. Obviously, this can be taken
+        too far. If the timeout is too low, then busy nodes will be skipped,
+        which is bad.</p>
+<p>Another useful SSH setting is <a id="I_indexterm9_d1e29485" class="epub__indexterm"></a><code class="epub__literal">StrictHostKeyChecking</code>, which can be set to
+        <code class="epub__literal">no</code> to automatically add new host
+        keys to the known hosts files. The default, <code class="epub__literal">ask</code>, prompts the user to confirm that he has
+        verified the key fingerprint, which is not a suitable setting in a
+        large cluster environment.<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id782670" id="id782670" class="epub__footnote" data-ajax="1">78</a>]</sup></p>
+<p>To pass extra options to SSH, define the <a id="I_indexterm9_d1e29504" class="epub__indexterm"></a><code class="epub__literal">HADOOP_SSH_OPTS</code>
+        environment variable in <em class="epub__filename">hadoop-env.sh</em>. See the <code class="epub__literal">ssh</code> and <a id="I_indexterm9_d1e29516" class="epub__indexterm"></a><code class="epub__literal">ssh_config</code> manual
+        pages for more SSH settings.</p>
+<p>The Hadoop control scripts can distribute configuration files to
+        all nodes of the cluster using rsync. This is not enabled by default,
+        but by defining the <a id="I_indexterm9_d1e29524" class="epub__indexterm"></a><code class="epub__literal">HADOOP_MASTER</code> setting
+        in <em class="epub__filename">hadoop-env.sh</em>, worker daemons
+        will rsync the tree rooted at <a id="I_indexterm9_d1e29533" class="epub__indexterm"></a><code class="epub__literal">HADOOP_MASTER</code> to the
+        local node’s <a id="I_indexterm9_d1e29539" class="epub__indexterm"></a><code class="epub__literal">HADOOP_INSTALL</code>
+        whenever the daemon starts up.</p>
+<p>What if you have two masters—a namenode and a jobtracker—on
+        separate machines? You can pick one as the source and the other can
+        rsync from it, along with all the workers. In fact, you could use any
+        machine, even one outside the Hadoop cluster, to rsync from.</p>
+<p>Because <a id="I_indexterm9_d1e29549" class="epub__indexterm"></a><code class="epub__literal">HADOOP_MASTER</code> is
+        unset by default, there is a bootstrapping problem: how do we make
+        sure <em class="epub__filename">hadoop-env.sh</em> with
+        <a id="I_indexterm9_d1e29558" class="epub__indexterm"></a><code class="epub__literal">HADOOP_MASTER</code> set is
+        present on worker nodes? For small clusters, it is easy to write a
+        small script to copy <em class="epub__filename">hadoop-env.sh</em> from the master to all of the
+        worker nodes. For larger clusters, tools such as <em class="epub__command">dsh</em> can do the copies in parallel.
+        Alternatively, a suitable <em class="epub__filename">hadoop-env.sh</em> can be created as a part of
+        the automated installation script (such as Kickstart).</p>
+<p>When starting a large cluster with rsyncing enabled, the worker
+        nodes start at around the same time and can overwhelm the master node
+        with rsync requests. To avoid this, set the <a id="I_indexterm9_d1e29576" class="epub__indexterm"></a><code class="epub__literal">HADOOP_SLAVE_SLEEP</code>
+        setting to a small number of seconds, such as <code class="epub__literal">0.1</code> for one-tenth of a second. When running
+        commands on all nodes of the cluster, the master will sleep for this
+        period between invoking the command on each worker machine in
+        turn.<a id="I_indexterm9_d1e29585" class="epub__indexterm"></a><a id="I_indexterm9_d1e29586" class="epub__indexterm"></a><a id="I_indexterm9_d1e29587" class="epub__indexterm"></a><a id="I_indexterm9_d1e29588" class="epub__indexterm"></a><a id="I_indexterm9_d1e29589" class="epub__indexterm"></a></p>
+</div>
+
+</div>
+
+<div class="epub__sect2" title="Important Hadoop Daemon Properties"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="ImportantHadoopDaemonProperties"></a>Important Hadoop Daemon Properties</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10685" class="epub__indexterm"></a><a id="idx10686" class="epub__indexterm"></a><a id="idx10687" class="epub__indexterm"></a>Hadoop has a bewildering number of configuration
+      properties. In this section, we address the ones that you need to define
+      (or at least understand why the default is appropriate) for any
+      real-world working cluster. These properties are set in the Hadoop site
+      files: <em class="epub__filename">core-site.xml</em>, <em class="epub__filename">hdfs-site.xml</em>, and <em class="epub__filename">mapred-site.xml</em>. Typical examples of these
+      files are shown in <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#core-site" class="epub__xref" title="Example 9-1. A typical core-site.xml configuration file" data-ajax="1">Example&nbsp;9-1</a>, <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#hdfs-site" class="epub__xref" title="Example 9-2. A typical hdfs-site.xml configuration file" data-ajax="1">Example&nbsp;9-2</a>, and <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#mapred-site" class="epub__xref" title="Example 9-3. A typical mapred-site.xml configuration file" data-ajax="1">Example&nbsp;9-3</a>. Notice that
+      most properties are marked as final in order to prevent them from being
+      overridden by job configurations. You can learn more about how to write
+      Hadoop’s configuration files in <a href="http://proquest.safaribooksonline.com/9781449328917/id2431005#TheConfigurationAPI" class="epub__xref" title="The Configuration API" data-ajax="1">The Configuration API</a>.</p><div class="epub__example"><a id="core-site"></a>
+<p class="epub__title">Example&nbsp;9-1.&nbsp;A typical core-site.xml configuration file</p><div class="epub__example-contents">
+<pre class="epub__programlisting">&lt;?xml version="1.0"?&gt;
+&lt;!-- core-site.xml --&gt;
+&lt;configuration&gt;
+  &lt;property&gt;
+    &lt;name&gt;fs.default.name&lt;/name&gt;
+    &lt;value&gt;hdfs://namenode/&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;</pre>
+</div>
+
+</div>
+
+<div class="epub__example"><a id="hdfs-site"></a>
+<p class="epub__title">Example&nbsp;9-2.&nbsp;A typical hdfs-site.xml configuration file</p><div class="epub__example-contents">
+<pre class="epub__programlisting">&lt;?xml version="1.0"?&gt;
+&lt;!-- hdfs-site.xml --&gt;
+&lt;configuration&gt;
+  &lt;property&gt;
+    &lt;name&gt;dfs.name.dir&lt;/name&gt;
+    &lt;value&gt;/disk1/hdfs/name,/remote/hdfs/name&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+
+  &lt;property&gt;
+    &lt;name&gt;dfs.data.dir&lt;/name&gt;
+    &lt;value&gt;/disk1/hdfs/data,/disk2/hdfs/data&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+  
+  &lt;property&gt;
+    &lt;name&gt;fs.checkpoint.dir&lt;/name&gt;
+    &lt;value&gt;/disk1/hdfs/namesecondary,/disk2/hdfs/namesecondary&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;</pre>
+</div>
+
+</div>
+
+<div class="epub__example"><a id="mapred-site"></a>
+<p class="epub__title">Example&nbsp;9-3.&nbsp;A typical mapred-site.xml configuration file</p><div class="epub__example-contents">
+<pre class="epub__programlisting">&lt;?xml version="1.0"?&gt;
+&lt;!-- mapred-site.xml --&gt;
+&lt;configuration&gt;
+  &lt;property&gt;
+    &lt;name&gt;mapred.job.tracker&lt;/name&gt;
+    &lt;value&gt;jobtracker:8021&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+  
+  &lt;property&gt;
+    &lt;name&gt;mapred.local.dir&lt;/name&gt;
+    &lt;value&gt;/disk1/mapred/local,/disk2/mapred/local&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+  
+  &lt;property&gt;
+    &lt;name&gt;mapred.system.dir&lt;/name&gt;
+    &lt;value&gt;/tmp/hadoop/mapred/system&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+  
+  &lt;property&gt;
+    &lt;name&gt;mapred.tasktracker.map.tasks.maximum&lt;/name&gt;
+    &lt;value&gt;7&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+  
+  &lt;property&gt;
+    &lt;name&gt;mapred.tasktracker.reduce.tasks.maximum&lt;/name&gt;
+    &lt;value&gt;7&lt;/value&gt;
+    &lt;final&gt;true&lt;/final&gt;
+  &lt;/property&gt;
+  
+  &lt;property&gt;
+    &lt;name&gt;mapred.child.java.opts&lt;/name&gt;
+    &lt;value&gt;-Xmx400m&lt;/value&gt;
+    &lt;!-- Not marked as final so jobs can include JVM debugging options --&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;</pre>
+</div>
+
+</div>
+
+<div class="epub__sect3" title="HDFS"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id504544"></a>HDFS</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10688" class="epub__indexterm"></a><a id="idx10689" class="epub__indexterm"></a>To run HDFS, you need to designate one machine as a
+        namenode. In this case, the property <a id="I_indexterm9_d1e29668" class="epub__indexterm"></a><code class="epub__literal">fs.default.name</code> is an
+        HDFS filesystem URI whose host is the namenode’s hostname or IP
+        address and whose port is the port that the namenode will listen on
+        for RPCs. If no port is specified, the default of 8020 is used.</p><div class="epub__note" title="Note">
+<h3 class="epub__title">Note</h3>
+<p>The <em class="epub__filename">masters</em> file that is
+          used by the control scripts is not used by the HDFS (or MapReduce)
+          daemons to determine hostnames. In fact, because the <em class="epub__filename">masters</em> file is used only by the scripts,
+          you can ignore it if you don’t use them.</p>
+</div>
+<p>The <a id="I_indexterm9_d1e29685" class="epub__indexterm"></a><code class="epub__literal">fs.default.name</code>
+        property also doubles as specifying the default filesystem. The
+        default filesystem is used to resolve relative paths, which are handy
+        to use because they save typing (and avoid hardcoding knowledge of a
+        particular namenode’s address). For example, with the default
+        filesystem defined in <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#core-site" class="epub__xref" title="Example 9-1. A typical core-site.xml configuration file" data-ajax="1">Example&nbsp;9-1</a>, the relative URI
+        <em class="epub__filename">/a/b</em> is resolved to <em class="epub__filename">hdfs://namenode/a/b</em>.</p><div class="epub__note" title="Note">
+<h3 class="epub__title">Note</h3>
+<p>If you are running HDFS, the fact that <a id="I_indexterm9_d1e29702" class="epub__indexterm"></a><code class="epub__literal">fs.default.name</code> is
+          used to specify both the HDFS namenode <span class="epub__italic">and</span> the default filesystem means HDFS has
+          to be the default filesystem in the server configuration. Bear in
+          mind, however, that it is possible to specify a different filesystem
+          as the default in the client configuration, for convenience.</p>
+<p>For example, if you use both HDFS and S3 filesystems, then you
+          have a choice of specifying either as the default in the client
+          configuration, which allows you to refer to the default with a
+          relative URI and the other with an absolute URI.</p>
+</div>
+<p>There are a few other configuration properties you should set
+        for HDFS: those that set the storage directories for the namenode and
+        for datanodes. The property <a id="I_indexterm9_d1e29716" class="epub__indexterm"></a><code class="epub__literal">dfs.name.dir</code>
+        specifies a list of directories where the namenode stores persistent
+        filesystem metadata (the edit log and the filesystem image). A copy of
+        each metadata file is stored in each directory for redundancy. It’s
+        common to configure <a id="I_indexterm9_d1e29722" class="epub__indexterm"></a><code class="epub__literal">dfs.name.dir</code> so that
+        the namenode metadata is written to one or two local disks, as well as
+        a remote disk, such as an NFS-mounted directory. Such a setup guards
+        against failure of a local disk and failure of the entire namenode,
+        since in both cases the files can be recovered and used to start a new
+        namenode. (The secondary namenode takes only periodic checkpoints of
+        the namenode, so it does not provide an up-to-date backup of the
+        namenode.)</p>
+<p>You should also set the <a id="I_indexterm9_d1e29730" class="epub__indexterm"></a><code class="epub__literal">dfs.data.dir</code>
+        property, which specifies a list of directories for a datanode to
+        store its blocks. Unlike the namenode, which uses multiple directories
+        for redundancy, a datanode round-robins writes between its storage
+        directories, so for performance you should
+        specify a storage directory for each local disk. Read performance also
+        benefits from having multiple disks for storage, because blocks will
+        be spread across them and concurrent reads for distinct blocks will be
+        correspondingly spread across disks.</p><div class="epub__tip" title="Tip">
+<h3 class="epub__title">Tip</h3>
+<p>For maximum performance, you should mount storage disks with
+          the <code class="epub__literal">noatime</code> option. This setting
+          means that last-accessed time information is not written on file
+          reads, which gives significant performance gains.</p>
+</div>
+<p>Finally, you should configure where the secondary namenode
+        stores its checkpoints of the filesystem. The <a id="I_indexterm9_d1e29746" class="epub__indexterm"></a><code class="epub__literal">fs.checkpoint.dir</code>
+        property specifies a list of directories where the checkpoints are
+        kept. Like the storage directories for the namenode, which keep
+        redundant copies of the namenode
+        metadata, the checkpointed filesystem image is stored in each
+        checkpoint directory for redundancy.</p>
+<p><a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#ImportantHDFSDaemonProperties" class="epub__xref" title="Table 9-3. Important HDFS daemon properties" data-ajax="1">Table&nbsp;9-3</a> summarizes the
+        important configuration properties for HDFS.</p><div class="epub__table"><a id="ImportantHDFSDaemonProperties"></a>
+<p class="epub__title">Table&nbsp;9-3.&nbsp;Important HDFS daemon properties</p><div class="epub__table-contents">
+<table summary="Important HDFS daemon properties" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Property name</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Type</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default value</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">fs.default.name</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">URI</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">file:///</code></td><td style="border-bottom: 0.5pt solid ; ">The default filesystem. The URI defines the hostname
+                and port that the namenode’s RPC server runs on. The default
+                port is 8020. This property is set in <em class="epub__filename">core-site.xml</em>.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">dfs.name.dir</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Comma-separated
+                directory names</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">${hadoop.tmp.dir}/dfs/name</code></td><td style="border-bottom: 0.5pt solid ; ">The list of directories where the namenode stores its
+                persistent metadata. The
+                namenode stores a copy of the metadata in each directory in
+                the list.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">dfs.data.dir</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Comma-separated directory names</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">${hadoop.tmp.dir}/dfs/data</code></td><td style="border-bottom: 0.5pt solid ; ">A list of directories where the datanode stores blocks.
+                Each block is stored in only one of these directories.</td></tr><tr><td style="border-right: 0.5pt solid ; "> <a id="I_indexterm9_d1e29824" class="epub__indexterm"></a><code class="epub__literal">fs.checkpoint.dir</code> </td><td style="border-right: 0.5pt solid ; ">Comma-separated directory names</td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">${hadoop.tmp.dir}/dfs/namesecondary</code></td><td style="">A list of directories where the secondary namenode stores
+                checkpoints. It stores a copy of the checkpoint in each
+                directory in the list.</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="epub__warning" title="Warning">
+<h3 class="epub__title">Warning</h3>
+<p>Note that the storage directories for HDFS are under Hadoop’s
+          temporary directory by default (the <a id="I_indexterm9_d1e29847" class="epub__indexterm"></a><code class="epub__literal">hadoop.tmp.dir</code>
+          property, whose default is <code class="epub__literal">/tmp/hadoop-${user.name}</code>). Therefore, it
+          is critical that these properties are set so that data is not lost
+          by the system when it clears out temporary directories.<a id="I_indexterm9_d1e29856" class="epub__indexterm"></a><a id="I_indexterm9_d1e29857" class="epub__indexterm"></a></p>
+</div>
+
+</div>
+
+<div class="epub__sect3" title="MapReduce"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id504546"></a>MapReduce</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10690" class="epub__indexterm"></a><a id="idx10691" class="epub__indexterm"></a>To run MapReduce, you need to designate one machine as a
+        jobtracker, which on small clusters may be the same machine as the
+        namenode. To do this, set the <a id="I_indexterm9_d1e29875" class="epub__indexterm"></a><code class="epub__literal">mapred.job.tracker</code>
+        property to the hostname or IP address and port that the jobtracker
+        will listen on. Note that this property is not a URI, but instead a
+        host-port pair, separated by a colon. The port number 8021 is a common
+        choice.</p>
+<p>During a MapReduce job, intermediate data and working files are
+        written to temporary local files. Because this data includes the
+        potentially very large output of map tasks, you need to ensure that
+        the <a id="I_indexterm9_d1e29883" class="epub__indexterm"></a><code class="epub__literal">mapred.local.dir</code>
+        property, which controls the location of local temporary storage, is
+        configured to use disk partitions that are large enough. The
+        <a id="I_indexterm9_d1e29889" class="epub__indexterm"></a><code class="epub__literal">mapred.local.dir</code>
+        property takes a comma-separated list of directory names, and you
+        should use all available local disks to spread disk I/O. Typically,
+        you will use the same disks and partitions (but different directories)
+        for MapReduce temporary data as you use for datanode block storage, as
+        governed by the <a id="I_indexterm9_d1e29895" class="epub__indexterm"></a><code class="epub__literal">dfs.data.dir</code>
+        property, which was discussed earlier.</p>
+<p>MapReduce uses a distributed filesystem to share files (such as
+        the job JAR file) with the tasktrackers that run the MapReduce tasks.
+        The <a id="I_indexterm9_d1e29904" class="epub__indexterm"></a><code class="epub__literal">mapred.system.dir</code>
+        property is used to specify a directory where these files can be
+        stored. This directory is resolved relative to the default filesystem
+        (configured in <code class="epub__literal">fs.default.name</code>),
+        which is usually HDFS.</p>
+<p>Finally, you should set the <code class="epub__literal">mapred.tasktracker.map.tasks.maximum</code> and
+        <code class="epub__literal">mapred.tasktracker.reduce.tasks.maximum</code>
+        properties to reflect the number of available cores on the tasktracker
+        machines and <a id="I_indexterm9_d1e29922" class="epub__indexterm"></a><code class="epub__literal">mapred.child.java.opts</code> to reflect the amount
+        of memory available for the tasktracker child JVMs. See the discussion
+        in <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#Memory" class="epub__xref" title="Memory" data-ajax="1">Memory</a>.</p>
+<p><a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#ImportantMapReduceDaemonProperties" class="epub__xref" title="Table 9-4. Important MapReduce daemon properties" data-ajax="1">Table&nbsp;9-4</a> summarizes
+        the important configuration properties for MapReduce.<a id="I_indexterm9_d1e29933" class="epub__indexterm"></a><a id="I_indexterm9_d1e29934" class="epub__indexterm"></a><a id="I_indexterm9_d1e29935" class="epub__indexterm"></a><a id="I_indexterm9_d1e29936" class="epub__indexterm"></a><a id="I_indexterm9_d1e29937" class="epub__indexterm"></a></p><div class="epub__table"><a id="ImportantMapReduceDaemonProperties"></a>
+<p class="epub__title">Table&nbsp;9-4.&nbsp;Important MapReduce daemon properties</p><div class="epub__table-contents">
+<table summary="Important MapReduce daemon properties" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Property name</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Type</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default value</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.job.tracker</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Hostname and port</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">local</code></td><td style="border-bottom: 0.5pt solid ; ">The hostname and port that the jobtracker’s RPC server
+                runs on. If set to the default value of <code class="epub__literal">local</code>, the jobtracker is run
+                in-process on demand when you run a MapReduce job (you don’t
+                need to start the jobtracker in this case, and in fact you will
+                get an error if you try to start it in this mode).</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.local.dir</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Comma-separated
+                directory names</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">${hadoop.tmp.dir}/mapred/local</code></td><td style="border-bottom: 0.5pt solid ; ">A list of directories where MapReduce stores
+                intermediate data for jobs. The data is cleared out when the
+                job ends.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.system.dir</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">URI</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">${hadoop.tmp.dir}/mapred/system</code></td><td style="border-bottom: 0.5pt solid ; ">The directory relative to <a id="I_indexterm9_d1e30001" class="epub__indexterm"></a><code class="epub__literal">fs.default.name</code> where shared files
+                are stored during a job run.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.tasktracker.map.tasks.maximum</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">2</code></td><td style="border-bottom: 0.5pt solid ; ">The number of map tasks that may be run on a
+                tasktracker at any one time.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.tasktracker.reduce.tasks.maximum</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">2</code></td><td style="border-bottom: 0.5pt solid ; ">The number of reduce tasks that may be run on a
+                tasktracker at any one time.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.child.java.opts</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">String</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">-Xmx200m</code></td><td style="border-bottom: 0.5pt solid ; ">The JVM options used to launch the tasktracker child
+                process that runs map and reduce tasks. This property can be
+                set on a per-job basis, which can be useful for setting JVM
+                properties for debugging, for example.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapreduce.map.java.opts</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">String</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">-Xmx200m</code></td><td style="border-bottom: 0.5pt solid ; ">The JVM options used for the child process that runs
+                map tasks. (Not available in 1.x.)</td></tr><tr><td style="border-right: 0.5pt solid ; "><code class="epub__literal">mapreduce.reduce.java.opts</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">String</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">-Xmx200m</code></td><td style="">The JVM options used for the child process that runs
+                reduce tasks. (Not available in 1.x.)</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+<div class="epub__sect2" title="Hadoop Daemon Addresses and Ports"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id508876"></a>Hadoop Daemon Addresses and Ports</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10692" class="epub__indexterm"></a><a id="idx10693" class="epub__indexterm"></a><a id="idx10694" class="epub__indexterm"></a><a id="idx10695" class="epub__indexterm"></a><a id="idx10696" class="epub__indexterm"></a>Hadoop daemons generally run both an RPC server (<a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#RPCServerProperties" class="epub__xref" title="Table 9-5. RPC server properties" data-ajax="1">Table&nbsp;9-5</a>) for communication between daemons and
+      an HTTP server to provide web pages for human consumption (<a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#HTTPServerProperties" class="epub__xref" title="Table 9-6. HTTP server properties" data-ajax="1">Table&nbsp;9-6</a>). Each server is configured by setting
+      the network address and port number to listen on. By specifying the
+      network address as <code class="epub__literal">0.0.0.0</code>, Hadoop
+      will bind to all addresses on the machine. Alternatively, you can
+      specify a single address to bind to. A port number of 0 instructs the
+      server to start on a free port, but this is generally discouraged
+      because it is incompatible with setting cluster-wide firewall
+      policies.</p><div class="epub__table"><a id="RPCServerProperties"></a>
+<p class="epub__title">Table&nbsp;9-5.&nbsp;RPC server properties</p><div class="epub__table-contents">
+<table summary="RPC server properties" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Property name</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default value</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">fs.default.name</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">file:///</code></td><td style="border-bottom: 0.5pt solid ; ">When set to an HDFS URI, this property determines the
+              namenode’s RPC server address and port. The default port is 8020
+              if not specified.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">dfs.datanode.ipc.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:50020</code></td><td style="border-bottom: 0.5pt solid ; ">The datanode’s RPC server address and port.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.job.tracker</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">local</code></td><td style="border-bottom: 0.5pt solid ; ">When set to a hostname and port, this property specifies
+              the jobtracker’s RPC server address and port. A commonly used
+              port is 8021.</td></tr><tr><td style="border-right: 0.5pt solid ; "><code class="epub__literal">mapred.task.tracker.report.address</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">127.0.0.1:0</code></td><td style="">The tasktracker’s RPC server address and port. This is
+              used by the tasktracker’s child JVM to communicate with the
+              tasktracker. Using any free port is acceptable in this case, as
+              the server only binds to the loopback address. You should change
+              this setting only if the
+              machine has no loopback address.</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+<p>In addition to an RPC server, datanodes run a TCP/IP server for
+      block transfers. The server address and port is set by the <a id="I_indexterm9_d1e30179" class="epub__indexterm"></a><code class="epub__literal">dfs.datanode.address</code>
+      property and has a default value of <code class="epub__literal">0.0.0.0:50010</code>.</p><div class="epub__table"><a id="HTTPServerProperties"></a>
+<p class="epub__title">Table&nbsp;9-6.&nbsp;HTTP server properties</p><div class="epub__table-contents">
+<table summary="HTTP server properties" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Property name</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default value</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.job.tracker.http.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:50030</code></td><td style="border-bottom: 0.5pt solid ; ">The jobtracker’s HTTP server address and port</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.task.tracker.http.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:50060</code></td><td style="border-bottom: 0.5pt solid ; ">The tasktracker’s HTTP server address and port</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">dfs.http.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:50070</code></td><td style="border-bottom: 0.5pt solid ; ">The namenode’s HTTP server address and port</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">dfs.datanode.http.address</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:50075</code></td><td style="border-bottom: 0.5pt solid ; ">The datanode’s HTTP server address and port</td></tr><tr><td style="border-right: 0.5pt solid ; "><code class="epub__literal">dfs.secondary.http.address</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">0.0.0.0:50090</code></td><td style="">The secondary namenode’s HTTP server address and
+              port</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+<p>There are also settings for controlling which network interfaces
+      the datanodes and tasktrackers report as their IP addresses (for HTTP
+      and RPC servers). The relevant properties are <a id="I_indexterm9_d1e30252" class="epub__indexterm"></a><code class="epub__literal">dfs.datanode.dns.interface</code> and <code class="epub__literal">mapred.tasktracker.dns.interface</code>, both of
+      which are set to <code class="epub__literal">default</code>, which will
+      use the default network interface. You can set this explicitly to report
+      the address of a particular interface (<code class="epub__literal">eth0</code>, for example).<a id="I_indexterm9_d1e30267" class="epub__indexterm"></a><a id="I_indexterm9_d1e30269" class="epub__indexterm"></a><a id="I_indexterm9_d1e30270" class="epub__indexterm"></a><a id="I_indexterm9_d1e30271" class="epub__indexterm"></a><a id="I_indexterm9_d1e30272" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect2" title="Other Hadoop Properties"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="OtherHadoopProperties"></a>Other Hadoop Properties</h2>
+</div>
+
+</div>
+
+
+</div>
+<p>This section discusses some other properties that you might
+      consider setting.</p>
+<div class="epub__sect3" title="Cluster membership"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id691779"></a>Cluster membership</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10697" class="epub__indexterm"></a><a id="idx10698" class="epub__indexterm"></a><a id="idx10699" class="epub__indexterm"></a>To aid the addition and removal of nodes in the future,
+        you can specify a file containing a list of authorized machines that
+        may join the cluster as datanodes or tasktrackers. The file is
+        specified using the <a id="I_indexterm9_d1e30302" class="epub__indexterm"></a><code class="epub__literal">dfs.hosts</code> and
+        <a id="I_indexterm9_d1e30308" class="epub__indexterm"></a><code class="epub__literal">mapred.hosts</code>
+        properties (for datanodes and tasktrackers, respectively), as well as
+        the corresponding <a id="I_indexterm9_d1e30314" class="epub__indexterm"></a><code class="epub__literal">dfs.hosts.exclude</code> and
+        <code class="epub__literal">mapred.hosts.exclude</code> files used for
+        decommissioning. See <a href="http://proquest.safaribooksonline.com/9781449328917/id2470668#CommissioningAndDecommissioningNodes" class="epub__xref" title="Commissioning and Decommissioning Nodes" data-ajax="1">Commissioning and Decommissioning Nodes</a> for further
+        discussion.<a id="I_indexterm9_d1e30326" class="epub__indexterm"></a><a id="I_indexterm9_d1e30327" class="epub__indexterm"></a><a id="I_indexterm9_d1e30328" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="Buffer size"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id486629"></a>Buffer size</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10700" class="epub__indexterm"></a><a id="idx10701" class="epub__indexterm"></a><a id="idx10702" class="epub__indexterm"></a>Hadoop uses a buffer size of 4 KB (4,096 bytes) for its
+        I/O operations. This is a conservative setting, and with modern
+        hardware and operating systems, you will likely see performance
+        benefits by increasing it; 128 KB (131,072 bytes) is a common choice.
+        Set this using the <code class="epub__literal">io.file.buffer.size</code> property in <em class="epub__filename">core-site.xml</em>.<a id="I_indexterm9_d1e30357" class="epub__indexterm"></a><a id="I_indexterm9_d1e30358" class="epub__indexterm"></a><a id="I_indexterm9_d1e30359" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="HDFS block size"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="HDFSBlockSize"></a>HDFS block size</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10703" class="epub__indexterm"></a><a id="idx10704" class="epub__indexterm"></a><a id="idx10705" class="epub__indexterm"></a><a id="idx10706" class="epub__indexterm"></a>The HDFS block size is 64 MB by default, but many
+        clusters use 128 MB (134,217,728 bytes) or even 256 MB (268,435,456
+        bytes) to ease memory pressure on the namenode and to give mappers
+        more data to work on. Set this using the <a id="I_indexterm9_d1e30389" class="epub__indexterm"></a><code class="epub__literal">dfs.block.size</code>
+        property in <em class="epub__filename">hdfs-site.xml</em>.<a id="I_indexterm9_d1e30398" class="epub__indexterm"></a><a id="I_indexterm9_d1e30400" class="epub__indexterm"></a><a id="I_indexterm9_d1e30401" class="epub__indexterm"></a><a id="I_indexterm9_d1e30402" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="Reserved storage space"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id639442"></a>Reserved storage space</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10707" class="epub__indexterm"></a><a id="idx10708" class="epub__indexterm"></a><a id="idx10709" class="epub__indexterm"></a>By default, datanodes will try to use all of the space
+        available in their storage directories. If you want to reserve some
+        space on the storage volumes for non-HDFS use, you can set <a id="I_indexterm9_d1e30425" class="epub__indexterm"></a><code class="epub__literal">dfs.datanode.du.reserved</code> to the amount, in
+        bytes, of space to reserve.<a id="I_indexterm9_d1e30431" class="epub__indexterm"></a><a id="I_indexterm9_d1e30432" class="epub__indexterm"></a><a id="I_indexterm9_d1e30433" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="Trash"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id684933"></a>Trash</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10710" class="epub__indexterm"></a><a id="idx10711" class="epub__indexterm"></a><a id="idx10712" class="epub__indexterm"></a>Hadoop filesystems have a trash facility, in which
+        deleted files are not actually deleted, but rather are moved to a
+        trash folder, where they remain for a minimum period before being
+        permanently deleted by the system. The minimum period in minutes that
+        a file will remain in the trash is set using the <code class="epub__literal">fs.trash.interval</code> configuration property in
+        <em class="epub__filename">core-site.xml</em>. By default, the
+        trash interval is zero, which disables trash.</p>
+<p>Like in many operating systems, Hadoop’s trash facility is a
+        user-level feature, meaning that only files that are deleted using the
+        filesystem shell are put in the trash. Files deleted programmatically
+        are deleted immediately. It is possible to use the trash
+        programmatically, however, by constructing a <code class="epub__literal">Trash</code> instance, then calling its <a id="I_indexterm9_d1e30467" class="epub__indexterm"></a><code class="epub__methodname">moveToTrash()</code> method with the
+        <code class="epub__literal">Path</code> of the file intended for
+        deletion. The method returns a value indicating success; a value of
+        <code class="epub__literal">false</code> means either that trash is
+        not enabled or that the file is already in the trash.</p>
+<p>When trash is enabled, each user has her own trash directory
+        called <em class="epub__filename">.Trash</em> in her home
+        directory. File recovery is simple: you look for the file in a
+        subdirectory of <em class="epub__filename">.Trash</em> and move
+        it out of the trash subtree.</p>
+<p>HDFS will automatically delete files in trash folders, but other
+        filesystems will not, so you have to arrange for this to be done
+        periodically. You can <a id="I_indexterm9_d1e30489" class="epub__indexterm"></a><em class="epub__firstterm">expunge</em> the trash, which will
+        delete files that have been in the trash longer than their minimum
+        period, using the filesystem shell:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop fs -expunge</code></strong></pre>
+<p>The <a id="I_indexterm9_d1e30503" class="epub__indexterm"></a><code class="epub__literal">Trash</code> class exposes
+        an <a id="I_indexterm9_d1e30509" class="epub__indexterm"></a><code class="epub__methodname">expunge()</code> method that has the
+        same effect.<a id="I_indexterm9_d1e30515" class="epub__indexterm"></a><a id="I_indexterm9_d1e30516" class="epub__indexterm"></a><a id="I_indexterm9_d1e30517" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="Job scheduler"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id621344"></a>Job scheduler</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10713" class="epub__indexterm"></a><a id="idx10714" class="epub__indexterm"></a><a id="idx10715" class="epub__indexterm"></a>Particularly in a multiuser MapReduce setting, consider
+        changing the default FIFO job scheduler to one of the more fully
+        featured alternatives. See <a href="http://proquest.safaribooksonline.com/9781449328917/id2440767#JobScheduling" class="epub__xref" title="Job Scheduling" data-ajax="1">Job Scheduling</a>.<a id="I_indexterm9_d1e30542" class="epub__indexterm"></a><a id="I_indexterm9_d1e30543" class="epub__indexterm"></a><a id="I_indexterm9_d1e30544" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="Reduce slow start"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id554764"></a>Reduce slow start</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10716" class="epub__indexterm"></a><a id="idx10717" class="epub__indexterm"></a><a id="idx10718" class="epub__indexterm"></a>By default, schedulers wait until 5% of the map tasks in
+        a job have completed before scheduling reduce tasks for the same job.
+        For large jobs this can cause problems with cluster utilization, since
+        they take up reduce slots while waiting for the map tasks to complete.
+        Setting <code class="epub__literal">mapred.reduce.slowstart.completed.maps</code> to a
+        higher value, such as <code class="epub__literal">0.80</code> (80%),
+        can help improve throughput.<a id="I_indexterm9_d1e30573" class="epub__indexterm"></a><a id="I_indexterm9_d1e30574" class="epub__indexterm"></a><a id="I_indexterm9_d1e30575" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect3" title="Task memory limits"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="TaskMemoryLimits"></a>Task memory limits</h3>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10719" class="epub__indexterm"></a><a id="idx10720" class="epub__indexterm"></a><a id="idx10721" class="epub__indexterm"></a>On a shared cluster, it shouldn’t be possible for one
+        user’s errant MapReduce program to bring down nodes in the cluster.
+        This can happen if the map or reduce task has a memory leak, for
+        example, because the machine on which the tasktracker is running will
+        run out of memory and may affect the other running processes.</p>
+<p>Or consider the case where a user sets <a id="I_indexterm9_d1e30600" class="epub__indexterm"></a><code class="epub__literal">mapred.child.java.opts</code> to a large value and
+        causes memory pressure on other running tasks, causing them to swap.
+        Marking this property as final on the cluster would prevent it from
+        being changed by users in their jobs, but there are legitimate reasons
+        to allow some jobs to use more memory, so this is not always an
+        acceptable solution. Furthermore, even locking down <a id="I_indexterm9_d1e30606" class="epub__indexterm"></a><code class="epub__literal">mapred.child.java.opts</code> does not solve the
+        problem, because tasks can spawn new processes that are not
+        constrained in their memory usage. Streaming and Pipes jobs do exactly
+        that, for example.</p>
+<p>To prevent cases like these, some way of enforcing a limit on a
+        task’s memory usage is needed. Hadoop provides two mechanisms for
+        this. The simplest is via the Linux <em class="epub__filename">ulimit</em> command, which can be done at the
+        operating-system level (in the <em class="epub__filename">limits.conf</em> file, typically found in
+        <em class="epub__filename">/etc/security</em>) or by setting
+        <code class="epub__literal">mapred.child.ulimit</code> in the Hadoop
+        configuration. The value is specified in kilobytes, and should be
+        comfortably larger than the memory of the JVM set by <a id="I_indexterm9_d1e30626" class="epub__indexterm"></a><code class="epub__literal">mapred.child.java.opts</code>; otherwise, the child
+        JVM might not start.</p>
+<p>The second mechanism is Hadoop’s <em class="epub__firstterm">task memory
+        monitoring</em> feature.<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id570160" id="id570160" class="epub__footnote" data-ajax="1">79</a>]</sup>  The
+        idea is that an administrator sets a range of allowed virtual memory
+        limits for tasks on the cluster, and users specify the maximum memory
+        requirements for their jobs in the job configuration. If a user
+        doesn’t set memory requirements for his job, then the defaults are
+        used (<code class="epub__literal">mapred.job.map.memory.mb</code> and
+        <code class="epub__literal">mapred.job.reduce.memory.mb</code>).</p>
+<p>This approach has a couple of advantages over the <em class="epub__filename">ulimit</em> approach. First, it enforces the
+        memory usage of the whole task process tree, including spawned
+        processes. Second, it enables memory-aware scheduling, where tasks are
+        scheduled on tasktrackers that have enough free memory to run them.
+        The Capacity Scheduler, for example, will account for slot usage based
+        on the memory settings, so if a job’s <code class="epub__literal">mapred.job.map.memory.mb</code> setting exceeds
+        <code class="epub__literal">mapred.cluster.map.memory.mb</code>, the
+        scheduler will allocate more than one slot on a tasktracker to run
+        each map task for that job.</p>
+<p>To enable task memory monitoring, you need to set all six of the
+        properties in <a href="http://proquest.safaribooksonline.com/9781449328917/id2459570#MapReduceTaskMemoryMonitoringProperties" class="epub__xref" title="Table 9-7. MapReduce task memory monitoring properties" data-ajax="1">Table&nbsp;9-7</a>. The default
+        values are all <code class="epub__literal">-1</code>, which means the
+        feature is disabled.<a id="I_indexterm9_d1e30669" class="epub__indexterm"></a><a id="I_indexterm9_d1e30670" class="epub__indexterm"></a><a id="I_indexterm9_d1e30671" class="epub__indexterm"></a></p><div class="epub__table"><a id="MapReduceTaskMemoryMonitoringProperties"></a>
+<p class="epub__title">Table&nbsp;9-7.&nbsp;MapReduce task memory monitoring properties</p><div class="epub__table-contents">
+<table summary="MapReduce task memory monitoring properties" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+<colgroup><col><col><col><col></colgroup><thead><tr><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Property name</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Type</th><th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Default value</th><th style="border-bottom: 0.5pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.cluster.map.memory.mb</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">-1</code></td><td style="border-bottom: 0.5pt solid ; ">The amount of virtual memory, in MB, that defines a map
+                slot. Map tasks that require more than this amount of memory
+                will use more than one map slot.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.cluster.reduce.memory.mb</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">-1</code></td><td style="border-bottom: 0.5pt solid ; ">The amount of virtual memory, in MB, that defines a
+                reduce slot. Reduce tasks that require more than this amount
+                of memory will use more than one reduce slot.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.job.map.memory.mb</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">-1</code></td><td style="border-bottom: 0.5pt solid ; ">The amount of virtual memory, in MB, that a map task
+                requires to run. If a map task exceeds this limit, it may be
+                terminated and marked as failed.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.job.reduce.memory.mb</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">-1</code></td><td style="border-bottom: 0.5pt solid ; ">The amount of virtual memory, in MB, that a reduce task
+                requires to run. If a reduce task exceeds this limit, it may
+                be terminated and marked as failed.</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">mapred.cluster.max.map.memory.mb</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><code class="epub__literal">-1</code></td><td style="border-bottom: 0.5pt solid ; ">The maximum limit that users can set <code class="epub__literal">mapred.job.map.memory.mb</code> to.</td></tr><tr><td style="border-right: 0.5pt solid ; "><code class="epub__literal">mapred.cluster.max.reduce.memory.mb</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">int</code></td><td style="border-right: 0.5pt solid ; "><code class="epub__literal">-1</code></td><td style="">The maximum limit that users can set <code class="epub__literal">mapred.job.reduce.memory.mb</code>
+                to.</td></tr></tbody>
+</table>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+<div class="epub__sect2" title="User Account Creation"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id691771"></a>User Account Creation</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10722" class="epub__indexterm"></a><a id="idx10723" class="epub__indexterm"></a><a id="idx10724" class="epub__indexterm"></a>Once you have a Hadoop cluster up and running, you need to
+      give users access to it. This involves creating a home directory for
+      each user and setting ownership permissions on it:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop fs -mkdir /user/<em class="epub__replaceable"><code>username</code></em></code></strong>
+<code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop fs -chown <em class="epub__replaceable"><code>username</code></em>:<em class="epub__replaceable"><code>username</code></em> /user/<em class="epub__replaceable"><code>username</code></em></code></strong></pre>
+<p>This is a good time to set space limits on the directory. The
+      following sets a 1 TB limit on the given user directory:<a id="I_indexterm9_d1e30812" class="epub__indexterm"></a><a id="I_indexterm9_d1e30813" class="epub__indexterm"></a><a id="I_indexterm9_d1e30814" class="epub__indexterm"></a><a id="I_indexterm9_d1e30815" class="epub__indexterm"></a><a id="I_indexterm9_d1e30816" class="epub__indexterm"></a></p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop dfsadmin -setSpaceQuota 1t /user/<em class="epub__replaceable"><code>username</code></em></code></strong></pre>
+</div>
+
+
+
+<div class="epub__sect1" title="YARN Configuration"><div class="epub__titlepage"><div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+function PagePrint()
+{
+    setTimeout("window.print()", 500);
+}
+PagePrint();
+</script></div><span id="BowEndOfDocument" style="display:none" hidden="hidden"></span></body></html>

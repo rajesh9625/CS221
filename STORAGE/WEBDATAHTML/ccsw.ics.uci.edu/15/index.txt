@@ -1,0 +1,166 @@
+CCSW 2015<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<title>CCSW 2015</title>
+	<meta name="description" content="CCSW 2015"/>
+	<meta name="keywords" content="CCSW 2015"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	<div id="head" class="container">
+		<div id="acm_logo">
+			<a href="http://www.sigsac.org/">
+				<img src="images/acm_logo.png" alt="" width="140"/>
+			</a>
+		</div>
+		<div id="title"><a href="index.html">CCSW<br/>2015</a></div>
+		<h1>The 7th ACM Cloud Computing<br/> Security Workshop</h1>
+		<h2>
+			October 16, 2015, The Denver Marriot City Center, Denver, Colorado, USA
+		</h2>
+		<h3>
+			in conjunction with the <a href="http://www.sigsac.org/ccs/CCS2015/cfp.html">22nd ACM Conference on Computer Communications Security (CCS)</a>
+		</h3>
+	</div>
+
+	<ul id="nav">
+		<li><a href="index.html" >Home</a></li>
+		<!-- <li class="bar"><a class="bar" href="dates.html">Important Dates</a></li> -->
+		<li><a href="info.html">Submission&nbsp;Info</a></li>
+		<li><a href="registration.html">Registration</a></li>
+		<!-- <li class="bar"><a class="bar" href="program.html">Program</a></li> -->
+		<li><a href="organizers.html">Organizers</a></li>
+		<li><a href="program.html">Program</a></li>
+		<li><a href="speakers.html">Speakers</a></li>
+		<!-- <li><a href="ccsw2015cfp.pdf">CFP</a></li> -->
+		<li><a href="past.html">Past&nbsp;editions</a></li>
+		<!-- <li class="bar"><a class="bar" href="">CFP (pdf)</a></li> -->
+	</ul>
+
+
+<div class="content home container">
+	<div class="content_left">
+		<h1>Overview</h1>
+		<p>
+			The CCSW workshop brings together researchers and practitioners in all security
+			and privacy aspects of cloud-centric and outsourced computing, including:
+		</p>
+		<ul>
+			<li>
+				practical cryptographic protocols for cloud security
+			</lis><li>
+			outsourced privacy-preserving computation
+		</li><li>
+		secure cloud resource virtualization mechanisms
+	</li><li>
+	secure data management outsourcing (e.g., database as a service)
+</li><li>
+practical privacy and integrity mechanisms for outsourcing
+</li><li>
+privacy-enhancing technologies for the cloud
+</li><li>
+foundations of cloud-centric threat models
+</li><li>
+secure computation outsourcing
+</li><li>
+remote attestation mechanisms in clouds
+</li><li>
+sandboxing and VM-based enforcements
+</li><li>
+trust and policy management in clouds
+</li><li>
+secure identity management mechanisms
+</li><li>
+new cloud-aware web service security paradigms and mechanisms
+</li><li>
+cloud-centric regulatory compliance issues and mechanisms
+</li><li>
+business and security risk models and clouds
+</li><li>
+cost and usability models and their interaction with security in clouds
+</li><li>
+scalability of security in global-size clouds
+</li><li>
+trusted computing technology and clouds
+</li><li>
+binary analysis of software for remote attestation and cloud protection
+</li><li>
+network security (DOS, IDS etc.) mechanisms for cloud contexts
+</li><li>
+security for emerging cloud programming models
+</li><li>
+energy/cost/efficiency of security in clouds
+</li><li>
+security for software defined networking
+</li>
+</ul>
+<p>
+	We would like to especially encourage novel paradigms and controversial ideas
+	that are not on the above list. The workshop is to act as a fertile ground for
+	creative debate and interaction in security-sensitive areas of computing 
+	impacted by clouds.
+</p>
+
+<h2>
+	Impact
+</h2>
+<p>
+	CCSW has had a significant impact in our research community. As of April 2015, in the <a href="http://scholar.google.de/citations?vq=eng_computersecuritycryptography&amp;view_op=list_hcore&amp;venue=LY1cSycZE0AJ.2013">Google Scholar Metrics entry for CCS</a> (which encompasses CCSW), <b>4 of the top 20 cited papers of the past five years come from CCSW</b>. One way to look at it is that you're as likely or perhaps more likely to have a top-20 paper publishing in CCSW than in CCS! (thanks to Ari Juels for noticing this)
+</p>
+
+
+</div>
+
+<div class="content_right">
+
+	<h1>Organizers</h1>
+	<h2>
+		Program Chairs:
+	</h2>
+	<ul class="names">
+		<li>
+			<a href='http://homes.cerias.purdue.edu/~crisn/index.html'>Cristina Nita-Rotaru</a>, Purdue University
+			<br/>
+		</li>
+		<li>
+			<a href='http://www.fkerschbaum.org/'>Florian Kerschbaum</a>, SAP
+		</li>
+	</ul>
+	<h2>
+		General Chair:
+	</h2>
+	<ul class="names">
+		<li>
+			<a href="http://www.cs.colostate.edu/~indrajit/">Indrajit Ray</a>, Colorado State University
+		</li>
+	</ul>
+	<h2>
+		Steering Chair:
+	</h2>
+	<ul class="names">
+		<li>
+			<a href="http://www.ics.uci.edu/~gts/">Gene Tsudik</a>, University of California, Irvine
+		</li>
+	</ul>
+	<h2>
+		
+	 <h1>
+		Sponsors
+	</h1>
+	<a href="http://research.microsoft.com/en-us/groups/crypto/" >
+	   <img style="margin-left: 2em;" align="left" src="images/microsoft_logo.png" alt="" width="220"/>
+	</a>
+	
+</div>
+</div>
+
+
+
+
+</body>
+</html>
+

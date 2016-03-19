@@ -1,0 +1,258 @@
+ICS 143CS 143B -- WQ 2016   
+
+
+
+
+
+
+
+
+
+
+
+
+
+General
+Course Information
+
+Office Hours:
+
+Instructor: Lubomir Bic, bic@ics.uci.edu
+
+Office
+Hours: after class or by appointment, DBH 3224 
+
+Teaching Assistant: Kyle Benson, kebenson@uci.edu
+     
+
+Office Hours: Weds. 2:30-3:30,
+DBH 2099 
+
+Prerequisites: 
+
+CS 143A
+
+Textbook:
+
+L. Bic,
+     A. Shaw, Operating Systems
+     Principles, Prentice-Hall, 2003 (ISBN: 0130266116)
+
+Course Objective:
+
+The main
+objective is to apply the principles of operating systems studied in CS 143A in
+practice. We will design and implement several important components of
+a simple operating system. 
+
+Course Structure:
+
+There will be a set of projects
+to complete, each dealing with a different part of the
+operating system. These will be discussed in class. On the due date, you have
+to submit the code of each project and have its functionality tested by running
+it with a given set of test data.
+
+All work must be done individually;
+no team work is allowed.
+
+Schedule and
+Grading:
+
+The
+grade will be based entirely on the course projects; no exams will be given. 
+Final grade is determined as follows: 
+
+85-100%: A+-70-84%:  
+      B+-50-69%:  
+      C+-
+
+
+(Each +
+or - corresponds to approximately 1/3 of a grade.) 
+  
+
+
+  Project
+  
+  Presentation  
+  starts
+  
+  Due date (midnight)
+  
+  Testing date
+  
+  Percent of final grade
+  
+  1
+  
+  Process and Resource 
+  Management
+  
+  Mon 1/4
+  
+  Sun 1/24
+  
+  Mon 1/25+
+  
+  30%
+  
+  2
+  
+  File 
+  System 
+  
+  Mon 1/18
+  
+  Sun 2/21
+  
+  Mon 2/22+
+  
+  40%
+  
+  3
+  
+  Virtual Memory
+  
+  Wed 2/17
+  
+  Sun 3/6
+  
+  Mon 3/7+
+  
+  30%
+  
+
+ 
+
+Testing:
+
+
+
+
+On or
+before due date, submit your code to EEE (how to submit
+to EEE)
+
+On the date of testing, there will be specific time
+windows during which you need to see the TA to have your program tested (see
+the specific protocols for each of the projects below.)
+
+Late work:
+
+Late work will be
+accepted, however, a penalty of 10% per day will be imposed.
+
+Plagiarism
+
+
+
+You are not allowed to reuse in
+your projects any portion of a design or code developed by another person or
+group (during this quarter or any previous quarters). Any violation of this
+rule will result in a final grade of F for this course.
+
+
+
+Grades 
+
+
+
+Grades are posted periodically
+via the Electronic Education Environment website: https://eee.uci.edu/
+
+
+
+
+
+
+
+
+
+Project-Specific
+Information
+
+1. Process and
+Resource Management
+
+Textbook, pages 482-491Lecture
+     Notes (PowerPoint)Lecture
+     1Lecture
+     2Lecture
+     3Lecture
+     4Lecture
+     5Shell
+     SpecificationSample test case: If
+     your program reads the following input
+     file, it should produce a file that looks something like this: outputOn due date
+
+o  
+Submit the code to
+be tested to EEE
+
+o  
+Demonstrate
+functionality; see protocol
+for details
+
+2. File System
+
+Textbook, pages 501-506Lecture
+     Notes (PowerPoint)Lecture
+     1Lecture
+     2Lecture
+     3Lecture
+     4Lecture
+     5Lecture
+     6Shell
+     SpecificationDisk
+     and FS SpecificationSample test case: If your program reads the following input file, it should
+     produce a file that looks something like this: outputJava code to pack/unpack
+     an integer to/from a byte array
+
+On due date:
+
+o  
+Submit the code to
+be tested to EEE
+
+o  
+Demonstrate
+functionality; see protocol
+for details
+
+3. Virtual Memory 
+
+Project
+     DescriptionLecture
+     Notes (PowerPoint)Lecture
+     1Lecture
+     2Lecture
+     3Lecture
+     4Lecture
+     5Sample test case: 
+
+o    The following file initializes the VM: input1
+
+
+o    The following files contains VAs to be translated: input2
+
+o    When not using the TLB, your program should produce the
+following file: output1
+
+o    With TLB the output should look like this: output2
+
+On due date, submit:
+
+o    Submit the code to be tested to EEE
+
+o    Demonstrate functionality; see protocol
+for details
+
+
+
+
+
+
+
+ 

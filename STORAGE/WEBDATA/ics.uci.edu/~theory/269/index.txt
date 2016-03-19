@@ -1,0 +1,15 @@
+Theory SeminarCompSci 269S, Winter 2016: Theory Seminar
+
+
+
+The Theory Group normally meets Fridays at 1:00pm; this quarter we are 
+in ICS 243.
+
+
+Below is this quarter's schedule.
+
+January 8:Organizational meeting January 15:(no seminar) January 22Michael Mitzenmacher:More
+analysis of double hashing with balanced allocations January 29:Timothy JohnsonAlgorithmic complexity of power law networks February 5:Nil MamanoOn the complexity of an unregulated traffic crossing February 12:Siddhartha Gupta February 19:Tsvi Kopelowitz February 26:Will Devanny March 4:Dmitri Arkhipov March 11:Shachar Lovett
+
+Previous
+quarters' theory seminars

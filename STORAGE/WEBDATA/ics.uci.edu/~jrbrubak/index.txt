@@ -1,0 +1,26 @@
+Jed BrubakerJed Brubaker // authoring my digital identity 
+  
+  
+  
+    
+      AboutBlogContact
+      
+    
+  
+  
+  
+    
+      
+      
+      
+        Current research, papers, and more information on my personal site:
+          www.jedbrubaker.com
+      
+    
+    
+      Welcome : //
+      
+        
+          I am a PhD student in Informatics at UC Irvine focusing on digital identity, social media, and human centered computing. I am particularly interested in issues of representation and the often invisible distinction between us and our data. My research draws from human centered computing, psychology, science and technology studies, and critical theory. 
+          I study with Gillian Hayes, so most days you can find me in the Laboratory for Ubiquitous Computing and Interaction (LUCI) where I am a part of the STAR research group. Previously, I earned my M.A. at Georgetown University in Communication, Culture and Technology, and my B.S.  in Psychology at the University of Utah.
+          Professionally, I  most recently spent four years at the Association of American Medical Colleges as a lead front-end software engineer. I worked on medical student systems (most notably the MCAT) and enterprise solutions including developing the AAMC’s JavaScript framework, launching a User Experience Competency Center, adoption of web analytics tools and best-practices, and cross-system standardization of digital identity information.

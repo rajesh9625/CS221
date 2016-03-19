@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0075)http://proquest.safaribooksonline.com/print?xmlid=9781449328917%2Fid2464679 -->
+<html xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./hadoop7_files/docsafarip.css"><link rel="stylesheet" type="text/css" href="./hadoop7_files/getfile"></head><body><div><p class="p"></p><hr><strong class="strong">Username: </strong><span>University of California Irvine User</span><span> </span><strong class="strong">Book: </strong><span>Hadoop: The Definitive Guide, 3rd Edition. </span><span>No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.</span><hr><p></p><div id="HtmlView"><div><h1 class="epub__title"><a id="security"></a>Security</h1>
+
+
+
+
+
+
+<p><a id="idx10738" class="epub__indexterm"></a><a id="idx10739" class="epub__indexterm"></a>Early versions of Hadoop assumed that HDFS and MapReduce
+    clusters would be used by a group of cooperating users within a secure
+    environment. The measures for restricting access were designed to prevent
+    accidental data loss, rather than to prevent unauthorized access to data.
+    For example, the file permissions system in HDFS prevents one user from
+    accidentally wiping out the whole filesystem from a bug in a program, or
+    by mistakenly typing <code class="epub__literal">hadoop fs -rmr /</code>,
+    but it doesn’t prevent a malicious user from assuming root’s identity (see
+    <a href="http://proquest.safaribooksonline.com/9781449328917/id2572159#I_sidebar5_d1e9874" class="epub__xref" title="Setting User Identity" data-ajax="1">Setting User Identity</a>) to access or delete any data in the
+    cluster.</p>
+<p>In security parlance, what was missing was a secure <a id="I_indexterm9_d1e31472" class="epub__indexterm"></a><em class="epub__firstterm">authentication</em> mechanism to assure
+    Hadoop that the user seeking to perform an operation on the cluster is who
+    she claims to be and therefore can be trusted. HDFS file permissions
+    provide only a mechanism for <a id="I_indexterm9_d1e31478" class="epub__indexterm"></a><em class="epub__firstterm">authorization</em>, which controls what a
+    particular user can do to a particular file. For example, a file may be readable only by a
+    certain group of users, so anyone not in that group is not authorized to
+    read it. However, authorization is not enough by itself, because the
+    system is still open to abuse via spoofing by a malicious user who can
+    gain network access to the cluster.</p>
+<p>It’s common to restrict access to data that contains personally
+    identifiable information (such as an end user’s full name or IP address)
+    to a small set of users (of the cluster) within the organization who are
+    authorized to access such information. Less sensitive (or anonymized) data
+    may be made available to a larger set of users. It is convenient to host a
+    mix of datasets with different security levels on the same cluster (not
+    least because it means the datasets with lower security levels can be
+    shared). However, to meet regulatory requirements for data protection,
+    secure authentication must be in place for shared clusters.</p>
+<p>This is the situation that Yahoo! faced in 2009, which led a team of
+    engineers there to implement secure authentication for Hadoop. In their
+    design, Hadoop itself does not manage user credentials; instead, it relies
+    on Kerberos, a mature open-source network authentication protocol, to
+    authenticate the user. In turn, Kerberos doesn’t manage permissions.
+    Kerberos says that a user is who he says he is; it’s Hadoop’s job to
+    determine whether that user has permission to perform a given action.
+    There’s a lot to Kerberos, so here we only cover enough to use it in the
+    context of Hadoop, referring readers who want more background to <span class="epub__italic"><a class="epub__ulink" href="http://oreilly.com/catalog/9780596004033/" target="_new">Kerberos: The Definitive
+    Guide</a></span> by Jason Garman (O’Reilly, 2003).</p><div class="epub__sidebar"><a id="I_sidebar9_d1e23940"></a>
+<p class="epub__title">Which Versions of Hadoop Support Kerberos Authentication?</p>
+<p>Kerberos for authentication was first added in the 0.20.20x series
+      of Apache Hadoop releases. See <a href="http://proquest.safaribooksonline.com/9781449328917/id2364497#HadoopReleasesTable" class="epub__xref" title="Table 1-2. Features supported by Hadoop release series" data-ajax="1">Table&nbsp;1-2</a>
+      for which recent release series support this feature.</p>
+</div>
+<div class="epub__sect2" title="Kerberos and Hadoop"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id669827"></a>Kerberos and Hadoop</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10740" class="epub__indexterm"></a><a id="idx10741" class="epub__indexterm"></a><a id="idx10742" class="epub__indexterm"></a>At a high level, there are three steps that a client must
+      take to access a service when using Kerberos, each of which involves a
+      message exchange with a server:</p><div class="epub__orderedlist">
+<ol class="epub__orderedlist">
+<li class="epub__listitem">
+<p><a id="I_indexterm9_d1e31525" class="epub__indexterm"></a><span class="epub__italic">Authentication.</span> The
+          client authenticates itself to the Authentication Server and receives a timestamped
+          Ticket-<a id="I_indexterm9_d1e31534" class="epub__indexterm"></a><a id="I_indexterm9_d1e31537" class="epub__indexterm"></a>Granting Ticket (TGT).</p></li><li class="epub__listitem">
+<p><a id="I_indexterm9_d1e31543" class="epub__indexterm"></a><span class="epub__italic">Authorization.</span> The
+          client uses the TGT to request a service ticket from the Ticket
+          Granting Server.</p></li><li class="epub__listitem">
+<p><span class="epub__italic">Service request.</span> The client
+          uses the service ticket to authenticate itself to the server that is
+          providing the service the client is using. In the case of Hadoop,
+          this might be the namenode or the jobtracker.</p></li></ol>
+
+</div>
+<p>Together, the Authentication Server and the Ticket Granting Server
+      form the <em class="epub__firstterm">Key Distribution Center</em> (KDC). The
+      process is shown graphically in <a href="http://proquest.safaribooksonline.com/9781449328917/id2464679#security_kerberos" class="epub__xref" title="Figure 9-2. The three-step Kerberos ticket exchange protocol" data-ajax="1">Figure&nbsp;9-2</a>.</p><div class="epub__figure-float"><div class="epub__figure"><a id="security_kerberos"></a><div class="epub__figure-contents"><div class="epub__mediaobject"><a id="I_mediaobject9_d1e23994"></a><img src="./hadoop7_files/getfile(1)" alt="The three-step Kerberos ticket exchange protocol">
+</div>
+
+</div>
+
+<p class="epub__title">Figure&nbsp;9-2.&nbsp;The three-step Kerberos ticket exchange protocol</p>
+</div>
+
+</div>
+
+<p>The authorization and service request steps are not user-level
+      actions; the client performs these steps on the user’s behalf. The
+      authentication step, however, is normally carried out explicitly by the
+      user using the <a id="I_indexterm9_d1e31571" class="epub__indexterm"></a><code class="epub__literal">kinit</code> command, which
+      will prompt for a password. However, this doesn’t mean you need to enter
+      your password every time you run a job or access HDFS, since TGTs last
+      for 10 hours by default (and can be renewed for up to a week). It’s
+      common to automate authentication at operating system login time,
+      thereby providing <em class="epub__firstterm">single sign-on</em> to
+      Hadoop.</p>
+<p>In cases where you don’t want to be prompted for a password (for
+      running an unattended MapReduce
+      job, for example), you can create a Kerberos
+      <em class="epub__firstterm">keytab</em> file using the <a id="I_indexterm9_d1e31588" class="epub__indexterm"></a><code class="epub__literal">ktutil</code> command. A
+      keytab is a file that stores passwords and may be supplied to <a id="I_indexterm9_d1e31594" class="epub__indexterm"></a><code class="epub__literal">kinit</code> with the <code class="epub__literal">-t</code> option.</p>
+<div class="epub__sect3" title="An example"><div class="epub__titlepage"><div>
+<div>
+<h3 class="epub__title"><a id="id568403"></a>An example</h3>
+</div>
+
+</div>
+
+
+</div>
+<p>Let’s look at an example of the process in action. The first
+        step is to enable Kerberos authentication by setting the <a id="I_indexterm9_d1e31609" class="epub__indexterm"></a><code class="epub__literal">hadoop.security.authentication</code> property in
+        <em class="epub__filename">core-site.xml</em> to <a id="I_indexterm9_d1e31618" class="epub__indexterm"></a><code class="epub__literal">kerberos</code>.<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id684220" id="id684220" class="epub__footnote" data-ajax="1">80</a>]</sup> The default setting is <code class="epub__literal">simple</code>, which signifies that the old backwards-compatible (but insecure)
+        behavior of using the operating system user name to determine identity
+        should be employed.</p>
+<p>We also need to enable service-level authorization by setting
+        <a id="I_indexterm9_d1e31641" class="epub__indexterm"></a><code class="epub__literal">hadoop.security.authorization</code> to <code class="epub__literal">true</code> in the same file. You may configure
+        Access Control Lists (ACLs) in the <em class="epub__filename">hadoop-policy.xml</em> configuration file to
+        control which users and groups have permission to connect to each
+        Hadoop service. Services are defined at the protocol level, so there
+        are ones for MapReduce job submission, namenode communication, and so
+        on. By default, all ACLs are set to <code class="epub__literal">*</code>, which means that all users have
+        permission to access each service, but on a real cluster you should
+        lock the ACLs down to only those users and groups that should have
+        access.</p>
+<p>The format for an ACL is a comma-separated list of usernames,
+        followed by whitespace, followed by a comma-separated list of group
+        names. For example, the ACL <code class="epub__literal">preston,howard directors,inventors</code>
+        would authorize access to users named <code class="epub__literal">preston</code> or <code class="epub__literal">howard</code>, or in groups <code class="epub__literal">directors</code> or <code class="epub__literal">inventors</code>.</p>
+<p>With Kerberos authentication turned on, let’s see what happens
+        when we try to copy a local file to HDFS:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop fs -put quangle.txt .</code></strong>
+10/07/03 15:44:58 WARN ipc.Client: Exception encountered while connecting to the
+server: javax.security.sasl.SaslException: GSS initiate failed [Caused by GSSEx
+ception: No valid credentials provided (Mechanism level: Failed to find any Ker
+beros tgt)]
+Bad connection to FS. command aborted. exception: Call to localhost/127.0.0.1:80
+20 failed on local exception: java.io.IOException: javax.security.sasl.SaslExcep
+tion: GSS initiate failed [Caused by GSSException: No valid credentials provided
+(Mechanism level: Failed to find any Kerberos tgt)]</pre>
+<p>The operation fails because we don’t have a Kerberos ticket. We
+        can get one by authenticating to the KDC, using <code class="epub__literal">kinit</code>:</p>
+<pre class="epub__screen"><code class="epub__prompt">%</code> <strong class="epub__userinput"><code>kinit</code></strong>
+Password for hadoop-user@LOCALDOMAIN: <em class="epub__replaceable"><code>password</code></em>
+<code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop fs -put quangle.txt .</code></strong>
+<code class="epub__prompt">%</code> <strong class="epub__userinput"><code>hadoop fs -stat %n quangle.txt</code></strong>
+quangle.txt</pre>
+<p>And we see that the file is successfully written to HDFS. Notice
+        that even though we carried out two filesystem commands, we only
+        needed to call <a id="I_indexterm9_d1e31712" class="epub__indexterm"></a><code class="epub__literal">kinit</code> once, since the
+        Kerberos ticket is valid for 10 hours (use the <a id="I_indexterm9_d1e31718" class="epub__indexterm"></a><code class="epub__literal">klist</code> command to see
+        the expiry time of your tickets and <a id="I_indexterm9_d1e31724" class="epub__indexterm"></a><code class="epub__literal">kdestroy</code> to
+        invalidate your tickets). After we get a ticket, everything works just
+        as it normally would.<a id="I_indexterm9_d1e31730" class="epub__indexterm"></a><a id="I_indexterm9_d1e31732" class="epub__indexterm"></a><a id="I_indexterm9_d1e31733" class="epub__indexterm"></a></p>
+</div>
+
+</div>
+
+<div class="epub__sect2" title="Delegation Tokens"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id707379"></a>Delegation Tokens</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10743" class="epub__indexterm"></a><a id="idx10744" class="epub__indexterm"></a><a id="idx10745" class="epub__indexterm"></a>In a distributed system such as HDFS or MapReduce, there
+      are many client-server interactions, each of which must be
+      authenticated. For example, an HDFS read operation will involve multiple
+      calls to the namenode and calls to one or more datanodes. Instead of
+      using the three-step Kerberos ticket exchange protocol to authenticate
+      each call, which would present a high load on the KDC on a busy cluster,
+      Hadoop uses <em class="epub__firstterm">delegation tokens</em> to allow later
+      authenticated access without having to contact the KDC again. Delegation
+      tokens are created and used transparently by Hadoop on behalf of users,
+      so there’s no action you need to take as a user beyond using <a id="I_indexterm9_d1e31757" class="epub__indexterm"></a><code class="epub__literal">kinit</code> to sign in, but
+      it’s useful to have a basic idea of how they are used.</p>
+<p>A delegation token is generated by the server (the namenode in
+      this case) and can be thought of as a shared secret between the client
+      and the server. On the first RPC call to the namenode, the client has no
+      delegation token, so it uses Kerberos to authenticate, and as a part of
+      the response it gets a delegation token from the namenode. In subsequent
+      calls, it presents the delegation token, which the namenode can verify
+      (since it generated it using a secret key), and hence the client is
+      authenticated to the server.</p>
+<p>When it wants to perform operations on HDFS blocks, the client
+      uses a special kind of delegation token, called a <em class="epub__firstterm">block
+      access token</em>, that the namenode passes to the client in
+      response to a metadata request. The client uses the block access token
+      to authenticate itself to datanodes. This is possible only because the
+      namenode shares its secret key used to generate the block access token
+      with datanodes (which it sends in heartbeat messages), so that they can
+      verify block access tokens. Thus, an HDFS block may be accessed only by
+      a client with a valid block access token from a namenode. This closes
+      the security hole in unsecured Hadoop where only the block ID was needed
+      to gain access to a block. This property is enabled by setting
+      <a id="I_indexterm9_d1e31770" class="epub__indexterm"></a><code class="epub__literal">dfs.block.access.token.enable</code> to <code class="epub__literal">true</code>.</p>
+<p>In MapReduce, job resources and metadata (such as JAR files, input
+      splits, and configuration files) are shared in HDFS for the jobtracker
+      to access, and user code runs on the tasktrackers and accesses files on
+      HDFS (the process is explained in <a href="http://proquest.safaribooksonline.com/9781449328917/id2438152#AnatomyOfAMapReduceJobRun" class="epub__xref" title="Anatomy of a MapReduce Job Run" data-ajax="1">Anatomy of a MapReduce Job Run</a>). Delegation tokens are used by
+      the jobtracker and tasktrackers to access HDFS during the course of the
+      job. When the job has finished, the delegation tokens are
+      invalidated.</p>
+<p>Delegation tokens are automatically obtained for the default HDFS
+      instance,
+      but if your job needs to access other HDFS clusters, you can load the
+      delegation tokens for these by setting the <a id="I_indexterm9_d1e31788" class="epub__indexterm"></a><code class="epub__literal">mapreduce.job.hdfs-servers</code> job property to a
+      comma-separated list of HDFS
+      URIs.<a id="I_indexterm9_d1e31797" class="epub__indexterm"></a><a id="I_indexterm9_d1e31798" class="epub__indexterm"></a><a id="I_indexterm9_d1e31799" class="epub__indexterm"></a></p>
+</div>
+<div class="epub__sect2" title="Other Security Enhancements"><div class="epub__titlepage"><div>
+<div>
+<h2 class="epub__title"><a id="id643614"></a>Other Security Enhancements</h2>
+</div>
+
+</div>
+
+
+</div>
+<p><a id="idx10746" class="epub__indexterm"></a><a id="idx10747" class="epub__indexterm"></a>Security has been tightened throughout HDFS and MapReduce
+      to protect against unauthorized access to resources.<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id613633" id="id613633" class="epub__footnote" data-ajax="1">81</a>]</sup> The more notable changes are listed here:</p><div class="epub__itemizedlist">
+<ul class="epub__itemizedlist">
+<li class="epub__listitem">
+<p>Tasks can be run using the operating system account for the
+          user who submitted the job, rather than the user running the
+          tasktracker. This
+          means that the operating system is used to isolate running tasks, so
+          they can’t send signals to each other (to kill another user’s tasks,
+          for example) and so local information, such as task data, is kept
+          private via local filesystem permissions.</p>
+<p>This feature is enabled by setting <code class="epub__literal">mapred.task.tracker.task-controller</code> to
+          <a id="I_indexterm9_d1e31833" class="epub__indexterm"></a><code class="epub__literal">org.apache.hadoop.mapred.LinuxTaskController</code>.<sup>[<a href="http://proquest.safaribooksonline.com/9781449328917/id2466321#ftn.id626477" id="id626477" class="epub__footnote" data-ajax="1">82</a>]</sup> In addition, administrators need to ensure that each
+          user is given an account on every node in the cluster (typically
+          using LDAP).</p></li><li class="epub__listitem">
+<p>When tasks are run as the user who submitted the job, the
+          distributed cache (<a href="http://proquest.safaribooksonline.com/9781449328917/id2456911#DistributedCache" class="epub__xref" title="Distributed Cache" data-ajax="1">Distributed Cache</a>) is secure.
+          Files that are world-readable are put in a shared cache (the
+          insecure default); otherwise, they go in a private cache, readable
+          only by the owner.</p></li><li class="epub__listitem">
+<p>Users can view and modify only their own jobs, not others.
+          This is enabled by setting <code class="epub__literal">mapred.acls.enabled</code> to <code class="epub__literal">true</code>. There are two job configuration
+          properties, <a id="I_indexterm9_d1e31871" class="epub__indexterm"></a><code class="epub__literal">mapreduce.job.acl-view-job</code> and <a id="I_indexterm9_d1e31877" class="epub__indexterm"></a><code class="epub__literal">mapreduce.job.acl-modify-job</code>, which may be
+          set to a comma-separated list of users to control who may view or
+          modify a particular job.</p></li><li class="epub__listitem">
+<p>The shuffle is secure, preventing a malicious user from
+          requesting another user’s map outputs. However,
+          the shuffle is not encrypted, so it is subject to malicious
+          sniffing.</p></li><li class="epub__listitem">
+<p>When appropriately configured, it’s no longer possible for a
+          malicious user to run a rogue secondary namenode, datanode, or
+          tasktracker that can join the cluster and potentially compromise
+          data stored in the cluster. This is enforced by requiring daemons to
+          authenticate with the master node they are connecting to.</p>
+<p>To enable this feature, you first need to configure Hadoop to
+          use a keytab previously generated with the <a id="I_indexterm9_d1e31893" class="epub__indexterm"></a><code class="epub__literal">ktutil</code> command. For
+          a datanode, for example, you would set the <a id="I_indexterm9_d1e31899" class="epub__indexterm"></a><code class="epub__literal">dfs.datanode.keytab.file</code> property to the
+          keytab filename and <a id="I_indexterm9_d1e31905" class="epub__indexterm"></a><code class="epub__literal">dfs.datanode.kerberos.principal</code> to the
+          username to use for the datanode. Finally, the ACL for the
+          <a id="I_indexterm9_d1e31911" class="epub__indexterm"></a><code class="epub__classname">DataNodeProtocol</code> (which is used
+          by datanodes to communicate with the namenode) must be set in
+          <em class="epub__filename">hadoop-policy.xml</em>, by
+          restricting <a id="I_indexterm9_d1e31921" class="epub__indexterm"></a><code class="epub__literal">security.datanode.protocol.acl</code> to the
+          datanode’s username.</p></li><li class="epub__listitem">
+<p>A datanode may be run on a privileged port (one lower than
+          1024), so a client may be reasonably sure that it was started
+          securely.</p></li><li class="epub__listitem">
+<p>A task may communicate only with its parent tasktracker, thus
+          preventing an attacker from
+          obtaining MapReduce data from another user’s job.</p></li></ul>
+
+</div>
+<p>One area that hasn’t yet been addressed in the security work is
+      encryption: neither RPC nor block transfers are encrypted. HDFS blocks
+      are not stored in an encrypted form either. These features are planned
+      for a future release, and in fact, encrypting the data stored in HDFS
+      could be carried out in existing versions of Hadoop by the application
+      itself (by writing an encryption <a id="I_indexterm9_d1e31940" class="epub__indexterm"></a><code class="epub__classname">CompressionCodec</code>, for example).<a id="I_indexterm9_d1e31947" class="epub__indexterm"></a><a id="I_indexterm9_d1e31948" class="epub__indexterm"></a><a id="I_indexterm9_d1e31949" class="epub__indexterm"></a><a id="I_indexterm9_d1e31950" class="epub__indexterm"></a></p>
+</div>
+
+
+
+<div class="epub__sect1" title="Benchmarking a Hadoop Cluster"><div class="epub__titlepage"><div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script type="text/javascript">
+function PagePrint()
+{
+    setTimeout("window.print()", 500);
+}
+PagePrint();
+</script></div><span id="BowEndOfDocument" style="display:none" hidden="hidden"></span></body></html>

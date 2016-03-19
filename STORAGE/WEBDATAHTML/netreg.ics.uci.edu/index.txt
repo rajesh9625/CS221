@@ -1,0 +1,69 @@
+ICS Hosts Registration - Login<HTML>
+<!-- begin standard header -->
+<!-- Created: 2016-Feb-Mon 23:40:17 -->
+<!-- ForBrowser: crawler4j (http://code.google.com/p/crawler4j/) -->
+<!-- ForUser:  () -->
+<!-- Application: hostreg ICS Hosts Registration -->
+<!-- CVS $Id: wchtml.inc,v 1.20 2009/06/30 19:09:48 wdcohen Exp $  -->
+<HEAD>
+<TITLE> ICS Hosts Registration - Login</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#0000ff" ALINK="#f0f0ff" BGCOLOR="#ffffff">
+<!-- end standard header -->
+
+
+
+<!-- begin standard title -->
+<TABLE BORDER=0 WIDTH="100%"><TR VALIGN=CENTER><TD>
+<IMG BORDER="0" SRC=".//images/logo.jpg" ALIGN="LEFT" ALT="Logo">
+</TD>
+<TD ALIGN=CENTER><B><BR><FONT SIZE=+3><I>
+ICS Hosts Registration
+</I></FONT></B></TD></TR></TABLE>
+<HR SIZE=3 NOSHADE WIDTH="100%" ALIGN="CENTER">
+<!-- end standard title -->
+
+
+
+<!-- outer block begin #1 -->
+<TABLE WIDTH="99%" BORDER=2 CELLSPACING=0 CELLPADDING=1 COLOR="RED">
+<TR>
+<TD BGCOLOR="#e0e0e0">
+<TABLE WIDTH="100%" BORDER=2 CELLSPACING=0 CELLPADDING=3>
+<TR ALIGN="LEFT" VALIGN="TOP" BGCOLOR="#000000">
+<TD ALIGN="LEFT" WIDTH="90%" >
+<FONT COLOR=#ffffff><B>Please log into system:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using LDAP Authentication with ICS ID and Password</B></FONT></TD>
+<TD ALIGN="RIGHT" WIDTH="6%" >
+<A HREF="?topic=Please+log+into+system%3A++%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3BUsing+LDAP+Authentication+with+ICS+ID+and+Password&state__=wcapp.help%2F%2F1455003637%2F%2F%2F%2F%2F%26500ae2e922e834afe082856912124cb6" TARGET="" >HELP</A>
+</TD></TR>
+<TD WIDTH="2%"></TD><TR ALIGN=LEFT VALIGN=TOP BGCOLOR="#e0e0e0">
+<TD COLSPAN=2><FONT COLOR="#000000">
+<FORM METHOD=POST ACTION=""   name="form1" >
+<INPUT TYPE="HIDDEN" NAME="state__" VALUE="home//1455003637/////&amp;fadbee7d4f29ee89eafee9588aa4f50d">
+<!-- begin table #1 -->
+<TABLE NOSHADE BORDER="0" CELLPADDING="0" CELLSPACING="1" WIDTH="95%">
+<TR VALIGN="MIDDLE"><BR><BR><BR></TR>
+<TR VALIGN="MIDDLE"><TD ALIGN="LEFT" WIDTH="10%"> </TD>
+<TD ALIGN="LEFT"><B>User ID</B>
+<BR><B>Password</B>
+<BR></TD>
+<TD ALIGN="LEFT"><INPUT TYPE="TEXT" NAME="uname" VALUE="" SIZE="35" tabindex="1" >
+<BR><INPUT TYPE="PASSWORD" NAME="passwd" VALUE=""SIZE="35" tabindex="2" >
+</TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD ALIGN="LEFT" WIDTH="30%"></TD>
+<TD ALIGN="LEFT"><BR><INPUT TYPE="IMAGE" ALIGN="TOP" BORDER=0 SRC=".//button.php?text=Login&cbut=d0d0d00&font=2&ctext=0000000&pic=&pad=3&beveled=1&border=1" ALT="[Login]" BORDER=0 >
+          <script language="javascript">
+    <!--
+    document.form1.uname.focus()
+    //-->
+    </script>
+
+        <BR><BR><BR></TD>
+</TR>
+</TABLE>
+<!-- end table #1 -->
+</FORM>
+</FONT></TD></TR></TABLE></TD></TR></TABLE>
+<!-- end block 1 -->
+

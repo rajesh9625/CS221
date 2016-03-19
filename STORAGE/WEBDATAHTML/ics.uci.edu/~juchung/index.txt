@@ -1,0 +1,34 @@
+Justin Chung<HTML><HEAD>
+<TITLE>Justin Chung</TITLE>
+<META name="person" content="Justin Chung">
+<META name="sortname" content="Chung, Justin">
+</HEAD><BODY>
+<H2>Justin Chung</H2>
+
+
+<UL>
+<LI>Position: Ph.D. Student
+<LI>Area: Interactive and Collaborative Technology
+<LI>Advisor: Gloria Mark
+<LI>Office Fax: +1(949)824-4056
+<LI>Contact: juchung -at- ics -dot- uci -dot- edu
+</UL>
+
+<H3>Research</H3>
+My research over the past several years has centered on the use of language for political purposes in social media. I use computational methods such as topic modeling, latent semantic analysis, and linguistic analysis tools including LIWC.
+
+<H3>Other Interests</H3>
+<p>I'm very interested in languages--I have the equivalent of at least two years of Mandarin, Taiwanese, Spanish, Portuguese, German and Ancient Greek, and have formally studied some Norwegian, French, and Latin. I like to cook, I like the outdoors, and I occasionally brew my own beer.</p>
+<p>For the past four years, I have also served with the <a href="http://www.ags.uci.edu/">Associated Graduate Students</a>, the recognized graduate student government at UCI. I am currently serving as President for my second term. As such, I am privileged to have been deeply involved with numerous aspects of University governace and am deeply interested in the complex interrelationship between policy and graduate student welfare. In addition to urging sensitivity on the part of administrators to the differing co-curricular needs of graduate and undergraduate students, I have been fighting what I see as an underappreciation of graduate student contributions outside of academia. We, as the bridge between research and pedagogy, are what distinguishes the University of California from less research-focused institutions of higher learning. The Orange County community could stand to benefit from more interaction with us and the cutting-edge research we perform.</p>
+
+
+<HR>
+<br>
+<ADDRESS>
+<a href="http://www.ics.uci.edu/">
+Information and Computer Science</a><BR>
+<a href="http://www.uci.edu/">University of California, Irvine</a><br>
+Irvine, CA 92697-3425
+</ADDRESS>
+Last modified: 12 June 2014
+</BODY></HTML>

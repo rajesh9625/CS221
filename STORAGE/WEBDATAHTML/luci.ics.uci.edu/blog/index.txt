@@ -1,0 +1,1238 @@
+LUCI blog<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title> LUCI blog</title>
+
+<link rel="icon" href="http://luci.ics.uci.edu/logo32by32.gif" />
+
+<link rel="stylesheet" href="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/style.css" type="text/css" media="screen" />
+<link rel="pingback" href="http://luci.ics.uci.edu/blog/xmlrpc.php" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+
+<script src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/js/cufon-yui.js" type="text/javascript"></script>
+<script src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/js/DIN_30640_Std_300.font.js" type="text/javascript"></script>
+<script src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/js/DIN_30640_Std_700.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+			Cufon.set('fontFamily', 'DIN 30640 Std').replace('.widgettitle');
+			Cufon.set('fontFamily', 'DIN 30640 Std').replace('.post h2');	
+</script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/body_bg.jpg") repeat-y top; border: none; }
+
+</style>
+
+
+<link rel="alternate" type="application/rss+xml" title="LUCI blog &raquo; Feed" href="http://luci.ics.uci.edu/blog/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="LUCI blog &raquo; Comments Feed" href="http://luci.ics.uci.edu/blog/?feed=comments-rss2" />
+<link rel='stylesheet' id='gdsr_style_main-css'  href='http://luci.ics.uci.edu/blog/wp-content/plugins/gd-star-rating/css/gdsr.css.php?t=1356656932&#038;s=a05i05m20k20c01r05%23121620243046%23121620243240%23s1pchristmas%23s1pcrystal%23s1pdarkness%23s1poxygen%23s1goxygen_gif%23s1pplain%23s1ppumpkin%23s1psoft%23s1pstarrating%23s1pstarscape%23t1pclassical%23t1pstarrating%23t1gstarrating_gif%23lsgtriangles%23lsgsquares%23lsg&#038;o=off&#038;ver=1.9.22' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-subscriptions-css'  href='http://luci.ics.uci.edu/blog/wp-content/plugins/jetpack/modules/subscriptions/subscriptions.css?ver=3.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://luci.ics.uci.edu/blog/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<script type='text/javascript' src='http://luci.ics.uci.edu/blog/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://luci.ics.uci.edu/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://luci.ics.uci.edu/blog/wp-content/plugins/gd-star-rating/js/gdsr.js?ver=1.9.22'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://luci.ics.uci.edu/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://luci.ics.uci.edu/blog/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.8.5" />
+<link rel='shortlink' href='http://wp.me/WLMz' />
+<script type="text/javascript">
+//<![CDATA[
+var gdsr_cnst_nonce = "e69955d69f";
+var gdsr_cnst_ajax = "http://luci.ics.uci.edu/blog/wp-content/plugins/gd-star-rating/ajax.php";
+var gdsr_cnst_button = 0;
+var gdsr_cnst_cache = 1;
+// ]]>
+</script>
+<!--[if IE]><style type="text/css">.ratemulti .starsbar .gdcurrent { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); }</style><![endif]-->
+		<style type="text/css">
+		.better-tag-cloud-shortcode li,
+		.better-tag-cloud-shortcode li a,
+		li#better-tag-cloud ul.wp-tag-cloud li,
+		li#better-tag-cloud ul.wp-tag-cloud li a {
+			display:	inline;
+					}
+		</style> 
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="LUCI blog" />
+<meta property="og:description" content="The Laboratory for Ubiquitous Computing and Interaction" />
+<meta property="og:url" content="http://luci.ics.uci.edu/blog/" />
+<meta property="og:site_name" content="LUCI blog" />
+<meta property="og:image" content="http://wordpress.com/i/blank.jpg" />
+<meta name="twitter:site" content="@jetpack" />
+</head>
+<body class="home blog">
+
+<div id="page">
+
+
+<div id="header" role="banner">
+	<div id="logo">
+		<a href="<? bloginfo('url') ?>"><img src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/luci_logo.jpg"/></a>
+	</div><!--END logo-->
+</div><!--END header-->
+<hr />
+
+	<div id="content" class="narrowcolumn" role="main">
+
+	
+					<div class="post-3116 post type-post status-publish format-standard hentry category-news tag-contest tag-infographic" id="post-3116">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3116" rel="bookmark" title="Permanent Link to Cheese Pizza Infographic wins Pie on Pi Day">
+Cheese Pizza Infographic wins Pie on Pi Day</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p><div id="attachment_3124" style="width: 206px" class="wp-caption alignleft"><a onclick="javascript:pageTracker._trackPageview('/outgoing/infogr.am/cheese-pizza-opinions?src=web');"  href="https://infogr.am/cheese-pizza-opinions?src=web"><img src="http://luci.ics.uci.edu/wp-uploads/2014/03/pizza1-196x300.jpg" alt="Cheese Pizza Opinions" title="Cheese Pizza Opinions" width="196" height="300" class="size-medium wp-image-3124" /></a><p class="wp-caption-text">Cheese Pizza Opinions</p></div><br />
+In a very complicated execution of metaphor and infographic, LUCI&#8217;s own Ph.D. student Oliver Haimson, won the @inforgram Pie Day Contest (#PiDay2014).  The prize is also pie!  So Meta!</p>
+<p>It&#8217;s interactive!</p>
+<p>Congrats Oliver!  </p>
+<div style="clear:both"></div>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+																		<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=100000079640640');"  href='https://facebook.com/profile.php?id=100000079640640' rel='external nofollow' class='url'>Julie Darwish</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3116" rel="bookmark" title="Permanent Link to Cheese Pizza Infographic wins Pie on Pi Day">
+								Julie Darwish liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=44300835');"  href='https://facebook.com/profile.php?id=44300835' rel='external nofollow' class='url'>Katie Derthick</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3116" rel="bookmark" title="Permanent Link to Cheese Pizza Infographic wins Pie on Pi Day">
+								Katie Derthick liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=1099334098');"  href='https://facebook.com/profile.php?id=1099334098' rel='external nofollow' class='url'>Oliver Haimson</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3116" rel="bookmark" title="Permanent Link to Cheese Pizza Infographic wins Pie on Pi Day">
+								Oliver Haimson liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=10717662');"  href='https://facebook.com/profile.php?id=10717662' rel='external nofollow' class='url'>Kate Ringland</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3116" rel="bookmark" title="Permanent Link to Cheese Pizza Infographic wins Pie on Pi Day">
+								Kate Ringland liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=1099334098');"  href='https://facebook.com/profile.php?id=1099334098' rel='external nofollow' class='url'>Oliver Haimson</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3116" rel="bookmark" title="Permanent Link to Cheese Pizza Infographic wins Pie on Pi Day">
+								Thanks!!  </a>
+								</span>
+							</td>
+						</tr>
+																																													<tr>
+						<td></td>
+						<td>
+						(<a href="http://luci.ics.uci.edu/blog/?p=3116" rel="bookmark" title="Permanent Link to Cheese Pizza Infographic wins Pie on Pi Day"><a href="http://luci.ics.uci.edu/blog/?p=3116#comments" title="Comment on Cheese Pizza Infographic wins Pie on Pi Day">Read 8 Comments</a></a>)
+						</td>
+					</tr>
+										</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=contest" rel="tag">contest</a>, <a href="http://luci.ics.uci.edu/blog/?tag=infographic" rel="tag">infographic</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3116" rel="bookmark" title="Permanent Link to Cheese Pizza Infographic wins Pie on Pi Day"> 3/20/14 5:52 pm PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <a href="http://luci.ics.uci.edu/blog/?p=3116#comments" title="Comment on Cheese Pizza Infographic wins Pie on Pi Day">Add Your Comment</a>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3116.0.1.1395337952.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3108 post type-post status-publish format-standard hentry category-news tag-class tag-contest tag-teaching" id="post-3108">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3108" rel="bookmark" title="Permanent Link to Flatricide Pulgamitude">
+Flatricide Pulgamitude</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p>Prof. Patterson&#8217;s class is having an Information Retrieval contest to get the term <a onclick="javascript:pageTracker._trackPageview('/outgoing/djp3-pc2.ics.uci.edu/flatricide_pulgamitude.html');"  href="http://djp3-pc2.ics.uci.edu/flatricide_pulgamitude.html">Flatricide Pulgamitude</a> listed at the top of a search for that term.</p>
+<p>This entry is to support the contest. If you want to support his efforts include this code on your blog as well:</p>
+<blockquote><p>&lt;a href=&#8221;http://djp3-pc2.ics.uci.edu/flatricide_pulgamitude.html&#8221;&gt;Flatricide Pulgamitude&lt;/a&gt;</p></blockquote>
+<p>Update: The contest will end in 4 days!</p>
+<div style="clear:both"></div>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+						</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=class" rel="tag">class</a>, <a href="http://luci.ics.uci.edu/blog/?tag=contest" rel="tag">contest</a>, <a href="http://luci.ics.uci.edu/blog/?tag=teaching" rel="tag">teaching</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3108" rel="bookmark" title="Permanent Link to Flatricide Pulgamitude"> 1/16/14 9:06 pm PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <span>Comments Off</span>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3108.0.1.1389906401.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3103 post type-post status-publish format-standard hentry category-news tag-janet-vertesi tag-nasa tag-press tag-space" id="post-3103">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3103" rel="bookmark" title="Permanent Link to Janet supports NASA in CNN">
+Janet supports NASA in CNN</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p><center><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-uploads/2013/12/121007122043-janet-vertesi-headshot-left-tease.jpg');"  href="http://luci.ics.uci.edu/wp-uploads/2013/12/121007122043-janet-vertesi-headshot-left-tease.jpg"><img src="http://luci.ics.uci.edu/wp-uploads/2013/12/121007122043-janet-vertesi-headshot-left-tease.jpg" alt="" title="121007122043-janet-vertesi-headshot-left-tease" width="214" height="122" class="aligncenter size-full wp-image-3104" /></a></center><br />
+Janet Vertesi, a former LUCI post-doc, has just <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.cnn.com/2013/12/14/opinion/vertesi-cassini-mission/index.html');"  href="http://www.cnn.com/2013/12/14/opinion/vertesi-cassini-mission/index.html" target="_blank">penned an article</a> for CNN supporting the broad impacts of continuing funding for NASA:</p>
+<div style="clear:both"></div>
+<blockquote><p>&#8220;At a time when our math and science students are getting left behind, and the public is looking to our high tech and scientific sectors to power innovation and economic growth, we should invest in our sciences and continue to inspire the next generation. Let&#8217;s make sure our current best and brightest working on the cutting edge don&#8217;t get the pink slip.&#8221;</p></blockquote>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+																		<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/LUCI_at_UCI');"  href='https://twitter.com/LUCI_at_UCI' rel='external nofollow' class='url'>LUCI_at_UCI</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3103" rel="bookmark" title="Permanent Link to Janet supports NASA in CNN">
+								LUCI Lab alumna, Janet Vertesi, has an article up on CNN reminding us that funding NASA isn't just about cute &hellip; </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/UCI_Informatics');"  href='https://twitter.com/UCI_Informatics' rel='external nofollow' class='url'>UCI_Informatics</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3103" rel="bookmark" title="Permanent Link to Janet supports NASA in CNN">
+								LUCI Lab alumna, Janet Vertesi, has an article up on CNN reminding us that funding NASA isn't just about cute &hellip; </a>
+								</span>
+							</td>
+						</tr>
+																			</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=janet-vertesi" rel="tag">Janet Vertesi</a>, <a href="http://luci.ics.uci.edu/blog/?tag=nasa" rel="tag">NASA</a>, <a href="http://luci.ics.uci.edu/blog/?tag=press" rel="tag">press</a>, <a href="http://luci.ics.uci.edu/blog/?tag=space" rel="tag">space</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3103" rel="bookmark" title="Permanent Link to Janet supports NASA in CNN"> 12/16/13 6:04 am PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <a href="http://luci.ics.uci.edu/blog/?p=3103#comments" title="Comment on Janet supports NASA in CNN">Add Your Comment</a>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3103.0.1.1387173856.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3098 post type-post status-publish format-standard hentry category-news tag-china tag-economist tag-ethnography tag-fudan-university tag-maker tag-mobile-phone tag-sharon-xianghua-ding tag-silvia-lindtner" id="post-3098">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3098" rel="bookmark" title="Permanent Link to Made in China">
+Made in China</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p><center><br />
+<a onclick="javascript:pageTracker._trackPageview('/outgoing/www.flickr.com/photos/64011301@N08/10108663155');"  href="http://www.flickr.com/photos/64011301@N08/10108663155" title="115. Yasujiro Ozu + Kogo Noda: Tateshina Humidor by C+D, on Flickr"><img src="http://farm8.staticflickr.com/7403/10108663155_5eabbf04d1_m.jpg" width="240" height="121" alt="115. Yasujiro Ozu + Kogo Noda: Tateshina Humidor"/></a><br />
+</center></p>
+<p><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.economist.com/news/technology-quarterly/21590756-technology-and-society-china-has-its-own-distinctive-version-maker-movement');"  href="http://www.economist.com/news/technology-quarterly/21590756-technology-and-society-china-has-its-own-distinctive-version-maker-movement" target="_blank">The Economist is featuring work</a> by former LUCI grad student and current UCI Post-doc, Silvia Lindtner, about the DIY Maker movement in China.  Notably another LUCI graduate, Sharon (Xianghua) Ding is at Fudan University now:</p>
+<blockquote><p>
+&#8220;Proximity to shanzhai manufacturers could make it easier for Chinese makers to turn prototypes into mass-produced products. At the same time, the maker community could boost innovation among shanzhai firms, which are in fact more inventive than is often assumed. Silvia Lindtner, an ethnographer at University of California, Irvine and Shanghai’s Fudan University, notes that shanzhai producers have long adapted mobile phones to the needs of people in the developing world. For example, unlike mainstream manufacturers, they championed mobile phones with dual SIM slots, ideal for Africa and India where users often switch networks to reduce costs.&#8221;</p></blockquote>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+																		<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/mohans');"  href='https://twitter.com/mohans' rel='external nofollow' class='url'>mohans</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3098" rel="bookmark" title="Permanent Link to Made in China">
+								RT @LUCI_at_UCI: When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/Od4yl…  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/Variablefrog');"  href='https://twitter.com/Variablefrog' rel='external nofollow' class='url'>Variablefrog</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3098" rel="bookmark" title="Permanent Link to Made in China">
+								RT @UCI_Informatics: When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/q…  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/LUCI_at_UCI');"  href='https://twitter.com/LUCI_at_UCI' rel='external nofollow' class='url'>LUCI_at_UCI</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3098" rel="bookmark" title="Permanent Link to Made in China">
+								When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/Od4ylIr704  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/dourish');"  href='https://twitter.com/dourish' rel='external nofollow' class='url'>dourish</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3098" rel="bookmark" title="Permanent Link to Made in China">
+								RT @UCI_Informatics: When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/q…  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/UCI_Informatics');"  href='https://twitter.com/UCI_Informatics' rel='external nofollow' class='url'>UCI_Informatics</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3098" rel="bookmark" title="Permanent Link to Made in China">
+								When The Economist wants to know about the maker movement in China, they ask @LUCI_at_UCI lab's @yunnia. http://t.co/qWwSwwrMFX  </a>
+								</span>
+							</td>
+						</tr>
+																		<tr>
+						<td></td>
+						<td>
+						(<a href="http://luci.ics.uci.edu/blog/?p=3098" rel="bookmark" title="Permanent Link to Made in China"><a href="http://luci.ics.uci.edu/blog/?p=3098#comments" title="Comment on Made in China">Read 5 Comments</a></a>)
+						</td>
+					</tr>
+										</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=china" rel="tag">China</a>, <a href="http://luci.ics.uci.edu/blog/?tag=economist" rel="tag">Economist</a>, <a href="http://luci.ics.uci.edu/blog/?tag=ethnography" rel="tag">ethnography</a>, <a href="http://luci.ics.uci.edu/blog/?tag=fudan-university" rel="tag">Fudan University</a>, <a href="http://luci.ics.uci.edu/blog/?tag=maker" rel="tag">maker</a>, <a href="http://luci.ics.uci.edu/blog/?tag=mobile-phone" rel="tag">mobile phone</a>, <a href="http://luci.ics.uci.edu/blog/?tag=sharon-xianghua-ding" rel="tag">Sharon Xianghua Ding</a>, <a href="http://luci.ics.uci.edu/blog/?tag=silvia-lindtner" rel="tag">Silvia Lindtner</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3098" rel="bookmark" title="Permanent Link to Made in China"> 12/6/13 7:01 pm PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <a href="http://luci.ics.uci.edu/blog/?p=3098#comments" title="Comment on Made in China">Add Your Comment</a>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3098.0.1.1386356502.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3094 post type-post status-publish format-standard hentry category-news tag-sen-hirano" id="post-3094">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3094" rel="bookmark" title="Permanent Link to Using Gas Sensors to Classify Odors">
+Using Gas Sensors to Classify Odors</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-uploads/2013/11/6244302657_61bca12828_b.jpg');"  href="http://luci.ics.uci.edu/wp-uploads/2013/11/6244302657_61bca12828_b.jpg"><img src="http://luci.ics.uci.edu/wp-uploads/2013/11/6244302657_61bca12828_b.jpg" alt="" title="6244302657_61bca12828_b" width="200" height="199" class="alignleft size-full wp-image-3095" /></a></p>
+<p>Congratulations to LUCI grad student Sen Hirano on passing his Phase II exam with the paper, &#8220;Exploring the Potential for Gas Sensors to Classify Odors in Ubicomp Applications&#8221;</p>
+<blockquote><p>&#8220;The sense of smell is the primary method many animals use to infer information about their environment. Although human noses are less developed, it is still a sense on which we rely heavily. Ubicomp researchers have long been interested in sensing user activities in an unobtrusive manner. One way to do this sensing is through detecting the gases released during those activities. Previous research has shown that gas sensors can be used to classify odors when used in highly controlled experimental testing chambers. However, potential ubicomp applications require these sensors to perform an analysis in less controlled environments. In this paper, I present my design of uSmell—a gas sensor system for sensing smell in ubicomp environments. My system samples an odor fingerprint from a variable amount of metal oxide semiconductor (MOS) gas sensors every second. It then processes the time series data to extract three features that highlight how time and distance affect the gas sensors’ ability to react to the gas molecules released by an odor, for each five-second window. I evaluate uSmell through four experiments: basic efficacy, effects of airflow and distance, classifying bathroom activities, and tracking cooking state. These experiments demonstrated my system’s ability to classify a set of odors in a small container with 88% average accuracy, a set of odors in open air 0.5-2 m from the odor samples, bathroom activities with 93% accuracy, and doneness for waffles and popcorn with 73% and 85% accuracy, respectively. I close with a discussion on opportunities for optimizing classification, opportunities for using shapes and patterns for recognition, and future directions for using this technology to help guide cooks.&#8221;</p></blockquote>
+<div style="clear:both"></div>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+																		<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=1487711146');"  href='https://facebook.com/profile.php?id=1487711146' rel='external nofollow' class='url'>Vrishti Gulati</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3094" rel="bookmark" title="Permanent Link to Using Gas Sensors to Classify Odors">
+								Vrishti Gulati liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=14400650');"  href='https://facebook.com/profile.php?id=14400650' rel='external nofollow' class='url'>John S. Seberger</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3094" rel="bookmark" title="Permanent Link to Using Gas Sensors to Classify Odors">
+								John S. Seberger liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=692090506');"  href='https://facebook.com/profile.php?id=692090506' rel='external nofollow' class='url'>Alejandro Komai</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3094" rel="bookmark" title="Permanent Link to Using Gas Sensors to Classify Odors">
+								Alejandro Komai liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=185000430');"  href='https://facebook.com/profile.php?id=185000430' rel='external nofollow' class='url'>Lynn Dombrowski</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3094" rel="bookmark" title="Permanent Link to Using Gas Sensors to Classify Odors">
+								Lynn Dombrowski liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=589255205');"  href='https://facebook.com/profile.php?id=589255205' rel='external nofollow' class='url'>Courtney Loder</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3094" rel="bookmark" title="Permanent Link to Using Gas Sensors to Classify Odors">
+								Courtney Loder liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																																																															<tr>
+						<td></td>
+						<td>
+						(<a href="http://luci.ics.uci.edu/blog/?p=3094" rel="bookmark" title="Permanent Link to Using Gas Sensors to Classify Odors"><a href="http://luci.ics.uci.edu/blog/?p=3094#comments" title="Comment on Using Gas Sensors to Classify Odors">Read 10 Comments</a></a>)
+						</td>
+					</tr>
+										</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=sen-hirano" rel="tag">Sen Hirano</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3094" rel="bookmark" title="Permanent Link to Using Gas Sensors to Classify Odors"> 11/19/13 3:10 pm PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <a href="http://luci.ics.uci.edu/blog/?p=3094#comments" title="Comment on Using Gas Sensors to Classify Odors">Add Your Comment</a>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3094.0.1.1384873853.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3085 post type-post status-publish format-standard hentry category-news tag-autism tag-book tag-gillian-hayes tag-jed-brubaker tag-michael-yeganyan tag-publication" id="post-3085">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3085" rel="bookmark" title="Permanent Link to Tech Tools for Students with Autism">
+Tech Tools for Students with Autism</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p><center><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-uploads/2013/11/71OhGjHC2dL._SL1280_.jpg');"  href="http://luci.ics.uci.edu/wp-uploads/2013/11/71OhGjHC2dL._SL1280_.jpg"><img src="http://luci.ics.uci.edu/wp-uploads/2013/11/71OhGjHC2dL._SL1280_-708x1024.jpg" alt="" title="71OhGjHC2dL._SL1280_" width="300" class="aligncenter size-large wp-image-3086" /></a></center></p>
+<div style="clear:both"></div>
+<p>Congratulations to Prof. Gillian Hayes and Ph.D student Jed Brubaker on the publication of &#8220;Technology Tools for Students with Autism&#8221;.  Two chapters in the book have LUCI Pedigrees:</p>
+<p><strong>Using Mobile Technologies to Support Students in Work Transition Programs</strong> by Hayes, G.R., Yeganyan, M.T., Brubaker, J.R., O’Neal, L., and Hosaflook, S.W.</p>
+<p><strong>Tools to support simplified capture activities in natural environments.</strong> by Abowd, G.D., Kientz, J.A., Hayes, G.R., Arriaga, R.I, and Nazneen. </p>
+<div style="clear:both"></div>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+																		<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/LUCI_at_UCI');"  href='https://twitter.com/LUCI_at_UCI' rel='external nofollow' class='url'>LUCI_at_UCI</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3085" rel="bookmark" title="Permanent Link to Tech Tools for Students with Autism">
+								Who wrote the book on "Tech Tools for Students with Autism"? Prof. Gillian Hayes and Ph.D. Student Jed Brubaker! http://t.co/Or8qR9ii8o  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/UCI_Informatics');"  href='https://twitter.com/UCI_Informatics' rel='external nofollow' class='url'>UCI_Informatics</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3085" rel="bookmark" title="Permanent Link to Tech Tools for Students with Autism">
+								Who wrote the book on "Tech Tools for Students with Autism"? Prof. Gillian Hayes and Ph.D. Student Jed Brubaker! http://t.co/nvIKVdZHYB  </a>
+								</span>
+							</td>
+						</tr>
+																			</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=autism" rel="tag">autism</a>, <a href="http://luci.ics.uci.edu/blog/?tag=book" rel="tag">book</a>, <a href="http://luci.ics.uci.edu/blog/?tag=gillian-hayes" rel="tag">Gillian Hayes</a>, <a href="http://luci.ics.uci.edu/blog/?tag=jed-brubaker" rel="tag">Jed Brubaker</a>, <a href="http://luci.ics.uci.edu/blog/?tag=michael-yeganyan" rel="tag">Michael Yeganyan</a>, <a href="http://luci.ics.uci.edu/blog/?tag=publication" rel="tag">publication</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3085" rel="bookmark" title="Permanent Link to Tech Tools for Students with Autism"> 11/8/13 11:16 pm PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <a href="http://luci.ics.uci.edu/blog/?p=3085#comments" title="Comment on Tech Tools for Students with Autism">Add Your Comment</a>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3085.0.1.1383952575.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3080 post type-post status-publish format-standard hentry category-news tag-geof-bowker tag-infrastructure tag-kavita-philip tag-luci tag-marisa-cohn tag-melissa-mazmanian tag-organization tag-paul-dourish tag-ph-d tag-research tag-thesis" id="post-3080">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3080" rel="bookmark" title="Permanent Link to Temporalities of Sociotechnical Change in a Long-Lived System">
+Temporalities of Sociotechnical Change in a Long-Lived System</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-uploads/2010/05/82648953_f1b71703ef_m.jpg');"  href="http://luci.ics.uci.edu/wp-uploads/2010/05/82648953_f1b71703ef_m.jpg"><img src="http://luci.ics.uci.edu/wp-uploads/2010/05/82648953_f1b71703ef_m.jpg" alt="Moleskins and Pens" title="Moleskins and Pens" width="240" height="180" class="size-full wp-image-428" /></a>
+<p>Congratulations to LUCI&#8217;s newest Ph.D., Dr. Marisa Cohn.  She just passed her final defense. With her thesis: &#8220;Lifetimes and Legacies: Temporalities of Sociotechnical Change in a Long-Lived System&#8221;</p>
+<blockquote><p>
+&#8220;In studying technological change, we often seek to understand the dynamics of how technologies and practice shape each other over time, examining sites of innovation, adaptation, and appropriation, of making and re-making systems anew. However less attention has been given to how formerly cutting-edge technologies become old, how people work alongside aging and obsolescent systems, or how organizations prepare for the end of a technology’s life cycle. </p>
+<p>In this dissertation, I argue that this bias towards progressivist accounts of technological change obscures the lived temporal relations of systems work. I present research drawn from 9 months of ethnographic fieldwork with engineers at the Cassini mission to Saturn, at the Jet Propulsion Laboratory, in Pasadena, CA. Having launched in 1997, the longevity of the mission means that their work takes place in the context of an aging spacecraft and increasingly obsolescent software infrastructure. As the mission is bound to complete in 2017, engineers are beginning to plan for and work towards the end of the mission and reflect on its origins and possible legacies. </p>
+<p>Cassini thus offers a perspicuous case for understanding technological change. I examine how Cassini’s computational infrastructure mediates the work of translating across multiple temporal concerns — from multi-year science objectives to the run time of algorithms to the lifetimes and legacies of hardware and software tools. In doing so, I shift attention from understanding how technologies emerge in practice, to how people live with technological change over the duration of lived experience. I articulate a lens that reveals technological change not as a single phenomenon belonging to a totalized system (e.g., the organizational infrastructure, information ecology, or sociotechnical system) but rather as multiple modes or regimes among which people, and organizations, evaluate how technologies (ought to) develop over time.&#8221;
+</p></blockquote>
+<p>Committee: Paul Dourish (Chair), Kavita Philip, Melissa Mazmanian, Geof Bowker</p>
+<div style="clear:both"></div>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+																		<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=10717662');"  href='https://facebook.com/profile.php?id=10717662' rel='external nofollow' class='url'>Kate Ringland</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3080" rel="bookmark" title="Permanent Link to Temporalities of Sociotechnical Change in a Long-Lived System">
+								Kate Ringland liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/facebook.com/profile.php?id=118501578');"  href='https://facebook.com/profile.php?id=118501578' rel='external nofollow' class='url'>Chris Wolf</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3080" rel="bookmark" title="Permanent Link to Temporalities of Sociotechnical Change in a Long-Lived System">
+								Chris Wolf liked this on Facebook.  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/UCI_Informatics');"  href='https://twitter.com/UCI_Informatics' rel='external nofollow' class='url'>UCI_Informatics</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3080" rel="bookmark" title="Permanent Link to Temporalities of Sociotechnical Change in a Long-Lived System">
+								"Lifetimes and Legacies: Temporalities of Sociotechnical Change in a Long-Lived System"  Congratulations Dr. Cohn! http://t.co/qIGysYZ6F6  </a>
+								</span>
+							</td>
+						</tr>
+																			</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=geof-bowker" rel="tag">Geof Bowker</a>, <a href="http://luci.ics.uci.edu/blog/?tag=infrastructure" rel="tag">infrastructure</a>, <a href="http://luci.ics.uci.edu/blog/?tag=kavita-philip" rel="tag">Kavita Philip</a>, <a href="http://luci.ics.uci.edu/blog/?tag=luci" rel="tag">LUCI</a>, <a href="http://luci.ics.uci.edu/blog/?tag=marisa-cohn" rel="tag">Marisa Cohn</a>, <a href="http://luci.ics.uci.edu/blog/?tag=melissa-mazmanian" rel="tag">Melissa Mazmanian</a>, <a href="http://luci.ics.uci.edu/blog/?tag=organization" rel="tag">organization</a>, <a href="http://luci.ics.uci.edu/blog/?tag=paul-dourish" rel="tag">Paul Dourish</a>, <a href="http://luci.ics.uci.edu/blog/?tag=ph-d" rel="tag">Ph.D.</a>, <a href="http://luci.ics.uci.edu/blog/?tag=research" rel="tag">research</a>, <a href="http://luci.ics.uci.edu/blog/?tag=thesis" rel="tag">thesis</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3080" rel="bookmark" title="Permanent Link to Temporalities of Sociotechnical Change in a Long-Lived System"> 10/26/13 12:07 am PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <a href="http://luci.ics.uci.edu/blog/?p=3080#comments" title="Comment on Temporalities of Sociotechnical Change in a Long-Lived System">Add Your Comment</a>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3080.0.1.1382746062.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3073 post type-post status-publish format-standard hentry category-news tag-article tag-award tag-emr tag-informatics tag-medical-informatics tag-paper tag-so-young-lee tag-sun-young-park tag-teaching tag-yunan-chen" id="post-3073">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3073" rel="bookmark" title="Permanent Link to The effects of EMR deployment wins best paper award">
+The effects of EMR deployment wins best paper award</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-uploads/2013/10/YunanChen.jpg');"  href="http://luci.ics.uci.edu/wp-uploads/2013/10/YunanChen.jpg"><img src="http://luci.ics.uci.edu/wp-uploads/2013/10/YunanChen-300x173.jpg" alt="" title="YunanChen" width="300" height="173" class="alignleft size-medium wp-image-3074" /></a></p>
+<p>Congratulations to LUCI grad students Sun Young Park and So Young Lee and Professor <a href="http://luci.ics.uci.edu/#bioFaculty&#038;yunan" target="_blank">Yunan Chen</a> on having their paper, &#8220;<a onclick="javascript:pageTracker._trackPageview('/outgoing/www.ijmijournal.com/article/S1386-5056(11)00242-5/abstract');"  href="http://www.ijmijournal.com/article/S1386-5056(11)00242-5/abstract" target="_blank">The effects of EMR deployment on doctors&#8217; work practices: a qualitative study in the emergency department of a teaching hospital</a>&#8221; selected as Best Paper of the year.</p>
+<blockquote><p>&#8220;The International Medical Informatics Association (IMIA) publishes the annual IMIA Yearbook of Medical Informatics, a non-profit project to advance the field of medical informatics and to stimulate dissemination and exchange of information between researchers and professionals belonging to IMIA&#8217;s societies.</p>
+<p>The Yearbook of IMIA contains references, reviews, and links to the ”best of medical informatics&#8221; articles from the preceding year, together with a number of original articles, as well as a background information on IMIA.  We are very pleased to inform you that the Editorial Board of the 2013 IMIA Yearbook of Medical Informatics has selected your article for listing in the Yearbook as one of the best articles from the literature in medical informatics published in 2012 in the Human Factors subfield of Medical Informatics.</p>
+<p>The Yearbook will be made available to over 20,000 members of the healthcare and biomedical scientific communities through both a print version and online access. It reaches members in more than 40 societies participating to IMIA worldwide.&#8221;</p></blockquote>
+<div style="clear:both"></div>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+						</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=article" rel="tag">article</a>, <a href="http://luci.ics.uci.edu/blog/?tag=award" rel="tag">award</a>, <a href="http://luci.ics.uci.edu/blog/?tag=emr" rel="tag">EMR</a>, <a href="http://luci.ics.uci.edu/blog/?tag=informatics" rel="tag">Informatics</a>, <a href="http://luci.ics.uci.edu/blog/?tag=medical-informatics" rel="tag">Medical Informatics</a>, <a href="http://luci.ics.uci.edu/blog/?tag=paper" rel="tag">paper</a>, <a href="http://luci.ics.uci.edu/blog/?tag=so-young-lee" rel="tag">So Young Lee</a>, <a href="http://luci.ics.uci.edu/blog/?tag=sun-young-park" rel="tag">Sun Young Park</a>, <a href="http://luci.ics.uci.edu/blog/?tag=teaching" rel="tag">teaching</a>, <a href="http://luci.ics.uci.edu/blog/?tag=yunan-chen" rel="tag">Yunan Chen</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3073" rel="bookmark" title="Permanent Link to The effects of EMR deployment wins best paper award"> 10/3/13 5:04 am PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <span>Comments Off</span>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3073.0.1.1380776665.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3069 post type-post status-publish format-standard hentry category-news tag-article tag-death tag-ethics tag-jed-brubaker tag-social-networks" id="post-3069">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3069" rel="bookmark" title="Permanent Link to RIP Trolling">
+RIP Trolling</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.flickr.com/photos/thekmancom/2501982616/');"  href="http://www.flickr.com/photos/thekmancom/2501982616/" title="Carpenter Run Cemetary - Blue Ash OH by OhKyleL, on Flickr"><img src="http://farm3.staticflickr.com/2397/2501982616_32cf4ae135_n.jpg" width="240" height="320" alt="Carpenter Run Cemetary - Blue Ash OH"/></a></p>
+<p>The Center for Digital Ethics and Policy at Loyola University has published <a onclick="javascript:pageTracker._trackPageview('/outgoing/digitalethics.org/essays/rip-trolling/');"  href="http://digitalethics.org/essays/rip-trolling/" target="_blank">an article on RIP Trolling</a> with help from <a href="http://luci.ics.uci.edu/#bioGrads&#038;jed" target="_blank">LUCI Lab Ph.D. student Jed Brubaker</a>.</p>
+<blockquote><p>&#8220;This troll targets a type of website most would deem sacred — not a place for joking, let alone crude tormenting. It’s a type of website increasingly common in the digital age: one that memorializes the deceased.</p>
+<p>Like the Westboro Baptist Church members who picket military funerals, or thieves who study obituaries for funeral information so they can rob families who are away from home, RIP trolls target people who are mourning their loved ones.&#8221;</p></blockquote>
+<div style="clear:both"></div>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+																		<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/UCI_Informatics');"  href='https://twitter.com/UCI_Informatics' rel='external nofollow' class='url'>UCI_Informatics</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3069" rel="bookmark" title="Permanent Link to RIP Trolling">
+								RIP Trolling: Jed Brubaker, Informatics Ph.D., talks to the Center for Digital Ethics &amp; Policy http://t.co/LgofkzCOks  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/LUCI_at_UCI');"  href='https://twitter.com/LUCI_at_UCI' rel='external nofollow' class='url'>LUCI_at_UCI</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3069" rel="bookmark" title="Permanent Link to RIP Trolling">
+								RIP Trolling: Jed Brubaker, Informatics Ph.D., talks to the Center for Digital Ethics &amp; Policy http://t.co/MdFZTWuIvX  </a>
+								</span>
+							</td>
+						</tr>
+																			</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=article" rel="tag">article</a>, <a href="http://luci.ics.uci.edu/blog/?tag=death" rel="tag">death</a>, <a href="http://luci.ics.uci.edu/blog/?tag=ethics" rel="tag">ethics</a>, <a href="http://luci.ics.uci.edu/blog/?tag=jed-brubaker" rel="tag">Jed Brubaker</a>, <a href="http://luci.ics.uci.edu/blog/?tag=social-networks" rel="tag">social networks</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3069" rel="bookmark" title="Permanent Link to RIP Trolling"> 10/2/13 9:57 pm PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <a href="http://luci.ics.uci.edu/blog/?p=3069#comments" title="Comment on RIP Trolling">Add Your Comment</a>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3069.0.1.1380751023.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+					<div class="post-3061 post type-post status-publish format-standard hentry category-news tag-award tag-courtney-loder tag-facebook tag-fellowship tag-informatics tag-infrastructure tag-luci tag-privacy tag-research tag-rob-kling" id="post-3061">
+				<h2><a href="http://luci.ics.uci.edu/blog/?p=3061" rel="bookmark" title="Permanent Link to Studying Ideological Differences wins Courtney the Rob Kling Fellowship">
+Studying Ideological Differences wins Courtney the Rob Kling Fellowship</a>
+ </h2>
+                
+            <div class="postFrame test">	
+            
+				<div class="entry">
+					<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-uploads/2010/05/82648953_f1b71703ef_m.jpg');"  href="http://luci.ics.uci.edu/wp-uploads/2010/05/82648953_f1b71703ef_m.jpg"><img src="http://luci.ics.uci.edu/wp-uploads/2010/05/82648953_f1b71703ef_m.jpg" alt="Moleskins and Pens" title="Moleskins and Pens" width="240" height="180" class="size-full wp-image-428" /></a><br />
+Congratulations to Courtney Loder on winning the Rob Kling Memorial Fellowship for 2013-2014! The award comes with a cash prize to support her work on studying ideological differences online:</p>
+<blockquote><p>
+&#8220;I am interested in the ways that people engage with systems, platforms, and web services in the presence of ideological difference. For example, what options are available to someone who wants to communicate with friends and family on Facebook but who dislikes features and policies that embody the company’s philosophy of radical transparency? Stories about this tug of war between the network effects of large-scale communication platforms and personally held values in conflict with the dominant platform are increasingly common (Mainwaring, Chang, &#038; Anderson, 2004). Another example at a different level of technological scale is the person who worries about the visibility of their communication as it traverses the network. Rather than opt out of using services completely (e.g. Portwood-Stacer, 2012), a growing number of people are taking action to adjust their use to better align with their personally held values. These actions happen at every level of scale. From something as simple as using a pseudonym on Facebook to more complicated configurations of encrypted web browsing, people are engaging with—and in some cases, altering—the infrastructures underlying digitally-mediated communication. &#8221;
+</p></blockquote>
+<p>And more about the award:</p>
+<blockquote><p>
+&#8220;The Rob Kling Memorial Fellowship was created to honor the life of Rob Kling, Professor of Information and Computer Science here at UCI, who passed away in 2003. For decades, Dr. Kling was a leader and icon in the field of social informatics. He had a deep concern, personally and professionally, for the welfare of the public and the relationship of technology use to the quality of life.  His intellectual contributions to the field of social informatics have been seminal and vast.  With this fellowship, the Bren School hopes that you will be able to continue your research and dissertation.&#8221;
+</p></blockquote>
+				</div><!--END entry-->
+
+
+		<!-- recent comment of each post -->
+			
+			<table width="100%" align="center" style="border:solid rgb(200,200,200) 1px;">
+																		<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/UCIbrenICS');"  href='https://twitter.com/UCIbrenICS' rel='external nofollow' class='url'>UCIbrenICS</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3061" rel="bookmark" title="Permanent Link to Studying Ideological Differences wins Courtney the Rob Kling Fellowship">
+								RT @UCI_Informatics: Congratulations to Courtney Loder on winning the Rob Kling Fellowship to study ideological differences online! http://…  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/UCI_Informatics');"  href='https://twitter.com/UCI_Informatics' rel='external nofollow' class='url'>UCI_Informatics</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3061" rel="bookmark" title="Permanent Link to Studying Ideological Differences wins Courtney the Rob Kling Fellowship">
+								Congratulations to Courtney Loder on winning the Rob Kling Fellowship to study ideological differences online! http://t.co/9u9mupt6am  </a>
+								</span>
+							</td>
+						</tr>
+																				<tr>
+							<td style="border-right:solid rgb(200,200,200) 1px; border-bottom:solid rgb(200,200,200) 1px;">
+								Posted by <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/LUCI_at_UCI');"  href='https://twitter.com/LUCI_at_UCI' rel='external nofollow' class='url'>LUCI_at_UCI</a>							</td>
+							<td style="border-bottom:solid rgb(200,200,200) 1px;">
+								<span class="comment">
+				<a href="http://luci.ics.uci.edu/blog/?p=3061" rel="bookmark" title="Permanent Link to Studying Ideological Differences wins Courtney the Rob Kling Fellowship">
+								Congratulations to Courtney Loder on winning the Rob Kling Fellowship to study ideological differences online! http://t.co/13S1IFW2wn  </a>
+								</span>
+							</td>
+						</tr>
+																			</table>
+			<table style="margin-left:auto;margin-right:auto;;color:black;border:solid rgb(86,138,136) 0px">
+				<tr>
+					<td colspan="2" style="text-align:center">
+						Tags: <a href="http://luci.ics.uci.edu/blog/?tag=award" rel="tag">award</a>, <a href="http://luci.ics.uci.edu/blog/?tag=courtney-loder" rel="tag">Courtney Loder</a>, <a href="http://luci.ics.uci.edu/blog/?tag=facebook" rel="tag">facebook</a>, <a href="http://luci.ics.uci.edu/blog/?tag=fellowship" rel="tag">fellowship</a>, <a href="http://luci.ics.uci.edu/blog/?tag=informatics" rel="tag">Informatics</a>, <a href="http://luci.ics.uci.edu/blog/?tag=infrastructure" rel="tag">infrastructure</a>, <a href="http://luci.ics.uci.edu/blog/?tag=luci" rel="tag">LUCI</a>, <a href="http://luci.ics.uci.edu/blog/?tag=privacy" rel="tag">privacy</a>, <a href="http://luci.ics.uci.edu/blog/?tag=research" rel="tag">research</a>, <a href="http://luci.ics.uci.edu/blog/?tag=rob-kling" rel="tag">Rob Kling</a><br />					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<span style="color:black">Posted: </span> <a href="http://luci.ics.uci.edu/blog/?p=3061" rel="bookmark" title="Permanent Link to Studying Ideological Differences wins Courtney the Rob Kling Fellowship"> 10/2/13 5:24 pm PST</a> by <a href="http://luci.ics.uci.edu/blog/?author=1" title="Posts by admin" rel="author">admin</a> <a href="http://luci.ics.uci.edu/blog/?p=3061#comments" title="Comment on Studying Ideological Differences wins Courtney the Rob Kling Fellowship">Add Your Comment</a>					</td>
+				</tr>
+				<tr>
+					<td width="200px">
+						<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3061.0.1.1380734677.49.0.24.0.0.0"><strong>GD Star Rating</strong><br /><em>a WordPress rating system</em></div>					</td>
+					<td>
+											</td>
+				</tr>
+			</table>
+
+		<!-- end recent comment-->
+
+			
+            </div><!--END postFrame-->
+            </div><!--END post-numbner-->
+
+		
+		<div class="navigation" style="font-size:x-large">
+			<table>
+				<tr>
+					<td width="40%">
+						<div class="alignleft"></div>
+					</td>
+					<td>
+						<a href="http://luci.ics.uci.edu/blog">Front Page</a>
+					</td>
+					<td width="40%">
+						<div class="alignright"><a href="http://luci.ics.uci.edu/blog/?paged=2" >Older Entries &raquo;</a></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+		
+
+
+	
+	</div>
+
+	<div id="sidebar" role="complementary">
+    	<ul>
+        	<li id="text-3" class="widget widget_text">			<div class="textwidget"><img src="http://luci.ics.uci.edu/wp-uploads/2010/06/UCI_Bonfire_Aliso_Beach_29.jpg"/></div>
+		</li>        </ul>
+		<ul class="sidebarFrame">
+			<li id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://luci.ics.uci.edu/blog/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li><li id="activitysparks-3" class="widget activitysparks"><img src="http://chart.apis.google.com/chart?chs=264x50&cht=ls&chd=t:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0|00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0&chco=A8BFA2,A76229&chdl=Posts|Comments&chma=5,5,5,5|90,20"></li><li id="text-6" class="widget widget_text"><h2 class="widgettitle">Lots of Thumbs-Up For:</h2>			<div class="textwidget"><div style="background-color:#FFFFFF"><table><thead><td class="title">Title</td><td class="votes">Votes</td><td class="rating">Rating</td></thead><tbody>No results.</tbody></table></div></div>
+		</li><li id="rssblogroll-3" class="widget RSSBlogroll"><h2 class="widgettitle">We Blog Lots of Places</h2><ul><li><a href="http://tagide.com/blog/research/distributed-systems-testing-the-lost-world/" title="After failing to find good papers about distributed systems testing for many months, yesterday I asked a question in Twitter: Twitter friends: what papers or frameworks do you recommend regarding dist&hellip;  Tagide January 23, 2016" target="_blank">Distributed Systems Testing: The Lost World</a>  <cite>crista</cite></li><li><a href="http://clrn.dmlhub.net/content/reading-the-runes-to-anticipate-childrens-digital-futures" title="Technology use is changing fast, which makes things difficult for parents trying to prepare their children for the future. Sonia Livingstone looks at the recent CHILDWISE report¹ and provides four key&hellip;  Connected Learning Research Network January 22, 2016" target="_blank">Reading the Runes to Anticipate Children’s Digital Futures</a>  <cite>Jamieson Pond</cite></li><li><a href="http://clrn.dmlhub.net/content/book-review-disconnected-youth-new-media-and-the-ethics-gap" title="Guest blogger Wendy M. Grossman wonders whether it is right to be optimistic about our digital futures? She discusses Carrie James‘ new book Disconnected: youth, new media and the ethics gap in which&hellip;  Connected Learning Research Network January 20, 2016" target="_blank">Book Review: Disconnected: Youth, New Media and the Ethics Gap</a>  <cite>Jamieson Pond</cite></li><li><a href="http://ericbaumer.com/2015/12/21/paper-in-social-media-society-with-press-coverage/" title="Last week, my co-authors and I had a paper appear on factors that influence how likely someone who leaves Facebook is to return to site. The paper was published in the stellar new journal Social Media&hellip;   December 21, 2015" target="_blank">Paper in Social Media + Society with Press Coverage</a>  <cite>epsb</cite></li><li><a href="http://tagide.com/blog/research/architectures-for-massively-multi-user-environments/" title="See my post at the IEEE Software Blog.&hellip;  Tagide December 17, 2015" target="_blank">Architectures for Massively Multi-User Environments</a>  <cite>crista</cite></li><li><a href="http://ericbaumer.com/2015/12/10/how-non-use-experiences-influence-the-likelihood-of-social-media-reversion-perceived-addiction-boundary-negotiation-subjective-mood-and-social-connections/" title="Baumer, E.P.S., Guha, S., Quan, E., Mimno, D., &amp; Gay, G. (2015). How Non-use Experiences Influence the Likelihood of Social Media Reversion: Perceived Addiction, Boundary Negotiation, Subjective M&hellip;   December 10, 2015" target="_blank">How Non-use Experiences Influence the Likelihood of Social Media Reversion: Perceived Addiction, Boundary Negotiation, Subjective Mood, and Social Connections</a>  <cite>epsb</cite></li><li><a href="http://www.differenceengines.com/?p=1091" title="Do you love yoga, curry, and henna? Should you be worried about Hindu education in California? It depends. Who’s allowed to salute the sun? What’s cooking? Who’s teaching whom? And how? A range of Hin&hellip;  Difference Engines December 10, 2015" target="_blank">Dharma in California?</a>  <cite>Zinc Sulfate</cite></li><li><a href="http://www.itofisher.com/mito/weblog/2015/11/writing_with_friends_participa.html" title="Emerging from my turkey coma, I am writing with much gratitude for my two dear friends and colleagues Henry Jenkins and danah boyd. I am a bit late to the party in announcing that the book we wrote to&hellip;  Mimi Ito - Weblog November 30, 2015" target="_blank">Writing with friends -- Participatory Culture in a Networked Era</a>  <cite>Mizuko Ito</cite></li><li><a href="http://www.star-uci.org/2015/11/07/braintrack/" title="Children suffering from a mild Traumatic Brain Injury (mTBI) are currently unlikely to follow recovery protocols and little is known about the recovery process of children who have suffered an mTBI. B&hellip;  STAR :: Social and Technological Action Research Group November 8, 2015" target="_blank">BrainTrack</a>  <cite>admin</cite></li><li><a href="http://www.star-uci.org/2015/11/07/software-developer-accessibility-awareness/" title="Standards for governing accessibility in software systems were established over two decades ago, yet poor compliance continues to pose challenges for the individuals dependent on these systems. This p&hellip;  STAR :: Social and Technological Action Research Group November 8, 2015" target="_blank">Software Developer Accessibility Awareness</a>  <cite>admin</cite></li><li><a href="http://www.differenceengines.com/?p=1083" title=" “Hey hey, ho ho, Western culture’s got to go” That’s a chant from the 1980s. Student protests on California campuses (at Stanford, most famously) brought national attention to the problems of Euro-ce&hellip;  Difference Engines August 22, 2015" target="_blank">Canon Politics</a>  <cite>Kavita</cite></li><li><a href="http://www.itofisher.com/mito/weblog/2015/03/connected_camps_summer_of_mine.html" title="I am stoked to announce today a project today that I&#039;m kicking off with co-founders Tara Brown and Katie Salen. It&#039;s a virtual summer camp for Minecraft, being run as a co-venture between ou&hellip;  Mimi Ito - Weblog March 12, 2015" target="_blank">Connected Camps Summer of Minecraft</a>  <cite>Mizuko Ito</cite></li></ul></li><li id="nktagcloud-3" class="widget widget_nktagcloud"><h2 class="widgettitle">Tags</h2><a href='http://luci.ics.uci.edu/blog/?tag=luci'  class='tag-link-334 nktagcloud-22' title='99 topics' style='font-size: 22pt;'>LUCI</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=design'  class='tag-link-122 nktagcloud-20' title='88 topics' style='font-size: 20.43pt;'>design</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=chi'  class='tag-link-181 nktagcloud-17' title='67 topics' style='font-size: 17.43pt;'>CHI</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=art'  class='tag-link-23 nktagcloud-17' title='65 topics' style='font-size: 17.14pt;'>art</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=donald-j-patterson'  class='tag-link-51 nktagcloud-16' title='62 topics' style='font-size: 16.71pt;'>Donald J. Patterson</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=paper-published'  class='tag-link-18 nktagcloud-15' title='54 topics' style='font-size: 15.57pt;'>paper published</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=article'  class='tag-link-143 nktagcloud-15' title='53 topics' style='font-size: 15.43pt;'>article</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ai'  class='tag-link-355 nktagcloud-15' title='52 topics' style='font-size: 15.29pt;'>AI</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=photos'  class='tag-link-137 nktagcloud-14' title='49 topics' style='font-size: 14.86pt;'>Photos</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=fun'  class='tag-link-136 nktagcloud-14' title='49 topics' style='font-size: 14.86pt;'>fun</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=award'  class='tag-link-105 nktagcloud-14' title='48 topics' style='font-size: 14.71pt;'>award</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=paul-dourish'  class='tag-link-210 nktagcloud-14' title='47 topics' style='font-size: 14.57pt;'>Paul Dourish</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ubiquitous-computing'  class='tag-link-50 nktagcloud-14' title='45 topics' style='font-size: 14.29pt;'>ubiquitous computing</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=gillian-r-hayes'  class='tag-link-64 nktagcloud-13' title='42 topics' style='font-size: 13.86pt;'>Gillian R. Hayes</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=video'  class='tag-link-290 nktagcloud-13' title='39 topics' style='font-size: 13.43pt;'>video</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=conference'  class='tag-link-354 nktagcloud-13' title='37 topics' style='font-size: 13.14pt;'>conference</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=research'  class='tag-link-436 nktagcloud-12' title='34 topics' style='font-size: 12.71pt;'>research</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=education'  class='tag-link-69 nktagcloud-12' title='34 topics' style='font-size: 12.71pt;'>education</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=app'  class='tag-link-28 nktagcloud-12' title='34 topics' style='font-size: 12.71pt;'>app</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=uci'  class='tag-link-166 nktagcloud-12' title='33 topics' style='font-size: 12.57pt;'>UCI</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ph-d'  class='tag-link-112 nktagcloud-12' title='29 topics' style='font-size: 12pt;'>Ph.D.</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=stem'  class='tag-link-322 nktagcloud-11' title='28 topics' style='font-size: 11.86pt;'>STEM</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=mobile-phone'  class='tag-link-163 nktagcloud-11' title='28 topics' style='font-size: 11.86pt;'>mobile phone</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=interface'  class='tag-link-21 nktagcloud-11' title='28 topics' style='font-size: 11.86pt;'>interface</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=hci'  class='tag-link-90 nktagcloud-11' title='27 topics' style='font-size: 11.71pt;'>HCI</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=infrastructure'  class='tag-link-169 nktagcloud-11' title='26 topics' style='font-size: 11.57pt;'>infrastructure</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=privacy'  class='tag-link-251 nktagcloud-11' title='23 topics' style='font-size: 11.14pt;'>privacy</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=bill-tomlinson'  class='tag-link-104 nktagcloud-11' title='23 topics' style='font-size: 11.14pt;'>Bill Tomlinson</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=workshop'  class='tag-link-224 nktagcloud-11' title='23 topics' style='font-size: 11.14pt;'>workshop</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=pervasive-computing'  class='tag-link-81 nktagcloud-11' title='22 topics' style='font-size: 11pt;'>pervasive computing</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=facebook'  class='tag-link-71 nktagcloud-11' title='22 topics' style='font-size: 11pt;'>facebook</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=melissa-mazmanian'  class='tag-link-301 nktagcloud-10' title='21 topics' style='font-size: 10.86pt;'>Melissa Mazmanian</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=mit'  class='tag-link-102 nktagcloud-10' title='21 topics' style='font-size: 10.86pt;'>MIT</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=cscw'  class='tag-link-209 nktagcloud-10' title='20 topics' style='font-size: 10.71pt;'>CSCW</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=context'  class='tag-link-264 nktagcloud-10' title='20 topics' style='font-size: 10.71pt;'>context</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=health-care'  class='tag-link-113 nktagcloud-10' title='20 topics' style='font-size: 10.71pt;'>Health Care</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=lilly-irani'  class='tag-link-120 nktagcloud-10' title='20 topics' style='font-size: 10.71pt;'>Lilly Irani</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=jed-brubaker'  class='tag-link-237 nktagcloud-10' title='19 topics' style='font-size: 10.57pt;'>Jed Brubaker</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=intel'  class='tag-link-229 nktagcloud-10' title='19 topics' style='font-size: 10.57pt;'>Intel</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=social-networks'  class='tag-link-75 nktagcloud-10' title='19 topics' style='font-size: 10.57pt;'>social networks</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=garnet-hertz'  class='tag-link-239 nktagcloud-10' title='18 topics' style='font-size: 10.43pt;'>Garnet Hertz</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=press'  class='tag-link-408 nktagcloud-10' title='18 topics' style='font-size: 10.43pt;'>press</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=demo'  class='tag-link-345 nktagcloud-10' title='17 topics' style='font-size: 10.29pt;'>demo</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=china'  class='tag-link-177 nktagcloud-10' title='17 topics' style='font-size: 10.29pt;'>China</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=culture'  class='tag-link-329 nktagcloud-10' title='17 topics' style='font-size: 10.29pt;'>culture</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=paper'  class='tag-link-452 nktagcloud-10' title='16 topics' style='font-size: 10.14pt;'>paper</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=podcast'  class='tag-link-236 nktagcloud-10' title='16 topics' style='font-size: 10.14pt;'>podcast</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=youtube'  class='tag-link-72 nktagcloud-10' title='16 topics' style='font-size: 10.14pt;'>youtube</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=collaboration'  class='tag-link-168 nktagcloud-10' title='16 topics' style='font-size: 10.14pt;'>collaboration</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=sustainability'  class='tag-link-74 nktagcloud-10' title='16 topics' style='font-size: 10.14pt;'>sustainability</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=medical-informatics'  class='tag-link-198 nktagcloud-10' title='15 topics' style='font-size: 10pt;'>Medical Informatics</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=silvia-lindtner'  class='tag-link-175 nktagcloud-10' title='15 topics' style='font-size: 10pt;'>Silvia Lindtner</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=google'  class='tag-link-99 nktagcloud-10' title='15 topics' style='font-size: 10pt;'>Google</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=geolocation'  class='tag-link-170 nktagcloud-9' title='14 topics' style='font-size: 9.86pt;'>geolocation</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=visualization'  class='tag-link-27 nktagcloud-9' title='14 topics' style='font-size: 9.86pt;'>visualization</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=twitter'  class='tag-link-60 nktagcloud-9' title='14 topics' style='font-size: 9.86pt;'>twitter</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=grant'  class='tag-link-356 nktagcloud-9' title='13 topics' style='font-size: 9.71pt;'>grant</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=anthropology'  class='tag-link-232 nktagcloud-9' title='13 topics' style='font-size: 9.71pt;'>anthropology</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=thesis'  class='tag-link-338 nktagcloud-9' title='13 topics' style='font-size: 9.71pt;'>thesis</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=yunan-chen'  class='tag-link-197 nktagcloud-9' title='13 topics' style='font-size: 9.71pt;'>Yunan Chen</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=bonnie-nardi'  class='tag-link-148 nktagcloud-9' title='13 topics' style='font-size: 9.71pt;'>Bonnie Nardi</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=sen-hirano'  class='tag-link-66 nktagcloud-9' title='13 topics' style='font-size: 9.71pt;'>Sen Hirano</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=nomatic'  class='tag-link-367 nktagcloud-9' title='12 topics' style='font-size: 9.57pt;'>Nomatic</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=eric-kabisch'  class='tag-link-262 nktagcloud-9' title='12 topics' style='font-size: 9.57pt;'>Eric Kabisch</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=mechanical-turk'  class='tag-link-54 nktagcloud-9' title='12 topics' style='font-size: 9.57pt;'>Mechanical Turk</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=contest'  class='tag-link-100 nktagcloud-9' title='12 topics' style='font-size: 9.57pt;'>contest</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=interactive-visualization'  class='tag-link-30 nktagcloud-9' title='12 topics' style='font-size: 9.57pt;'>interactive visualization</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=children'  class='tag-link-61 nktagcloud-9' title='12 topics' style='font-size: 9.57pt;'>children</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ami'  class='tag-link-293 nktagcloud-9' title='11 topics' style='font-size: 9.43pt;'>AmI</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ethnography'  class='tag-link-315 nktagcloud-9' title='11 topics' style='font-size: 9.43pt;'>ethnography</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=sam-kaufman'  class='tag-link-179 nktagcloud-9' title='11 topics' style='font-size: 9.43pt;'>Sam Kaufman</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=crista-lopes'  class='tag-link-83 nktagcloud-9' title='11 topics' style='font-size: 9.43pt;'>Crista Lopes</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=surveillance'  class='tag-link-199 nktagcloud-9' title='11 topics' style='font-size: 9.43pt;'>surveillance</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=star'  class='tag-link-182 nktagcloud-9' title='11 topics' style='font-size: 9.43pt;'>STAR</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=nsf'  class='tag-link-235 nktagcloud-9' title='10 topics' style='font-size: 9.29pt;'>NSF</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=vehicle'  class='tag-link-220 nktagcloud-9' title='10 topics' style='font-size: 9.29pt;'>vehicle</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=sharon-xianghua-ding'  class='tag-link-111 nktagcloud-9' title='10 topics' style='font-size: 9.29pt;'>Sharon Xianghua Ding</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=autism'  class='tag-link-62 nktagcloud-9' title='10 topics' style='font-size: 9.29pt;'>autism</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=microsoft'  class='tag-link-42 nktagcloud-9' title='10 topics' style='font-size: 9.29pt;'>Microsoft</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=mobile-app'  class='tag-link-103 nktagcloud-9' title='10 topics' style='font-size: 9.29pt;'>mobile app</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=internship'  class='tag-link-368 nktagcloud-9' title='9 topics' style='font-size: 9.14pt;'>internship</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=gillian-hayes'  class='tag-link-313 nktagcloud-9' title='9 topics' style='font-size: 9.14pt;'>Gillian Hayes</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=six-silberman'  class='tag-link-256 nktagcloud-9' title='9 topics' style='font-size: 9.14pt;'>Six Silberman</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=amanda-williams'  class='tag-link-278 nktagcloud-9' title='9 topics' style='font-size: 9.14pt;'>Amanda WIlliams</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=eric-baumer'  class='tag-link-118 nktagcloud-9' title='9 topics' style='font-size: 9.14pt;'>Eric Baumer</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ieee'  class='tag-link-85 nktagcloud-9' title='9 topics' style='font-size: 9.14pt;'>IEEE</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=pod'  class='tag-link-284 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>pod</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=italy'  class='tag-link-285 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>Italy</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=mimi-ito'  class='tag-link-230 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>Mimi Ito</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=machine-learning'  class='tag-link-300 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>machine learning</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=information-retrieval'  class='tag-link-299 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>information retrieval</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=calit2'  class='tag-link-76 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>CalIT2</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=japan'  class='tag-link-33 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>japan</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=australia'  class='tag-link-203 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>Australia</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=physical-sensors'  class='tag-link-34 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>physical sensors</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=joel-ross'  class='tag-link-123 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>Joel Ross</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=hacking'  class='tag-link-185 nktagcloud-9' title='8 topics' style='font-size: 9pt;'>hacking</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=food'  class='tag-link-371 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>food</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=map'  class='tag-link-305 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>map</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=sun-young-park'  class='tag-link-391 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>Sun Young Park</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=creative-expression'  class='tag-link-3 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>Creative Expression</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=teaching'  class='tag-link-414 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>teaching</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=nick-noack'  class='tag-link-344 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>Nick Noack</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=judy-chen'  class='tag-link-180 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>Judy Chen</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=android'  class='tag-link-109 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>Android</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=humor'  class='tag-link-70 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>humor</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=monica-tentori'  class='tag-link-153 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>Monica Tentori</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=gabriela-marcu'  class='tag-link-63 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>Gabriela Marcu</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ngo'  class='tag-link-132 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>NGO</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=augmented-reality'  class='tag-link-147 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>Augmented Reality</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ict4d'  class='tag-link-152 nktagcloud-8' title='7 topics' style='font-size: 8.86pt;'>ICT4D</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ipod'  class='tag-link-304 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>ipod</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=gps'  class='tag-link-340 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>GPS</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=informatics'  class='tag-link-492 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>Informatics</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=media'  class='tag-link-385 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>media</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=lynn-dombrowski'  class='tag-link-267 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>Lynn Dombrowski</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=talk'  class='tag-link-455 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>talk</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=commentary'  class='tag-link-5 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>Commentary</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=book-published'  class='tag-link-141 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>book published</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=david-h-nguyen'  class='tag-link-67 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>David H. Nguyen</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=instant-messenger'  class='tag-link-259 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>instant messenger</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=mohamad-monibi'  class='tag-link-65 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>Mohamad Monibi</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=africa'  class='tag-link-202 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>Africa</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=bill-maurer'  class='tag-link-150 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>Bill Maurer</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=blogs'  class='tag-link-186 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>blogs</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=gaming'  class='tag-link-178 nktagcloud-8' title='6 topics' style='font-size: 8.71pt;'>gaming</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=urban-computing'  class='tag-link-281 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>urban computing</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=gloria-mark'  class='tag-link-274 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Gloria Mark</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ellie-harmon'  class='tag-link-272 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Ellie Harmon</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=rfid'  class='tag-link-288 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>RFID</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=charlotte-lee'  class='tag-link-372 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Charlotte Lee</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=kavita-philip'  class='tag-link-314 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Kavita Philip</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ubicomp'  class='tag-link-523 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>UBICOMP</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=study'  class='tag-link-453 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>study</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=bluetooth'  class='tag-link-263 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>bluetooth</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=gadget'  class='tag-link-13 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Gadget</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=tech-report-published'  class='tag-link-119 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>tech report published</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=wikipedia'  class='tag-link-139 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Wikipedia</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=karen-cheng'  class='tag-link-116 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Karen Cheng</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=children-with-autism'  class='tag-link-43 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>children with autism</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=bruce-sterling'  class='tag-link-24 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Bruce Sterling</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=india'  class='tag-link-212 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>India</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=telecom-companies'  class='tag-link-31 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>telecom companies</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=gesture-recognition'  class='tag-link-188 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Gesture Recognition</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=nithya-sambasivan'  class='tag-link-151 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>Nithya Sambasivan</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=scholarship'  class='tag-link-183 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>scholarship</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=myspace'  class='tag-link-173 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>myspace</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=activity-recognition'  class='tag-link-155 nktagcloud-8' title='5 topics' style='font-size: 8.57pt;'>activity recognition</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=korea'  class='tag-link-343 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Korea</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=code'  class='tag-link-346 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>code</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=t-mobile'  class='tag-link-296 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>T-Mobile</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=navigation'  class='tag-link-321 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>navigation</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=iot'  class='tag-link-375 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>iot</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=smartphone'  class='tag-link-483 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>smartphone</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=kinect'  class='tag-link-387 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>kinect</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=architecture'  class='tag-link-286 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>architecture</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=blog'  class='tag-link-442 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>blog</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=scott-mainwaring'  class='tag-link-416 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Scott Mainwaring</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=transportation'  class='tag-link-411 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>transportation</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=johanna-brewer'  class='tag-link-339 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Johanna Brewer</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=coffee'  class='tag-link-108 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>coffee</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=michael-yeganyan'  class='tag-link-68 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Michael Yeganyan</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=recognition-algorithms'  class='tag-link-37 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>recognition algorithms</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=3d-printing'  class='tag-link-25 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>3d printing</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=virtual-reality'  class='tag-link-20 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>virtual reality</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ken-anderson'  class='tag-link-279 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Ken Anderson</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=rapid-prototyping'  class='tag-link-26 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>rapid prototyping</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=usc'  class='tag-link-276 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>USC</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=janet-vertesi'  class='tag-link-243 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Janet Vertesi</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=lecture'  class='tag-link-114 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Lecture</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=vrishti-gulati'  class='tag-link-225 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Vrishti Gulati</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=aids'  class='tag-link-157 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>AIDS</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=seattle'  class='tag-link-213 nktagcloud-8' title='4 topics' style='font-size: 8.43pt;'>Seattle</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=marisa-cohn'  class='tag-link-328 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Marisa Cohn</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=outreach'  class='tag-link-316 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>outreach</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=jim-jones'  class='tag-link-306 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Jim Jones</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=ramesh-jain'  class='tag-link-311 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Ramesh Jain</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=vending-machine'  class='tag-link-289 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>vending machine</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=politics'  class='tag-link-330 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>politics</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=yasser-ganjisaffar'  class='tag-link-298 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Yasser Ganjisaffar</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=bitcoin'  class='tag-link-489 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>bitcoin</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=arduino'  class='tag-link-332 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>arduino</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=fellowship'  class='tag-link-517 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>fellowship</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=michael-curry'  class='tag-link-548 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Michael Curry</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=circuit-bending'  class='tag-link-275 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>circuit bending</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=turkopticon'  class='tag-link-503 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Turkopticon</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=organization'  class='tag-link-485 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>organization</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=geoffrey-bowker'  class='tag-link-388 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Geoffrey Bowker</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=geof-bowker'  class='tag-link-421 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Geof Bowker</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=urop'  class='tag-link-450 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>UROP</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=so-young-lee'  class='tag-link-327 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>So Young Lee</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=solar'  class='tag-link-162 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>solar</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=software-engineering'  class='tag-link-87 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>software engineering</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=parc'  class='tag-link-146 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>PARC</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=alladi-venkatesh'  class='tag-link-79 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Alladi Venkatesh</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=video-data'  class='tag-link-58 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>video data</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=safety'  class='tag-link-261 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>safety</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=games'  class='tag-link-382 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>games</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=digital-camera'  class='tag-link-41 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>digital camera</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=fulbright'  class='tag-link-121 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Fulbright</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=kiosk'  class='tag-link-226 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>kiosk</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=susan-sim'  class='tag-link-245 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Susan Sim</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=mohan-singh'  class='tag-link-187 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Mohan Singh</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=automotive-ui'  class='tag-link-248 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>automotive UI</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=genevieve-bell'  class='tag-link-228 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Genevieve Bell</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=leslie-liu'  class='tag-link-208 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Leslie Liu</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=cerebral-palsy'  class='tag-link-189 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Cerebral Palsy</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=laptop'  class='tag-link-190 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>laptop</a><span class="nktagcloud-separator">:</span>
+<a href='http://luci.ics.uci.edu/blog/?tag=nitin-shantharam'  class='tag-link-195 nktagcloud-8' title='3 topics' style='font-size: 8.29pt;'>Nitin Shantharam</a></li>		</ul>
+        <ul class="sidebarFrame">
+        	<li id="text-4" class="widget widget_text">			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "pub-1141908690853170";
+/* 250x250, created 5/5/10 for LUCI blog */
+google_ad_slot = "3888160434";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</li><li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>		<ul>
+			<li><a href='http://luci.ics.uci.edu/blog/?m=201403'>March 2014</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201401'>January 2014</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201312'>December 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201311'>November 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201310'>October 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201309'>September 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201308'>August 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201307'>July 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201306'>June 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201305'>May 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201304'>April 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201303'>March 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201302'>February 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201301'>January 2013</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201212'>December 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201211'>November 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201210'>October 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201209'>September 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201208'>August 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201207'>July 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201206'>June 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201205'>May 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201204'>April 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201203'>March 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201202'>February 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201201'>January 2012</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201112'>December 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201111'>November 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201110'>October 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201109'>September 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201108'>August 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201107'>July 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201106'>June 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201105'>May 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201104'>April 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201103'>March 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201102'>February 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201101'>January 2011</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201012'>December 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201011'>November 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201010'>October 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201009'>September 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201008'>August 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201007'>July 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201006'>June 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201005'>May 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201004'>April 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201003'>March 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201002'>February 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=201001'>January 2010</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200912'>December 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200911'>November 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200910'>October 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200909'>September 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200908'>August 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200907'>July 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200906'>June 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200905'>May 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200904'>April 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200902'>February 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200901'>January 2009</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200812'>December 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200811'>November 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200810'>October 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200809'>September 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200808'>August 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200807'>July 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200806'>June 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200805'>May 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200804'>April 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200803'>March 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200802'>February 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200801'>January 2008</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200712'>December 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200711'>November 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200710'>October 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200709'>September 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200708'>August 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200707'>July 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200706'>June 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200705'>May 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200704'>April 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200703'>March 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200702'>February 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200701'>January 2007</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200612'>December 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200611'>November 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200610'>October 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200609'>September 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200608'>August 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200607'>July 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200606'>June 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200605'>May 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200604'>April 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200603'>March 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200602'>February 2006</a></li>
+	<li><a href='http://luci.ics.uci.edu/blog/?m=200601'>January 2006</a></li>
+		</ul>
+</li>        </ul>
+	</div>
+
+
+
+	<hr />
+     <div class="clear"></div>
+    </div><!--END page-->
+    
+   
+    
+	<div id="footer" role="contentinfo">
+    <div id="footer-wrap">
+    	<div class="leftAligned">
+        	<a href="http://djp3-pc2.ics.uci.edu/LUCI_blog/contrib.php" target="_blank"><img src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/footer_submit_your_stories.jpg" class="inFooter"/></a>
+        </div><!--END leftAligned-->
+        
+        <div id="footerText" class="centerAligned">
+        	<p>Copyright 2010 - all rights reserved</p>
+        </div><!--END centerAligned-->
+        
+        <div class="rightAligned">
+        	<img src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/footer_follow_us_on.jpg" class="inFooter" id="follow_us_on"/>
+            <a href="http://twitter.com/LUCI_at_UCI" target="_blank"><img src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/footer_twiter_logo.jpg" class="footerIco"/></a>
+            <a href="http://www.facebook.com/pages/LUCI-The-Laboratory-for-Ubiquitous-Computing-and-Interaction-a/119724564723161?v=wall" target="_blank"><img src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/footer_facebook_logo.jpg" class="footerIco"/></a>
+            <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=320997099" target="_blank"><img src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/footer_music_logo.jpg" class="footerIco"/></a>
+            <a href="http://luci.ics.uci.edu/blog/?feed=rss2" target="_blank"><img src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/footer_rss_logo.jpg" class="footerIco"/></a>
+            <a href="?page_id=442"><img src="http://luci.ics.uci.edu/blog/wp-content/themes/lucy/images/footer_envelope_logo.jpg" class="inFooter" id="envelope"/></a>
+        </div><!--END rightAligned-->
+        
+        
+	
+	</div><!--END footer-wrap-->
+    </div><!--END footer-->
+    
+
+	<script type="text/javascript"> 
+		Cufon.set('fontFamily', 'DIN 30640 Std').replace('.post h2');
+		Cufon.now(); 
+    </script>
+
+		
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-338915-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201606'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2016Febaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://luci.ics.uci.edu/blog/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.8.5'></script>
+
+	<script src="http://stats.wp.com/e-201606.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:3.1.1',blog:'14006703',post:'0',tz:'-8'});
+	var load_cmc = function(){linktracker_init(14006703,0,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script></body>
+</html>

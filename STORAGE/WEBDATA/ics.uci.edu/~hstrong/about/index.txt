@@ -1,0 +1,46 @@
+About · Homer StrongHomer Strong
+        
+      
+      Statistics PhD student at University of California, Irvine
+    
+
+    
+      Home
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            About
+          
+        
+      
+        
+      
+        
+          
+        
+      
+
+
+      GitHub
+      Currently v0.0.2
+    
+
+    © 2015. All rights reserved.
+  
+
+
+
+    
+      
+  About
+  My interests include statistics, machine learning, distributed systems, information visualization, and functional programming.
+
+I hail from western Colorado. My undergraduate degree in Mathematics is from Reed College in Portland, Oregon. During college I studied abroad through the Budapest Semesters in Mathematics program. Between schools I worked in the private sector, notably co-founding a natural language analytics startup, Lucky Sort.

@@ -1,0 +1,154 @@
+Computational Vision | ICS | UC IrvineComputational Vision at UC Irvine  
+  
+  
+    homeprojectspeoplepublicationsdatasetseventscoursescontactlinks
+  
+
+  
+    
+      Overview:
+      
+        
+
+Consider the image patches at right. Though they lack global context, it is
+often clear which contain object boundaries and which do not. We are developing
+algorithms that integrate local image measurements in order to provide global
+explanations of scenes in terms of objects, surfaces and their spatial
+relations. This includes algorithms for bottom-up boundary detection and
+segmentation from local features as well integrating top-down knowledge such as
+the detection of familiar objects.
+
+
+      
+    
+    
+      Publications:
+      
+        
+
+  
+  Planar Ultrametrics for Image SegmentationJulian Yarkony, Charless FowlkesNeural Information Processing Systems (NIPS), 2015.[pdf]
+
+
+  
+  Oriented Edge Forests for Boundary DetectionSam Hallman, Charless FowlkesCVPR, 2015.[pdf]
+
+
+  
+  Using segmentation to predict the absence of occluded partsGolnaz Ghiasi, Charless FowlkesBritish Machine Vision Conference (BMVC), 2015.[pdf]
+
+
+  
+  Hierarchical Planar Correlation Clustering for Cell SegmentationJulian Yarkony, Chong Zhang, Charless FowlkesEnergy Minimization Methods in Computer Vision and Pattern Recognition, 2015, 492--504.[pdf]
+
+
+  
+  Articulated pose estimation with flexible mixtures-of-partsYi Yang, Deva RamananIEEE TPAMI, 2013.[pdf]
+
+
+  
+  Layered Object Models for Image SegmentationYi Yang, Sam Hallman, Deva Ramanan, Charless FowlkesIEEE TPAMI, 2011.[pdf]
+
+
+  
+  Contour Detection and Hierarchical Image SegmentationPablo Arbelaez, Michael Maire, Charless Fowlkes, Jitendra MalikIEEE PAMI, 2011, 33(5).[pdf]
+
+
+  
+  Tightening MRF Relaxations with Planar SubproblemsJulian Yarkony, Ragib Morshed, Alex Ihler, Charless FowlkesUAI, 2011.[pdf]
+
+
+  
+  Shape-based Pedestrian ParsingYihang Bo, Charless FowlkesCVPR, 2011.[pdf]
+
+
+  
+  Planar Cycle Covering GraphsJulian Yarkony, Alex Ihler, Charless FowlkesUAI, 2011.[pdf]
+
+
+  
+  Integrating Local Classifiers through Nonlinear Dynamics on Label Graphs with an Application to Image SegmentationYutian Chen, Andrew Gelfand, Charless Fowlkes, Max WellingProc. of the International Confernece on Computer Vision, 2011.[pdf]
+
+
+  
+  Layered Object Detection for Multi-Class SegmentationYi Yang, Sam Hallman, Deva Ramanan, Charless FowlkesCVPR, 2010.[pdf]
+
+
+  
+  Covering Trees and Lower-bounds on Quadratic AssignmentJulian Yarkony, Charless Fowlkes, Alex IhlerCVPR, 2010.[pdf]
+
+
+  
+  From Contours to Regions: An Empirical EvaluationPablo Arbelaez, Michael Maire, Charless Fowlkes, Jitendra MalikCVPR, 2009.[pdf]
+
+
+  
+  Using Contours to Detect and Localize Junctions in Natural ImagesMichael Maire, Pablo Arbelaez, Charless Fowlkes, Jitendra MalikCVPR, 2008.[pdf]
+
+
+  
+  Unsupervised Learning of Visual TaxonomiesEvgeniy Bart, Ian Porteous, Pietro Perona, Max WellingCVPR, 2008.[pdf]
+
+
+  
+  Learning Probabilistic Models for Contour Completion.Xiaofeng Ren, Charless Fowlkes, Jitendra MalikIJCV, 2008, 77, 47-63.[pdf]
+
+
+  
+  Cue Integration for Figure/Ground LabelingXiaofeng Ren, Charless Fowlkes, Jitendra MalikAdvances in Neural Information Processing Systems 18, 2006, 1121--1128.[pdf]
+
+
+  
+  Figure/Ground Assignment in Natural ImagesXiaofeng Ren, Charless Fowlkes, Jitendra MalikECCV, 2006, II: 614-627.[pdf]
+
+
+  
+  Mid-level cues improve boundary detectionXiaofeng Ren, Charless Fowlkes, Jitendra MalikUC Berkeley, 2005, UCB//CSD-05-1382.[pdf]
+
+
+  
+  Scale-Invariant Contour Completion Using Conditional Random FieldsXiaofeng Ren, Charless Fowlkes, Jitendra MalikICCV, 2005, II: 1214-1221.[pdf]
+
+
+  
+  Learning to detect natural image boundaries using local brightness, color, and texture cuesDavid Martin, Charless Fowlkes, Jitendra MalikIEEE PAMI, 2004, 26, 5, 530-549.[pdf]
+
+
+  
+  Spectral Grouping Using the Nyström MethodCharless Fowlkes, Serge Belongie, Fan Chung, Jitendra MalikIEEE PAMI, 2004, 26, 2, 214-225.[pdf]
+
+
+  
+  How Much Does Globalization Help Segmentation?Charless Fowlkes, Jitendra MalikUC Berkeley, 2004, UCB//CSD-04-1340.[pdf]
+
+
+  
+  Learning Affinity Functions for Image Segmentation: Combining Patch-Based and Gradient-Based ApproachesCharless Fowlkes, David Martin, Jitendra MalikCVPR, 2003, II: 54-61.[pdf]
+
+
+  
+  Learning to Detect Natural Image Boundaries Using Brightness and TextureDavid, Martin, Charless, Fowlkes, Jitendra MalikAdvances in Neural Information Processing Systems, 2002.[pdf]
+
+
+  
+  Spectral Partitioning with Indefinite Kernels Using the Nyström ExtensionSerge Belongie, Charless Fowlkes, Fan Chung, Jitendra MalikECCV, 2002, III: 531 ff..[pdf]
+
+
+  
+  Efficient Spatiotemporal Grouping Using the Nyström MethodCharless Fowlkes, Serge Belongie, Jitendra MalikCVPR, 2001, I:231-238.[pdf]
+
+
+  
+  A Database of Human Segmented Natural Images and its Application to Evaluating Segmentation Algorithms and Measuring Ecological StatisticsDavid Martin, Charless Fowlkes, Doron Tal, Jitendra MalikICCV, 2001, II: 416-423.[pdf]
+
+
+      
+    
+  
+  
+    
+      Computational Vision |
+      School of Information and Computer Sciences |
+      UC Irvine
+    
+    © 2007-2015 UC Irvine

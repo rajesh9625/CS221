@@ -1,0 +1,272 @@
+Chen Li's homepageChen Li
+
+Professor 
+School of Information and Computer Sciences
+Bren Hall, Room 2092
+University of California, Irvine
+Irvine, CA 92697-3435
+Phone:  (949) 824-9470 (Office) 
+CHENLI AT ics DOT uci . E Du
+http://www.ics.uci.edu/~chenli
+Information Systems Group
+Founder of SRCH2
+
+
+ Recent
+    News.  
+
+
+
+
+
+
+
+
+
+ Curriculum Vitae: PDF.
+ Research Projects
+ Released Prototypes and Source Code Packages
+ Students
+ Grants, Fellowships, Awards
+ Publications. Miscellaneous
+
+
+
+
+Recent News
+
+ Check our ISG Group Page for
+recent news about our group.
+
+(1/2016) Teaching CS122B
+  this quarter.
+
+(9/2015)  Teaching CS222
+  this quarter.
+
+(9/2015) We had a great VLDB 2015 conference in Hawaii!
+
+(1/2015) I came back to UCI after a 1.5-year leave at SRCH2.
+
+(2/2014) Together
+  with Prof. Volker
+  Markl, I will be a Program Co-Chair (PVLDB Editor-in-Chief) for VLDB
+  2015, which will be in Hawaii :-)
+
+(7/2013) Starting from July 2013, I am taking a leave of absence from
+  UCI to work at my startup, SRCH2.
+
+ Archived news
+
+
+
+
+
+Research
+
+My research interests are in the fields of databases and information
+retrieval, including search, data-intensive computing,
+data integration and sharing, data warehouses, data cleansing,
+and Web information management.  The following are several database
+projects I am working on. 
+
+Current Projects
+ ASTERIX: This project is about
+Active, Scalable, Transactional Enterprise Repository for Information in XML. It's a new effort to develop a scalable semi-structured information management system, based on XML and XQuery technologies, targeting very large shared-nothing compute clusters.
+
+  
+
+Past Projects
+FLAMINGO: A project on data cleaning. 
+
+IPUBMED: Efficient instant
+  search on large amounts of data.  It started with the joint
+  research project
+  with Tsinghua University on
+  efficient auto-complete and type-ahead search on large data sets.
+
+Family Reunification.
+Help people find their loved ones during or after a disaster.
+The Raccoon Project on Data
+Integration and Sharing.  I started this project several years ago,
+and it's in its final stage. I still have some ongoing research related to
+this project. But compared to the first two projects, this one is less active.
+ Data sets of the history 
+of data objects collected from 6 web sites in 1.5 years.. 
+
+
+
+
+Released Prototypes and Source Code Packages
+
+ Flamingo
+Packge: C++ package to do approximate string queries.
+
+   ASTERIX.
+
+   Fuzzy
+  keyword search on maps
+
+   qSpell:
+  Spelling Correction of Web Search Queries (won the 3rd Prize in
+  Microsoft's speller challenge in 2011)
+
+
+   
+Lightweight In-Memory Implementation of R*-Tree (maintained by Sattam Alsubaiee).
+
+   iPubMed: Instant fuzzy
+  search on more than 20 million medical publications
+  from MEDLINE.
+
+   Instant fuzzy
+  search for learning.
+
+   Location-based instant fuzzy
+  search.
+
+   Location-based approximate keyword search.
+
+  CHIME: Error-tolerant Chinese
+  input method.
+
+   PSearch: Instant fuzzy
+  search on the UCI directory.
+
+   Efficient Parallel
+  Set-Similarity Joins Using MapReduce.
+
+   Haiti family
+  reunification: Instant fuzzy search on records about people affected
+  by the Haiti earthquake.
+
+   DNAzip: DNA sequence
+  compression using a reference genome.
+
+
+   Hobbes: genome sequence
+  mapping.
+
+
+
+
+
+
+
+
+Students
+
+Current PhD students
+
+ Inci Cetindil
+  Jamshid Esmaelnezhad
+  Jianfeng Jia
+  Taewoo Kim
+  Young-Seok Kim
+
+Graduated PhD Students
+
+ Michal
+ Shmueli-Scheuer: PhD 2009, first appointment: researcher
+ at IBM Haifa Research Lab
+  Shengyue Ji, PhD
+ 2011, first appointment: Google.
+  Rares Vernica: PhD 2011 (co-advised with Professor Michael Carey), first appointment, HP Labs.
+  Alex Behm: PhD 2013 (co-advised with Professor Michael Carey), first appointment, Cloudera.
+  Sattam Mubark Alsubaiee, PhD 2014 (co-advised with Professor Michael
+ Carey), first appointment, Research Assistant Professor, KACST, Saudi Arabia
+
+
+Past MS students, Postdocs, and visitors
+ Athena Ahmadi, MS, 2012, Google
+  Manik Sikka, MS, 2011
+  Sandeep Paul Katumalla, MS 
+  Nagesh Honnalli, MS, 2010 - 2011, Amazon
+  Andrea Zilio, Exchange student from Italy, 2010 - 2011, Google.
+  Yabin Zheng,
+ 2009 - 2010, Visiting PhD student from Tsinghua University, China.
+  Prof. Heri Ramampiaro,
+ 2009 - 2010, Visiting professor from Norwegian University of Science and
+ Technology (NTNU).
+  Vijay Rajakumar, MS 2008-2010. Bimaple
+  Minh Doan, MS 2008-2010.
+  Jiaheng Lu, Postdoc 2006-2008, first appointment: faculty at Renmin University, China.
+  Yiming Lu, MS 2006-2008, first appointment: Microsoft.
+  Vassia Pavlaki, PhD student from NTUA, Greece. Visitor, Summer
+ 2005 and April 2006.
+  Bin Wang (PhD candidate) and Xiaochun Yang (professor), Northeastern University, China. Visitors, summer 2006, summer 2007.
+  Houtan Shirani-Mehr, MS in 2006, became a PhD student at USC.
+  Chris Trezzo, Undergrad student (SURF-IT),
+   summer 2006.
+  Jia Li, MS in 2005, first appointment: an IT company in the bay
+ area.
+  Liang Jin, MS in 2005, first appointment: Microsoft.
+  Qi Zhong, MS in 2005, first appointment: Microsoft.
+
+
+
+
+
+Grants, fellowships, awards
+
+2013, 10-year Best Paper Award for the DASFAA 2003 paper
+titled "Efficient Record Linkage in Large Data Sets" by Liang Jin, Chen Li, and Sharad Mehrotra.
+
+2012, ACM
+  SIGMOD 2012 Test-of-Time Award for the SIGMOD 2002 paper titled
+  "Executing SQL over encrypted data in the database-service-provider
+  model" by Hakan Hacigumus, Bala Iyer, Chen Li, and Sharad Mehrotra.
+
+  2012, UCI ICS Dean's Award for Graduate Student Mentoring.
+
+ 2011, I advised a group of students to participate in the
+  Microsoft
+  Speller Challenge and won the third place.
+
+  2010, Intel grant on compression of human genome data.
+
+  NSF research award IIS 1030002 on powerful keyword search in a cloud-computing infrastructure, 2010.
+
+  2009 UCI ICS Dean's Award for excellence in Mid-Career Research.
+
+
+  2009, NSF research
+   award 0910989
+   titled "DC: Large: Collaborative Research: ASTERIX: A Highly Scalable
+   Parallel Platform for Semistructured Data Management and Analysis."
+
+ 2008, Research Funding Award of the
+"Research
+  Funds for Oversea Scholars" program of the
+  National Natural
+  Science Foundation of China.
+
+   NSF SGER grant No.
+  IIS-0742960, 2007.
+
+  ICS Ted & Janice Smith Faculty Seed Fund (December 2006).
+
+  Google Research Award (September 2006).
+
+  Microsoft unrestricted research grant (April 2006).
+
+  UCI Faculty Career Development Award (2005).
+
+  Recipient of National Science Foundation CAREER Award
+      (No. IIS-0238586, 2003 - 2008, single PI).
+
+  Senior investigator of National Science Foundation Award
+  No. 0331707: RESCUE (2003 -
+  2008).
+  
+  Stanford Graduate Fellowship, Stanford University, 1997 - 2001.
+
+  Entrance exams to Tsinghua University waived (undergrad 1989, MS 1994)
+
+   Recent committee services: PVLDB 2011, SIGMOD 2010 (Group Leader), VLDB 2010, ICDE
+ 2010 (also Local Arrangements Chair), PVLDB 2009, PVLDB 2008, ICDE 2009
+ Demo Track, CIKM 2008, VLDB 2008, WWW 2008, ICDE 2008, KDD 2007,
+ SIGMOD07, ICDT07, KDD06, CIKM06, CleanDB06 (Workshop cochair), SIGMOD06
+ Undergraduate Scholarship Program (chair), IQIS06, ICDE06 Committee for
+ tutorial proposals, VLDB05 (IIS), SIGMOD05 Demo track, PODS05 Proceedings
+ Chair, DASFAA05.

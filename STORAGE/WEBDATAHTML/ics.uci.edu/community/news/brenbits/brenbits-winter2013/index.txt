@@ -1,0 +1,602 @@
+Brenbits Winter 2013<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Brenbits Winter 2013</title>
+
+
+<meta content="Fri, 16 Oct 2015 10:52:11 -0380" name="date"/>
+<link href="../../../bin/styles/stylesheet_nosidebar.css" rel="stylesheet" type="text/css"/><script type="text/javascript">
+<!-- 
+function clear_textbox()
+{
+if (document.searchform.q.value == "Search ICS")
+document.searchform.q.value = "";
+} 
+-->
+</script>
+</head>
+<body>
+
+<h1 class="ahem">This site will look much better in a browser that supports <a href="http://www.webstandards.org/upgrade/" title="Download a browser that complies with Web standards.">web standards</a>, but it is accessible to any browser or Internet device.</h1>
+ <div id="wrapper"><script type="text/javascript">
+
+sfHover = function() {
+    var sfEls = document.getElementById("navcontainer").getElementsByTagName("LI");
+    for (var i=0; i<sfEls.length; i++) {
+        sfEls[i].onmouseover=function() {
+            this.className+=" sfhover";
+        }
+        sfEls[i].onmouseout=function() {
+            this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+        }
+    }
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+
+</script>
+
+
+
+
+
+      <style>
+
+
+         #school_header {
+             background-image: url('http://www.ics.uci.edu/bin/img/ICSWebBanner2014-bigUCI.png');
+             background-repeat: no-repeat;
+             background-color: #0064a4;
+             margin-bottom: 0;
+             width: 760px;
+             height: 70px;
+             position: relative;
+         }
+
+
+         #school_link {
+                 display: block;
+                 position: absolute;
+                 width: 100%; height: 100%;
+         }
+
+
+         #uci_link {
+            display: block;
+            position: absolute;
+
+            height: 45px;
+            width: 109px;
+            left: 18px;
+            top: 7px;
+
+         }
+
+
+      </style>
+
+
+
+      <div id="school_header">
+
+         <a id="school_link" href="http://www.ics.uci.edu/" TITLE="Donald Bren School of Information and Computer Sciences"></a>
+
+         <a id="uci_link" href="http://www.uci.edu/" TITLE="University of California, Irvine"></a>
+
+      </div>
+
+
+
+
+
+
+
+
+
+    <div id="navcontainer">
+
+                
+            <ul>
+                
+                <li>
+                
+                    <a href='/about/' title='about'>ABOUT</a>
+
+                    
+                    <ul>
+                        <li><a href='/about/'>About the School</a></li>
+                        <li><a href='/about/about_deanmsg.php'>Dean's Welcome</a></li>
+                        <li><a href='/about/about_factsfigures.php'>Facts and Figures</a></li>
+                        <li><a href='/about/brenhall/index.php'>Donald Bren Hall</a></li>
+                        <li><a href='/about/visit/index.php'>Visit the Bren School</a></li>
+                        <li><A HREF='/about/equity/'>Equity & Diversity</A></Lli>
+                        <LI><a href='/about/about_contact.php'>Contact Us</a></LI>
+                        
+                    </ul>               
+                </li>
+                
+                <li>
+                
+                    <a href='/dept/' title='departments'> DEPARTMENTS </a>
+                    
+
+                    <ul>
+                        <li><a href='http://www.cs.uci.edu'>Computer Science</a></li>
+                        <li><a href='http://www.informatics.uci.edu'>Informatics</a></li>
+                        <li><a href='http://www.stat.uci.edu'>Statistics</a></li>
+                    </ul>               
+                </li>
+                
+                <li>
+                
+                    <a href='/faculty/area/' title='research'> RESEARCH </a>
+                
+                
+                    <ul>
+                        <li><a href='/faculty/area/'>Research Areas</a></li>
+                        <li><a href='/faculty/centers/'>Research Centers</a></li>
+                        <li><a href='/faculty/highlights/'>Research Highlights</a></li>
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                
+                    <a href='#' title='education'> EDUCATION </a>
+                    
+
+                    <ul>
+                        <li><a href='/grad/admissions/index'>Graduate &#x25B8; </a>
+                        
+                            <ul>
+                            <li><a href='/grad/admissions/index'>Prospective Students</a></li>
+                            <li><a href='/grad/admissions/Prospective_ApplicationProcess.php'>How to Apply</a></li>
+                            <li><a href='/grad/degrees/index'>Programs of Study</a></LI>
+                            <li><a href='/grad/courses/index'>Academic Year Plan</a></li>
+                            <li><a href='/grad/forms/index'>Forms</a></li>
+                            <li><a href='/grad/policies/index'>Policies</a></li>
+                            <li><a href='/grad/funding/index'>Funding &amp; Housing</a></li>
+                            <li><a href='/computing/account/new'>Computing Support</a></li>
+                            <li><a href='/grad/resources'>Campus Resources</a></li>
+                            <li><a href='/about/visit/index'>Visit the Bren School</a></li>
+                            <li><a href='http://www.ics.uci.edu/bin/pdf/grad/F15-16%20Graduate%20Handbook.pdf'>Graduate Student Handbook</a></li>
+                            <li><a href='/grad/index'>Contact</a></li>
+                            </ul>
+
+                        </li>
+                        
+                        <li><a href='/ugrad/'>Undergraduate &#x25B8; </a>
+                        
+                            <ul>
+                            <li><a href='/ugrad/index'>Contact</a></li>
+                            <li><a href='/ugrad/sao/index'>Academic Advising</a></li>
+                            <li><a href='/ugrad/courses/index'>Academic Year Plan</a></li>
+                            <li><a href='/ugrad/QA_Petitions'>Petitions</a></li>
+                            <li><a href='/ugrad/degrees/index.php'>ICS Majors</a></li>
+                            <li><a href='/ugrad/degrees/Minors'>ICS Minors</a></li>
+
+                            <li><a href='/ugrad/policies/Academic_Integrity'>Policies: Academic Integrity</a></li>
+                            <li><a href='/ugrad/policies/Academic_Standing'>Policies: Academic Standing</a></li>
+                            <li><a href='/ugrad/policies/Add_Drop_ChangeOption'>Policies: Add, drop, &amp; change options</a></li>
+                            <li><a href='/ugrad/policies/Course_Outside_UCI'>Policies: Coursework outside UCI</a></li>
+                            <li><a href='/ugrad/policies/Grade_Options'>Policies: Grade policy</a></li>
+                            <li><a href='/ugrad/policies/Laptop_ComputerUse'>Policies: Laptop &amp; computer use</a></li>
+                            <li><a href='/ugrad/policies/Withdrawal_Readmission'>Policies: Withdrawal/Readmission</a></li>
+
+                              <li><a href='/ugrad/QA_Graduation'>Graduation</a></li>
+                              <li><a href='/ugrad/resources/index'>ICS Student Life</a></li>
+                              <li><a href='/computing/account/new'>Computing Support</a></li>
+                            </ul>
+                        </li>
+
+                        
+                        <li><a href='http://www.ics.uci.edu/prospective'>Prospective Undergrad</a></li>
+
+
+                        <li><a href='/community/scholarships/index'>Scholarships & Fellowships</a></li>
+                        
+                                                    
+                    </ul>               
+                </li>
+
+    
+                <li>
+                    
+                    <a href='#' title='people'>PEOPLE</a>                      
+                    
+                
+                    <ul>
+                        <li><a href='/faculty/'>Faculty</a></li>
+                        <li><a href='/about/search/index.php'>Staff</a></li>
+                        <li><a href='/about/search/search_graduate_all.php'>Graduate Students</a></li>
+                    </ul>   
+                </li>
+                                
+                
+                <li> 
+                
+                    <span id=specialborder><a href='#' title='community'>COMMUNITY</a></span>
+                    
+                    
+                    <ul>
+                        <li><a href='/community/alumni/'>Alumni</a></li>
+                        <li><a href='/community/friends/'>Friends</a></li>
+                        <li><a href='/community/news/'>News</a></li>
+
+                        <li><a href='http://www.parents.uci.edu/'>UCI Parents</a></li>
+
+                    </ul>   
+                </li>
+
+                <li>
+                
+                    <a href='/involved/' title='get involved'>GET INVOLVED</a>
+                
+                
+                    <ul>
+                    
+                            <LI><A HREF='http://www.uadv.uci.edu/DonaldBrenSchoolOfICSAnnualGiving'>Make a Gift</A></LI>
+                            <LI><A HREF='/involved/leadership_council'>Leadership Council</A></LI>
+                            <LI><A HREF='/involved/corporate_partner'>Corporate Partners</A></LI>
+                            <LI><A HREF='/involved/project_class'>Sponsor Projects</A></LI>
+                            <LI><A HREF='/community/events/competition/'>Product Development Competition</A></LI>
+                            <LI><A HREF='https://ucirvine-csm.symplicity.com/index.php/pid700104'>ZotLink Jobs & Internships</A></LI>
+                            
+                    </ul>               
+                </li>
+
+
+                 
+                                 
+
+            </ul>
+
+<style type='text/css'>@import url('/bin/icssearchstyle/css/icssearch.css');</style>
+<script src='/bin/icssearchstyle/js/icssearch.js' type='text/javascript'></script>
+<script src='/bin/icssearchstyle/js/icssearchform.js' type='text/javascript'></script>
+
+
+            
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="bread" id="breadcrumbs"><!-- starting function breadcrumb_nav --><!-- done with function breadcrumb_nav, going to return [<A HREF="/">Bren school home</A> &gt; <a href="http://www.ics.uci.edu/community/">Community</a> &gt; <a href="http://www.ics.uci.edu/community/news/">News</a> &gt; <a href="http://www.ics.uci.edu/community/news/brenbits/"></a>] --><A HREF="/">Bren school home</A> &gt; <a href="http://www.ics.uci.edu/community/">Community</a> &gt; <a href="http://www.ics.uci.edu/community/news/">News</a> &gt; <a href="http://www.ics.uci.edu/community/news/brenbits/"></a></div>
+<div id="content"><a id="startcontent" name="startcontent"></a> 
+<div id="content_title">Brenbits Winter 2013</div>
+<blockquote>
+<div id="content_text"><style style="margin: 0pt; padding: 0pt;" type="text/css">
+
+/*
+
+*{margin:0;padding:0;}
+body&gt;table{border: 1px solid #999999;margin:0 auto;background:#fff;}
+body{background:#cccccc;font-family:Arial, Helvetica, sans-serif;}
+
+*/
+
+#header-image{border-top:1px solid #999999;}
+#header-band{background-color:#002a5c;}
+h2{font-weight:normal;font-size:12px;color:#fff;margin-bottom:5px;text-align:right; margin-right:10px;}
+a img{border:none;margin-bottom:5px;}
+#main-content h3{color:#999999;font-size:18px;margin-bottom:10px;margin-top:10px;}
+#BRENBITSspotlight{padding:15px; margin-bottom:30px;}
+#main-content td{padding-right:10px;}
+#main-content p,#side-bar p{color:#666666;font-size:12px;line-height:16px;padding-right:10px;}
+#side-bar h3{color:#002a5c;font-size:16px;margin:10px 10px 15px 10px;}
+#side-bar p{color:#666666;font-size:12px;line-height:16px;padding-right:10px;padding-left:10px;}
+#side-bar{background:#efefef;border-left:1px solid #d3cccc;line-height:14px;}
+#content-wrap{width:600px;}
+h4{margin-bottom:5px;}
+h4 a{color:#002469;font-size:14px;text-decoration:none;}
+p a{color:#002a5c;text-decoration:none;}
+p a:hover{text-decoration:underline;}
+#features{border-top:1px solid #d1d1d1;padding-left:15px;}
+#features p{margin-bottom:45px;}
+#event,#giving{background:#f9f9f9;border-right:1px solid #d8d2d2;border-top:1px solid #d8d2d2;border-bottom:1px solid #d8d2d2;padding-top:10px;padding-bottom:10px;padding-bottom:20px;margin-right:5px;}
+#giving img,#giving h4,#event h4{margin-left:10px;}
+#giving img{margin-bottom:10px;}
+#deans-message{margin-top:57px;margin-bottom:25px;}
+#news{margin:25px 0;}
+#learn-more{color:#4d4d4d;font-size:12px;text-decoration:none;}
+#give-button img{margin-top:10px;}
+#learn-more{padding-left:10px;}
+#social-networks{width:100px;margin-left:12px;}
+#bbfooter{width:603px;margin:0 auto;margin-bottom:25px;background:#333;color:#999;font-size:11px;height:85px;}
+#bbfooter p{padding:20px;width:500px;line-height:20px;}
+#bbfooter a{color:#fff;;text-decoration:none;}
+#bbfooter a:hover{text-decoration:underline;}
+#sub-header{height:45px;color:#fff;width:603px;margin:25px auto 0 auto;font-size:12px;text-align:center;}
+#sub-header a{color:#fff;text-decoration:underline;}
+#sub-header p{padding-top:10px;}
+</style>
+<meta content="noindex,nofollow" name="robots"/>
+<meta content="Bren School of ICS eNews - Spring 2012" property="og:title"/>
+<!-- -->
+
+	
+<table cellpadding="0" cellspacing="0" style="margin-top: 0; margin-bottom: 0; margin-right: auto; margin-left: auto; background-color: #fff; background-image: none; background-repeat: repeat; background-position: top left; background-attachment: scroll; padding: 0; border: 1px solid #999999;" width="600">
+<tbody>
+<tr style="padding: 0; margin: 0;">
+<td colspan="2" style="padding: 0; margin: 0;">
+        		
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-t/" style="padding: 0; margin: 0;" target="_blank"><img alt="Donald Bren School of Information &lt; Computer Sciences" src="http://i4.createsend1.com/ti/j/FD/361/5D7/070303/images/bren-header.gif" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;"/></a></td>
+</tr>
+<tr style="padding: 0; margin: 0;">
+<td colspan="2" id="header-image" style="border-top-width: 1px; border-top-style: solid; border-top-color: #999999; padding: 0; margin: 0;"><img alt="AppJam+ Mentors" height="163" src="http://i1.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_header_mentors.121503.jpg" style="padding: 0; margin: 0;" width="601"/></td>
+</tr>
+<tr id="header-band" style="background-color: #002a5c; padding: 0; margin: 0;">
+<td style="padding: 0; margin: 0;" width="485"><img src="http://i1.createsend1.com/ti/j/FD/361/5D7/070303/images/bren-band.gif" style="padding: 0; margin: 0;"/></td>
+<td style="padding: 0; margin: 0;">
+<h2 style="margin-top: 0; margin-left: 0; font-weight: normal; font-size: 12px; color: #fff; margin-bottom: 5px; text-align: right; margin-right: 10px; padding: 0;">
+<div id="social-networks" style="margin-top: 0; margin-bottom: 0; margin-right: 0; width: 120px; margin-left: 12px; padding: 0;">
+                    <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-i/" style="padding: 0; margin: 0;"><img alt="facebook" src="http://i6.createsend1.com/ti/j/FD/361/5D7/070303/images/fb-icon.gif" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;"/></a>
+                    <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-d/" style="padding: 0; margin: 0;"><img alt="twitter" src="http://i7.createsend1.com/ti/j/FD/361/5D7/070303/images/twitter-icon.gif" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;"/></a>
+                    <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-h/" style="padding: 0; margin: 0;"><img alt="flickr" src="http://i8.createsend1.com/ti/j/FD/361/5D7/070303/images/flickr-icon.gif" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;"/></a>
+                    <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-k/" style="padding: 0; margin: 0;"><img alt="youtube" src="http://i5.createsend1.com/ti/j/FD/361/5D7/070303/images/youtube-icon.gif" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;"/></a>
+                </div>
+</h2>
+</td>
+</tr>
+<tr style="padding: 0; margin: 0;">
+<td colspan="2" style="padding: 0; margin: 0;">
+            	
+<table cellpadding="0" cellspacing="0" id="content-wrap" style="width: 600px; padding: 0; margin: 0;">
+<tbody>
+<tr style="padding: 0; margin: 0;" valign="top">
+<td id="main-content" style="padding: 0; margin: 0;">
+<div id="BRENBITSspotlight" style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 30px; padding: 15px;">
+<h3 style="margin-right: 0; margin-left: 0; color: #999999; font-size: 18px; margin-bottom: 10px; margin-top: 10px; padding: 0;">Spotlight</h3>
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                    <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-u/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Dreaming big</a>
+                                </h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-o/" style="padding: 0; margin: 0;"><img alt="Computer science major Nithin Jilla" height="220" src="http://i2.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_spotlight_jilla.121530.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="380"/></a>
+<p style="padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin: 0;">&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin: 0;">
+	After starting a campus club to assist Kenya schools, computer science major Nithin Jilla now aims to improve access to education on a global scale.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-b/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</div>
+<div id="features" style="padding-top: 0; padding-bottom: 0; padding-right: 0; border-top-width: 1px; border-top-style: solid; border-top-color: #d1d1d1; padding-left: 15px; margin: 0;">
+                            
+<table cellpadding="0" cellspacing="0" style="padding: 0; margin: 0;">
+<tbody>
+<tr style="padding: 0; margin: 0;">
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h3 style="margin-right: 0; margin-left: 0; color: #999999; font-size: 18px; margin-bottom: 10px; margin-top: 10px; padding: 0;">Features</h3>
+</td>
+</tr>
+<tr style="padding: 0; margin: 0;" valign="top">
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-n/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Innovation Lab launch</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-p/" style="padding: 0; margin: 0;"><img alt="Kay Family Foundation Innovation Lab" height="118" src="http://i5.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_kfflab.121545.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	Kay Family Foundation gift creates mobile technology lab designed to foster student collaboration.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-q/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</td>
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-a/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Cancer breakthrough</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-f/" style="padding: 0; margin: 0;"><img alt="UCI team finds new target for treating wide spectrum of cancers" height="118" src="http://i6.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_lathrop.121608.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	UCI biologists, chemists and computer scientists find new target for treating wide spectrum of cancers.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-z/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</td>
+</tr>
+<tr style="padding: 0; margin: 0;" valign="top">
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-v/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">From India to Ghana</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-e/" style="padding: 0; margin: 0;"><img alt="Nithya Sambasivan received her Ph.D. in 2012" height="118" src="http://i7.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_sambasivan.102645.JPG" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	Alumna joins Google.org, continues research on technology use in developing countries.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-s/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</td>
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-g/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Apps for health care</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-w/" style="padding: 0; margin: 0;"><img alt="First-ever Med AppJam a resounding succes" height="118" src="http://i8.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_medappjam.102604.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	100 Bren School and 30 medical students from UCI team up in first-ever Med AppJam tournament.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-yd/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</td>
+</tr>
+<tr style="padding: 0; margin: 0;" valign="top">
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-yh/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">App design 101</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-yk/" style="padding: 0; margin: 0;"><img alt="College prep via app design" height="118" src="http://i9.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_appjamplus.103652.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	Coached by Bren School students, middle school teams learn STEM skills by creating educational smartphone games.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-yu/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</td>
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-jl/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Intel research center</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-jr/" style="padding: 0; margin: 0;"><img alt="ISTC for Social Computing" height="118" src="http://i10.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_istc.103233.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	UC Irvine anchors new $12.5 million Intel Science &amp; Technology Center for Social Computing.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-jy/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</td>
+</tr>
+<tr style="padding: 0; margin: 0;" valign="top">
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-jj/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Gene genie</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-jt/" style="padding: 0; margin: 0;"><img alt="Professor Gene Tsudik and team developed Genodroid" height="118" src="http://i1.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_genodroid.104100.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	Smartphone app developed by Bren School researchers permits secure storage and testing of DNA data.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ji/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</td>
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-jd/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Gender &amp; tech</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-jh/" style="padding: 0; margin: 0;"><img alt="Maria Klawe with members of UCI Women in Computer Sciences" height="118" src="http://i2.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_klawe_wics.104134.JPG" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	Harvey Mudd College president Maria Klawe kicks off Top Trends in Tech Speaker Series with "Gender and Technology" talk.<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-jk/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">View Video</a></strong></span></p>
+</td>
+</tr>
+<tr style="padding: 0; margin: 0;" valign="top">
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ju/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Year in review</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-tl/" style="padding: 0; margin: 0;"><img alt="Participants in the 2012 A Mobile Application Showcase Event" height="118" src="http://i3.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_highlights.173601.JPG" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	A look at some of the events that helped make 2012 another exceptional year for the Bren School.<br style="padding: 0; margin: 0;"/>
+	<strong style="padding: 0; margin: 0;"><span style="font-size: 11px; padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-tr/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">View Video</a></span></strong></p>
+</td>
+<td style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 10px; margin: 0;">
+<h4 style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 5px; padding: 0;">
+                                        	 <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ty/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">Homecoming 2013</a>
+                                    	</h4>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-tj/" style="padding: 0; margin: 0;"><img alt="Thousands took part in the UCI Homecoming Street Festival" height="118" src="http://i4.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_feature_homecoming.173617.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="185"/></a>
+<p style="margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; margin-bottom: 45px;">
+	Bren and Samueli schools team up to welcome ICS and engineering alumni at annual UCI festival.<br style="padding: 0; margin: 0;"/>
+	<strong style="padding: 0; margin: 0;"><span style="font-size: 11px; padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-tt/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">View Photos</a></span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td id="side-bar" style="background-color: #efefef; background-image: none; background-repeat: repeat; background-position: top left; background-attachment: scroll; border-left-width: 1px; border-left-style: solid; border-left-color: #d3cccc; line-height: 14px; padding: 0; margin: 0;" width="195">
+<div id="deans-message" style="margin-right: 0; margin-left: 0; margin-top: 57px; margin-bottom: 25px; padding: 0;">
+<h3 style="color: #002a5c; font-size: 16px; margin-top: 10px; margin-bottom: 15px; margin-right: 10px; margin-left: 10px; padding: 0;">Dean&#8217;s Message</h3>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	UC Irvine continues to thrive, receiving a record high 60,619 freshman applications for fall 2013. And with strong prospects for employment in the technology sector &#8212; the Bureau of Labor Statistics predicts the tech boom will create more than 1 million jobs by 2020 &#8212; ICS continues to be a popular destination within UCI. In fact, applications to our undergraduate programs are up 30 percent ...&#160;<span style="font-size: 11px; padding: 0; margin: 0;"><strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ti/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Read More</a></strong></span></p>
+</div>
+<div id="event" style="margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 0; padding-left: 0; background-color: #f9f9f9; background-image: none; background-repeat: repeat; background-position: top left; background-attachment: scroll; border-right-width: 1px; border-right-style: solid; border-right-color: #d8d2d2; border-top-width: 1px; border-top-style: solid; border-top-color: #d8d2d2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d8d2d2; padding-top: 10px; padding-bottom: 20px; margin-right: 5px;">
+<h3 style="color: #002a5c; font-size: 16px; margin-top: 10px; margin-bottom: 15px; margin-right: 10px; margin-left: 10px; padding: 0;">Save the Date</h3>
+<h4 style="margin-top: 0; margin-right: 0; margin-bottom: 5px; margin-left: 10px; padding: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-td/" style="color: #002469; font-size: 14px; text-decoration: none; padding: 0; margin: 0;">TOP TRENDS IN TECH</a></h4>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+                                	
+                                    <a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-th/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;"><img alt="Top Trends in Tech speaker Fred Wilson" height="126" src="http://i3.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_event_wilson.123448.jpg" style="margin-top: 0; margin-right: 0; margin-left: 0; border-style: none; margin-bottom: 5px; padding: 0;" width="164"/></a>
+									</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<strong style="padding: 0; margin: 0;">April 1, Monday, 5 to 6 p.m.<br style="padding: 0; margin: 0;"/>
+	Calit2 Auditorium, UCI</strong><br style="padding: 0; margin: 0;"/>
+	<br style="padding: 0; margin: 0;"/>
+	Fred Wilson, managing partner at Union Square Ventures, will present "Confessions of a VC."<br style="padding: 0; margin: 0;"/>
+	<br style="padding: 0; margin: 0;"/>
+	<strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-tk/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">RSVP NOW</a></strong></p>
+</div>
+<div id="news" style="margin-top: 25px; margin-bottom: 25px; margin-right: 0; margin-left: 0; padding: 0;">
+<h3 style="color: #002a5c; font-size: 16px; margin-top: 10px; margin-bottom: 15px; margin-right: 10px; margin-left: 10px; padding: 0;">News</h3>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-tu/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Fowlkes receives NSF CAREER Award</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-il/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Hayes directs technology research for new autism center</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ir/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Nardi, Grinter (MS '94, PhD '96) named to CHI Academy</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-iy/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Tsudik named IEEE Fellow</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ij/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Baldi named ACM Fellow</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-it/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Hancock joins statistics faculty</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ii/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Ramanan named to Brilliant 10</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-id/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Franz awarded U.S. Patent on software diversity</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ih/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Student receives prestigious diversity fellowship</a><br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-ik/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Peters Fellowship awarded to PhD student</a></p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<br style="padding: 0; margin: 0;"/>
+	<br style="padding: 0; margin: 0;"/>
+	<span style="font-size: 11px; padding: 0; margin: 0;"><em style="padding: 0; margin: 0;">* View <strong style="padding: 0; margin: 0;"><a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-iu/" style="color: #002a5c; text-decoration: none; padding: 0; margin: 0;">Noteworthy Achievements</a></strong> for more faculty and student news</em></span></p>
+</div>
+<div id="giving" style="margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 0; padding-left: 0; background-color: #f9f9f9; background-image: none; background-repeat: repeat; background-position: top left; background-attachment: scroll; border-right-width: 1px; border-right-style: solid; border-right-color: #d8d2d2; border-top-width: 1px; border-top-style: solid; border-top-color: #d8d2d2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d8d2d2; padding-top: 10px; padding-bottom: 20px; margin-right: 5px;">
+<h3 style="color: #002a5c; font-size: 16px; margin-top: 10px; margin-bottom: 15px; margin-right: 10px; margin-left: 10px; padding: 0;">Giving</h3>
+<img height="126" src="http://i4.createsend1.com/ei/j/0D/9E7/9C9/csimport/bb_giving_commencement1.123609.jpg" style="margin-top: 0; margin-right: 0; margin-left: 10px; margin-bottom: 10px; padding: 0;" width="164"/>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">&#160;</p>
+<p style="padding-top: 0; padding-bottom: 0; color: #666666; font-size: 12px; line-height: 16px; padding-right: 10px; padding-left: 10px; margin: 0;">
+	<strong style="padding: 0; margin: 0;">Bren School Annual Fund</strong><br style="padding: 0; margin: 0;"/>
+	<br style="padding: 0; margin: 0;"/>
+	Your annual gift to the Donald Bren School of Information and Computer Sciences allows us to provide the best programs for our students and to support these up-and-coming innovators as they create new and better technology to meet the challenges of our digital age. Every gift, no matter the amount, makes a difference. Consider making a contribution today. Together we can empower ICS students with the skills they need to serve future generations.<br style="padding: 0; margin: 0;"/>
+	&#160;</p>
+<a href="http://ucibrenschoolofinfomationandcomputersciences.createsend1.com/t/j-l-jjjutrd-iihydjduy-dl/" style="padding: 0; margin: 0;"><img alt="Make a gift" id="give-button" src="http://i4.createsend1.com/ti/j/FD/361/5D7/070303/images/_content/gift.gif" style="margin-top: 0; margin-right: 0; border-style: none; margin-left: 10px; margin-bottom: 10px; padding: 0;" width="90"/></a>
+                             
+                            </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="footer" style="width: 603px; margin-top: 0; margin-bottom: 25px; margin-right: auto; margin-left: auto; background-color: #333; background-image: none; background-repeat: repeat; background-position: top left; background-attachment: scroll; color: #999; font-size: 11px; height: 85px; padding: 0;">
+<p style="width: 500px; line-height: 20px; padding: 20px; margin: 0;">Brenbits is published by the UCI Donald Bren School of Information and Computer Sciences. To contact the editor, please email <a href="mailto:communications@ics.uci.edu" style="color: #fff; text-decoration: none; padding: 0; margin: 0;">communications@ics.uci.edu</a>. </p>
+</div></div>
+</blockquote>
+</div>
+<div id="links_bottom"><div style="float: left; margin-right: 1em; notmargin-left: 1em; border: 0px dotted grey;"><form name="quicklinksform"><span style="color: #0064a4; font-weight: bold; font-size: 13px;">Quick Links </span><select name="linkselect" onchange="location.href=quicklinksform.linkselect.options[selectedIndex].value">
+<option value="#">- select a page -</option>
+<option value="/computing/index.php">Computing support</option>
+<option value="http://www.cs.uci.edu/research/seminarseries/">CS Seminar Series</option>
+<option value="/employment/">Employment</option>
+<option value="/about/facilities/index.php">Facilities</option>
+<option value="/about/search/index.php">Find faculty and staff</option>
+<option value="/supportICS">Giving to the Bren School</option>
+<option value="/grad/degrees/index.php">Graduate degrees</option>
+<option value="/about/kfflab/index.php">Kay Family Foundation Lab</option>
+<option value="/community/friends/proj125/index.php">Project ICS</option>
+<option value="/prospective">Prospective undergraduates</option>
+<option value="/about/about_safety.php">Safety procedures</option>
+<option value="/ugrad/degrees/index.php">Undergraduate degrees</option>
+</select></form></div>
+<div id="socmed_icons" style="float: right;"><a href="http://vimeo.com/ucibrenics"><img alt="Vimeo" border="0" class="icon32" src="../../../bin/img/logos/socialmedia/vimeo.png"/></a> <a href="http://ucibrenics.tumblr.com/"><img alt="Tumblr" border="0" class="icon32" src="../../../bin/img/logos/socialmedia/tumblr.png"/></a> <a href="http://plus.google.com/107018281301622394010/posts"><img alt="Google+" border="0" class="icon32" src="../../../bin/img/logos/socialmedia/googleplus.png"/></a> <a href="http://youtube.com/UCIBrenICS"><img alt="YouTube" border="0" class="icon32" src="../../../bin/img/logos/socialmedia/youtube.png"/></a> <a href="http://flickr.com/BrenSchool"> <img alt="Flickr" border="0" class="icon32" src="../../../bin/img/logos/socialmedia/flickr.png"/></a> <a href="http://twitter.com/UCIbrenICS"> <img alt="Twitter" border="0" class="icon32" src="../../../bin/img/logos/socialmedia/twitter.png"/></a> <a href="http://instagram.com/ucibrenics/"> <img alt="Instagram" border="0" class="icon32" src="../../../bin/img/logos/socialmedia/instagram.png"/></a> <a href="http://facebook.com/UCIBrenICS"> <img alt="Facebook" border="0" class="icon32" src="../../../bin/img/logos/socialmedia/facebook.png"/></a></div>
+<div style="clear: both;"></div></div>
+<div id="footer"><a href="http://www.uci.edu/copyright.php">Copyright Inquiries</a> |
+   <a href="http://www.uci.edu/cgi-bin/phonebook">UCI Directory</a> |
+   <a href="http://intranet.ics.uci.edu/">Intranet</a> |
+   
+   <!-- <a href="http://www.ics.uci.edu/sitemap.php">Site Map</a> | -->
+ 
+  <a href="mailto: i%63%73%77%65%62m%61s%74%65r@%69c%73%2e%75c%69%2eedu">icswebmaster</a></div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-605898-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

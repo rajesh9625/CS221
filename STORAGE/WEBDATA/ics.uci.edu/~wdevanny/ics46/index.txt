@@ -1,0 +1,191 @@
+ICS/CSE 46ICS/CSE 46: Data Structures Implementation and Analysis (Summer 2015)
+
+Instructors and Office Hours
+
+Instructor: William Devanny
+Office: DBH 4032
+Email: wdevanny@uci.edu
+Office Hours: Thursday 10:00am-12:00pm
+
+Teaching assistant: Sridevi Maharaj
+Office: DBH 4044
+Email: sridevi.m@uci.edu
+Office Hours: Tuesday 2:00-3:00pm
+
+Lectures, Labs, and Exams
+
+Lecture: M/W/F 1:00-1:50pm in PSCB 120
+Lab: M 2:00-5:00pm in ICS 364A
+Midterm: July 24th
+Final: August 28th 1:00-2:50pm in PSCB 140
+
+Course Resources
+
+
+There is no required course textbook for this class.  The following are optional textbooks: 
+
+
+Data Structures and Algorithms in C++
+by Goodrich, Tamassia, Mount
+Published through Wiley
+Data Structures and Algorithm Analysis in C++
+by Weiss
+Published through Prentice Hall
+The Algorithm Design Manual 
+by Skiena
+Available free through Springer
+Algorithms and Data Structures: The Basic Toolbox
+by Mehlhorn, Sanders
+Available free through Springer
+
+
+
+Questions about course material are best asked in person either in class, in lab, or in office hours.  You can also ask questions by emailing myself or the TA (preferably both).  Please include "ICS 46" or "CSE 46" somewhere in the subject line of your email.
+
+
+Grading Policy
+
+
+Grades will be computed by a weighted combination of your programming projects, quizzes, midterm, and final:
+
+
+ Project 0 (2%)
+ Project 1-5 (28%)
+ Quizzes (10%)
+ Midterm (25%)
+ Final (35%)
+
+
+
+The letter grade conversions will be decided at the end of the course.
+
+
+Tentative Course Schedule
+Week 1 (June 22nd) 
+ Course overview
+ Templates
+ Arrays
+ O-Notation
+ Basic search
+ Insertion sort
+ Merge sort
+
+Week 2 (June 29th)
+ Omega and theta notation
+ Comparison sorting
+ Sorting lowerbound and an alternate proof
+ Amortized analysis
+ Linked lists
+ Array-based (dynamic) lists
+
+Week 3 (July 6th)
+ Hash tables, maps, and sets
+ O(n) sorting
+ Bucket and radix sort
+ Binary trees
+ Traversing binary trees
+
+Week 4 (July 13th)
+ Binary search trees
+ AVL trees
+ Stacks
+ Queues
+
+Week 5 (July 20th)
+ Skip lists
+ Midterm exam
+
+Week 6 (July 27th)
+ Priority queues
+ Binary heaps
+ Heapsort
+ Graphs
+ Adjacent lists
+ Adjacency matrices
+ Multidimensional arrays in a single array
+ DFS
+ BFS
+
+Week 7 (August 3rd)
+ Dijksta's algorithm
+ Bellman-Ford
+
+Week 8 (August 10th)
+ P vs. NP
+ Traveling salesperson problem
+ Minimum spanning tree
+ Kruskal's Algorithm
+ Union find
+
+Week 9 (August 17th)
+ Digraphs
+ Strong connectivity
+ Tarjan's algorithm
+ DAGs
+ Topological sorting
+
+Week 10 (August 24th)
+ Bloom filters (not on final)
+ Final exam (Friday August 28th)
+
+
+Solutions
+ Quiz 1
+ Quiz 2
+ Quiz 3
+ Quiz 4
+ Midterm (blank)
+ Midterm
+ Quiz 5
+ Quiz 6
+ Quiz 7
+ Quiz 8
+
+
+Projects
+
+
+As the course title indicates this course is about both implementation and analysis.  Most of lecture time will be devoted to the analysis of data structures and algorithms, while the projects will require you to work on implementing the data structures.
+
+
+
+We will have a total of six projects.  The first project (Project 0) will be much shorter and cover setting up our environment.
+
+
+ Project 0: VirtualBox and Templates due on Friday June 26th at 11:59pm
+ Project 1: Sorting Lab due on Friday July 3rd at 11:59pm
+ Project 2: Following Wikipedia Links due on Friday July 17th at 11:59pm
+ Project 3: An AVL Tree due on Sunday August 2nd Friday July 31st at 11:59pm
+ Project 4: Finding Shortest Paths due on Friday August 14th at 11:59pm
+ Project 5: Approximating TSP due on Wednesday August 26th at 11:59pm
+
+
+
+Projects will be graded on a 40 point scale with approximately 30 points for correctness and 10 points for code style.  Correctness covers did you met the project specifications and did your code compile and run without error. Coding style covers did you write readable, well documented code.  We expect that you will be working in the virtual machine you set up in Project 0 for all of your projects.  If your code does not compile and run with the provided build script on the provided platform, then it does not compile and run for the purposes of grading.
+
+
+
+Projects will all be due at 11:59pm on their due date.  You will be allowed one 48 hour extension on a project.  We will apply this policy to the first project you submit late.  No other late work will be accepted. Projects can be submitted by first following the instructions in Project 0 to create a .tar.gz file and then handing it in to the appropriate EEE dropbox.  Submissions by email will not be accepted.  Please make sure you submit the correct version of your project.  Accidentally submitting the wrong code is not an acceptable reason for a regrade.
+
+
+Academic Honesty
+
+
+The ICS policy on academic honesty can be found here.
+
+
+
+All of the work you complete in this class should be your own.  Discussing course material at a high level is encouraged, however at no point should you share code with other students in any form.  Plagarism detection software will be run on the submissions for each project.  Additionally, answers on exams and quizzes should be entirely your own work.  Exams will be closed-note and closed-book.
+
+
+
+Anyone who commits an academic honesty violation will be reported accordingly and subject to the penalties described in the above policy.
+
+
+Accommodations for Disabilities
+
+
+If you feel you need any accommodations based on a disability, please contact me and the Disabilities Services Center as soon as possibile to ensure the apporpriate accommodations can me made.
+
+Acknowledgements
+Portions of this course are based on similar courses by Michael Bannister, Richard Pattis, and Alex Thornton

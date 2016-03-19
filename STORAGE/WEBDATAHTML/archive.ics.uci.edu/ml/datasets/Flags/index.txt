@@ -1,0 +1,247 @@
+UCI Machine Learning Repository: Flags Data Set
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Flags Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Flags Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/flags/"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="../machine-learning-databases/flags/flag.names"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: From Collins Gem Guide to Flags, 1986</p>
+     </td>
+     <td><img 
+src="../assets/MLimages/Large40.jpg" 
+hspace=20 vspace=10  /> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">194</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Categorical, Integer</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">30</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">1990-05-15</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">No</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">107054</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Creators: <br><br>Collected primarily from the "Collins Gem Guide to Flags": Collins Publishers (1986).<br><br>Donor: <br><br>Richard S. Forsyth <br>8 Grosvenor Avenue<br>Mapperley Park<br>Nottingham NG3 5DX<br>0602-621676</p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">This data file contains details of various nations and their flags. In this file the fields are separated by spaces (not commas).  With this data you can try things like predicting the religion of a country from its size and the colours in its flag.  <br><br>10 attributes are numeric-valued.  The remainder are either Boolean- or nominal-valued.</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">   1. name:	Name of the country concerned<br>   2. landmass:	1=N.America, 2=S.America, 3=Europe, 4=Africa, 4=Asia, 6=Oceania<br>   3. zone:	Geographic quadrant, based on Greenwich and the Equator; 1=NE, 2=SE, 3=SW, 4=NW<br>   4. area:	in thousands of square km<br>   5. population:	in round millions<br>   6. language: 1=English, 2=Spanish, 3=French, 4=German, 5=Slavic, 6=Other Indo-European, 7=Chinese, 8=Arabic, 9=Japanese/Turkish/Finnish/Magyar, 10=Others<br>   7. religion: 0=Catholic, 1=Other Christian, 2=Muslim, 3=Buddhist, 4=Hindu, 5=Ethnic, 6=Marxist, 7=Others<br>   8. bars:     Number of vertical bars in the flag<br>   9. stripes:  Number of horizontal stripes in the flag<br>  10. colours:  Number of different colours in the flag<br>  11. red:      0 if red absent, 1 if red present in the flag<br>  12. green:    same for green<br>  13. blue:     same for blue<br>  14. gold:     same for gold (also yellow)<br>  15. white:    same for white<br>  16. black:    same for black<br>  17. orange:   same for orange (also brown)<br>  18. mainhue:  predominant colour in the flag (tie-breaks decided by taking the topmost hue, if that fails then the most central hue, and if that fails the leftmost hue)<br>  19. circles:  Number of circles in the flag<br>  20. crosses:  Number of (upright) crosses<br>  21. saltires: Number of diagonal crosses<br>  22. quarters: Number of quartered sections<br>  23. sunstars: Number of sun or star symbols<br>  24. crescent: 1 if a crescent moon symbol present, else 0<br>  25. triangle: 1 if any triangles present, 0 otherwise<br>  26. icon:     1 if an inanimate image present (e.g., a boat), otherwise 0<br>  27. animate:  1 if an animate image (e.g., an eagle, a tree, a human hand) present, 0 otherwise<br>  28. text:     1 if any letters or writing on the flag (e.g., a motto or slogan), 0 otherwise<br>  29. topleft:  colour in the top-left corner (moving right to decide tie-breaks)<br>  30. botright: Colour in the bottom-left corner (moving left to decide tie-breaks)</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Forsyth's PC/BEAGLE User's Guide.</p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">Ron Kohavi and George H. John and Richard Long and David Manley and Karl Pfleger. <a 
+href="http://rexa.info/paper/3f9e71cd1f71f5f65b712d5cc5c29045d0193711">MLC++: A Machine Learning Library in C</a>. ICTAI. 1994.  [<a 
+href="../support/Flags#3f9e71cd1f71f5f65b712d5cc5c29045d0193711">View Context</a>].<br><br>George H. John and Ron Kohavi and Karl Pfleger. <a 
+href="http://rexa.info/paper/d4ea16b5ea06d216f7d2be28615fa9c66b98bbea">Irrelevant Features and the Subset Selection Problem</a>. ICML. 1994.  [<a 
+href="../support/Flags#d4ea16b5ea06d216f7d2be28615fa9c66b98bbea">View Context</a>].<br><br>Wl/odzisl/aw Duch and Karol Grudzi nski and Grzegorz Stawski. <a 
+href="http://rexa.info/paper/82cbfc464ed8d2bd0b91ffd1132022df16b7334d">SYMBOLIC FEATURES IN NEURAL NETWORKS</a>. Department of Computer Methods, Nicolaus Copernicus University.  [<a 
+href="../support/Flags#82cbfc464ed8d2bd0b91ffd1132022df16b7334d">View Context</a>].<br><br></p>
+
+-->
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" /><p class="normal">Ron Kohavi and George H. John and Richard Long and David Manley and Karl Pfleger. <a 
+href="http://rexa.info/paper/3f9e71cd1f71f5f65b712d5cc5c29045d0193711">MLC++: A Machine Learning Library in C</a>. ICTAI. 1994.  [<a 
+href="../support/Flags#3f9e71cd1f71f5f65b712d5cc5c29045d0193711">View Context</a>].<br><br>George H. John and Ron Kohavi and Karl Pfleger. <a 
+href="http://rexa.info/paper/d4ea16b5ea06d216f7d2be28615fa9c66b98bbea">Irrelevant Features and the Subset Selection Problem</a>. ICML. 1994.  [<a 
+href="../support/Flags#d4ea16b5ea06d216f7d2be28615fa9c66b98bbea">View Context</a>].<br><br>Wl/odzisl/aw Duch and Karol Grudzi nski and Grzegorz Stawski. <a 
+href="http://rexa.info/paper/82cbfc464ed8d2bd0b91ffd1132022df16b7334d">SYMBOLIC FEATURES IN NEURAL NETWORKS</a>. Department of Computer Methods, Nicolaus Copernicus University.  [<a 
+href="../support/Flags#82cbfc464ed8d2bd0b91ffd1132022df16b7334d">View Context</a>].<br><br></p>
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning 
+Repository's <a href="../citation_policy.html">citation policy</a></p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration 
+with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

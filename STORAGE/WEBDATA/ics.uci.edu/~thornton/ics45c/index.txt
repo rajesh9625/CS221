@@ -1,0 +1,29 @@
+ICS 45C Fall 2015ICS 45C Fall 2015 |
+News |
+Course Reference |
+Schedule |
+Project Guide |
+Notes and Examples |
+About Alex
+
+
+
+
+
+
+
+
+ICS 45C Fall 2015
+   Course News
+
+
+
+
+
+
+
+Check back here every day or so.  I will generally post important coursewide announcements here.  They will be listed in reverse-chronological order (i.e., newest items first).
+
+Date AddedNews ItemSu 12/13The final course grades are now available.M 12/7The last set of Notes and Examples is now available.W 11/25Two new sets of Notes and Examples are now available.Tu 11/24A new set of Notes and Examples is now available.F 11/21Project #4 is now available, along with a Schedule update and one new set of Notes and Examples.Tu 11/17A Schedule update, including a few missing readings from the Savitch textbook, for those of you using it alongside my Notes and Examples.Su 11/15The Project #3 due date is postponed until Friday, November 20.W 11/11New Notes and Examples sections are now available.Tu 11/3Today's remaining Notes and Examples section, about linked data structures, are now available.  Note that we aren't covering all of this material in lecture, since portions of it are prerequisite knowledge from courses you will have taken previously, but I've included a complete summary of the topic for those who haven't seen it recently.Sa 10/31An additional Schedule update is available, plus the postponement of the due date for Project #3 until Wednesday, November 18, to give us more lecture time to be prepared for the fourth project.Th 10/29A Schedule update is now available, along with two of next week's Notes and Examples sections.Th 10/29I made a small tweak to the Pointers and the Heap notes.  The code snippet in the section titled Dynamically allocating an object had a minor issue that I've fixed.Tu 10/27Project #3 is now available.M 10/26Notes and Examples through the end of this week are now available.Th 10/22Two new sets of Notes and Examples are now available.F 10/16Project #2 is now available, along with a Schedule update.F 10/16An additional two sets of Notes and Examples are now available.Th 10/15Two new sets of Notes and Examples are now available.W 10/14The Schedule has been updated, along with one missing batch of Notes and Examples.  More notes to come.Tu 10/13The schedule of labs in the Course Reference has been updated, with a few of the hours each week removed, because they conflict with the labs for ICS 46.M 10/12Multiple new sets of Notes and Examples are available, along with a Schedule update.  Additionally, I retitled the notes previously titled Behind the Scenes 1; this section is now titled Behind the Scenes.Th 10/8One batch of notes for today's lecture is now available; the rest will follow this weekend.Tu 10/6One more tweak has been made to the lab schedule in the Course Reference — removing one of the Friday hours, which was a course conflict for the student who was scheduled to tutor it.M 10/5A slight adjustment has been made to the lab schedule in the Course Reference.  In particular, we'll no longer have a lab on Mondays or Wednesdays from 10:00am-11:00am, but all other hours we had before remain covered.F 10/2Lab meetings will begin on Monday, October 5.  A complete schedule of times, along with more details about what the lab meetings are, etc., is available in the Course Reference.Th 10/1A Schedule update, along with some of next week's Notes and Examples, are now available.W 9/30The Project #0 write-up has been updated to include details about enabling virtualization (VT-x/AMD-v) support and how to ensure that you're host machine can run a 64-bit VM.  These details are based on things I've already sent out via email, but I've now included them with the rest of Project #0 for clarity.W 9/30A new set of notes is now available in the Notes and Examples section.Tu 9/29My office hours have been scheduled into a room.  I'll be in ICS 209 on Tuesdays and Thursdays from 8:20-9:40pm, beginning tonight.M 9/28The C++ Basics notes are available in the Notes and Examples section.Th 9/24Added the first batch of Notes and Examples, which are also now listed in the Schedule alongside the lectures that correspond to them.M 9/21
+      Welcome!  Please note a couple of things as we get started this quarter:
+      The first lecture will meet on Thursday, September 24.  There are no scheduled lab sections, but we will have informal lab meetings, with times and dates to be announced early in the quarter, but likely to begin sometime during Week 1.  For more information about meeting times of lab meetings, see the Course Reference.  For information about lecture material and readings, see the Schedule.I encourage you to spend some time reading through the material on the course web site.  It will be updated periodically throughout the quarter, and there will always be an announcement here describing each update.  For now, notice the set of links at the top of this (and every) page, leading you to the Course Reference, the Schedule, and the Project Guide, as well as a set of Notes and Examples — mostly emanating from the lectures — that will be posted throughout the quarter.

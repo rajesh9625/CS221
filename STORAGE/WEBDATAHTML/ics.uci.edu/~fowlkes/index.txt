@@ -1,0 +1,288 @@
+charless c. fowlkes - uc irvine - computer vision
+<html>
+  <head>
+    <title>
+    charless c. fowlkes - uc irvine - computer vision 
+    </title>
+    <link rel="icon" href="images/mug.jpg" type="image/jpg">
+    <meta name="keywords" content="charless c. fowlkes homepage computer vision natural image ecological statistics segmentation grouping perceptual organization computational biology gene expression atlas">
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+     <link rel="STYLESHEET" href="http://www.ics.uci.edu/~fowlkes/linkage.css" type="text/css">   
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23283073-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body bgcolor="#333333" text="#FFFFFF" link="#99CC99" alink="#FFFFFF" vlink="#99CC99">
+    <div class="sidebar">
+      <div class="sidebar2">
+      <br>
+
+<center> <a href="images/seq1c.gif" style="color:#999999"> <img src="images/mug3.jpg" alt="mugshot"></a></center>
+
+<h3>charless c. fowlkes</h3>
+associate professor<br>
+computer science<br>
+uc irvine<br>
+<br>
+fowlkes@ics.uci.edu<br>
+4076 dbh <br>
+949.824.6945<br>
+<br>
+<a href="http://www.uci.edu/">uci</a> : <a href="http://www.ics.uci.edu/computerscience/">cs</a> : <a href="http://vision.ics.uci.edu">vision group</a><br>
+<p></p>
+
+      </div>
+      <div class="sidebar2">
+  <a href="http://www.ics.uci.edu/~fowlkes/">home</a><br>
+  <a href="http://www.ics.uci.edu/~fowlkes/publications.html">publications</a><br>
+  <a href="http://www.ics.uci.edu/~fowlkes/presentations.html">presentations</a><br>
+  <a href="http://www.ics.uci.edu/~fowlkes/software.html">software</a><br>
+<!--  <a href="http://www.ics.uci.edu/~fowlkes/cv.pdf">cv</a><br>-->
+</div>
+
+    </div>
+    <div class="content">
+        <table>
+        <tr>
+        <td width=60%>
+        <br><br>
+        My research is in computational vision, in particular how to integrate
+        mechanisms for <a href="imageunderstanding/index.html">visual
+        recognition and perceptual organization</a>.
+        I'm interested in how measuring the predictive power of different visual
+        cues can provide general information-theoretic constraints on human
+        visual processing.  I also work on developing tools for <a href="bioshape/index.html">
+        biological image and shape analysis</a> in order to
+        measure morphology and spatial patterns of gene expression in
+        developing animals. 
+        <br><br>
+        <br><br>
+        </td>
+        <td width=15%>
+        <table>
+        <!--<tr><td><center><img width=130px src="vision.jpg"></center></td></tr>
+        <tr><td><img width=200px src="biology.jpg"></td></tr>-->
+        <tr><td><center><img width=100% src="vision.jpg"></center></td></tr>
+        <tr><td><img width=100% src="biology.jpg"></td></tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+
+        <h4>recent research and news: </h4>
+        <br><br>
+        <ul>
+        
+        <li>
+        D. Tcheng, A. Nayak, C. Fowlkes, S. Punyasena,
+        "Visual recognition software for binary classification and its application to spruce pollen identification"
+        <a href="http://www.plosone.org/" style="color:#BBBBFF">PLoS ONE</a>, to appear
+        <br>
+        <br>
+
+        <li>
+        R. Diaz, M. Lee, J. Schubert, C. Fowlkes,
+        "Lifting GIS Maps into Strong Geometric Context" 
+        <a href="http://www.wacv16.org/" style="color:#BBBBFF">WACV 2016</a>
+        <a href="http://arxiv.org/abs/1507.03698" style="color:#BBBBFF">arXiv:1507.03698</a>
+        <a href="papers/dlsf_gis_wacv16.pdf">[pdf]</a>
+        <br>
+        <br>
+
+        <li> We received a <a href="https://en.wikipedia.org/wiki/International_Conference_on_Computer_Vision#Helmholtz_Prize"
+        style="color:#DDDDFF" >Helmholtz Prize</a> in 2015 for having a
+        significant impact on the field of computer vision with our ICCV 2001
+        paper: D.  Martin, C. Fowlkes, D. Tal, J. Malik.  
+        "A Database of Human Segmented Natural Images and its Application to Evaluating Segmentation
+        Algorithms and Measuring Ecological Statistics"</a>
+        <a href="papers/mftm-iccv01.pdf">[pdf]</a>
+        <br><br>                
+
+
+         <li> M. Chiang, S. Hallman, A. Cinquin, N. Reyes de Mochel, A. Paz, S. Kawauchi, A. Calof, K. Cho, C. Fowlkes, O. Cinquin,
+         "Analysis of in vivo single cell behavior by high throughput, human-in-the-loop segmentation of three-dimensional images",
+         <a href="http://www.biomedcentral.com/1471-2105/16/397" style="color:#BBBBFF">BMC Bioinformatics</a> 2015, 16:397  doi:10.1186/s12859-015-0814-7.
+         <a href="papers/chiang_bmcbioinfo2015.pdf">[pdf]</a>
+        <br><br>
+
+         <li>
+          J. Yarkony, C. Fowlkes, "Planar Ultrametrics for Image Segmentation", Proc. of
+          <a href="http://nips.cc/" style="color:#BBBBFF">NIPS</a>,  (Dec. 2015).
+          <a href="http://arxiv.org/abs/1507.02407" style="color:#BBBBFF">arXiv:1507.02407</a>  
+          <a href="papers/yf_nips_2105.pdf">[pdf]</a>
+          <br>
+          <br>
+
+          <li>J. B. Treweek, K. Chan, N. Flytzanis, B. Yang, B. Deverman, A. Greenbaum, A.
+          Lignell, C. Xiao, L. Cai, M. Ladinsky, P. Bjorkman, C. Fowlkes, V. Gradinaru
+          "Whole-Body Tissue Stabilization and Selective Extractions via Tissue-Hydrogel
+          Hybrids for High Resolution Intact Circuit Mapping and Phenotyping", 
+          <a
+          href="http://www.nature.com/nprot/journal/v10/n11/full/nprot.2015.122.html"
+          style="color:#BBBBFF">Nature Protocols</a>, 10 (11), 1860-1896, (2015)
+          DOI 10.1038/nprot.2015.122
+          <br>
+          <br>
+
+          <li>
+          S. Wang, C. Fowlkes, "Learning Optimal Parameters for Multi-target Tracking",
+          <a href="http://bmvc2015.swan.ac.uk/" style="color:#DDDDFF">BMVC 2015</a>
+          <a href="papers/wf-multitarget-bmvc2015.pdf">[pdf]</a>
+          <br>
+          <br>
+
+         <li>
+          G. Ghiasi, C. Fowlkes, "Using segmentation to predict the absence of occluded parts",
+          <a href="http://bmvc2015.swan.ac.uk/" style="color:#DDDDFF">BMVC 2015</a>.
+          <a href="papers/gf-faceocclusion-bmvc2015.pdf">[pdf]</a>
+          <a href="https://github.com/golnazghiasi/cofw-train-data-masks">[data]</a>
+          <br>
+          <br>
+
+
+        <li> 
+        G. Ghiasi, C. Fowlkes, "Occlusion Coherence: Detecting and Localizing Occluded Faces", Technical Report, June 2015
+        <a href="http://arxiv.org/abs/1506.08347" style="color:#BBBBFF">arXiv:1506.08347</a> 
+        <a href="papers/gf-pamisubmit2015.pdf">[pdf]</a>
+        <a href="https://github.com/golnazghiasi/HPM-detection-code">[code]</a>
+        <a href="https://github.com/golnazghiasi/HPM-detection-code/tree/master/UCI_OFD">[dataset]</a>
+        <br>
+        <br>
+
+          <li>
+           S. Hallman, C. Fowlkes, "Oriented Edge Forests for Boundary Detection", 
+           <a href="http://www.pamitc.org/cvpr15/" style="color:#CCCCFF" >CVPR</a>, Boston, MA, June 2015.
+           <a href="http://arxiv.org/abs/1412.4181" style="color:#BBBBFF">arXiv:1412.4181</a>
+           <a href="papers/hf_oeforests_cvpr2015.pdf">[pdf]</a>
+           <a href="https://github.com/samhallman/oef">[code]</a>
+           <br><br>
+
+          <li>
+          X. Zhu, C. Vondrick, C. Fowlkes, D. Ramanan, "Do we need more training data?", 
+         <a href="http://link.springer.com/article/10.1007/s11263-015-0812-2" style="color:#CCCCFF" >IJCV</a>, March 2015
+         <a href="http://arxiv.org/abs/1503.01508" style="color:#BBBBFF">arXiv:1503.01508</a>
+         <a href="papers/zvfr-ijcv2015.pdf">[pdf]</a>
+          <br><br>
+
+          <li>
+           M. Staller, C. Fowlkes, M. Bragdon, J. Estrada, Z. Wunderlich, A. DePace, "A
+           gene expression atlas of a bicoid-depleted Drosophila embryo reveals
+           early canalization of cell fate", 
+           <a href="http://dev.biologists.org/content/142/3/587.full" style="color:#CCCCFF" >Development</a> 142, p 587-596, (2015)
+           <a href="papers/Development-2015-Staller-587-96.pdf">[pdf]</a>
+           <br><br>
+<br><br>
+        more recent pubs <a href="publications.html">here...</a>
+        </ul>
+
+        <br><br>
+        <br><br>
+        <h4>teaching:</h4>
+        <br>
+        cs 117 : project in computer vision [w09,f13,s15]<br>
+        ics 162 : modeling and world building [f12,s14,f15]<br>
+        cs 116 : computational photography and vision [w10,w11,w13,w14,w16]<br>
+        cs 216 : image understanding [f08,f10,f11,f12,s14,w16]<br>
+        cs 217 : light and geometry in vision [s10,w12,s15]<br>
+        cs 295 : research topics in vision [s09,w10,w11]<br>
+        cs 177 : applications of probability in computer science [s08]<br>
+        </ul>
+        <br><br>
+        <h4>students:</h4>
+        <br>
+        advisees
+        <ul>
+        <li><a href="http://www.ics.uci.edu/~rdiazgar">Ra&uacute;l D&iacute;az</a> (PhD)<br>
+        <li><a href="http://www.ics.uci.edu/~gghiasi/">Golnaz Ghiasi</a> (PhD)<br>
+        <li><a href="http://www.ics.uci.edu/~minhaenl/">Minhaeng Lee</a> (PhD)<br>
+        <li><a href="http://baileykong.com">Bailey Kong</a> (PhD)<br>
+        <li><a href="http://www.ics.uci.edu/~skong2/">Shu Kong</a> (PhD) <br>
+        </ul>
+        <br>
+        past advisees and collaborators<p>
+        <ul>
+        <li><a href="http://www.ics.uci.edu/~shallman/">Sam Hallman</a> (PhD, 2015) now at Amazon<br>
+        <li><a href="">Michael Chiang</a> (PhD, 2015)<br>
+        <li><a href="https://www.linkedin.com/pub/hyeoungho-wayne-bae/24/957/8b3">Hyeoungho Bae</a> (PhD, 2013) now at Microsoft<br>
+        <li><a href="https://www.linkedin.com/pub/shaofei-wang/55/681/24b">Shaofei Wang</a> (MS, 2013)<br>
+        <li><a href="http://www.ece.ucsb.edu/~jyarkony/">Julian Yarkony</a> (PhD,2012) now at Experian Data Lab<br>
+        <li><a href="https://www.linkedin.com/pub/matthew-nease/50/840/178">Matthew Nease</a> (BS, 2012) now at Edmunds<br>
+        <li>Shu-Chi Hsu (MS, 2012)<br>
+        <li><a href="https://www.linkedin.com/pub/yihang-bo/20/785/2a5">Yihang Bo</a> (visiting PhD, 2010-2011) now at Beijing Film Academy <br> 
+        <li><a href="https://www.linkedin.com/in/ragibmorshed">Ragib Morshed</a> (MS, 2011) now at Adconion <br>
+        <li><a href="https://www.linkedin.com/pub/sangeeta-jha/19/a16/b97">Sangeeta Jha</a>  (MS, 2010) now at Intel <br>
+        <li><a href="https://www.linkedin.com/in/totran">Tony Tran</a> (MS, 2009) now at Bizo<br>
+        <li><a href="">Dennis Park</a> (MS, 2009) now at Vicarious<br>
+        </ul>
+        <br><br>
+        <!--
+        <h4>awards:</h4>
+        <br>
+        My research has received several awards including
+        <ul>
+        <li> <a href="https://en.wikipedia.org/wiki/International_Conference_on_Computer_Vision#Helmholtz_Prize" style="color:#DDDDFF" >Helmholtz
+        Prize</a> in 2015 for making a singificant contribution to the field of computer vision with our paper:
+        <br><br>
+        <a href="papers/mftm-iccv01.pdf">
+        "A Database of Human Segmented Natural Images and its Application to Evaluating Segmentation
+        Algorithms and Measuring Ecological Statistics"</a>,
+        D. Martin, C. Fowlkes, D. Tal, J. Malik.  
+        <a href="http://www.cs.ubc.ca/conferences/ICCV/" style="color:#DDDDFF">ICCV 2001</a>
+        <br><br>                
+
+        <li><a href="https://en.wikipedia.org/wiki/Marr_Prize" style="color:#DDDDFF" >Marr Prize</a> in 2009 for our paper:
+        <br><br>
+       <a href="papers/drf-iccv09.pdf">"Discriminative models for multi-class object layout",</a>
+        C. Desai, D. Ramanan, C. Fowlkes.  <a href="http://www.iccv2009.org/" style="color:#DDDDFF" >ICCV 2009</a>
+        <br><br>
+       </ul>
+-->
+
+        <br><br>
+        <h4>funding:</h4>
+        <br>
+        My research is currently supported by:
+        <ul>
+        <li>NSF (
+        <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1253538">IIS-1253538</a>,
+        <a href="http://nsf.gov/awardsearch/showAward?AWD_ID=1262547">DBI-1262547</a>
+        )
+        <li> NIH (<a href="">NIBIB 1R25EB022366</a>)
+        <li> NIST <a href="http://forensic.stat.iastate.edu/">CSAFE: Center for Statistics and Applications in Forensic Evidence</a>
+        <li> Research Gift from Adobe
+       
+        </ul>
+        previously: 
+        <ul>
+        <li>National Science Foundation <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1053036">DBI-1053036</a>
+        <li><a href="http://www.google.com/research/university/">Google Research Award</a>
+        <li><a href="http://www.ucop.edu/labresrfp/">UC Labs Research Program</a>
+        </ul>
+ <br><br>
+        <h4>meetings organized: </h4>
+        <ul>
+        <li> <a href="http://vision.cse.psu.edu/vlpr2012/vlpr2012.html">USA-Sino Summer School in Vision, Learning, Pattern Recognition: VLPR 2012</a> Fudan Unviersity, Shanghai, China July 2012.
+        <br>
+        <br>
+        <li> <a href="http://vision.ics.uci.edu/pocv2012/index.html">The Eighth IEEE Computer Society Workshop on Perceptual Organization in Computer Vision (POCV 2012)</a>, CVPR 2012, Providence, RI.
+        <br>
+        <br>
+        <li> <a href="http://vision.ics.uci.edu/sccv/">Annual Southern California Computer Vision Meetup</a><br>
+        </ul>
+        <br>
+
+    </div>
+
+  </body>
+</html>
+

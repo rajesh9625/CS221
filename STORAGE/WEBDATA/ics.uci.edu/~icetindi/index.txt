@@ -1,0 +1,75 @@
+Inci Cetindil's HomepageInci Cetindil
+
+
+
+PhD student
+
+ 
+Resume 
+
+Advisor: Prof. Chen Li
+
+
+
+
+Department of Computer Science
+
+Information Systems Group 
+
+Donald Bren Hall, Room 2062
+
+University of California, Irvine
+
+
+
+
+
+Research
+Information Management, Instant and Fuzzy Search, Data Cleaning
+
+
+
+Education
+PhD student, Computer Science Department, University of California, Irvine, USA.
+M.S. of Computer Science, University of California, Riverside, USA.
+B.S. of Computer Science, Bilkent University, TURKEY.   
+
+
+
+Projects
+AsterixDB
+iPubMed
+TASTIER: Efficient Auto-Completion, Type-Ahead Search. 
+qSpell: Spelling Correction of Web Search Queries
+
+
+Publications
+Efficient Instant-Fuzzy Search with Proximity Ranking.
+
+Inci Cetindil, Jamshid Esmaelnezhad, Taewoo Kim, Chen Li
+
+ICDE 2014 (to appear). 
+
+Analysis of Instant Search Query Logs.
+
+Inci Cetindil, Jamshid Esmaelnezhad, Chen Li, David Newman
+
+WebDB 2012.
+
+qSpell: Spelling Correction of Web Search Queries using Ranking Models and Iterative Correction.
+
+Y. Ganjisaffar, A. Zilio, S. Javanmardi, I. Cetindil, M. Sikka, S. Katumalla, N. Khatib, C. Li, C. Lopes
+
+Spelling Alteration for Web Search Workshop, Bellevue, WA, USA, July 2011.
+
+Interactive and fuzzy search: a dynamic way to explore MEDLINE.
+
+Jiannan Wang, Inci Cetindil, Shengyue Ji, Chen Li, Xiaohui Xie, Guoliang Li, Jianhua Feng
+
+Bioinformatics 2010.
+
+Making Instant Fuzzy Search Faster with Less Memory.
+
+Shengyue Ji, Inci Cetindil, Chen Li
+
+Technical Report, UC Irvine 2010.

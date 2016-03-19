@@ -1,0 +1,153 @@
+Computational Vision | ICS | UC IrvineComputational Vision at UC Irvine  
+  
+  
+    homeprojectspeoplepublicationsdatasetseventscoursescontactlinks
+  
+
+  
+    
+      Overview:
+      
+        
+A large precentage of the images and video that exists today - from personal
+photo collections to webcams to online images - contain people. We are
+working on automated methods for analyzing people from such data. Such
+methods have a variety of applications from pedestrian detection for
+autonomous vehicles to surveillance-based security to motion capture
+for computer graphics & interaction. We are also interested in
+higher-level activity models that can capture human actions and
+behavior.
+
+      
+    
+    
+      Publications:
+      
+        
+
+  
+  Occlusion Coherence: Detecting and Localizing Occluded FacesGolnaz Ghiasi, Charless FowlkesarXiv:, 2015, abs/1506.08347.[pdf]
+
+
+  
+  First-Person Pose Recognition using Egocentric WorkspacesGrégory Rogez, James Supančič, Deva RamananCVPR, 2015.[pdf]
+
+
+  
+  Using segmentation to predict the absence of occluded partsGolnaz Ghiasi, Charless FowlkesBritish Machine Vision Conference (BMVC), 2015.[pdf]
+
+
+  
+  Understanding Everyday Hands in Action from RGB-D ImagesGrégory Rogez, James Supančič, Deva RamananIEEE International Conference on Computer Vision, 2015.[pdf]
+
+
+  
+  Occlusion Coherence: Localizing Occluded Faces with a Hierarchical Deformable Part ModelGolnaz Ghiasi, Charless FowlkesCVPR, 2014.[pdf]
+
+
+  
+  3D Hand Pose Detection in Egocentric {RGB-D} ImagesGr{\'{e}}gory Rogez, James III, Maryam Khademi, Jos{\'{e}} Montiel, Deva RamananCoRR, 2014, abs/1412.0065.[pdf]
+
+
+  
+  Parsing Occluded PeopleGolnaz Ghiasi, Yi Yang, Deva Ramanan, Charless FowlkesCVPR, 2014.[pdf]
+
+
+  
+  Egovision4Health - Assessing Activities of Daily Living from a Wearable RGB-D Camera for In-Home Health Care ApplicationsGrégory Rogez, Deva Ramanan, J.M.M. MontielERCIM News, 2013, 2013, 95, 18-19.[pdf]
+
+
+  
+  Monocular 3-D Gait Tracking in Surveillance ScenesGrégory Rogez, Jonathan Rihan, J.J. Guerrero, Carlos OrriteCybernetics, IEEE Transactions on, 2013, PP, 99.[pdf]
+
+
+  
+  Fast Human Pose Detection Using Randomized Hierarchical Cascades of RejectorsGrégory Rogez, Jonathan Rihan, Carlos Orrite, Philip TorrInternational Journal of Computer Vision, 2012, 99, 1, 25-52.[pdf]
+
+
+  
+  A Large-scale Benchmark Dataset for Event Recognition in Surveillance VideoSangmin Oh, Anthony Hoogs, Amitha Perera, Naresh Cuntoor, C.-C. Chen, Jong Lee, Saurajit Mukherjee, J. Aggarwal, Hyungtae Lee, Larry Davis, Eran Swears, Xioyang Wang, Qiang Ji, Kishore Reddy, Mubarak Shah, Carl Vondrick, Hamed Pirsiavash, Deva Ramanan, Jenny Yuen, Antonio Torralba, Bi Song, Anesco Fong, Amit Roy-Chowdhury, Mita DesaiCVPR, 2011.[pdf]
+
+
+  
+  Shape-based Pedestrian ParsingYihang Bo, Charless FowlkesCVPR, 2011.[pdf]
+
+
+  
+  Globally-Optimal Greedy Algorithms for Tracking a Variable Number of ObjectsHamed Pirsiavash, Deva Ramanan, Charless FowlkesIEEE conference on Computer Vision and Pattern Recognition (CVPR), 2011.[pdf]
+
+
+  
+  Where's Waldo: Matching People in Images of CrowdsRahul Garg, Deva Ramanan, Steve Seitz, Noah SnavelyIEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2011.[pdf]
+
+
+  
+  Discriminative models for static human-object interactionsChaitanya Desai, Deva Ramanan, Charless FowlkesIEEE Conference on Computer Vision and Pattern Recognition, Workshop on Structured Prediction, 2010.[pdf]
+
+
+  
+  SEMARTCam Scheduler - Semantics Driven Real-Time Data Collection from Indoor Camera Networks to Maximize Event DetectionRonen Vaisenberg, Sharad Mehrotra, Deva RamananJournal of Real-Time Image Processing (JRTIP), 2010.[pdf]
+
+
+  
+  Efficiently Scaling Up Video Annotation with Crowdsourced MarketplacesCarl Vondrick, Deva Ramanan, Donald PattersonProc. of the European Conference on Computer Vision, 2010.[pdf]
+
+
+  
+  Robust Tracking of the Upper Limb for Functional Stroke AssessmentSonya Allin, Nancy Baker, Emily Eckel, Deva RamananIEEE Transactions on Neural Systems and Rehabilitation Engineering (NSRE), 2010.[pdf]
+
+
+  
+  Exploiting Semantics for Scheduling Data Collection From Sensors in Real-Time to Maximimize Event DetectionRonen Vaisenberg, Sharad Mehrotra, Deva RamananMultimedia and Computer Networks (MMCN), 2009.[pdf]
+
+
+  
+  Assessment of Post Stroke Functioning Using Machine VisionSonya Allin, Deva RamananIAPR Conference on Machine Vision Applications (MVA), 2007.[pdf]
+
+
+  
+  Leveraging Archival Video for Building Face DatasetsDeva Ramanan, Simon Baker, Sham KakadeICCV, 2007, 141.[pdf]
+
+
+  
+  Tracking People by Learning Their AppearanceDeva Ramanan, D.A. Forsyth, Andrew ZissermanPAMI, 2007, 29, 1, 65-81.[pdf]
+
+
+  
+  Learning to parse images of articulated bodiesDeva RamananAdvances in Neural Information Processing Systems 19, 2007, 1129--1136.[pdf]
+
+
+  
+  Using Segmentation to Verify Object HypothesesDeva RamananCVPR, 2007, 1-8.[pdf]
+
+
+  
+  Training Deformable Models for LocalizationDeva Ramanan, Cristian SminchisescuCVPR, 2006, I: 206-213.[pdf]
+
+
+  
+  Tracking People and Recognizing Their ActivitiesDeva Ramanan, D.A. Forsyth, Andrew ZissermanCVPR, 2005, II: 1194.[pdf]
+
+
+  
+  Computational studies of human motion: part 1, tracking and motion synthesisDavid Forsyth, Okan Arikan, Leslie Ikemoto, James O'Brien, Deva RamananFound. Trends. Comput. Graph. Vis., 2005, 1, 2-3, 77--254.[pdf]
+
+
+  
+  Automatic Annotation of Everyday MovementsDeva Ramanan, David ForsythAdvances in Neural Information Processing Systems 16, 2004.[pdf]
+
+
+  
+  Finding and tracking people from the bottom upDeva Ramanan, D.A. ForsythCVPR, 2003, II: 467-474.[pdf]
+
+
+      
+    
+  
+  
+    
+      Computational Vision |
+      School of Information and Computer Sciences |
+      UC Irvine
+    
+    © 2007-2015 UC Irvine

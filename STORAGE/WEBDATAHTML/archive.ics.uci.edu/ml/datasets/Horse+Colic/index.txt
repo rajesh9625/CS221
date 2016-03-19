@@ -1,0 +1,287 @@
+UCI Machine Learning Repository: Horse Colic Data Set
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Horse Colic Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Horse Colic Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/horse-colic/"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="../machine-learning-databases/horse-colic/horse-colic.names"><font 
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Well documented attributes; 368 instances with 28 attributes (continuous, discrete, and nominal); 30% missing values</p>
+     </td>
+     <td><img 
+src="../assets/MLimages/Large47.jpg" 
+hspace=20 vspace=10  /> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">368</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Life</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Categorical, Integer, Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">27</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">1989-08-06</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">Yes</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">55156</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Creators: <br><br>Mary McLeish & Matt Cecile<br>Department of Computer Science<br>University of Guelph<br>Guelph, Ontario, Canada N1G 2W1<br><u>mdmcleish <b>'@'</b> water.waterloo.edu</u><br><br>Donor:<br><br>Will Taylor (<u>taylor <b>'@'</b> pluto.arc.nasa.gov</u>)</p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">2 data files: <br>      -- horse-colic.data: 300 training instances<br>      -- horse-colic.test: 68 test instances<br><br>Possible class attributes: 24 (whether lesion is surgical)<br>     -- others include: 23, 25, 26, and 27<br><br>Many Data types: (continuous, discrete, and nominal)</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">  1:  surgery?<br>          1 = Yes, it had surgery<br>          2 = It was treated without surgery<br><br>  2:  Age <br>          1 = Adult horse<br>          2 = Young (< 6 months)<br><br>  3:  Hospital Number <br>          - numeric id<br>          - the case number assigned to the horse (may not be unique if the horse is treated > 1 time)<br><br>  4:  rectal temperature<br>          - linear<br>          - in degrees celsius.<br>          - An elevated temp may occur due to infection.<br>          - temperature may be reduced when the animal is in late shock<br>          - normal temp is 37.8<br>          - this parameter will usually change as the problem progresses, eg. may start out normal, then become elevated because of the lesion, passing back through the normal range as the horse goes into shock<br>  5:  pulse <br>          - linear<br>          - the heart rate in beats per minute<br>          - is a reflection of the heart condition: 30 -40 is normal for adults<br>          - rare to have a lower than normal rate although athletic horses may have a rate of 20-25<br>          - animals with painful lesions or suffering from circulatory shock may have an elevated heart rate<br><br>  6:  respiratory rate<br>          - linear<br>          - normal rate is 8 to 10<br>          - usefulness is doubtful due to the great fluctuations<br><br>  7:  temperature of extremities<br>          - a subjective indication of peripheral circulation<br>          - possible values:<br>               1 = Normal<br>               2 = Warm<br>               3 = Cool<br>               4 = Cold<br>          - cool to cold extremities indicate possible shock<br>          - hot extremities should correlate with an elevated rectal temp.<br><br>  8:  peripheral pulse<br>          - subjective<br>          - possible values are:<br>               1 = normal<br>               2 = increased<br>               3 = reduced<br>               4 = absent<br>          - normal or increased p.p. are indicative of adequate circulation while reduced or absent indicate poor perfusion<br><br>  9:  mucous membranes<br>          - a subjective measurement of colour<br>          - possible values are:<br>               1 = normal pink<br>               2 = bright pink<br>               3 = pale pink<br>               4 = pale cyanotic<br>               5 = bright red / injected<br>               6 = dark cyanotic<br>          - 1 and 2 probably indicate a normal or slightly increased circulation<br>          - 3 may occur in early shock<br>          - 4 and 6 are indicative of serious circulatory compromise<br>          - 5 is more indicative of a septicemia<br><br> 10: capillary refill time<br>          - a clinical judgement. The longer the refill, the poorer the circulation<br>          - possible values<br>               1 = < 3 seconds<br>               2 = >= 3 seconds<br><br> 11: pain - a subjective judgement of the horse's pain level<br>          - possible values:<br>               1 = alert, no pain<br>               2 = depressed<br>               3 = intermittent mild pain<br>               4 = intermittent severe pain<br>               5 = continuous severe pain<br>          - should NOT be treated as a ordered or discrete variable!<br>          - In general, the more painful, the more likely it is to require surgery<br>          - prior treatment of pain may mask the pain level to some extent<br><br> 12: peristalsis                              <br>          - an indication of the activity in the horse's gut. As the gut becomes more distended or the horse becomes more toxic, the activity decreases<br>          - possible values:<br>               1 = hypermotile<br>               2 = normal<br>               3 = hypomotile<br>               4 = absent<br><br> 13: abdominal distension<br>          - An IMPORTANT parameter.<br>          - possible values<br>               1 = none<br>               2 = slight<br>               3 = moderate<br>               4 = severe<br>          - an animal with abdominal distension is likely to be painful and have reduced gut motility.<br>          - a horse with severe abdominal distension is likely to require surgery just tio relieve the pressure<br><br> 14: nasogastric tube<br>          - this refers to any gas coming out of the tube<br>          - possible values:<br>               1 = none<br>               2 = slight<br>               3 = significant<br>          - a large gas cap in the stomach is likely to give the horse discomfort<br><br> 15: nasogastric reflux<br>          - possible values<br>               1 = none<br>               2 = > 1 liter<br>               3 = < 1 liter<br>          - the greater amount of reflux, the more likelihood that there is some serious obstruction to the fluid passage from the rest of the intestine<br><br> 16: nasogastric reflux PH<br>          - linear<br>          - scale is from 0 to 14 with 7 being neutral<br>          - normal values are in the 3 to 4 range<br><br> 17: rectal examination - feces<br>          - possible values<br>               1 = normal<br>               2 = increased<br>               3 = decreased<br>               4 = absent<br>          - absent feces probably indicates an obstruction<br><br> 18: abdomen<br>          - possible values<br>               1 = normal<br>               2 = other<br>               3 = firm feces in the large intestine<br>               4 = distended small intestine<br>               5 = distended large intestine<br>          - 3 is probably an obstruction caused by a mechanical impaction and is normally treated medically<br>          - 4 and 5 indicate a surgical lesion<br><br> 19: packed cell volume<br>          - linear<br>          - the # of red cells by volume in the blood<br>          - normal range is 30 to 50. The level rises as the circulation becomes compromised or as the animal becomes dehydrated.<br><br> 20: total protein<br>          - linear<br>          - normal values lie in the 6-7.5 (gms/dL) range<br>          - the higher the value the greater the dehydration<br><br> 21: abdominocentesis appearance<br>          - a needle is put in the horse's abdomen and fluid is obtained from<br>            the abdominal cavity<br>          - possible values:<br>               1 = clear<br>               2 = cloudy<br>               3 = serosanguinous<br>          - normal fluid is clear while cloudy or serosanguinous indicates a compromised gut<br><br> 22: abdomcentesis total protein<br>          - linear<br>          - the higher the level of protein the more likely it is to have a compromised gut. Values are in gms/dL<br><br> 23: outcome<br>          - what eventually happened to the horse?<br>          - possible values:<br>               1 = lived<br>               2 = died<br>               3 = was euthanized<br><br> 24: surgical lesion?<br>          - retrospectively, was the problem (lesion) surgical?<br>          - all cases are either operated upon or autopsied so that this value and the lesion type are always known<br>          - possible values:<br>               1 = Yes<br>               2 = No<br><br> 25, 26, 27: type of lesion<br>          - first number is site of lesion<br>               1 = gastric<br>               2 = sm intestine<br>               3 = lg colon<br>               4 = lg colon and cecum<br>               5 = cecum<br>               6 = transverse colon<br>               7 = retum/descending colon<br>               8 = uterus<br>               9 = bladder<br>               11 = all intestinal sites<br>               00 = none<br>          - second number is type<br>               1 = simple<br>               2 = strangulation<br>               3 = inflammation<br>               4 = other<br>          - third number is subtype<br>               1 = mechanical<br>               2 = paralytic<br>               0 = n/a<br>          - fourth number is specific code<br>               1 = obturation<br>               2 = intrinsic<br>               3 = extrinsic<br>               4 = adynamic<br>               5 = volvulus/torsion<br>               6 = intussuption<br>               7 = thromboembolic<br>               8 = hernia<br>               9 = lipoma/slenic incarceration<br>               10 = displacement<br>               0 = n/a<br> 28: cp_data<br>          - is pathology data present for this case?<br>               1 = Yes<br>               2 = No<br>          - this variable is of no significance since pathology data is not included or collected for these cases</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">N/A</p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">Julie Greensmith. <a 
+href="http://rexa.info/paper/09b1c64b200c3b3acff18a3e45a2d75ba0aef2b7">New Frontiers For An Artificial Immune System</a>. Digital Media Systems Laboratory HP Laboratories Bristol. 2003.  [<a 
+href="../support/Horse+Colic#09b1c64b200c3b3acff18a3e45a2d75ba0aef2b7">View Context</a>].<br><br>Richard Nock and Marc Sebban and David Bernard. <a 
+href="http://rexa.info/paper/a914c3920de02d035db122f72172f31446e9f5e1">A SIMPLE LOCALLY ADAPTIVE NEAREST NEIGHBOR RULE WITH APPLICATION TO POLLUTION FORECASTING</a>. International Journal of Pattern Recognition and Artificial Intelligence Vol. 2003.  [<a 
+href="../support/Horse+Colic#a914c3920de02d035db122f72172f31446e9f5e1">View Context</a>].<br><br>Huan Liu and Hiroshi Motoda and Lei Yu. <a 
+href="http://rexa.info/paper/e69241ee87f9d58fd07b8ccbee48fbaa881fd695">Feature Selection with Selective Sampling</a>. ICML. 2002.  [<a 
+href="../support/Horse+Colic#e69241ee87f9d58fd07b8ccbee48fbaa881fd695">View Context</a>].<br><br>Marc Sebban and Richard Nock and Stéphane Lallich. <a 
+href="http://rexa.info/paper/1b77c2b6fd8a261af286cf411879f9f520824bd6">Stopping Criterion for Boosting-Based Data Reduction Techniques: from Binary to Multiclass Problem</a>. Journal of Machine Learning Research, 3. 2002.  [<a 
+href="../support/Horse+Colic#1b77c2b6fd8a261af286cf411879f9f520824bd6">View Context</a>].<br><br>Mukund Deshpande and George Karypis. <a 
+href="http://rexa.info/paper/a32ab1b3da96c9ae515a685b4fcf50e857708f24">Using conjunction of attribute values for classification</a>. CIKM. 2002.  [<a 
+href="../support/Horse+Colic#a32ab1b3da96c9ae515a685b4fcf50e857708f24">View Context</a>].<br><br>Mark A. Hall. <a 
+href="http://rexa.info/paper/cd11168bb19fd462bc59beefbe670bc4eb31e3eb">Department of Computer Science Hamilton, NewZealand Correlation-based Feature Selection for Machine Learning</a>. Doctor of Philosophy at The University of Waikato. 1999.  [<a 
+href="../support/Horse+Colic#cd11168bb19fd462bc59beefbe670bc4eb31e3eb">View Context</a>].<br><br>Kai Ming Ting and Ian H. Witten. <a 
+href="http://rexa.info/paper/70172e511a3bc27c7927119a3b2a3405fbad99e0">Issues in Stacked Generalization</a>. J. Artif. Intell. Res. (JAIR, 10. 1999.  [<a 
+href="../support/Horse+Colic#70172e511a3bc27c7927119a3b2a3405fbad99e0">View Context</a>].<br><br>Eibe Frank and Ian H. Witten. <a 
+href="http://rexa.info/paper/27e33344198975ea1b20e02c8f0fce01cd29f6e5">Generating Accurate Rule Sets Without Global Optimization</a>. ICML. 1998.  [<a 
+href="../support/Horse+Colic#27e33344198975ea1b20e02c8f0fce01cd29f6e5">View Context</a>].<br><br>Gabor Melli. <a 
+href="http://rexa.info/paper/287f8092a743949a6e0151893b9e3bc4d03466ed">A Lazy Model-Based Approach to On-Line Classification</a>. University of British Columbia. 1989.  [<a 
+href="../support/Horse+Colic#287f8092a743949a6e0151893b9e3bc4d03466ed">View Context</a>].<br><br>H. Altay G uvenir and Aynur Akkus. <a 
+href="http://rexa.info/paper/cf334aad055b27faaeece97ee1630e146388cd10">WEIGHTED K NEAREST NEIGHBOR CLASSIFICATION ON FEATURE PROJECTIONS</a>. Department of Computer Engineering and Information Science Bilkent University.  [<a 
+href="../support/Horse+Colic#cf334aad055b27faaeece97ee1630e146388cd10">View Context</a>].<br><br>Kai Ming Ting and Ian H. Witten. <a 
+href="http://rexa.info/paper/939595ca638eb3390e9bb9c4e6cc1352163cbf18">Stacked Generalization: when does it work</a>. Department of Computer Science University of Waikato.  [<a 
+href="../support/Horse+Colic#939595ca638eb3390e9bb9c4e6cc1352163cbf18">View Context</a>].<br><br>Alexander K. Seewald. <a 
+href="http://rexa.info/paper/e2b2b723df700c90e69a31a4403b740c2d2a7b2f">Dissertation Towards Understanding Stacking Studies of a General Ensemble Learning Scheme ausgefuhrt zum Zwecke der Erlangung des akademischen Grades eines Doktors der technischen Naturwissenschaften</a>.  [<a 
+href="../support/Horse+Colic#e2b2b723df700c90e69a31a4403b740c2d2a7b2f">View Context</a>].<br><br>James J. Liu and James Tin and Yau Kwok. <a 
+href="http://rexa.info/paper/0a882383e36d72c5890e2d191326433e23e53c9b">An Extended Genetic Rule Induction Algorithm</a>. Department of Computer Science Wuhan University.  [<a 
+href="../support/Horse+Colic#0a882383e36d72c5890e2d191326433e23e53c9b">View Context</a>].<br><br></p>
+
+-->
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" /><p class="normal">Julie Greensmith. <a 
+href="http://rexa.info/paper/09b1c64b200c3b3acff18a3e45a2d75ba0aef2b7">New Frontiers For An Artificial Immune System</a>. Digital Media Systems Laboratory HP Laboratories Bristol. 2003.  [<a 
+href="../support/Horse+Colic#09b1c64b200c3b3acff18a3e45a2d75ba0aef2b7">View Context</a>].<br><br>Richard Nock and Marc Sebban and David Bernard. <a 
+href="http://rexa.info/paper/a914c3920de02d035db122f72172f31446e9f5e1">A SIMPLE LOCALLY ADAPTIVE NEAREST NEIGHBOR RULE WITH APPLICATION TO POLLUTION FORECASTING</a>. International Journal of Pattern Recognition and Artificial Intelligence Vol. 2003.  [<a 
+href="../support/Horse+Colic#a914c3920de02d035db122f72172f31446e9f5e1">View Context</a>].<br><br>Huan Liu and Hiroshi Motoda and Lei Yu. <a 
+href="http://rexa.info/paper/e69241ee87f9d58fd07b8ccbee48fbaa881fd695">Feature Selection with Selective Sampling</a>. ICML. 2002.  [<a 
+href="../support/Horse+Colic#e69241ee87f9d58fd07b8ccbee48fbaa881fd695">View Context</a>].<br><br>Marc Sebban and Richard Nock and Stéphane Lallich. <a 
+href="http://rexa.info/paper/1b77c2b6fd8a261af286cf411879f9f520824bd6">Stopping Criterion for Boosting-Based Data Reduction Techniques: from Binary to Multiclass Problem</a>. Journal of Machine Learning Research, 3. 2002.  [<a 
+href="../support/Horse+Colic#1b77c2b6fd8a261af286cf411879f9f520824bd6">View Context</a>].<br><br>Mukund Deshpande and George Karypis. <a 
+href="http://rexa.info/paper/a32ab1b3da96c9ae515a685b4fcf50e857708f24">Using conjunction of attribute values for classification</a>. CIKM. 2002.  [<a 
+href="../support/Horse+Colic#a32ab1b3da96c9ae515a685b4fcf50e857708f24">View Context</a>].<br><br>Mark A. Hall. <a 
+href="http://rexa.info/paper/cd11168bb19fd462bc59beefbe670bc4eb31e3eb">Department of Computer Science Hamilton, NewZealand Correlation-based Feature Selection for Machine Learning</a>. Doctor of Philosophy at The University of Waikato. 1999.  [<a 
+href="../support/Horse+Colic#cd11168bb19fd462bc59beefbe670bc4eb31e3eb">View Context</a>].<br><br>Kai Ming Ting and Ian H. Witten. <a 
+href="http://rexa.info/paper/70172e511a3bc27c7927119a3b2a3405fbad99e0">Issues in Stacked Generalization</a>. J. Artif. Intell. Res. (JAIR, 10. 1999.  [<a 
+href="../support/Horse+Colic#70172e511a3bc27c7927119a3b2a3405fbad99e0">View Context</a>].<br><br>Eibe Frank and Ian H. Witten. <a 
+href="http://rexa.info/paper/27e33344198975ea1b20e02c8f0fce01cd29f6e5">Generating Accurate Rule Sets Without Global Optimization</a>. ICML. 1998.  [<a 
+href="../support/Horse+Colic#27e33344198975ea1b20e02c8f0fce01cd29f6e5">View Context</a>].<br><br>Gabor Melli. <a 
+href="http://rexa.info/paper/287f8092a743949a6e0151893b9e3bc4d03466ed">A Lazy Model-Based Approach to On-Line Classification</a>. University of British Columbia. 1989.  [<a 
+href="../support/Horse+Colic#287f8092a743949a6e0151893b9e3bc4d03466ed">View Context</a>].<br><br>H. Altay G uvenir and Aynur Akkus. <a 
+href="http://rexa.info/paper/cf334aad055b27faaeece97ee1630e146388cd10">WEIGHTED K NEAREST NEIGHBOR CLASSIFICATION ON FEATURE PROJECTIONS</a>. Department of Computer Engineering and Information Science Bilkent University.  [<a 
+href="../support/Horse+Colic#cf334aad055b27faaeece97ee1630e146388cd10">View Context</a>].<br><br>Kai Ming Ting and Ian H. Witten. <a 
+href="http://rexa.info/paper/939595ca638eb3390e9bb9c4e6cc1352163cbf18">Stacked Generalization: when does it work</a>. Department of Computer Science University of Waikato.  [<a 
+href="../support/Horse+Colic#939595ca638eb3390e9bb9c4e6cc1352163cbf18">View Context</a>].<br><br>Alexander K. Seewald. <a 
+href="http://rexa.info/paper/e2b2b723df700c90e69a31a4403b740c2d2a7b2f">Dissertation Towards Understanding Stacking Studies of a General Ensemble Learning Scheme ausgefuhrt zum Zwecke der Erlangung des akademischen Grades eines Doktors der technischen Naturwissenschaften</a>.  [<a 
+href="../support/Horse+Colic#e2b2b723df700c90e69a31a4403b740c2d2a7b2f">View Context</a>].<br><br>James J. Liu and James Tin and Yau Kwok. <a 
+href="http://rexa.info/paper/0a882383e36d72c5890e2d191326433e23e53c9b">An Extended Genetic Rule Induction Algorithm</a>. Department of Computer Science Wuhan University.  [<a 
+href="../support/Horse+Colic#0a882383e36d72c5890e2d191326433e23e53c9b">View Context</a>].<br><br></p>
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning 
+Repository's <a href="../citation_policy.html">citation policy</a></p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration 
+with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

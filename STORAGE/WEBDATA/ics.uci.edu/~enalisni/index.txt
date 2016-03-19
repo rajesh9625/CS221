@@ -1,0 +1,45 @@
+Eric T. Nalisnick | UC Irvineeric t. nalisnick
+
+PhD Student
+Computer Science
+University of California, Irvine
+
+
+
+Smyth DataLab
+Room 4228
+Donald Bren Hall
+Irvine, CA 92617
+enalisni (at) uci (dot) edu
+
+
+
+
+
+
+
+about    
+resume    
+code    
+blog    
+
+
+
+	
+	
+        I am a 3rd year PhD candidate in the Computer Science Department at the University of California, Irvine.  Padhraic Smyth is my advisor, and I am a member of his DataLab research group.  My research interests reside in both the theory and application of neural networks and other latent variable models.  I've done research internships at Amazon, building Deep Learning systems for product recommendations, and at Microsoft Research / Bing (under Rich Caruana and Nick Craswell), investigating word embeddings for information retrieval.   
+	
+
+	preprints / working papers
+        
+        
+	  Eric T. Nalisnick and Sachin Ravi.  Infinite Dimensional Word Embeddings.
+	  
+        Eric T. Nalisnick, Anima Anandkumar, and Padhraic Smyth. A Scale Mixture Perspective of Multiplicative Noise in Neural Networks.
+	
+	publications
+	
+	
+        Eric T. Nalisnick and Henry S. Baird. Character-to-Character Sentiment Analysis in Shakespeare's Plays. In Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (ACL), pages 479-83, Sofia, Bulgaria, August 4-9 2013. [Shakespeare Sentiment Explorer]
+        
+        Eric T. Nalisnick and Henry S. Baird. Extracting Sentiment Networks from Shakespeare's Plays. In Proceedings of the 12th International Conference on Document Analysis and Recognition (ICDAR), pages 758-762, Washington, DC, August 25-28, 2013.

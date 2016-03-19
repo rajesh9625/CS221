@@ -1,0 +1,54 @@
+CS 203 / NETSYS 240  Class PageICS 203 / NetSys 240  
+	  Network and Distributed Systems Security -- Winter 2015 
+    
+
+    Instructor:
+	      Gene Tsudik
+    
+      
+	       
+	    
+
+	      
+		Anouncements:
+	      
+
+	      
+		Logistics:
+	       Lecture: Tu/Th 9:30am-10:50pm, DBH 1300. Professor's office hours: Monday 11:00am-12:00pm in DBH 3228 (Bren Hall). Alternatively, via email or by appointment. Midterm: TBD, during class. Final: Thur, Mar 19, 8:00am-10:00am. Course Reader:
+		  Cesar Ghali: Office hours: Wednesday 3:00pm-4:00pm in ICS1 468A (Computer Science 1).
+		
+
+	      
+
+	      
+		Book Pointers:
+	      
+		   Stallings' book  
+		   FREE HAC book  
+
+	      
+		Current Lecture Material (in PDF):
+	      01/06: Introduction01/08: Overview of Network Security01/13: User Authentication01/20: The Password That Never Was01/22: Web Security01/29: Named Data Networking02/03: Spam02/05: Phishing02/10: Network Threats/Attacks02/17: Fighting Insider Threats with Eye Movement Biometrics02/24: Firewalls02/26: Privacy and Anonymity03/03: Privacy03/05: E-Cash03/10: Public Key Distribution, Certification and Revocation
+
+	      
+		Talks:
+	      
+
+	      
+		Related Links:
+	      
+		  CS 134 -- Undergraduate Security Course (Winter 2015)
+		  UCI Secure Computing and Networking Center (SCONCE)
+		  UCI Security and Privacy Research Outfit (SPROUT) 
+		  2014/2015 Computer Science Department Seminar Series
+	      
+	      
+		Academic Honesty:
+	      
+		  Academic honesty is always an uncomfortable topic and hopefully this will be an unnecessary reminder but here it is. Academic honesty will be strictly enforced, and misconduct dealt with according to the official policy for Academic misconduct at UC Irvine.
+
+
+
+	    
+	       

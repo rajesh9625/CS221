@@ -1,0 +1,46 @@
+Siddharth GuptaSiddharth Gupta
+                    Graduate Student
+                    DBH 4032siddharth.gupta@uci.edu
+                    Curriculum vitae
+                
+            
+        
+        
+            About
+            
+                
+                I am a Computer Science PhD student in the
+                Center for Algorithms and Theory of Computation
+                at University of California, Irvine. My research interest are in the field of Algorithms and Graph Theory.
+                 
+                Before joining UCI, I completed my M.Sc.(Hons.) Mathematics and B.E.(Hons.) Computer Science from BITS-Pilani, Goa Campus in 2014.
+                
+        
+        
+        
+            Teaching
+            
+                Winter 2016
+                
+                        ICS 6D : Discrete Maths for CS(TA)
+                    
+            
+            
+            
+                Fall 2015
+                
+                        CS/CSE161: Design and Analysis of Algorithms(Reader)
+                    
+            
+        
+        
+        
+            Publications
+            
+                
+                A New Parallel Algorithm for Two-Pass Connected Component Labeling
+                
+                Siddharth GuptaDiana PalsetiaMd. Mostofa Ali PatwaryAnkit AgrawalAlok Choudhary
+                
+                
+                Presented at MTAAP 2014.

@@ -1,0 +1,121 @@
+Kai Wang's Homepage
+<title>Kai Wang's Homepage</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.3.0/build/cssreset/reset-min.css&3.3.0/build/cssfonts/fonts-min.css&3.3.0/build/cssgrids/grids-min.css"/>
+<!-- Source File -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssbase/base-min.css">
+
+<style>
+   body {
+	           margin: auto; /* center in viewport */
+		           width: 960px;
+        }
+	ul {
+	  list-style: none;
+	  margin-left: 0;
+	  padding-left: 1em;
+	text-indent: -1em;
+}
+
+ul li {
+	  list-style: none;
+}
+
+ul li:before {
+		content: "\00BB \0020";
+			}
+
+			table, th, td
+			{
+				border: none;
+			}
+		</style>
+</head>
+
+<body>
+<br><br><a href="head3.png" style="float:right;"><img src="head3.png" style="float:right;" border="0.1" alt=""></a>
+<br>
+<br>
+<h1>Kai Wang's Homepage</h1>
+<br>
+<br>
+<td>
+        <a class ="1" href="http://www.ics.uci.edu/" >
+<IMG src="logo.jpg" alt="School of ICS"> </a>
+<br><br><br>
+<br>Ph.D. Student <br>
+<br>
+
+<a href="http://www.cs.uci.edu/">Computer Science Department</a> <br />
+<a href="http://www.ics.uci.edu/">Donald Bren School of Computer and Information Sciences </a><br />
+<a href="http://www.uci.edu/">University of California, Irvine</a><br />
+<br />
+<br>
+Email: wangk7<em> at </em>uci.edu<br />
+Office: Donald Bren Hall 3243<br />
+
+<br><br><br><br>
+<hr />
+<h1><span style="color:#FFFFFF; background-color:#B22222">About me &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></h1>
+<p>I am currently a second-year Ph.D. student at University of California, Irvine. My advisor is Prof. <a href="http://www.ics.uci.edu/~guoqingx/">Guoqing(Harry) Xu</a>. Before coming to UC Irvine, I completed my Master's degree in CS at <a href="http://english.ict.cas.cn/">Institute of Computing Technology</a>, <a href="http://english.cas.cn/">Chinese Academy of Sciences</a>
+I completed my undergraduate degree in CS at <a href="http://english.hust.edu.cn">Huazhong Unversity of Science&Technology</a>.
+<br>It's really a brand-new journey. Enjoy! :)
+</p>
+<h1><span style="color:#FFFFFF; background-color:#B22222">Research Interests &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></h1>
+<p>Programming Language, Program Analysis, Software Engineering</p>
+
+</p>
+<h1><span style="color:#FFFFFF; background-color:#B22222">Current Projects &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></h1>
+<p>
+
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><span style='mso-fareast-font-family:"Times New Roman";
+color:black'>1 Facade: A compiler and runtime system for (almost)
+object-bounded Big Data applications<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.0in;mso-layout-grid-align:none;
+text-autospace:none'><span style='mso-fareast-font-family:"Times New Roman";
+color:black'>A managed Big Data application often suffers from large space
+overhead and GC cost due to extremely large numbers of objects and references
+in the heap. A key observation is that, in a scalable system, the number of
+heap objects representing data items cannot grow proportionally with the
+dataset cardinality. We develop Facade, a Java-based compiler and <span
+class=GramE>runtime, that</span> can statically bound the number of heap
+objects that represent data items. Facade advocates <span class=GramE>to store
+data items in native memory and create</span> objects as facades to represent
+data items. It uses a new execution model that dynamically establishes a
+many-to-one mapping between an unbounded set of data items in native memory and
+a statically bounded set of objects in the heap, thereby reducing significantly
+the number of objects, their associated space overhead (i.e., pointers and
+headers), as well as the GC cost.<o:p></o:p></span></p>
+
+</p>
+
+<p class=MsoNormal style='margin-left:.0in;mso-layout-grid-align:none;
+text-autospace:none'><span style='mso-fareast-font-family:"Times New Roman";
+color:black'> The paper is accepted by ASPLOS'15. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+color:black'> <b>2 GraphQ: Graph query processing with abstraction refinement<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:.0in'><span style='mso-fareast-font-family:
+"Times New Roman";color:black;mso-bidi-font-weight:bold'>GraphQ is a scalable querying framework for very large graphs. GraphQ is built on a key insight that many interesting graph properties --- such as finding cliques of a certain size, or finding vertices with a certain page rank --- can be effectively computed by exploring only a small fraction of the graph, and traversing the complete graph is an overkill. The centerpiece of our framework is the novel idea of abstraction refinement, where the very large graph is represented as multiple levels of abstractions, and a query is processed through iterative refinement across graph abstraction levels. As a result, GraphQ enjoys several distinctive traits unseen in existing graph processing systems: query processing is naturally budget-aware, friendly for out-of-core processing where ``Big Graphs'' can not entirely fit into memory, and endowed with strong correctness properties on query answers. With GraphQ, a wide range of complex analytical queries over very large graphs can be answered with resources affordable to a single PC, which is in compliant with the recent trend that advocates single-machine-based Big Data processing.  <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.0in;mso-layout-grid-align:none;
+text-autospace:none'><span style='mso-fareast-font-family:"Times New Roman";
+color:black'> The paper is accepted by USENIX ATC'15. <o:p></o:p></span></p>
+<h1><span style="color:#FFFFFF; background-color:#B22222">Publications &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></h1>
+<li><b>1</b> Khanh Nguyen,<b> Kai Wang</b>, Yingyi Bu, Lu Fang, Jianfei Hu, and Guoqing Xu. "Facade: A Compiler and Runtime for (Almost) Object-Bounded Big Data Applications", 20th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), Istanbul, Turkey, March 14-18, 2015. (Acceptance rate: <b>48/278, 17%</b>)
+
+
+<p><li><li><b>2</b> <b> Kai Wang</b>, Guoqing Xu, Zhendong Su, and Yu David Liu. "GraphQ: Graph Query Processing with Abstraction Refinement -- Programmable and Budget-Aware Analytical Queries over Very Large Graphs on a Single PC", 2015 USENIX Annual Technical Conference, Santa Clara, CA, July 2015. (Acceptance rate: <b>35/221, 15.8%</b>)
+</p>
+<h1><span style="color:#FFFFFF; background-color:#B22222">Personal Interests &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></h1>
+<p>
+Music, Movies, Skiing.
+</p>
+
+</body>
+</html>
+
+<div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://www.ics.uci.edu/~wangk7/', 'user' : 1167848, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2015-04-21', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www3.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www3.clustrmaps.com/user/65411d1e8"><img src="http://www3.clustrmaps.com/stats/maps-no_clusters/www.ics.uci.edu-~wangk7--thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>

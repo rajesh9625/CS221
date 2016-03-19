@@ -1,0 +1,192 @@
+ICS 45C Fall 2015<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC
+ "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="course.css" type="text/css" />
+
+<title>ICS 45C Fall 2015</title>
+</head>
+
+<body>
+
+<div class="navbar">
+
+<p>
+ICS 45C Fall 2015 |
+<a href="index.html">News</a> |
+<a href="CourseReference.html">Course Reference</a> |
+<a href="Schedule.html">Schedule</a> |
+<a href="ProjectGuide">Project Guide</a> |
+<a href="Notes">Notes and Examples</a> |
+<a href="http://www.ics.uci.edu/~thornton/">About Alex</a>
+</p>
+
+<hr />
+
+</div>
+
+<div class="header">
+
+<p>ICS 45C Fall 2015<br />
+   Course News</p>
+
+</div>
+
+<div class="section">
+
+<hr />
+
+<p>Check back here every day or so.  I will generally post important coursewide announcements here.  They will be listed in reverse-chronological order (i.e., newest items first).</p>
+
+<table class="normal">
+  <tr class="top">
+    <td>Date&nbsp;Added</td>
+    <td>News Item</td>
+  </tr>
+  <tr>
+    <td>Su 12/13</td>
+    <td>The <a href="FinalGrades.html">final course grades</a> are now available.</td>
+  </tr>
+  <tr>
+    <td>M 12/7</td>
+    <td>The last set of <a href="Notes">Notes and Examples</a> is now available.</td>
+  </tr>
+  <tr>
+    <td>W 11/25</td>
+    <td>Two new sets of <a href="Notes">Notes and Examples</a> are now available.</td>
+  </tr>
+  <tr>
+    <td>Tu 11/24</td>
+    <td>A new set of <a href="Notes">Notes and Examples</a> is now available.</td>
+  </tr>
+  <tr>
+    <td>F 11/21</td>
+    <td><a href="ProjectGuide/Project4">Project #4</a> is now available, along with a <a href="Schedule.html">Schedule</a> update and one new set of <a href="Notes">Notes and Examples</a>.</td>
+  </tr>
+  <tr>
+    <td>Tu 11/17</td>
+    <td>A <a href="Schedule.html">Schedule</a> update, including a few missing readings from the Savitch textbook, for those of you using it alongside my <a href="Notes">Notes and Examples</a>.</td>
+  </tr>
+  <tr>
+    <td>Su 11/15</td>
+    <td>The <a href="ProjectGuide/Project3">Project #3</a> due date is postponed until Friday, November 20.</td>
+  </tr>
+  <tr>
+    <td>W 11/11</td>
+    <td>New <a href="Notes">Notes and Examples</a> sections are now available.</td>
+  </tr>
+  <tr>
+    <td>Tu 11/3</td>
+    <td>Today's remaining <a href="Notes">Notes and Examples</a> section, about linked data structures, are now available.  Note that we aren't covering all of this material in lecture, since portions of it are prerequisite knowledge from courses you will have taken previously, but I've included a complete summary of the topic for those who haven't seen it recently.</td>
+  </tr>
+  <tr>
+    <td>Sa 10/31</td>
+    <td>An additional <a href="Schedule.html">Schedule</a> update is available, plus the postponement of the due date for <a href="ProjectGuide/Project3">Project #3</a> until Wednesday, November 18, to give us more lecture time to be prepared for the fourth project.</td>
+  </tr>
+  <tr>
+    <td>Th 10/29</td>
+    <td>A <a href="Schedule.html">Schedule</a> update is now available, along with two of next week's <a href="Notes">Notes and Examples</a> sections.</td>
+  </tr>
+  <tr>
+    <td>Th 10/29</td>
+    <td>I made a small tweak to the <a href="Notes/PointersAndTheHeap">Pointers and the Heap</a> notes.  The code snippet in the section titled <i>Dynamically allocating an object</i> had a minor issue that I've fixed.</td>
+  </tr>
+  <tr>
+    <td>Tu 10/27</td>
+    <td><a href="ProjectGuide/Project3">Project #3</a> is now available.</td>
+  </tr>
+  <tr>
+    <td>M 10/26</td>
+    <td><a href="Notes">Notes and Examples</a> through the end of this week are now available.</td>
+  </tr>
+  <tr>
+    <td>Th 10/22</td>
+    <td>Two new sets of <a href="Notes">Notes and Examples</a> are now available.</td>
+  </tr>
+  <tr>
+    <td>F 10/16</td>
+    <td><a href="ProjectGuide/Project2">Project #2</a> is now available, along with a <a href="Schedule.html">Schedule</a> update.</td>
+  </tr>
+  <tr>
+    <td>F 10/16</td>
+    <td>An additional two sets of <a href="Notes">Notes and Examples</a> are now available.</td>
+  </tr>
+  <tr>
+    <td>Th 10/15</td>
+    <td>Two new sets of <a href="Notes">Notes and Examples</a> are now available.</td>
+  </tr>
+  <tr>
+    <td>W 10/14</td>
+    <td>The <a href="Schedule.html">Schedule</a> has been updated, along with one missing batch of <a href="Notes">Notes and Examples</a>.  More notes to come.</td>
+  </tr>
+  <tr>
+    <td>Tu 10/13</td>
+    <td>The schedule of labs in the <a href="CourseReference.html">Course Reference</a> has been updated, with a few of the hours each week removed, because they conflict with the labs for ICS 46.</td>
+  </tr>
+  <tr>
+    <td>M 10/12</td>
+    <td>Multiple new sets of <a href="Notes">Notes and Examples</a> are available, along with a <a href="Schedule.html">Schedule</a> update.  Additionally, I retitled the notes previously titled <b>Behind the Scenes 1</b>; this section is now titled <a href="Notes/BehindTheScenes">Behind the Scenes</a>.</td>
+  </tr>
+  <tr>
+    <td>Th 10/8</td>
+    <td>One batch of <a href="Notes">notes</a> for today's lecture is now available; the rest will follow this weekend.</td>
+  </tr>
+  <tr>
+    <td>Tu 10/6</td>
+    <td>One more tweak has been made to the lab schedule in the <a href="CourseReference.html">Course Reference</a> &mdash; removing one of the Friday hours, which was a course conflict for the student who was scheduled to tutor it.</td>
+  </tr>
+  <tr>
+    <td>M 10/5</td>
+    <td>A slight adjustment has been made to the lab schedule in the <a href="CourseReference.html">Course Reference</a>.  In particular, we'll no longer have a lab on Mondays or Wednesdays from 10:00am-11:00am, but all other hours we had before remain covered.</td>
+  </tr>
+  <tr>
+    <td>F 10/2</td>
+    <td>Lab meetings will begin on Monday, October 5.  A complete schedule of times, along with more details about what the lab meetings are, etc., is available in the <a href="CourseReference.html">Course Reference</a>.</td>
+  </tr>
+  <tr>
+    <td>Th 10/1</td>
+    <td>A <a href="Schedule.html">Schedule</a> update, along with some of next week's <a href="Notes">Notes and Examples</a>, are now available.</td>
+  </tr>
+  <tr>
+    <td>W 9/30</td>
+    <td>The <a href="ProjectGuide/Project0">Project #0</a> write-up has been updated to include details about enabling virtualization (VT-x/AMD-v) support and how to ensure that you're host machine can run a 64-bit VM.  These details are based on things I've already sent out via email, but I've now included them with the rest of <a href="ProjectGuide/Project0">Project #0</a> for clarity.</td>
+  </tr>
+  <tr>
+    <td>W 9/30</td>
+    <td>A new set of notes is now available in the <a href="Notes">Notes and Examples</a> section.</td>
+  </tr>
+  <tr>
+    <td>Tu 9/29</td>
+    <td>My office hours have been scheduled into a room.  I'll be in ICS 209 on Tuesdays and Thursdays from 8:20-9:40pm, beginning tonight.</td>
+  </tr>
+  <tr>
+    <td>M 9/28</td>
+    <td>The <a href="Notes/Basics">C++ Basics</a> notes are available in the <a href="Notes">Notes and Examples</a> section.</td>
+  </tr>
+  <tr>
+    <td>Th 9/24</td>
+    <td>Added the first batch of <a href="Notes">Notes and Examples</a>, which are also now listed in the <a href="Schedule.html">Schedule</a> alongside the lectures that correspond to them.</td>
+  </tr>
+  <tr>
+    <td>M 9/21</td>
+    <td>
+      <p>Welcome!  Please note a couple of things as we get started this quarter:</p>
+      <ul>
+        <li>The first lecture will meet on Thursday, September 24.  There are no scheduled lab sections, but we will have informal lab meetings, with times and dates to be announced early in the quarter, but likely to begin sometime during Week 1.  For more information about meeting times of lab meetings, see the <a href="CourseReference.html">Course Reference</a>.  For information about lecture material and readings, see the <a href="Schedule.html">Schedule</a>.</li>
+        <li>I encourage you to spend some time reading through the material on the course web site.  It will be updated periodically throughout the quarter, and there will always be an announcement here describing each update.  For now, notice the set of links at the top of this (and every) page, leading you to the <a href="CourseReference.html">Course Reference</a>, the <a href="Schedule.html">Schedule</a>, and the <a href="ProjectGuide">Project Guide</a>, as well as a set of <a href="NotesAndExamples">Notes and Examples</a> &mdash; mostly emanating from the lectures &mdash; that will be posted throughout the quarter.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+</div>
+
+</body>
+</html>

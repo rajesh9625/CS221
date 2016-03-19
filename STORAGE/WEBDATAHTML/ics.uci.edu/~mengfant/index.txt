@@ -1,0 +1,72 @@
+Mengfan Tang<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body><center>
+<title>Mengfan Tang
+</title>
+<style>
+A:link, A:visited{
+color:purple;text-decoration:none;
+}
+</style>
+<div style="border: 2px solid
+  black;text-align:left;padding:20px;max-width:850px">
+<table>
+<tbody><tr>
+
+<td>
+ <img src="profile.jpg" height="318" width="270">
+</td>
+<td width="610" style="text-align:right">
+<span style="font-variant:small-caps"><h2>Mengfan Tang</h2></span>
+<p>Office: 3211, Donald Bren Hall<br>
+<br>
+<p>Department of Computer Science<br>
+<a href="http://ics.uci.edu/">School of Information and Computer Sciences</a><br>
+<a href="http://uci.edu/">University of California, Irvine </a><br>
+email: mengfant at uci dot edu<br>
+</p>
+</td>
+</tr>
+</tbody></table>
+
+<br>
+
+<span style="font-size:20px;font-style:bold;font-variant:small-caps"><b> News:</b></span>
+
+<span style="font-size:13px;"><ul>
+<li>5/20: Our ICME paper was nominated as both Best student paper candidate and Best paper candidate.
+<li>5/15: Our ACM WebSci paper was accepted as oral.
+<li>3/15: Our ICME paper was accepted as oral.
+<li>11/14: I will be doing my internship in the Data Science team at Intuit, Mountain View Office, in summer 2015.
+</ul></span>
+<div></div>
+<span></span>
+<br>
+
+<span style="font-size:20px;font-style:bold;font-variant:small-caps"> <b>About me:</b></span>
+ <p>I am a Ph.D. candidate at Computer Science Department, working with <a href="http://ngs.ics.uci.edu">Prof. Ramesh Jain</a>. Before coming to UCI, I received my B.S. in mathematics from <a href="http://en.scgy.ustc.edu.cn">School for the Gifted Young</a>,<a href="http://ustc.edu.cn"> University of Science and Technology of China</a> in 2010.
+ </p>
+<div></div>
+<span></span>
+<br>
+
+<span style="font-size:20px;font-style:bold;font-variant:small-caps"> <b>Publications:</b></span>
+<ul>
+<li> <p> <span style="font-style:italic"><b>M. Tang, </b>F. Nie, R Jain,<b>&nbsp;</b></span><span style="background-color:transparent"><font size="3">A graph regularized dimension reduction method for out-of-sample data(submitted)</span></p>
+
+<li> <p> <span style="font-style:italic"><b>M. Tang, </b>P. Agrwal, R Jain,<b>&nbsp;</b></span><span style="background-color:transparent"><font size="3">Habits vs Environment:&nbsp;What Really Causes Asthma?, ACM Web Science 2015</span></p>
+<li>  <p> <span style="font-style:italic"><b>M. Tang</b>, P. Agrwal,&nbsp;</span><span style="font-size:medium;line-height:20px">S. Pongpaichet,&nbsp;</span><span style="font-size:medium;line-height:20px">R</span><span style="font-size:medium;line-height:20px">. Jain,&nbsp;</span><font size="3"><span style="line-height:20px">Geospatial interpolation Analytics for Data Streams in EventShop, 2015 IEEE International Conference on Multimedia &amp; Expo</span></font><font size="3"><span style="line-height:20px">. (<font color="#ff0000">Best Paper Candidate</font> and <font color="#ff0000">Best Student Paper Candidate</font>)
+<li> <p> <span style="font-style:italic">L. Jalali, D. Huo, H. Oh, <b>M. Tang</b>, S. Pongpaichet, <span>R</span>. Jain, Personicle: Personal Chronicle of Life Events, Workshop on Personal Data Analytics in the Internet of Things, VLDB 2014.</span></p>
+<li> <p> <span style="font-style:italic">S. Pongpaichet,<b> M. Tang</b>, L. Jalali, R. Jain, Observing Real-World Phenomena through EventWeb over Space, Time and Theme, 2nd International Workshop on Building Web Observatories, ACM Web Science 2014.</span></p>
+<li> <p> <span style="font-style:italic">G. Ye, </span><b>M. Tang</b><span style="font-weight:normal">, J. Cai, Q. Nie, X. Xie, Low-Rank Regularization for Learning Gene Expression Programs, PLOS ONE, 2013.</span></p>
+
+<ul>
+
+
+  </span></font></div>
+<div><font size="3"><span style="font-weight:normal"><br>
+</span></font></div>
+<div><font size="3"><span style="font-weight:normal"><br>
+</span></font></div>
+<br><br>
+<HR>
+</HTML>

@@ -1,0 +1,97 @@
+Golnaz GhiasiGolnaz Ghiasi
+                
+        		I am a Computer Science PhD student at the University of California Irvine and a member   
+                of Computational Vision Group where I am advised by Prof. Charless Fowlkes.
+				
+		 		My research interest is Computer Vision and Machine Learning. My current research is focused on Pose Estimation in the Presence of Occlusion.
+                
+                
+                
+                gghiasi [at] ics.uci.edu
+                4209 Donald Bren Hall
+                 
+		 
+        
+        
+            
+            Publications
+            
+				
+                    
+                    
+                    
+                    
+						G. Ghiasi, C. Fowlkes, 
+						
+							"Using Segmentation to Predict the Absence of Occluded Parts" 
+						, 
+						Proc. of British Machine Vision Conference
+						
+							(BMVC) 2015
+						
+                    
+                    paper
+                    COFW train data masks
+                    
+                    
+                
+                
+
+				
+                    
+                    
+                    
+                    
+						G. Ghiasi, C. Fowlkes, 
+						
+							"Occlusion Coherence: Detecting and Localizing Occluded Faces" 
+						, 
+						Technical Report, 2015
+                    
+                    paper
+                    detection code
+                    training code
+                    UCI-OFD dataset
+                    Occluded HELEN
+                    
+                    
+                
+                
+
+                
+                    
+                    
+                    
+                    
+						G. Ghiasi, C. Fowlkes, 
+						
+							"Occlusion Coherence: Localizing Occluded Faces with a Hierarchical Deformable Part Model" 
+						, 
+						Proc. of Computer Vision and Pattern Recognition 
+						
+							(CVPR) 2014
+						
+                    
+                    paper
+                    poster
+                    
+                    
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                        G. Ghiasi, Y. Yang, D. Ramanan, C. Fowlkes, 
+						
+						"Parsing Occluded People" 
+						, 
+						Proc. of Computer Vision and Pattern Recognition 
+						 
+							(CVPR) 2014
+						
+                    
+                    paper
+                    poster

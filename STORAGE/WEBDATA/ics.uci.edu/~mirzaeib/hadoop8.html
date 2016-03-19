@@ -1,0 +1,193 @@
+Username: University of California Irvine User Book: Hadoop: The Definitive Guide, 3rd Edition. No part of any chapter or book may be reproduced or transmitted in any form by any means without the prior written permission for reprints and excerpts from the publisher of the book or chapter. Redistribution or other use that violates the fair use privilege under U.S. copyright laws (see 17 USC107) or that otherwise violates these Terms of Service is strictly prohibited. Violators will be prosecuted to the full extent of U.S. Federal and Massachusetts laws.Benchmarking a Hadoop Cluster
+
+
+
+
+
+
+Is the cluster set up correctly? The best way to answer this
+    question is empirically: run some jobs and confirm that you get the
+    expected results. Benchmarks make good tests because you also get numbers
+    that you can compare with other clusters as a sanity check on whether your
+    new cluster is performing roughly as expected. And you can tune a cluster
+    using benchmark results to squeeze the best performance out of it. This is
+    often done with monitoring systems in place (see Monitoring), so you can see how resources are being used
+    across the cluster.
+To get the best results, you should run benchmarks on a cluster that
+    is not being used by others. In practice, this is just before it is put
+    into service and users start relying on it. Once users have scheduled
+    periodic jobs on a cluster, it is generally impossible to find a time when
+    the cluster is not being used (unless you arrange downtime with users), so
+    you should run benchmarks to your satisfaction before this happens.
+Experience has shown that most hardware failures for new systems are
+    hard drive failures. By running I/O-intensive benchmarks—such as the ones
+    described next—you can “burn in” the cluster before it goes live.
+
+
+Hadoop Benchmarks
+
+
+
+
+
+
+Hadoop comes with several benchmarks that you can run very easily
+      with minimal setup cost. Benchmarks are packaged in the test JAR file,
+      and you can get a list of them, with descriptions, by invoking the JAR
+      file with no arguments:
+% hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar
+Most of the benchmarks show usage instructions when invoked with
+      no arguments. For example:
+% hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar TestDFSIO
+TestFDSIO.0.0.4
+Usage: TestFDSIO -read | -write | -clean [-nrFiles N] [-fileSize MB] [-resFile 
+resultFileName] [-bufferSize Bytes]
+
+
+Benchmarking HDFS with TestDFSIO
+
+
+
+
+
+
+TestDFSIO tests the
+        I/O performance of HDFS. It does this by using a MapReduce job as a
+        convenient way to read or write files in parallel. Each file is read
+        or written in a separate map task, and the output of the map is used
+        for collecting statistics related to the file just processed. The
+        statistics are accumulated in the reduce to produce a summary.
+The following command writes 10 files of 1,000 MB each:
+% hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar TestDFSIO -write -nrFiles 10
+-fileSize 1000
+At the end of the run, the results are written to the console
+        and also recorded in a local file (which is appended to, so you can
+        rerun the benchmark and not lose old results):
+% cat TestDFSIO_results.log
+----- TestDFSIO ----- : write
+           Date & time: Sun Apr 12 07:14:09 EDT 2009
+       Number of files: 10
+Total MBytes processed: 10000
+     Throughput mb/sec: 7.796340865378244
+Average IO rate mb/sec: 7.8862199783325195
+ IO rate std deviation: 0.9101254683525547
+    Test exec time sec: 163.387
+The files are written under the /benchmarks/TestDFSIO directory by default
+        (this can be changed by setting the test.build.data system property), in a
+        directory called io_data.
+To run a read benchmark, use the -read argument. Note that these files must
+        already exist (having been written by TestDFSIO -write):
+% hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar TestDFSIO -read -nrFiles 10 
+-fileSize 1000
+Here are the results for a real run:
+----- TestDFSIO ----- : read
+           Date & time: Sun Apr 12 07:24:28 EDT 2009
+       Number of files: 10
+Total MBytes processed: 10000
+     Throughput mb/sec: 80.25553361904304
+Average IO rate mb/sec: 98.6801528930664
+ IO rate std deviation: 36.63507598174921
+    Test exec time sec: 47.624
+When you’ve finished benchmarking, you can delete all the
+        generated files from HDFS using the -clean
+        argument:
+% hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar TestDFSIO -clean
+
+
+
+Benchmarking MapReduce with Sort
+
+
+
+
+
+
+Hadoop comes with a MapReduce program that does a
+        partial sort of its input. It is very useful for benchmarking the
+        whole MapReduce system, as the full input dataset is transferred
+        through the shuffle. The three steps are: generate some random data,
+        perform the sort, then validate the results.
+First, we generate some random data using RandomWriter. It runs
+        a MapReduce job with 10 maps per
+        node, and each map generates (approximately) 1 GB of random binary data, with keys and values of
+        various sizes. You can change these values if you like
+        by setting the properties test.randomwriter.maps_per_host and test.randomwrite.bytes_per_map.
+        There are also settings for the size ranges of the keys and
+        values; see RandomWriter for
+        details.
+Here’s how to invoke RandomWriter (found
+        in the example JAR file, not the test one) to write its output to a
+        directory called random-data:
+% hadoop jar $HADOOP_INSTALL/hadoop-*-examples.jar randomwriter random-data
+Next, we can run the Sort
+        program:
+% hadoop jar $HADOOP_INSTALL/hadoop-*-examples.jar sort random-data sorted-data
+The overall execution time of the sort is the metric we are
+        interested in, but it’s instructive to watch the job’s progress via
+        the web UI
+        (http://jobtracker-host:50030/),
+        where you can get a feel for how long each phase of the job takes.
+        Adjusting the parameters
+        mentioned in Tuning a Job is a useful exercise,
+        too.
+As a final sanity check, we validate that the data in sorted-data is, in fact, correctly
+        sorted:
+% hadoop jar $HADOOP_INSTALL/hadoop-*-test.jar testmapredsort -sortInput random-data \
+  -sortOutput sorted-data
+This command runs the SortValidator
+        program, which performs a series of checks on the unsorted and sorted
+        data to check whether the sort is accurate. It reports the outcome to
+        the console at the end of its run:
+SUCCESS! Validated the MapReduce framework's 'sort' successfully.
+
+
+
+Other benchmarks
+
+
+
+
+
+
+There are many more Hadoop benchmarks, but the following
+        are widely used:
+
+MRBench (invoked
+            with mrbench) runs a small job
+            a number of times. It acts as a good counterpoint to sort, as it
+            checks whether small job runs are responsive.
+NNBench (invoked
+            with nnbench) is useful for
+            load-testing namenode hardware.
+Gridmix is a suite of
+            benchmarks designed to model a realistic cluster workload by
+            mimicking a variety of data-access patterns seen in practice. See
+            the documentation in the distribution for how to run Gridmix, and
+            the blog post at http://developer.yahoo.net/blogs/hadoop/2010/04/gridmix3_emulating_production.html
+            for more background.[83]
+
+
+
+
+
+
+
+
+
+User Jobs
+
+
+
+
+
+
+For tuning, it is best to include a few jobs that are
+      representative of the jobs that your users run, so your cluster is tuned
+      for these and not just for the standard benchmarks. If this is your
+      first Hadoop cluster and you don’t have any user jobs yet, then Gridmix
+      is a good substitute.
+When running your own jobs as benchmarks, you should select a
+      dataset for your user jobs and use it each time you run the benchmarks
+      to allow comparisons between runs. When you set up a new cluster or
+      upgrade a cluster, you will be able to use the same dataset to compare
+      the performance with previous runs.

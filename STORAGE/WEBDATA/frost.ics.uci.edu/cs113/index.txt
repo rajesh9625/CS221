@@ -1,0 +1,224 @@
+CS 113 / Informatics 125 SyllabusCS 113 / Informatics 125: Computer Game Development
+
+
+Fall, 2015 
+Tu Th 7:00pm - 8:20pm, SSPA 1100,
+Course codes: 34030 (CS) and 37060 (Inf)
+
+
+
+Instructor:
+Dan Frost
+	frost@ics.uci.edu   
+	Office: Donald Bren Hall 5058
+	(949) 824-1588 (Why UCI? 1 Luv!)
+	Office hours: Tuesdays, 2:00pm - 3:00pm, and by appointment, in DBH 5058
+
+Teaching assistant:
+Mehdi Rahimzadeh    m.rahimzadeh at uci.edu
+
+
+
+Goal:
+To learn about the science, art, craft, and industry
+of computer games.
+
+
+
+ 
+
+
+
+
+Useful links:
+ Team Information Form
+ How To Make A Game
+ Game Loop Pattern
+ Notes from class on how the final game project is graded
+ 3D modeling and rigging.
+ TextureDemo.zip
+ A form of AI
+ Design Document drafts and pitches -- schedule and assignments
+ Final presentation schedule and information
+ Wonders of GPUs
+ Game Megatrends
+
+
+ Need space on the web?  Consider
+	 ICS's web space and
+	 UCI Webfiles
+
+
+
+
+
+Ground rules
+Your grade will be based mostly
+     on your team's accomplishments, which are primarily the
+     design document, the delivered game, and the final presentation.
+     No quizzes, tests, or final exam.
+     Usually all team members get the same grade for the team game.
+
+ If you add the course after Sept. 29, or if you do not fill out and turn
+in the Team Information Form,
+or if you drop from your team and do not find another team,
+then
+you will not be able to work on a team and the
+best possible grade you can get for the course will be a B.
+
+
+
+Important Dates
+Attendance during the lecture period is required on certain days, often those with student or
+guest speakers:
+ Thursday, Oct. 1: team announcements and first team meetings
+ Team Pitches: Tuesday, Oct. 27, Thursday, Oct. 29, Tuesday, Nov. 3
+ Tuesday, Nov. 10: guest speaker Graham Harwood.
+	Links: http://v2.nl/archive/people/graham-harwood,
+	vimeo.com/32030825
+ Thursday, Nov. 12: guest speaker Thomas Lee, owner and founder of
+	Ying Ying Apps
+Tuesday, Dec. 8, 7:00pm - 9:00pm in DBH 4011 and DBH 5011:
+	Open House during the course's final exam period time
+
+
+
+
+Assignments and projects
+ First individual assignment, due Tuesday, 9/29/2015 7:00pm:
+     completed Team Information Form.
+
+ Second individual assignment, due Sunday, 10/25/2015:
+     Comment on another team's draft design.
+
+ Third individual assignment: six weekly status reports,
+	 due Mondays of sixth through Finals weeks.
+
+
+
+
+ The major part of the course is a project, to be completed by a team.
+The project will be to design and implement substantial portions of
+a computer game.
+The project consists of the following:
+ A statement of team composition.  Name the students on the team,
+     the grade option of each student, the major of each student,
+     the team name, brief descriptions of two ideas you are considering
+     for the team's game, and the time and place your team will meet
+     for three hours every week.
+     If you plan to work with students from  outside
+     of the class, please mention that as well.
+     Send by email to m.rahimzadeh at uci.edu,
+     Friday, 10/2/2015, by noon.
+     Put "CS 113/Inf 125" at the start of the email's subject line.
+ A draft design document for the game.  This should be between
+     20 and 40 pages in length.  It should be on the World Wide Web
+     using HTML, PDF, or Google Docs.
+     The format must permit scrolling through the entire document;
+     therefore a wiki is not acceptable.
+     Due Wednesday, 10/21/2015 (by the end of the day).
+     Email the URL of your draft to Prof. Frost.
+     Structure your Design Doc based on
+     our recommended Design Doc structure.
+ A presentation, or "pitch," of the team's game idea
+     in the fifth or sixth week of the class Tuesday, 10/27/2015,
+     or Thursday, 10/29/2015, or Tuesday, 11/3/2015 (subject to change).
+ A final design document for the game.  This should be about
+     30 to 40 pages in length.  In addition to describing the game,
+     technologies, art, and game play in detail,
+     it should describe the specific responsibilities
+     of each team member.
+     Due Wednesday, 11/4/2015 (for teams pitching in week 5) or
+     due Friday, 11/6/2015 (for teams pitching in week 6).
+     This is also on the web,
+     and the URL should be emailed to Prof. Frost.
+ A presentation of the game development status in eighth week. (Cancelled)
+ A presentation of the game at the end of week 10 or in Finals Week.
+	 To be scheduled; each team will have 30 minutes.
+     Your team's grade will be based
+     on the game as of this presentation.
+ A two to three minute video of the game and the team, ideally posted on YouTube.
+ A completion document, which includes an optional users manual,
+     revised design document,
+     individual statements about the course of the project (optional), and a
+     CD with source code, executables, art and
+     music files, a link to the game video, and at least two screen shots.
+     Due at final presentation.
+ Participation in the CS 113/Informatics 125 Open House, held during
+     the course's Final Exam period, Tuesday, 12/8/2015 7:00pm-9:00pm.
+
+
+
+
+
+
+Scoring and grading
+
+Grading will be on a straight scale, based on total points.
+(A+ 97.0 or higher;
+A  93.0 to 96.9;
+A- 90.0 to 92.9;
+B+ 87.0 to 89.9;
+B  83.0 to 86.9;
+B- 80.0 to 82.9; and so on.)
+
+
+
+Each game project will receive a letter grade, e.g.
+A, A-, B+, B (these are by far the most common grades).
+The game project is worth at most 75 points, as follows:
+A+, 73 to 75; A, 71; A-, 68; B+, 65; B, 62; and so on.
+
+
+The game design document (including pitch and 8th
+week status reports) is worth up to 10 points; most teams
+will get 9 (an A).
+Students who miss part or all of their team's pitch
+will receive less credit.
+
+
+Individual accomplishments are worth up to 15 points:
+
+
+5 - attendance (roll will be taken on six or more dates)
+
+2 - comment on another team's draft design document
+
+2 - attendance at and energy demonstrated in eighth week presentation
+
+6 - six status reports
+
+
+
+
+
+
+
+Special Accommodations:
+Any student who feels he or she may need an accommodation based on
+the impact of a disability should contact me privately to discuss
+his or her specific needs.
+Also contact the Disability Services
+Center at (949) 824-7494 as soon as possible to ensure that
+such accommodations are implementationed in a timely fashion.
+
+
+
+
+
+
+
+At the Computer Game Design Conference on May 6, 1998, there
+was a panel on design docs.  Moderator Alex Dunne referenced a real
+design document which was submitted by panelist John Jack, a producer
+at Monolith.  This design doc was from the company's recent computer
+game, "Claw".
+
+Claw Design Document.
+
+
+  
+  
+  
+  
+ 

@@ -1,0 +1,156 @@
+Mohaned Qunaibit<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mohaned Qunaibit</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<!-- Header -->
+				<section id="header" class="skel-layers-fixed">
+					<header>
+						<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+						<h1 id="logo"><a href="#">Mohaned Qunaibit</a></h1>
+						<p>Computer Scientist<br/>
+						
+					</header>
+					<nav id="nav">
+						<ul>
+							<li><a href="#two" class="active">About</a></li>
+							<li><a href="#three">Education</a></li>
+							<li><a href="#four">Experience</a></li>
+							<li><a href="#five">Contact</a></li>
+						</ul>
+					</nav>
+					<footer>
+						<ul class="icons">
+							<li><a href="https://bitbucket.org/qunaibit" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+							<li><a href="https://github.com/qunaibit" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/qunaibit" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="http://m.qunaibit.com" class="icon fa-globe"><span class="label">Blog</span></a></li>
+							<li><a href="mailto:m.qunaibit@uci.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- One -->
+						<section id="two">
+							<div class="container">
+								<header class="major">
+									<h2>About me</h2>
+								</header>
+									<h4>PhD Student <br />
+									at the <a href="http://ics.uci.edu">Donald Bren School of Information & Computer Science</a><br />
+									at <a href="http://uci.edu">University of California, Irvine</a>.</h4>
+								<p>My research is in Systems Software with focus in the area of Programming Languages Design and Implementation.<br/>
+								Advisor: <a href="http://www.ics.uci.edu/~franz">Prof. Michael Franz</a>.<br/>
+								Work in: <a href="http://www.ssllab.org/"><img alt="ssllab.png" height="50" width="50" style="position: relative;top: 15px;" src="https://m-qunaibit.appspot.com/ssllab/uci_logo.png">Secure Systems and Software Laboratory</a>.</p>
+							</div>
+						</section>
+
+					<!-- Two -->
+						<section id="three">
+							<div class="container">
+								<header class="major">
+									<h2>Education</h2>
+								</header>
+								
+
+								<h3>Ph.D. Computer Science Student</h3>
+								<h4 class="icon fa-university">  University of California Irvine</h4>
+								<h6>2014 - present</h6>
+								<p></p>
+
+								<h3>M.S. Computer Science</h3>
+								<h4 class="icon fa-university">  University of California Irvine</h4>
+								<h6>2012 - 2014</h6>
+								<p></p>
+
+
+								<h3>B.Sc. Computer Science</h3>
+								<h4 class="icon fa-university">  King Saud University</h4>
+								<h6>2004 - 2008</h6>
+								<p></p>
+
+							</div>
+						</section>
+
+					<!-- Three -->
+
+						<section id="four">
+							<div class="container">
+								<header class="major">
+									<h2>Experience</h2>
+								</header>
+								
+
+								<h3>Graduate Student Researcher</h3>
+								<h4 class="icon fa-university">  University of California Irvine</h4>
+								<h6>2013</h6>
+								<p></p>
+
+								<h3>Application Specialist</h3>
+								<h4 class="icon fa-briefcase">  Saudi Basic Industries Corporation</h4>
+								<h6>2009 - 2011</h6>
+								<p></p>
+
+
+								<h3>System Development</h3>
+								<h4 class="icon fa-briefcase">  Advanced Electronics Company</h4>
+								<h6>2007</h6>
+								<p></p>
+
+							</div>
+						</section>
+
+
+					<!-- four -->
+						<section id="five">
+							<div class="container">
+								<h3>Contact Me</h3>
+								<ul class="feature-icons">
+									<li class="fa-envelope"><a href="mailto:m.qunaibit@uci.edu">m.qunaibit@uci.edu</a></li>
+								</ul>
+								<br/>
+
+								<blockquote>“Life begins at the end of your comfort zone.” <h6>- Neale Donald Walsch</h6></blockquote>
+							</div>
+						</section>
+				</div>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>&copy; Mohaned Qunaibit. All rights reserved. 2015</li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+	</body>
+</html>

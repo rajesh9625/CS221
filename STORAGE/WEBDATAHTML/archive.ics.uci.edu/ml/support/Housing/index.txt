@@ -1,0 +1,155 @@
+UCI Machine Learning Repository: Housing Data Set: Support
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Housing Data Set: Support</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" 
+alt="Home"><img src="../assets/logo.gif" 
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.html"><font size="3" color="#FFDD33"><b>View ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Housing Data Set</b></span>
+
+		
+		<img src="../assets/MLimages/Large48.jpg" hspace=20 vspace=10 align=right />		<p class="normal">Below are papers that cite this data set, with context shown.
+		Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info">Rexa.info</a>.</p>
+		<img src="../assets/rexa.jpg" />
+		<p class="normal"><a href="/ml/datasets/Housing">Return to Housing data set page</a>.
+		<hr><p class="normal"><a name="5b07457d7b968260c0c1a712f9120a243bcfbf8c"></a><i>Manuel Oliveira. <a href="http://rexa.info/paper/5b07457d7b968260c0c1a712f9120a243bcfbf8c">Library Release Form Name of Author: Stanley Robson de Medeiros Oliveira Title of Thesis: Data Transformation For Privacy-Preserving Data Mining Degree: Doctor of Philosophy Year this Degree Granted</a>. University of Alberta Library. 2005. </i><br><br>is also available at the UCI Repository of Machine Learning Databases [17]. 9. Pumsb: The Pumsb dataset contains census data for population and <b>housing</b>  This dataset is available at http://www.almaden.ibm.com/software/quest. There are 49,046 records with 2,113 different data values (distinct items),<br></p><hr><p class="normal"><a name="dd4500e327a5f555d2f594711dc50b0f9faccd30"></a><i>Gavin Brown. <a href="http://rexa.info/paper/dd4500e327a5f555d2f594711dc50b0f9faccd30">Diversity in Neural Network Ensembles</a>. The University of Birmingham. 2004. </i><br><br>2 we use a sigmoid output activation function. The ensemble is combined by a uniformly weighted linear combination. Dataset 1: Boston <b>Housing</b> This regression dataset concerns housing values in suburbs of Boston, the problem is to predict the median house price given a number of demographic features. There are 506<br></p><hr><p class="normal"><a name="45391c9343dc03f6033eba55364366eddbb693db"></a><i>Predrag Radivojac and Zoran Obradovic and A. Keith Dunker and Slobodan Vucetic. <a href="http://rexa.info/paper/45391c9343dc03f6033eba55364366eddbb693db">Feature Selection Filters Based on the Permutation Test</a>. ECML. 2004. </i><br><br>summarized in Table 1. The first nine were downloaded from the UCI repository [38], with dataset <b>HOUSING</b> converted into a binary classification problem according to the mean value of the target. Datasets MAMMOGRAPHY and OIL were constructed in [39] and [40], respectively, and provided to us by<br></p><hr><p class="normal"><a name="49b5aef7a515640b1dde8f9f777d5a1f0c014022"></a><i>Glenn Fung and M. Murat Dundar and Jinbo Bi and Bharat Rao. <a href="http://rexa.info/paper/49b5aef7a515640b1dde8f9f777d5a1f0c014022">A fast iterative algorithm for fisher discriminant using heterogeneous kernels</a>. ICML. 2004. </i><br><br>used in the literature for benchmarking from the UCI Machine Learning Repository (Murphy & Aha, 1992): Ionosphere, Cleveland Heart, Pima Indians, BUPA Liver and Boston <b>Housing</b>  Additionally, a sixth dataset, the colon CAD dataset, relates to colorectal cancer diagnosis using virtual colonoscopy derived from computer tomographic images. We will refer to this dataset as the colon CAD dataset. The<br></p><hr><p class="normal"><a name="4bcdbeaa8f46590fca87d041c66b18a6622b82b3"></a><i>Kristiaan Pelckmans and Jos De Brabanter and J. A. K Suykens and Bart De Moor and K. U. Leuven - ESAT. <a href="http://rexa.info/paper/4bcdbeaa8f46590fca87d041c66b18a6622b82b3">The Differogram: Non-parametric Noise Variance Estimation and its Use for Model Selection</a>. SCDSISTA. 2004. </i><br><br>can therefor be used for picking good startingvalues for a local search based on a more powerful and computationally intensive way to achieve a good generalization performance. The Boston <b>housing</b> dataset (Blake and Merz, 1998) concerning the housing values in suburbs of Boston was used to benchmark the proposed method on a real world dataset. This set contains 506 instances of 12 continuous and 1<br></p><hr><p class="normal"><a name="74b68cad54c62b62b7ad64911291e2e0b0620dd8"></a><i>Bart Hamers and J. A. K Suykens. <a href="http://rexa.info/paper/74b68cad54c62b62b7ad64911291e2e0b0620dd8">Coupled Transductive Ensemble Learning of Kernel Models</a>. Bart De Moor. 2003. </i><br><br>models of both ensembles (uncoupled (left); coupled (right)). This shows the e�ect and improvement obtained by coupling of the learning processes for the individual submodels. 5.1.2 Boston <b>housing</b> Data Set The Boston housing data set is a multivariate regression data set of 506 cases in 14 attributes. It has two prototasks: NOX, in which the nitrous oxide level is to be predicted, and price MEDV, in<br></p><hr><p class="normal"><a name="1b7ec8555d756f0b0f3899a066abb09329234c5b"></a><i>Christopher K I Williams and Carl Edward Rasmussen and Anton Schwaighofer and Volker Tresp. <a href="http://rexa.info/paper/1b7ec8555d756f0b0f3899a066abb09329234c5b">Observations on the Nystrom Method for Gaussian Process Prediction</a>. Division of Informatics Gatsby Computational Neuroscience Unit University of Edinburgh University College London. 2002. </i><br><br>0.0885 # 0.0073 0.1171 # 0.0222 0.0846 400 0.0871 # 0.0071 0.0843 # 0.0026 0.0922 # 0.0193 0.0845 Table 1: Comparison of the Nystrom, SR, just-m and m-eigenvectors methods on the Boston <b>housing</b> data set for values of m of 100; 200; 300; 400. For the first three methods ten replications were used, with random choice of the x points; each entry shows the mean and standard deviation of the 10 MSE<br></p><hr><p class="normal"><a name="220290933c845bcae1348931e08740d3e16b5360"></a><i>David Hershberger and Hillol Kargupta. <a href="http://rexa.info/paper/220290933c845bcae1348931e08740d3e16b5360">Distributed Multivariate Regression Using Wavelet-Based Collective Data Mining</a>. J. Parallel Distrib. Comput, 61. 2001. </i><br><br>use to generate a regression model may not generate the MSE model for that amount of information transfer. The result also supports the MSE model result for the wavelet basis. The second benchmark data set we employ is the Boston <b>Housing</b> data set created by Harrison and Rubinfeld [18]. This data set consists of 506 samples with 13 independent variables, 12 of which are real-valued, and one real-valued<br></p><hr><p class="normal"><a name="39037b34a030869c4d11077a2cb171ac3ba3ff0d"></a><i>Thomas Melluish and Craig Saunders and Ilia Nouretdinov and Volodya Vovk and Carol S. Saunders and I. Nouretdinov V.. <a href="http://rexa.info/paper/39037b34a030869c4d11077a2cb171ac3ba3ff0d">The typicalness framework: a comparison with the Bayesian approach</a>. Department of Computer Science. 2001. </i><br><br>regions for data with w ~ N(0,1) % confidence Mean tolerance region width a=1 a=1000 a=10000 Figure 1 Bayesian RR and RRCM on data generated with w � N(0; 1) We also experimented on two benchmark dataset, the auto-mpg dataset and the Boston <b>housing</b> dataset. For each experiment, we show the percentage confidence against the percentage of labels outside the tolerance region predicted for that<br></p><hr><p class="normal"><a name="949c026b9a5a6fba34e6c93763433b9eb516a7bf"></a><i>Martin H C Law and James T. Kwok. <a href="http://rexa.info/paper/949c026b9a5a6fba34e6c93763433b9eb516a7bf">Applying the Bayesian Evidence Framework to 
+u -Support Vector Regression</a>. ECML. 2001. </i><br><br>task is to predict the ages of the abalones based on 8 input attributes. We used 256 patterns for training and the remaining 3921 patterns for testing. The experiment is repeated 25 times. The third data set is the Boston <b>housing</b> data, and the task is to predict housing values in the Boston suburbs using 13 input attributes. We used 128 patterns for training and the remaining 378 patterns for testing.<br></p><hr><p class="normal"><a name="e28683d93b8fd976add91a9a13a588202d32fcea"></a><i>Peter L. Hammer and Alexander Kogan and Bruno Simeone and Sandor Szedm'ak. <a href="http://rexa.info/paper/e28683d93b8fd976add91a9a13a588202d32fcea">R u t c o r Research R e p o r t</a>. Rutgers Center for Operations Research Rutgers University. 2001. </i><br><br>are obtained by lexicographically Page 28 RRR 7-2001 Figure 1: Cost of Classification Inaccuracy for # = 0 0 5 10 15 20 25 30 Credit Breast Cancer Boston <b>Housing</b> Diabetes Heart Disease Oil Voting Datasets Mean Cost LAD StrongSpanned StrongPrime Prime Figure 2: Cost of Classification Inaccuracy for # = 0.5 0 5 10 15 20 25 30 35 40 Credit Breast Cancer Boston Housing Diabetes Heart Disease Oil Voting<br></p><hr><p class="normal"><a name="fc1871a06c2119d5979c934e3d950ce16246f512"></a><i>Zhi-Hua Zhou and Jianping Wu and Weiyu Tang and Zen Chen. <a href="http://rexa.info/paper/fc1871a06c2119d5979c934e3d950ce16246f512">Combining Regression Estimators: GA-Based Selective Neural Network Ensemble</a>. International Journal of Computational Intelligence and Applications, 1. 2001. </i><br><br>than that generated by averaging all in most cases. Pairwise one-tailed t-tests also indicate that the generalization ability of GASEN and enumerating is not significantly different on all the data sets except Boston <b>Housing</b> where GASEN is significantly better than enumerating. Considering that enumerating can hardly work when there are lots of individual networks due to its extensive<br></p><hr><p class="normal"><a name="72d5bd2d46a0dc05c20340f71ac9c9e0eb6e0abf"></a><i>Nir Friedman and Iftach Nachman. <a href="http://rexa.info/paper/72d5bd2d46a0dc05c20340f71ac9c9e0eb6e0abf">Gaussian Process Networks</a>. UAI. 2000. </i><br><br>from the UCI machine learning repository [2]. These data sets are: # Boston <b>housing</b> data set - a data set describing different aspects of neighborhoods in the Boston area, and the median price of houses in those neighborhoods. The data set contains 506<br></p><hr><p class="normal"><a name="7265efd898e4c045ff078fcb63fec9fbde4b1249"></a><i>Endre Boros and Peter Hammer and Toshihide Ibaraki and Alexander Kogan and Eddy Mayoraz and Ilya B. Muchnik. <a href="http://rexa.info/paper/7265efd898e4c045ff078fcb63fec9fbde4b1249">An Implementation of Logical Analysis of Data</a>. IEEE Trans. Knowl. Data Eng, 12. 2000. </i><br><br>in 85.51% of the cases. Furthermore, it is interesting to notice that the inclusion of additional patterns in the discriminant does not seem to improve the prediction accuracy. Boston <b>Housing</b>  This dataset was created by D. Harrison and D. Rubinfeld in 1978 and contains 506 records describing housing values in the suburbs of Boston, depending on observations consisting of one binary and 12 continuous<br></p><hr><p class="normal"><a name="7c48d99a6eaf10a72fda6d4dd5591be082286c84"></a><i>Rudy Setiono and Huan Liu. <a href="http://rexa.info/paper/7c48d99a6eaf10a72fda6d4dd5591be082286c84">A connectionist approach to generating oblique decision trees</a>. IEEE Transactions on Systems, Man, and Cybernetics, Part B, 29. 1999. </i><br><br>351 34 continuous 9. Iris 150 4 continuous 10. Pima-diabetes 768 8 continuous 11. Sonar 208 60 continuous 12. Australian 690 14 mixed 13. HeartDisease 297 13 mixed 14. <b>Housing</b> 506 13 mixed Table 1: Dataset Summary. #Data - data size, Type - attribute type, and #A - number of attributes. 3. Apply NN-DT as follows: (a) Construct a network using the algorithm MLNNCA for the training dataset. Stop MLNNCA<br></p><hr><p class="normal"><a name="a56eb6b369952a5e696937ad2d432212563846ba"></a><i>Jinyan Li and Xiuzhen Zhang and Guozhu Dong and Kotagiri Ramamohanarao and Qun Sun. <a href="http://rexa.info/paper/a56eb6b369952a5e696937ad2d432212563846ba">Efficient Mining of High Confidience Association Rules without Support Thresholds</a>. PKDD. 1999. </i><br><br>rules and some very high (say 90%) confidence rules using approaches similar to mining top rules. Experimental results using the Mushroom, the Cleveland heart disease, and the Boston <b>housing</b> datasets are reported to evaluate the efficiency of the proposed approach. 1 Introduction Association rules [1] were proposed to capture significant dependence between items in transactional datasets. For<br></p><hr><p class="normal"><a name="10e99a623872cac01bf1cd18cc027b2559db0a86"></a><i>Christopher J. Merz and Michael J. Pazzani. <a href="http://rexa.info/paper/10e99a623872cac01bf1cd18cc027b2559db0a86">A Principal Components Approach to Combining Regression Estimates</a>. Machine Learning, 36. 1999. </i><br><br>No method in the first block does particularly well for the bodyfat or <b>housing</b> data sets indicating that a moderate amount of regularization is required there. Examining the more advanced methods for handling multicollinearity in the second block of rows reveals that PCR*, EG, and CR<br></p><hr><p class="normal"><a name="3ef07572a3c1cda9a7f2e4243ad683964cf7a084"></a><i>H. Altay Guvenir and Ilhan Uysal. <a href="http://rexa.info/paper/3ef07572a3c1cda9a7f2e4243ad683964cf7a084">Regression on feature projections</a>. a Department of Computer Engineering, Bilkent University. 1999. </i><br><br>q i 2 ^ t q i jj 13 In order to compare the RFP algorithm with KNN and Rules learning algorithms, we used abalone, auto-mpg, buying, country, cpu, electric, �are, <b>housing</b>  read and servo real world datasets for function approximation (available at http://funapp.cs.bilkent.edu.tr [11]). The information about the number of instances, number and type of features and presence of missing values are<br></p><hr><p class="normal"><a name="ba594780aee46c6bcb4af5f3dbb56027735edecf"></a><i>Ayhan Demiriz and Kristin P. Bennett and Mark J. Embrechts. <a href="http://rexa.info/paper/ba594780aee46c6bcb4af5f3dbb56027735edecf">Semi-Supervised Clustering Using Genetic Algorithms</a>. Dept. 1999. </i><br><br>have all originally two-class output variable except <b>Housing</b>  The output variable for this dataset was categorized at the level of 21.5. Each dataset was divided into three subsets after a standard normalization. We call these subsets the learning, testing and working sets. Currently 40% of data<br></p><hr><p class="normal"><a name="5d88347a087b01681bec3121a13b7b29465cdc71"></a><i>Mauro Birattari and Gianluca Bontempi and Hugues Bersini. <a href="http://rexa.info/paper/5d88347a087b01681bec3121a13b7b29465cdc71">Lazy Learning Meets the Recursive Least Squares Algorithm</a>. NIPS. 1998. </i><br><br>classical mean square error criterion: ^ y q = x 0 q ^ fi( ^ k); with ^ k = arg min k MSE(k) = arg min k P k i=1 ! i (e cv i (k)) 2 P k i=1 ! i ; (9) Table 1: A summary of the characteristics of the datasets considered. Dataset <b>Housing</b> Cpu Prices Mpg Servo Ozone Number of examples 506 209 159 392 167 330 Number of regressors 13 6 16 7 8 8 where ! i are weights than can be conveniently used to discount<br></p><hr><p class="normal"><a name="96246754b7958de8a635165e8b145c264240cd3d"></a><i>Huan Liu and Rudy Setiono. <a href="http://rexa.info/paper/96246754b7958de8a635165e8b145c264240cd3d">Feature Transformation and Multivariate Decision Tree Induction</a>. Discovery Science. 1998. </i><br><br>351 34 continuous 11 Iris 150 4 continuous 12 Pima-diabetes 768 8 continuous 13 Sonar 208 60 continuous 14 Australian 690 14 mixed 15 HeartDisease 297 13 mixed 16 <b>Housing</b> 506 13 mixed Table 1. Dataset Summary. #Data - data size, Type - attribute type, and #A - number of attributes. neural networks (NN) based on which BMDT builds MDT's. We want to understand whether the difference between every<br></p><hr><p class="normal"><a name="81fe50fa69f7adda42abf462e865a3b68089f333"></a><i>Sreerama K. Murthy and Simon Kasif and Steven Salzberg. <a href="http://rexa.info/paper/81fe50fa69f7adda42abf462e865a3b68089f333">A System for Induction of Oblique Decision Trees</a>. Department of Computer Science Johns Hopkins University. 1994. </i><br><br>of three different types of iris flower. Weiss and Kapouleas (1989) obtained accuracies of 96.7% and 96.0% on this data with back propagation and 1-NN, respectively. <b>Housing</b> Costs in Boston. This data set, also available as a part of the UCI ML repository, describes housing values in the suburbs of Boston as a function of 12 continuous attributes and 1 binary attribute (Harrison & Rubinfeld, 1978).<br></p><hr><p class="normal"><a name="8432b52f06e00a68cb8a7a49e3938190338231de"></a><i>Yin Zhang and W. Nick Street. <a href="http://rexa.info/paper/8432b52f06e00a68cb8a7a49e3938190338231de">Bagging with Adaptive Costs</a>. Management Sciences Department University of Iowa Iowa City. </i><br><br>and the out-of-bag margin estimation will result in better generalization as it does in stacking. 3. Computational Experiments Bacing was implemented using MATLAB and tested on 14 UCI repository data sets [2]: Autompg, Bupa, Glass, Haberman, <b>Housing</b>  Cleveland-heart-disease, Hepatitis, Ion, Pima, Sonar, Vehicle, WDBC, Wine and WPBC. Some of the data sets do not originally depict two-class problems<br></p><hr><p class="normal"><a name="965bcc99a91fa65151f0985f3813992c6403c2f6"></a><i>Tapani Raiko and Harri Valpola. <a href="http://rexa.info/paper/965bcc99a91fa65151f0985f3813992c6403c2f6">MISSING VALUES IN NONLINEAR FACTOR ANALYSIS</a>. Helsinki University of Technology, Neural Networks Research Centre. </i><br><br>The training set contains vectors more similar to the test set now. 4. Training and testing sets are permuted and 10 percent of the values are set to miss independently of any neighbours. The second data set is Boston <b>housing</b> data, which is publicly available at [2]. It concerns housing values in suburbs of Boston. Data set contains 506 vectors of 13 dimensions excluding one binary attribute. Four of<br></p><hr><p class="normal"><a name="5657ca96b13a51d96b97c4f8d8f5e724a616b9e6"></a><i>Dorian Suc and Ivan Bratko. <a href="http://rexa.info/paper/5657ca96b13a51d96b97c4f8d8f5e724a616b9e6">Combining Learning Constraints and Numerical Regression</a>. National ICT Australia, Sydney Laboratory at UNSW. </i><br><br>which enables a better comparison of Q 2 to other methods. These data sets are AutoMpg, AutoPrice, <b>Housing</b>  MachineCpu and Servo. The other three data sets are from dynamic domains where QUIN has typically been applied so far [Suc, 2003; Suc and Bratko, 2002] . It should<br></p><hr><p class="normal"><a name="36d1c58be0e3c0c1d57492d050d8a71a04a72858"></a><i>Ayhan Demiriz and Kristin P. Bennett. <a href="http://rexa.info/paper/36d1c58be0e3c0c1d57492d050d8a71a04a72858">Chapter 1 OPTIMIZATIONAPPROACHESTOSEMI-SUPERVISED LEARNING</a>. Department of Decision Sciences and Engineering Systems & Department of Mathematical Sciences, Rensselaer Polytechnic Institute. </i><br><br>of the working set is set to 50 points and rest of the data are used as the training set. We use the following formula to pick the penalty parameter: 1 The continuous response variable in <b>Housing</b> dataset was categorized at 21.5 12 APPLICATIONS AND ALGORITHMS OF COMPLEMENTARITY Table 1.2 Average Error Results for Inductive and Transductive SVM Methods Data Set SVM-RLP �Ե���� Local SVM Local �εS���<br></p><hr><p class="normal"><a name="e3cb1b3c129bc2be18036ad91073724543894185"></a><i>Luc Hoegaerts and J. A. K Suykens and J. Vandewalle and Bart De Moor. <a href="http://rexa.info/paper/e3cb1b3c129bc2be18036ad91073724543894185">Subset Based Least Squares Subspace Regression in RKHS</a>. Katholieke Universiteit Leuven Department of Electrical Engineering, ESAT-SCD-SISTA. </i><br><br>took unity values. The use of other kernels, like the polynomial or the sigmoidal kernel, did not produce such good results as the Gaussian kernel. 6.2 Real world data examples The Boston <b>Housing</b> data set [31] consists of 506 cases having p = 13 input variables. The aim is to predict the housing prices. We standardized the data to zero mean and unit variance. We picked at random a training set of<br></p><hr><p class="normal"><a name="b921d6a9c3c9b7cd79c2e3c070080f7c6770ac28"></a><i>S. Sathiya Keerthi. <a href="http://rexa.info/paper/b921d6a9c3c9b7cd79c2e3c070080f7c6770ac28">Improvements to SMO Algorithm for SVM Regression</a>. Author for Correspondence: Prof. </i><br><br>samples were chosen randomly. The performance of the four algorithms for the polynomial kernel k(x i ; x j ) = (1 + x i Delta x j ) p where p was chosen to be 3, is shown in Fig. 1. The second dataset is the Boston <b>housing</b> dataset which is a standard benchmark for testing regression algorithms. This dataset is available at UCI Repository [1]. The dimension of the input is 13. We used the training<br></p><hr><p class="normal"><a name="cb859ac992c9a4cf5cdb94f0dd15a628718a4b0c"></a><i>Jarkko Tikka. <a href="http://rexa.info/paper/cb859ac992c9a4cf5cdb94f0dd15a628718a4b0c">AB HELSINKI UNIVERSITY OF TECHNOLOGY Department of Automation and Systems Technology Jarkko Tikka Learning linear dependency trees from multivariate data</a>. Helsinki University of Technology Abstract of Master's thesis Department of Automation and Systems Technology Author Date. </i><br><br>and ipkts. The value of the regression coefficient of wio is also negative in the latter case. A positive change in wio decreases the value of ipkts. 4.3 Boston <b>housing</b> data The second real world data set is called the Boston housing data. The data are got from the UCI repository of the databases [3]. The data set concerns housing values in suburbs of Boston in the USA. The data were collected in<br></p><hr><p class="normal"><a name="f1395e1da4a724219d6cc414e48969140355bebb"></a><i>David R. Musicant. <a href="http://rexa.info/paper/f1395e1da4a724219d6cc414e48969140355bebb">DATA MINING VIA MATHEMATICAL PROGRAMMING AND MACHINE LEARNING</a>. Doctor of Philosophy (Computer Sciences) UNIVERSITY. </i><br><br>We implemented the "cpuSmall prototask", which involves using twelve of these attributes to predict what fraction of a CPU's processing time is devoted to a specific mode ("user mode"). The third dataset, Boston <b>Housing</b>  is a fairly standard dataset used for testing regression problems. It contains 506 data points with 12 numeric attributes, and one binary categorical attribute. 96 The goal is to<br></p><hr><p class="normal"><a name="fc0a66d3a7336b6eabad919a7389c68cc37f2564"></a><i>Ayhan Demiriz and Kristin P. Bennett and John Shawe and I. Nouretdinov V.. <a href="http://rexa.info/paper/fc0a66d3a7336b6eabad919a7389c68cc37f2564">Linear Programming Boosting via Column Generation</a>. Dept. of Decision Sciences and Eng. Systems, Rensselaer Polytechnic Institute. </i><br><br>used in decision tree stumps experiments, we use four additional UCI datasets here. These are the House(16,435), <b>Housing</b> 13,506) 3 , Pima(8,768), and Spam(57,4601) datasets. As in the decision tree stumps experiments, we report results from 10-fold CV. Since the best # value<br></p><hr><p class="normal"><a name="9628f95b0cc07019875b0659d10aab8e2904bfca"></a><i>Jianping Wu and Zhi-Hua Zhou and Cheng-The Chen. <a href="http://rexa.info/paper/9628f95b0cc07019875b0659d10aab8e2904bfca">Ensemble of GA based Selective Neural Network Ensembles</a>. National Laboratory for Novel Software Technology Nanjing University. </i><br><br>mean squared error and corresponding standard deviation is also recorded. Experimental results are shown in Tab l e 1 . Statistical tests show that on the Friedman#1, Boston <b>Housing</b>  and Ozone data sets, GASEN's generalization error is significantly lower than that of the simple ensemble method, and e-GASEN attains still lower generalization errors than GASEN. On the Servo data set, GASEN is<br></p><hr><p class="normal"><a name="48d6beec2a36a87d9d88b6de85dd85a75e5ed24d"></a><i>C. Titus Brown and Harry W. Bullen and Sean P. Kelly and Robert K. Xiao and Steven G. Satterfield and John G. Hagedorn and Judith E. Devaney. <a href="http://rexa.info/paper/48d6beec2a36a87d9d88b6de85dd85a75e5ed24d">Visualization and Data Mining in an 3D Immersive Environment: Summer Project 2003</a>. </i><br><br>We decided to explore labeling systems and layouts more in the future. 19 Figure 4.2: A closeup of two of the MPG graphs. 20 4.3 <b>Housing</b> This data set was analysed by Robert Xiao. Overview The housing data set consisted of data regarding 506 houses in Boston, Massachusetts. Thirteen continuous attributes, including a target variable of median<br></p><hr><p class="normal"><a name="8e003bfae7c07cdeeb0ae5f251d545873364dd1e"></a><i>David R. Musicant and Alexander Feinberg. <a href="http://rexa.info/paper/8e003bfae7c07cdeeb0ae5f251d545873364dd1e">Active Set Support Vector Regression</a>. </i><br><br>were used for the first round of experiments. The first dataset, Boston <b>Housing</b>  is a fairly standard dataset used for testing regression problems. It contains 506 data points with 12 numeric attributes, and one binary categorical attribute. The goal is to<br></p><hr><p class="normal"><a name="09e7adcf66589d1d54853bb072ead0657a5c5e14"></a><i>Nir Friedman and Daphne Koller (koller@cs. stanford. edu. <a href="http://rexa.info/paper/09e7adcf66589d1d54853bb072ead0657a5c5e14">A Bayesian Approach to Structure Discovery in Bayesian Networks</a>. School of Computer Science & Engineering Hebrew University. </i><br><br>indicating that model selection is likely to return a fairly representative structure in this case. A second form of support for the non-mixing conjecture is obtained by considering an even smaller data set: the Boston <b>housing</b> data set, from the UCI repository (Murphy and Aha, 1995), is a continuous domain with 14 variables and 506 samples. Here, we considered linear Gaussian networks, and used a<br></p>
+
+
+	</td></tr></table>
+
+
+
+<hr>
+
+<p class="normal"><a href="/datasets/Housing">Return to Housing data set page</a>.
+
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

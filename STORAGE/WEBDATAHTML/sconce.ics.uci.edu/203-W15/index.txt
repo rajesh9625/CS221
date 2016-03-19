@@ -1,0 +1,137 @@
+CS 203 / NETSYS 240  Class Page<!DOCTYPE HTML PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Mozilla/4.7 [en]C-CCK-MCD {Sony}  (Win98; U) [Netscape]">
+    <title> CS 203 / NETSYS 240  Class Page </title>
+  </head><body bgcolor="#DBFFEF">
+
+    <center>
+      <h1>
+	<font color="#000000"><u>ICS 203 / NetSys 240  <br>
+	  </u>Network and Distributed Systems Security -- Winter 2015 
+    </font></h1></center>
+
+    <center><b><font face="Arial,Helvetica"><font color="#000000"><font size="+2">Instructor:
+	      <a href="http://www.ics.uci.edu/%7Egts" target="_blank">Gene Tsudik</a></font></font></font></b></center>
+    <p><br>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+
+	    <td valign="TOP" width="1%" align="CENTER" bgcolor="#adc895">
+	      <blockquote>&nbsp;</blockquote>
+	    </td>
+
+	    <td width="3%"></td>
+
+	    <td>
+
+	      <h2>
+		<u><font face="Arial,Helvetica"><font color="#800040">Anouncements:</font></font></u></h2>
+	      <ul>
+		<!--<li>
+		  Class on February 25th <b>will</b> take place in DBH 6011, Silvio Micali is giving a talk.
+		</li> -->
+	      </ul>
+
+	      <h3>
+		<u><font face="Arial,Helvetica"><font color="#800040">Logistics:</font></font></u></h3>
+	      <ul>
+		<li> Lecture: Tu/Th 9:30am-10:50pm, DBH 1300.</li>
+		<li> Professor's office hours: Monday 11:00am-12:00pm in DBH 3228 (Bren Hall). Alternatively, via email or by appointment.</li>
+		<li> Midterm: TBD, during class.</li>
+		<li> Final: Thur, Mar 19, 8:00am-10:00am.</li>
+		<li> Course Reader:
+		  <ul>
+		    <li>Cesar Ghali: <img src="reader.png" /></li>
+		    <li>Office hours: Wednesday 3:00pm-4:00pm in ICS1 468A (Computer Science 1).</li>
+		  </ul>
+		</li>
+	      </ul>
+
+	      <!-- <h3>
+		<b><u><font face="Arial,Helvetica"><font color="#800040">Mailing Lists:</font></font></u></b></h3>
+	      <ul>
+		<li> 37632-W12@classes.uci.edu 
+		</li><li> 35520-W12@classes.uci.edu 
+	      </li></ul> -->
+
+	      <h3>
+		<b><u><font face="Arial,Helvetica"><font color="#800040">Book Pointers:</font></font></u></b></h3>
+	      <ul>
+		<li>
+		  <a href="http://williamstallings.com/Crypto/Crypto4e.html"> Stallings' book </a>&nbsp;</li>
+		<li>
+		  <a href="http://www.cacr.math.uwaterloo.ca/hac/index.html"> FREE HAC book </a>&nbsp;</li>
+	      </ul>
+
+	      <h3>
+		<b><u><font face="Arial,Helvetica"><font color="#800040">Current Lecture Material (in PDF):</font></font></u></b></h3>
+	      <ol>
+		<li>01/06: <a href="intro.pdf">Introduction</a></li>
+		<li>01/08: <a href="background-overview-2.pdf">Overview of Network Security</a></li>
+		<li>01/13: <a href="user-auth-3.pdf">User Authentication</a></li>
+		<li>01/20: <a href="honey-passwords-4.pdf">The Password That Never Was</a></li>
+		<li>01/22: <a href="web-auth+kerberos-5.pdf">Web Security</a></li>
+		<li>01/29: <a href="ndn.pdf">Named Data Networking</a></li>
+		<li>02/03: <a href="spam-7.pdf">Spam</a></li>
+		<li>02/05: <a href="phishing-8.pdf">Phishing</a></li>
+		<li>02/10: <a href="netattacks-9.pdf">Network Threats/Attacks</a></li>
+		<li>02/17: <a href="gaze-biometric-10.pdf">Fighting Insider Threats with Eye Movement Biometrics</a></li>
+		<li>02/24: <a href="firewalls11.pdf">Firewalls</a></li>
+		<li>02/26: <a href="anonymity-12.pdf">Privacy and Anonymity</a></li>
+		<li>03/03: <a href="privacy_basics-13.pdf">Privacy</a></li>
+		<li>03/05: <a href="ecash-14.pdf">E-Cash</a></li>
+		<li>03/10: <a href="cert-revoke-15.pdf">Public Key Distribution, Certification and Revocation</a></li>
+	      </ol>
+
+	      <h3>
+		<b><u><font face="Arial,Helvetica"><font color="#800040">Talks:</font></font></u></b></h3>
+	      <ol>
+		<!-- <li>01/31: <a href="hookplace_uci_1402.pdf">Producing Minimal Hook Placements to Enforce Authorization Policies</a></li>
+		<li>01/31: <a href="http://www.cs.uci.edu/video/CSTalk022514Micali.mp4">Proofs, Secrets and Computation</a></li> -->
+	      </ol>
+
+	      <h3>
+		<b><u><font face="Arial,Helvetica"><font color="#800040">Related Links:</font></font></u></b></h3>
+	      <ul>
+		<li>
+		  <font color="#400040"><a href="http://sconce.ics.uci.edu/134-W15/">CS 134 -- Undergraduate Security Course (Winter 2015)</a></font></li>
+		<li>
+		  <font color="#400040"><a href="http://sconce.ics.uci.edu/">UCI Secure Computing and Networking Center (SCONCE)</a></font></li>
+		<li>
+		  <font color="#400040"><a href="http://sprout.ics.uci.edu/">UCI Security and Privacy Research Outfit (SPROUT) </a></font></li>
+		<li>
+		  <font color="#400040"><a href="http://www.ics.uci.edu/computerscience/research/seminarseries/">2014/2015 Computer Science Department Seminar Series</a></font></li>
+	      </ul>
+	      
+	      <h3>
+		<b><u><font face="Arial,Helvetica"><font color="#800040">Academic Honesty:</font></font></u></b></h3>
+	      <ul>
+		<li>
+		  <font color="#400040">Academic honesty is always an uncomfortable topic and hopefully this will be an unnecessary reminder but here it is. Academic honesty will be strictly enforced, and misconduct dealt with according to the official policy for <a class="ulink" href="http://honesty.uci.edu/" target="_top">Academic misconduct at UC Irvine</a>.</font></li>
+	      </ul>
+
+
+
+	    </td>
+
+	    <td valign="TOP" width="1%" align="CENTER" bgcolor="#adc895">
+	      <blockquote>&nbsp;</blockquote>
+	    </td>
+
+
+	  </tr>
+
+	  <tr>
+	    <td></td>
+
+	    <td></td>
+
+	    <td></td>
+	  </tr>
+      </tbody></table>
+
+
+
+    </p><hr>
+</body></html>

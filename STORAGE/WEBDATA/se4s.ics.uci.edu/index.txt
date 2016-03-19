@@ -1,0 +1,138 @@
+Software Engineering for Sustainability (SE4S)SE4S
+          
+            MissionProjectsCollaborationsTeamContact
+          
+        
+      
+    
+
+
+
+
+   
+
+ Software Engineering for Sustainability
+
+
+
+
+News
+May 2015: The EnviroSiSE funding has run out and this website is no longer updated. For more recent publications and updates, please visit here.
+
+
+Mission
+
+Sustainability and sustainable development have become pressing concerns over the last several decades. Software systems strongly affect our everyday lives in many aspects and in varying contexts. Consequently, supporting sustainability in software engineering explicitly is likely to have a substantial impact on making our planet greener in the long run and improving our communities as well as our environment.
+
+
+
+The Big Picture
+
+Sustainability is not supported by traditional software engineering methods. This lack of support leads to inefficient efforts to address sustainability or complete omission of this important concept. The aim of our SE4S project is to support the dimensions of sustainability - human, social, economic, environmental, and technical - within different phases of the software lifecycle, with a focus on requirements engineering (RE) and quality assurance (QA). 
+
+
+
+We are analyzing to what extent and how RE and QA can contribute to the improvement of the sustainability of software systems in general. This involves identifying stakeholder needs, eliciting appropriate goals and requirements, finding metrics to assess realization of the requirements, and evaluating whether the proposed activities helps to improve a system's sustainability. Thereby, software engineers can engage with the activities that enable them to have the greatest impact on sustainability while still satisfying other requirements of the system.
+
+
+
+This work is part of the DFG EnviroSiSE project (grant number PE2044/1-1) and National Science Foundation Grant No. 0644415.
+
+
+
+   
+
+
+
+
+
+
+Projects
+
+Sustainability Goal Model
+
+We have developed a generic sustainability model with process- and product-specific instances that can help requirements engineers to analyze their projects according to the different dimensions of sustainability, instantiate concrete goals for the project, and choose actions for improvement. Special emphasis is put on environmental sustainability in and via software systems, as this dimension of sustainability is the one that is least supported by our traditional ways of developing software systems.
+
+
+
+Requirements Analysis
+
+To transition from goals to requirements and to adequately document these requirements, we intend to adapt a number of requirements analysis techniques, including life cycle analysis, as well as integrating environmental information into the requirements artifacts.
+
+
+
+Sustainability as a Non Functional Requirement
+
+We envision a Non Functional Requirement Framework for Sustainability as the basis upon which requirements engineers can categorize various sustainability requirements elicited for the software system to be built. It would allow goals from the Sustainability Goal Model to be categorized based on two dimensions: (1) Sustainability aspects - environmental, human, social, economic and technical; and (2) Order of effect - direct result of requirement, effect of application, or long-term socio-economic structural changes. 
+
+
+
+Requirements Recommender System
+
+We are working to create a recommender system that will lessen the workload and cost associated with requirements elicitation of sustainable software systems. The recommender system will present archetypes (templates from which requirements are constructed) to the user based on application domain, organizational values and guidelines, and/or deployment locale. In addition, users will be able to create a profile with which the user can save and share the requirements of a project.
+
+
+
+Sustainability Standard
+
+To ensure wider applicability, we proposed establishing a governing standard with relevant policies and recommendations.  For sustainability to become a first class quality consideration, we intend to develop components for two standards:
+	IEEE 830 Recommended Practice for Software Requirements Specification: a brief, first definition of sustainability in a software requirements context;ISO 9126-1 Software engineering - Product quality: application of the sustainability goal model, quality model and NFR framework to create a hierarchically structured set of characteristics of sustainability as a software quality.	
+
+
+
+
+
+Collaboration
+
+Research on this topic is only valuable if it can be applied in practice. Therefore, we would like to engage with industry partners to jointly develop feasibility studies and pilot projects to evaluate our research, to get feedback on our results, and to help our partners improve their current software engineering practice wrt supporting the objective of sustainability.
+
+
+
+What are we looking for?
+
+Any of the following industrial case studies would be useful for our purposes: an existing system built with environmental sustainability considerations; a system (existing or under development) with potential direct impact on environmental sustainability or one where user behavior can be influenced with respect to environment sustainability.
+
+
+
+The Timeline
+
+We envision the following steps: 1. interviews, 2. project reviews, and 3. a collaborative case study.
+Steps 1 and 2 could be scheduled over about 4-8 weeks, depending on the number of available interviewees, Step 3 in about 12-16 weeks. More details follow:
+
+	A series of 30-60 minute semi-structured interviews with different roles (e.g., business analyst, requirements engineer, project manager, system architect) to find out about the state of practice in sustainability support.A look into a current example project to deepen our understanding of the state of practice in RE and QA.A conjoint case study (training and support for the industrial partner, evaluation and feedback for us) that includes developing a sustainability goal model, analyzing the requirements, and prototyping a goal model.
+
+
+
+
+
+
+Team
+
+Debra Richardson is a Professor of Informatics in the Bren School of ICS at UCIrvine.  Her current research interests are in exploring how software engineering - requirements engineering and quality assurance, in particular - can be made to address socially relevant problems such as sustainability.  More here. 
+
+
+
+Bill Tomlinson is an Associate Professor of Informatics at the University of California, Irvine, and a researcher in the California Institute for Telecommunications and Information Technology.  His research approaches major social topics - such as environmental issues, education, and politics - through technological innovation, analysis, and understanding. 
+More here.
+
+
+
+Birgit Penzenstadler is an Assistant Professor at CSULB, formerly postdoc in Informatics at UCI and, before that, TUM, Germany, who received her doctor's degree in 2011. Her research focuses on supporting sustainability from within requirements engineering and quality assurance. 
+More here.
+
+
+
+Ankita Raturi is a PhD student in Software Engineering at UCIrvine. Her Master's thesis was "Visualization of energy data in a software development environment". Her research interests are involving sustainability considerations in software development (including energy management), software standards and metrics. 
+More here.
+
+
+
+Kristin Roher is a first year Ph.D. student in Informatics at the University of California, Irvine. She received her B.S. in Computer Engineering from the University of Pittsburgh. Her research interests are in using IT systems to influence and encourage sustainable human behavior. 
+More here.
+
+
+
+
+Contact
+
+Birgit Penzenstadler: birgit dot penzenstadler at csulb dot edu

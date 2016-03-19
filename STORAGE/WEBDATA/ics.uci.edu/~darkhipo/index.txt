@@ -1,0 +1,171 @@
+Dmitri Ivanovich ArkhipovDmitri I. Arkhipov 
+    4081 Bren Hall
+
+    1(505)234-6275
+
+    darkhipo AT uci DOT edu
+    
+    Advisor:
+    Amelia Regan
+    
+    
+    
+    
+    
+
+     A collection of my work from different courses, notes, and other similar sources 
+    My public github  
+
+    Education/Distinctions
+
+    University of
+        California Irvine (2004 - 2009):
+        B.S in Information and Computer Science
+        (Cum Laude).
+        Specializations: Computer Systems, Distributed
+        Systems.
+        Minor in
+        Mathematics.
+        Member Phi Beta Kappa.University of
+        California Irvine (2010 - 2012):
+        M.S in Computer Science
+         
+    
+
+    
+
+    Software
+    Experience
+
+    
+
+    Programming
+        Languages/Frameworks: Java, Scala, JDBC,
+        JSP, C, C++, C#, SQL, x86
+        assembler, Perl, Python, Matlab, VHDL, Java Script, HTML,
+        CSS, MySQL, PostgreSQL. Apache Tomcat, Apache Hadoop, Apache Hive, Cloudera, Horton Works.
+
+    Development
+        Software: PostgeSQL,
+        OpenGL, MS Visual Studio 2005, Model-Sim (VHDL), Eclipse
+        IDE, PyDev, Scala IDE, Matlab, Vim, LaTex, Unix, Open/Libre Office.Software: MS Windows
+        XP, Linux (Redhat/Ubuntu), MS Office.
+
+    Language: English,
+        Russian.
+    
+
+    
+
+    
+
+    Employment
+
+    Graduate Student Researcher and Teacher Assistant @ UCI Bren School of C.S
+        (09/2011 - Current)
+        Working on several ongoing optimization and parallel execution themed papers. 
+        Assisting in introductory computer programming, and discrete mathematics courses. 
+        Current research projects include: 
+         Novel concurrency and inter-thread/inter-agent communication and synchronization methods.  Agent based navigational programming approaches for heuristic scheduling optimization in a distributed environment.  Dynamic approaches to a new varient of the probabilistic traveling salesman problem.  Congestion and load adaptive first hop selection in SDN networks.  Novel methods for parallelization and batch selection in stochastic gradient descent. 
+        
+    Software Engineering Intern (Java/Scala/Python)@ Adaptive Medias Inc (04/2014 - 11/2014):
+        I worked on three primary projects. Firstly, a heuristic optimization solution to an ad-ordering 
+        problem written in Java. Secondly, I wrote a REST-ful web application in Python flask to accept web-domain urls and 
+        classify the semantic content into Internet Advertising Bureau tier 1 categories. 
+        Finally, I worked in Scala with the cloudera package of Hadoop to write Spark code to perform log aggregation. 
+
+    Teacher Assistant @ UCI Bren School C.S
+        (Java)(11/2010 - 1/2011):
+        Discussed introductory to intermediate
+        Java and Python concepts with students. Taught basic programming
+        skills and principals to undergraduate students. Graded
+        student Python and Java programs.
+
+    Web Application
+        Developer (Perl/JS) @ Intellisurvey Inc (04/2010 - 10/2010):
+        Designed and implemented new features and
+        enhancements to Intellisurvey software. Found and resolved
+        software defects. Assisted in developing Intellisurvey
+        infrastructure by creating tools to aid in development,
+        testing, and systems administration. Provided technical
+        support to internal software users and to clients who users
+        licensing Intellisurvey software tools.
+        
+
+    Research Assistant @
+        Institute of Transportation Studies at University of
+        California Irvine (05/2009 - 09/2009):
+        Installed, configured and populated a
+        Postgress database with heterogeneous data sources.
+        Developed a front end for the data using JSP. Linked the
+        sources together into larger databases on the basis of
+        common fields and meta information.
+
+    Research Assistant @
+        Donald Bren School of Information and Computer Sciences
+        (01/2009 - 05/2009):
+        Optimization of MatLab algorithms for
+        dynamic network flow optimization. Writing C functions
+        called from the mex interface of Matlab, parsing work with
+        python and re-implementing several algorithms from Matlab
+        in Python. Developed a genetic algorithm
+        solution.
+
+    
+
+    Publications
+
+    
+        
+    
+    
+        
+                
+                D.I. Arkhipov, Wu, Di, and A.C. Regan (2015), A Simple Genetic Algorithm Parallelization 
+                Toolkit (SGAPTk) for Transportation Planners and Logistics Managers. Proceedings of the 2015 meeting of the Transportation Research Board, 45(8) 765-778.
+                
+            
+                
+                Wu, D., D I. Arkhipov, Y. Zhang, C.H. Liu and A.C. Regan (2015), Online Wardriving by Compressive Sensing. Wu, D., D I. Arkhipov, Y. Zhang, C.H. Liu and A.C. Regan (2015), IEEE Transactions on Mobile Computing, in press.
+                
+            
+    
+
+    
+        
+                Chow,
+                J.Y.J., A.C. Regan, F. Ranaiefar and D. Arkhipov
+                (2011), A Network Option Portfolio Management
+                Framework for Adaptive Transportation
+                Planning. Transportation Research, Part A: Policy
+                and Practice, 45(8)
+                765-778.
+                
+            
+                Tok,
+                Y.C.A, M. Zhao, Chow, J.Y.J., S. G. Ritchie and D.
+                Arkhipov (2011), An on-line data repository for
+                statewide freight planning and
+                analysis. Proceedings of the 2010 meeting of the
+                Transportation Research Board.
+            
+    
+
+    
+        
+                Chow,
+                J.Y.J., A.C. Regan and D.I. Arkhipov (2010). Fast
+                converging global heuristic for continuous network
+                design problem using radial basis
+                functions. Proceedings of the 2010 meeting
+                of the Transportation Research Board.
+                
+            
+                Chow,
+                J.Y.J., A.C. Regan and D.I. Arkhipov (2010). Faster
+                converging global heuristic for continuous network
+                design problem using radial basis
+                functions. Transportation Research Record: Journal
+                of the Transportation Research
+                Board, 2196,
+                210-110.

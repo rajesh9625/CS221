@@ -1,0 +1,25 @@
+Index of /~fielding/pubs<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~fielding/pubs</title>
+ </head>
+ <body>
+<h1>Index of /~fielding/pubs</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/~fielding/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="apache_icse2000.pdf">apache_icse2000.pdf</a></td><td align="right">06-Mar-2000 00:52  </td><td align="right">175K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="arch_survey.pdf">arch_survey.pdf</a></td><td align="right">15-Jul-1999 18:45  </td><td align="right">268K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="arch_survey_20.pdf">arch_survey_20.pdf</a></td><td align="right">29-Mar-2000 19:32  </td><td align="right">384K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="cacm98_enterprises.pdf">cacm98_enterprises.pdf</a></td><td align="right">30-May-1999 21:52  </td><td align="right">195K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="cacm99_apache.pdf">cacm99_apache.pdf</a></td><td align="right">30-May-1999 22:19  </td><td align="right">120K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="dissertation/">dissertation/</a></td><td align="right">09-Jan-2010 22:18  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/a.gif" alt="[   ]"></td><td><a href="dl95.ps">dl95.ps</a></td><td align="right">20-Jul-1996 07:12  </td><td align="right">857K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="fse99_webarch.pdf">fse99_webarch.pdf</a></td><td align="right">07-Mar-1999 08:43  </td><td align="right">105K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/a.gif" alt="[   ]"></td><td><a href="fse99_webarch.ps">fse99_webarch.ps</a></td><td align="right">07-Mar-1999 08:46  </td><td align="right">124K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="ieeeic97.pdf">ieeeic97.pdf</a></td><td align="right">07-Aug-1997 14:26  </td><td align="right">104K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/a.gif" alt="[   ]"></td><td><a href="ieeeic97.ps">ieeeic97.ps</a></td><td align="right">07-Aug-1997 14:54  </td><td align="right">632K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="webarch_icse2000.pdf">webarch_icse2000.pdf</a></td><td align="right">06-Mar-2000 01:09  </td><td align="right">158K</td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.15 (CentOS) Server at www.ics.uci.edu Port 80</address>
+</body></html>

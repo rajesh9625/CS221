@@ -1,0 +1,208 @@
+charless c. fowlkes - uc irvine - computer visioncharless c. fowlkes
+associate professor
+computer science
+uc irvine
+
+fowlkes@ics.uci.edu
+4076 dbh 
+949.824.6945
+
+uci : cs : vision group
+
+
+      
+      
+  home
+  publications
+  presentations
+  software
+
+
+
+    
+    
+        
+        
+        My research is in computational vision, in particular how to integrate
+        mechanisms for visual
+        recognition and perceptual organization.
+        I'm interested in how measuring the predictive power of different visual
+        cues can provide general information-theoretic constraints on human
+        visual processing.  I also work on developing tools for 
+        biological image and shape analysis in order to
+        measure morphology and spatial patterns of gene expression in
+        developing animals. 
+        
+        
+        
+        
+        
+
+        recent research and news: 
+        
+        
+        D. Tcheng, A. Nayak, C. Fowlkes, S. Punyasena,
+        "Visual recognition software for binary classification and its application to spruce pollen identification"
+        PLoS ONE, to appear
+        
+        
+
+        
+        R. Diaz, M. Lee, J. Schubert, C. Fowlkes,
+        "Lifting GIS Maps into Strong Geometric Context" 
+        WACV 2016
+        arXiv:1507.03698
+        [pdf]
+        
+        
+
+         We received a Helmholtz Prize in 2015 for having a
+        significant impact on the field of computer vision with our ICCV 2001
+        paper: D.  Martin, C. Fowlkes, D. Tal, J. Malik.  
+        "A Database of Human Segmented Natural Images and its Application to Evaluating Segmentation
+        Algorithms and Measuring Ecological Statistics"
+        [pdf]
+                        
+
+
+          M. Chiang, S. Hallman, A. Cinquin, N. Reyes de Mochel, A. Paz, S. Kawauchi, A. Calof, K. Cho, C. Fowlkes, O. Cinquin,
+         "Analysis of in vivo single cell behavior by high throughput, human-in-the-loop segmentation of three-dimensional images",
+         BMC Bioinformatics 2015, 16:397  doi:10.1186/s12859-015-0814-7.
+         [pdf]
+        
+
+         
+          J. Yarkony, C. Fowlkes, "Planar Ultrametrics for Image Segmentation", Proc. of
+          NIPS,  (Dec. 2015).
+          arXiv:1507.02407  
+          [pdf]
+          
+          
+
+          J. B. Treweek, K. Chan, N. Flytzanis, B. Yang, B. Deverman, A. Greenbaum, A.
+          Lignell, C. Xiao, L. Cai, M. Ladinsky, P. Bjorkman, C. Fowlkes, V. Gradinaru
+          "Whole-Body Tissue Stabilization and Selective Extractions via Tissue-Hydrogel
+          Hybrids for High Resolution Intact Circuit Mapping and Phenotyping", 
+          Nature Protocols, 10 (11), 1860-1896, (2015)
+          DOI 10.1038/nprot.2015.122
+          
+          
+
+          
+          S. Wang, C. Fowlkes, "Learning Optimal Parameters for Multi-target Tracking",
+          BMVC 2015
+          [pdf]
+          
+          
+
+         
+          G. Ghiasi, C. Fowlkes, "Using segmentation to predict the absence of occluded parts",
+          BMVC 2015.
+          [pdf]
+          [data]
+          
+          
+
+
+         
+        G. Ghiasi, C. Fowlkes, "Occlusion Coherence: Detecting and Localizing Occluded Faces", Technical Report, June 2015
+        arXiv:1506.08347 
+        [pdf]
+        [code]
+        [dataset]
+        
+        
+
+          
+           S. Hallman, C. Fowlkes, "Oriented Edge Forests for Boundary Detection", 
+           CVPR, Boston, MA, June 2015.
+           arXiv:1412.4181
+           [pdf]
+           [code]
+           
+
+          
+          X. Zhu, C. Vondrick, C. Fowlkes, D. Ramanan, "Do we need more training data?", 
+         IJCV, March 2015
+         arXiv:1503.01508
+         [pdf]
+          
+
+          
+           M. Staller, C. Fowlkes, M. Bragdon, J. Estrada, Z. Wunderlich, A. DePace, "A
+           gene expression atlas of a bicoid-depleted Drosophila embryo reveals
+           early canalization of cell fate", 
+           Development 142, p 587-596, (2015)
+           [pdf]
+           
+
+        more recent pubs here...
+        
+
+        
+        
+        teaching:
+        
+        cs 117 : project in computer vision [w09,f13,s15]
+        ics 162 : modeling and world building [f12,s14,f15]
+        cs 116 : computational photography and vision [w10,w11,w13,w14,w16]
+        cs 216 : image understanding [f08,f10,f11,f12,s14,w16]
+        cs 217 : light and geometry in vision [s10,w12,s15]
+        cs 295 : research topics in vision [s09,w10,w11]
+        cs 177 : applications of probability in computer science [s08]
+        
+        
+        students:
+        
+        advisees
+        Raúl Díaz (PhD)
+        Golnaz Ghiasi (PhD)
+        Minhaeng Lee (PhD)
+        Bailey Kong (PhD)
+        Shu Kong (PhD) 
+        
+        
+        past advisees and collaborators
+        Sam Hallman (PhD, 2015) now at Amazon
+        Michael Chiang (PhD, 2015)
+        Hyeoungho Bae (PhD, 2013) now at Microsoft
+        Shaofei Wang (MS, 2013)
+        Julian Yarkony (PhD,2012) now at Experian Data Lab
+        Matthew Nease (BS, 2012) now at Edmunds
+        Shu-Chi Hsu (MS, 2012)
+        Yihang Bo (visiting PhD, 2010-2011) now at Beijing Film Academy  
+        Ragib Morshed (MS, 2011) now at Adconion 
+        Sangeeta Jha  (MS, 2010) now at Intel 
+        Tony Tran (MS, 2009) now at Bizo
+        Dennis Park (MS, 2009) now at Vicarious
+        
+        
+        
+
+        
+        funding:
+        
+        My research is currently supported by:
+        NSF (
+        IIS-1253538,
+        DBI-1262547
+        )
+         NIH (NIBIB 1R25EB022366)
+         NIST CSAFE: Center for Statistics and Applications in Forensic Evidence
+         Research Gift from Adobe
+       
+        
+        previously: 
+        National Science Foundation DBI-1053036
+        Google Research Award
+        UC Labs Research Program
+        
+ 
+        meetings organized: 
+         USA-Sino Summer School in Vision, Learning, Pattern Recognition: VLPR 2012 Fudan Unviersity, Shanghai, China July 2012.
+        
+        
+         The Eighth IEEE Computer Society Workshop on Perceptual Organization in Computer Vision (POCV 2012), CVPR 2012, Providence, RI.
+        
+        
+         Annual Southern California Computer Vision Meetup
